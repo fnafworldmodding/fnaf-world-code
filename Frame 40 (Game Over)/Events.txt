@@ -1,0 +1,27 @@
+* Every 00''-04
+	Active : Add 1 to Alterable Value A
+
+* Alterable Value A of Active > 1
+	Active : Set Alterable Value A to 0
+
+* Alterable Value A of Active = 0
+	 Active : Set effect to "Semi-transparent"
+
+* Alterable Value A of Active = 1
+	 Active : Set effect to "Inverted"
+
+* Start of Frame
+	Sound : Stop any sample
+	 Sound : Play sample die1 on channel #6
+
+* Timer equals 02''-00
+	 Sound : Play sample die2 on channel #6
+	Active : Destroy
+	New Objects : Create Active 5 at (0,0) from Active
+
+* Active 5 animation Stopped is over
+	Active 5 : Destroy
+
+* Timer equals 05''-00
+	storyboard controls : Jump to frame "halloween land" (35)
+

@@ -1,0 +1,21 @@
++ Object Definitions
+	+ Active
+		- Type: Active
+		- Images hash: 0xB861
+	+ POW 2
+		- Type: Active
+		- Images hash: 0x3F1B
+	+ POW
+		- Type: Active
+		- Images hash: 0xBEC3
+	+ String
+		- Type: String
+		+ Texts
+			1: MISSION: FAILED
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xF11D
++ Layer #1 (Layer 1)
+	- Active [389, 201]
+	- String [161, -164]
+	- Active 2 [185, 178]

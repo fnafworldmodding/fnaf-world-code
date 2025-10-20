@@ -1,0 +1,81 @@
++ Object Definitions
+	+ Active 4
+		- Type: Active
+		- Images hash: 0xB959
+	+ sparkle 2
+		- Type: Active
+		- Images hash: 0x098D
+	+ Active 2
+		- Type: Active
+		- Images hash: 0x3278
+	+ spray
+		- Type: Active
+		- Images hash: 0xC844
+	+ invid
+		- Type: Active
+		- Images hash: 0xFA0A
+	+ Active 6
+		- Type: Active
+		- Images hash: 0x1517
+	+ Cursor
+		- Type: Cursor
+	+ Active 32
+		- Type: Active
+		- Images hash: 0x6E9A
+	+ demo?
+		- Type: Counter
+		- Images hash: 0xF3AC
+	+ Active 3
+		- Type: Active
+		- Images hash: 0x8972
+	+ Active
+		- Type: Active
+		- Images hash: 0xC6B5
+	+ String
+		- Type: String
+		+ Texts
+			1: Update 2
+	+ String 2
+		- Type: String
+		+ Texts
+			1: v 1.24\n
+	+ String 3
+		- Type: String
+		+ Texts
+			1: Copyright © 2016 Scott Cawthon
+	+ Active 8
+		- Type: Active
+		- Images hash: 0x07E9
+	+ Active 5
+		- Type: Active
+		- Images hash: 0xE168
+	+ nose
+		- Type: Active
+		- Images hash: 0x2E15
+	+ Active 9
+		- Type: Active
+		- Images hash: 0x3593
+	+ Active 7
+		- Type: Active
+		- Images hash: 0x4626
++ Layer #1 (Layer 1)
+	- Active 4 [0, 0]
++ Layer #2 (Layer 2)
+	- Active 2 [-401, 57]
+	- spray [397, 448]
+	- invid [390, 382]
+	- Active 6 [396, 396]
+	- Cursor [-156, 228]
+	- Active 32 [-153, 283]
+	- demo? [-70, -42]
++ Layer #3 (Layer 3)
+	- Active 3 [413, 754]
+	- Active [942, 441]
+	- String [243, -239]
+	- String 2 [-16, -228]
+	- String 3 [200, -150]
+	- Active 8 [16, 10]
+	- Active 5 [600, 453]
+	- nose [376, 699]
+	- Active 9 [9, 450]
+	- Active 7 [10, 429]

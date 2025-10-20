@@ -1,0 +1,321 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* set is overlapping Byte Icon
++ Alterable Value A of Byte Icon = 0
+	set : Add 1 to Alterable Value A
+	Byte Icon : Set Alterable Value A to Alterable Value A( "set" )
+	set : Set position at (100,0) from set
+	set : Add 1 to Alterable Value B
+	Byte Icon : Set Alterable Value H to ItemValue( "Ini", "p" + Str$(Alterable Value A( "set" )) )
+
+* Alterable Value B of set >= 7
+	set : Set position at (-700,100) from set
+	set : Set Alterable Value B to 0
+	set : Add 1 to Alterable Value D
+
+* Alterable Value A of Byte Icon = 1
+	Byte Icon : Change animation sequence to Stopped
+
+* Alterable Value A of Byte Icon = 2
+	Byte Icon : Change animation sequence to Animation 12
+
+* Alterable Value A of Byte Icon = 3
+	Byte Icon : Change animation sequence to Animation 13
+
+* Alterable Value A of Byte Icon = 4
+	Byte Icon : Change animation sequence to Animation 14
+
+* Alterable Value A of Byte Icon = 5
+	Byte Icon : Change animation sequence to Animation 15
+
+* Alterable Value A of Byte Icon = 6
+	Byte Icon : Change animation sequence to Animation 16
+
+* Alterable Value A of Byte Icon = 7
+	Byte Icon : Change animation sequence to Animation 17
+
+* Alterable Value A of Byte Icon = 8
+	Byte Icon : Change animation sequence to Animation 18
+
+* Alterable Value A of Byte Icon = 9
+	Byte Icon : Change animation sequence to Animation 19
+
+* Alterable Value A of Byte Icon = 10
+	Byte Icon : Change animation sequence to Animation 20
+
+* Alterable Value A of Byte Icon = 11
+	Byte Icon : Change animation sequence to Animation 21
+
+* Alterable Value A of Byte Icon = 12
+	Byte Icon : Change animation sequence to Animation 22
+
+* Alterable Value A of Byte Icon = 13
+	Byte Icon : Change animation sequence to Animation 23
+
+* Alterable Value A of Byte Icon = 14
+	Byte Icon : Change animation sequence to Animation 24
+
+* Alterable Value A of Byte Icon = 15
+	Byte Icon : Change animation sequence to Animation 25
+
+* Alterable Value A of Byte Icon = 16
+	Byte Icon : Change animation sequence to Animation 26
+
+* Alterable Value A of Byte Icon = 17
+	Byte Icon : Change animation sequence to Animation 27
+
+* Alterable Value A of Byte Icon = 18
+	Byte Icon : Change animation sequence to Animation 28
+
+* Alterable Value A of Byte Icon = 19
+	Byte Icon : Change animation sequence to Animation 29
+
+* Alterable Value A of Byte Icon = 20
+	Byte Icon : Change animation sequence to Animation 30
+
+* Alterable Value A of Byte Icon = 21
+	Byte Icon : Change animation sequence to Animation 31
+
+* Alterable Value A of Byte Icon = 0
+	Byte Icon : Make invisible
+
+* Alterable Value A of Byte Icon > 0
+	Byte Icon : Reappear
+
+* User clicks with left button on reset
+	chip slot : Set Alterable Value A to 0
+	chip slot 2 : Set Alterable Value A to 0
+	chip slot 3 : Set Alterable Value A to 0
+	chip slot 4 : Set Alterable Value A to 0
+	selected 1 : Set Alterable Value A to 0
+	selected 2 : Set Alterable Value A to 0
+	selected 3 : Set Alterable Value A to 0
+	selected 4 : Set Alterable Value A to 0
+	Byte Icon : Set Alterable Value O to 0
+	 Ini : Set value 0 to item "active1b"
+	 Ini : Set value 0 to item "active2b"
+	 Ini : Set value 0 to item "active3b"
+	 Ini : Set value 0 to item "active4b"
+	 Sound : Play sample clear on channel #2
+	Byte Icon : Set Alterable Value U to 0
+
+* Alterable Value A of chip slot = 0
+	chip slot : Change animation sequence to Stopped
+
+* Alterable Value A of chip slot 2 = 0
+	chip slot 2 : Change animation sequence to Stopped
+
+* Alterable Value A of chip slot 3 = 0
+	chip slot 3 : Change animation sequence to Stopped
+
+* Alterable Value A of chip slot 4 = 0
+	chip slot 4 : Change animation sequence to Stopped
+
+* User clicks with left button on Byte Icon
++ Alterable Value O of Byte Icon = 0
++ Alterable Value H of Byte Icon = 1
++ Alterable Value Z of Byte Icon = 0
++ Alterable Value U of Byte Icon = 0
++ Alterable Value A of chip slot = 0
++ Alterable Value C of set = 0
++ Alterable Value D of set >= 3
+	set : Set Alterable Value C to 10
+	selected 1 : Set Alterable Value A to Alterable Value A( "Byte Icon" )
+	chip slot : Set Alterable Value A to 1
+	Byte Icon : Set Alterable Value O to 1
+	 Ini : Set value Alterable Value A( "Byte Icon" ) to item "active1b"
+	 Sound : Play sample pickbyte on channel #2
+
+* User clicks with left button on Byte Icon
++ Alterable Value H of Byte Icon = 1
++ Alterable Value O of Byte Icon = 0
++ Alterable Value Z of Byte Icon = 0
++ Alterable Value U of Byte Icon = 0
++ Alterable Value A of chip slot 2 = 0
++ Alterable Value C of set = 0
++ Alterable Value D of set >= 3
+	chip slot 2 : Set Alterable Value A to 1
+	selected 2 : Set Alterable Value A to Alterable Value A( "Byte Icon" )
+	set : Set Alterable Value C to 10
+	Byte Icon : Set Alterable Value O to 1
+	 Ini : Set value Alterable Value A( "Byte Icon" ) to item "active2b"
+	 Sound : Play sample pickbyte on channel #2
+
+* User clicks with left button on Byte Icon
++ Alterable Value O of Byte Icon = 0
++ Alterable Value H of Byte Icon = 1
++ Alterable Value Z of Byte Icon = 0
++ Alterable Value U of Byte Icon = 0
++ Alterable Value A of chip slot 3 = 0
++ Alterable Value C of set = 0
++ Alterable Value D of set >= 3
+	chip slot 3 : Set Alterable Value A to 1
+	selected 3 : Set Alterable Value A to Alterable Value A( "Byte Icon" )
+	set : Set Alterable Value C to 10
+	Byte Icon : Set Alterable Value O to 1
+	 Ini : Set value Alterable Value A( "Byte Icon" ) to item "active3b"
+	 Sound : Play sample pickbyte on channel #2
+
+* User clicks with left button on Byte Icon
++ Alterable Value O of Byte Icon = 0
++ Alterable Value H of Byte Icon = 1
++ Alterable Value Z of Byte Icon = 0
++ Alterable Value U of Byte Icon = 0
++ Alterable Value A of chip slot 4 = 0
++ Alterable Value C of set = 0
++ Alterable Value D of set >= 3
+	chip slot 4 : Set Alterable Value A to 1
+	selected 4 : Set Alterable Value A to Alterable Value A( "Byte Icon" )
+	set : Set Alterable Value C to 10
+	Byte Icon : Set Alterable Value O to 1
+	 Ini : Set value Alterable Value A( "Byte Icon" ) to item "active4b"
+	 Sound : Play sample pickbyte on channel #2
+
+* Alterable Value C of set > 0
+	set : Sub 1 from Alterable Value C
+
+* Alterable Value A of Byte Icon = Alterable Value A( "selected 1" )
++ Alterable Value A of selected 1 > 0
+	selected 1 : Set position at (0,0) from Byte Icon
+
+* Alterable Value A of Byte Icon = Alterable Value A( "selected 2" )
++ Alterable Value A of selected 2 > 0
+	selected 2 : Set position at (0,0) from Byte Icon
+
+* Alterable Value A of Byte Icon = Alterable Value A( "selected 3" )
++ Alterable Value A of selected 3 > 0
+	selected 3 : Set position at (0,0) from Byte Icon
+
+* Alterable Value A of Byte Icon = Alterable Value A( "selected 4" )
++ Alterable Value A of selected 4 > 0
+	selected 4 : Set position at (0,0) from Byte Icon
+
+* Alterable Value A of chip slot = 1
+	chip slot : Change animation sequence to Animation 12
+
+* Alterable Value A of chip slot 2 = 1
+	chip slot 2 : Change animation sequence to Animation 12
+
+* Alterable Value A of chip slot 3 = 1
+	chip slot 3 : Change animation sequence to Animation 12
+
+* Alterable Value A of chip slot 4 = 1
+	chip slot 4 : Change animation sequence to Animation 12
+
+* Start of Frame
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+	Byte Icon : Set Alterable Value A to 0
+	Byte Icon : Set Alterable Value U to 0
+
+* Alterable Value H of Byte Icon = 0
+	 Byte Icon : Set effect to "Monochrome"
+	 Byte Icon : Set alpha-blending coefficient to 245
+
+* Alterable Value H of Byte Icon = 1
+	 Byte Icon : Set effect to "Semi-transparent"
+	 Byte Icon : Set alpha-blending coefficient to 0
+
+* Alterable Value D of set >= 3
++ Only one action when event loops
+	selected 1 : Set Alterable Value A to ItemValue( "Ini", "active1b" )
+	selected 2 : Set Alterable Value A to ItemValue( "Ini", "active2b" )
+	selected 3 : Set Alterable Value A to ItemValue( "Ini", "active3b" )
+	selected 4 : Set Alterable Value A to ItemValue( "Ini", "active4b" )
+
+* User clicks with left button on Active 2
+	storyboard controls : Jump to frame "wait" (10)
+
+* Alterable Value A of selected 1 > 0
+	chip slot : Set Alterable Value A to 1
+	selected 1 : Reappear
+
+* Alterable Value A of selected 2 > 0
+	chip slot 2 : Set Alterable Value A to 1
+	selected 2 : Reappear
+
+* Alterable Value A of selected 3 > 0
+	chip slot 3 : Set Alterable Value A to 1
+	selected 3 : Reappear
+
+* Alterable Value A of selected 4 > 0
+	chip slot 4 : Set Alterable Value A to 1
+	selected 4 : Reappear
+
+* Alterable Value D of set >= 3
++ Alterable Value A of selected 1 > 0
+	selected 1 : Reappear
+
+* Alterable Value D of set >= 3
++ Alterable Value A of selected 2 > 0
+	selected 2 : Reappear
+
+* Alterable Value D of set >= 3
++ Alterable Value A of selected 3 > 0
+	selected 3 : Reappear
+
+* Alterable Value D of set >= 3
++ Alterable Value A of selected 4 > 0
+	selected 4 : Reappear
+
+* Alterable Value A of selected 1 = 0
+	selected 1 : Make invisible
+
+* Alterable Value A of selected 2 = 0
+	selected 2 : Make invisible
+
+* Alterable Value A of selected 3 = 0
+	selected 3 : Make invisible
+
+* Alterable Value A of selected 4 = 0
+	selected 4 : Make invisible
+
+* User clicks with left button on Byte Icon
+	test : Set Counter to Alterable Value U( "Byte Icon" )
+	test 2 : Set Counter to Alterable Value Z( "Byte Icon" )
+	test 3 : Set Counter to Alterable Value H( "Byte Icon" )
+	test 4 : Set Counter to Alterable Value O( "Byte Icon" )
+
+* demo? = 1
+	blue out : Reappear
+	demo : Reappear
+
+* demo? = 1
++ Byte Icon is overlapping blue out
+	Byte Icon : Set Alterable Value Z to 1
+
+* Byte Icon is overlapping selected 1
++ Alterable Value A of chip slot = 1
+	Byte Icon : Set Alterable Value U to 1
+
+* Byte Icon is overlapping selected 2
++ Alterable Value A of chip slot 2 = 1
+	Byte Icon : Set Alterable Value U to 1
+
+* Byte Icon is overlapping selected 3
++ Alterable Value A of chip slot 3 = 1
+	Byte Icon : Set Alterable Value U to 1
+
+* Byte Icon is overlapping selected 4
++ Alterable Value A of chip slot 4 = 1
+	Byte Icon : Set Alterable Value U to 1
+
+* NOT Byte Icon is overlapping selected 1
++ NOT Byte Icon is overlapping selected 2
++ NOT Byte Icon is overlapping selected 3
++ NOT Byte Icon is overlapping selected 4
+	Byte Icon : Set Alterable Value U to 0
+
+* Alterable Value A of chip slot = 0
+	selected 1 : Set position at (635,-151)
+
+* Alterable Value A of chip slot 2 = 0
+	selected 2 : Set position at (635,-151)
+
+* Alterable Value A of chip slot 3 = 0
+	selected 3 : Set position at (635,-151)
+
+* Alterable Value A of chip slot 4 = 0
+	selected 4 : Set position at (635,-151)
+

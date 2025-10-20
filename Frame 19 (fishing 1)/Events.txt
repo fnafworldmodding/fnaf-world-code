@@ -1,0 +1,271 @@
+* Start of Frame
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+	character : Set Alterable Value A to ItemValue( "Ini", "s1" )
+	Sound : Stop any sample
+	 Sound : Play sample City theme - Running lights draft1 loop (uninteruptable) on channel #1, 0 times
+	item box : Set Alterable Value G to 0
+	pearl : Set Alterable Value A to ItemValue( "Ini", "pearl" )
+
+* Alterable Value A of character = 1
+	character : Change animation sequence to Stopped
+
+* Alterable Value A of character = 2
+	character : Change animation sequence to Animation 12
+
+* Alterable Value A of character = 3
+	character : Change animation sequence to Animation 13
+
+* Alterable Value A of character = 4
+	character : Change animation sequence to Animation 14
+
+* Alterable Value A of character = 5
+	character : Change animation sequence to Animation 15
+
+* Alterable Value A of character = 6
+	character : Change animation sequence to Animation 16
+
+* Alterable Value A of character = 7
+	character : Change animation sequence to Animation 17
+
+* Alterable Value A of character = 8
+	character : Change animation sequence to Animation 18
+
+* Alterable Value A of character = 9
+	character : Change animation sequence to Animation 19
+
+* Alterable Value A of character = 10
+	character : Change animation sequence to Animation 20
+
+* Alterable Value A of character = 11
+	character : Change animation sequence to Animation 21
+
+* Alterable Value A of character = 12
+	character : Change animation sequence to Animation 22
+
+* Alterable Value A of character = 13
+	character : Change animation sequence to Animation 23
+
+* Alterable Value A of character = 14
+	character : Change animation sequence to Animation 24
+
+* Alterable Value A of character = 15
+	character : Change animation sequence to Animation 25
+
+* Alterable Value A of character = 16
+	character : Change animation sequence to Animation 26
+
+* Alterable Value A of character = 17
+	character : Change animation sequence to Animation 27
+
+* Alterable Value A of character = 18
+	character : Change animation sequence to Animation 28
+
+* Alterable Value A of character = 19
+	character : Change animation sequence to Animation 29
+
+* Alterable Value A of character = 20
+	character : Change animation sequence to Animation 30
+
+* Alterable Value A of character = 21
+	character : Change animation sequence to Animation 31
+
+* Alterable Value A of character = 22
+	character : Change animation sequence to Animation 32
+
+* Alterable Value A of character = 23
+	character : Change animation sequence to Animation 33
+
+* Alterable Value A of character = 24
+	character : Change animation sequence to Animation 34
+
+* Alterable Value A of character = 25
+	character : Change animation sequence to Animation 35
+
+* Alterable Value A of character = 26
+	character : Change animation sequence to Animation 36
+
+* Alterable Value A of character = 27
+	character : Change animation sequence to Animation 37
+
+* Alterable Value A of character = 28
+	character : Change animation sequence to Animation 38
+
+* Alterable Value A of character = 29
+	character : Change animation sequence to Animation 39
+
+* Alterable Value A of character = 30
+	character : Change animation sequence to Animation 40
+
+* Alterable Value A of character = 31
+	character : Change animation sequence to Animation 41
+
+* Alterable Value A of character = 32
+	character : Change animation sequence to Animation 42
+
+* Alterable Value A of character = 33
+	character : Change animation sequence to Animation 43
+
+* Alterable Value A of character = 34
+	character : Change animation sequence to Animation 44
+
+* Alterable Value A of character = 35
+	character : Change animation sequence to Animation 45
+
+* Alterable Value A of character = 36
+	character : Change animation sequence to Animation 46
+
+* Alterable Value A of character = 37
+	character : Change animation sequence to Animation 47
+
+* Alterable Value A of character = 38
+	character : Change animation sequence to Animation 48
+
+* Alterable Value A of character = 39
+	character : Change animation sequence to Animation 49
+
+* Alterable Value A of character = 40
+	character : Change animation sequence to Animation 50
+
+* User clicks with left button on Active 2
+	storyboard controls : Jump to frame "wait" (10)
+
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* Start of Frame
+	tokens : Set Counter to ItemValue( "Ini", "tokens" )
+
+* what shop = 1
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 1
+	set item 2 : Set Alterable Value A to 2
+	set item 3 : Set Alterable Value A to 3
+	checkl : Set Counter to 1
+
+* what shop = 2
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 4
+	set item 2 : Set Alterable Value A to 5
+	set item 3 : Set Alterable Value A to 6
+	checkl : Set Counter to 1
+
+* what shop = 5
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 7
+	set item 2 : Set Alterable Value A to 8
+	set item 3 : Set Alterable Value A to 9
+	checkl : Set Counter to 1
+
+* what shop = 20
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 10
+	set item 2 : Set Alterable Value A to 11
+	set item 3 : Set Alterable Value A to 12
+	checkl : Set Counter to 1
+
+* what shop = 11
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 13
+	set item 2 : Set Alterable Value A to 14
+	set item 3 : Set Alterable Value A to 15
+	checkl : Set Counter to 1
+
+* what shop = 14
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 16
+	set item 2 : Set Alterable Value A to 17
+	set item 3 : Set Alterable Value A to 18
+	checkl : Set Counter to 1
+
+* what shop = 17
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 19
+	set item 2 : Set Alterable Value A to 20
+	set item 3 : Set Alterable Value A to 21
+	checkl : Set Counter to 1
+
+* item box is overlapping set item 1
+	item box : Set Alterable Value A to Alterable Value A( "set item 1" )
+	item box : Set Alterable Value B to 1
+
+* Byte Icon is overlapping set item 1
+	Byte Icon : Set Alterable Value A to Alterable Value A( "set item 1" )
+	Byte Icon : Set Alterable Value B to 1
+
+* item box is overlapping set item 2
+	item box : Set Alterable Value A to Alterable Value A( "set item 2" )
+	item box : Set Alterable Value B to 2
+
+* Byte Icon is overlapping set item 2
+	Byte Icon : Set Alterable Value A to Alterable Value A( "set item 2" )
+	Byte Icon : Set Alterable Value B to 2
+
+* item box is overlapping set item 3
+	item box : Set Alterable Value A to Alterable Value A( "set item 3" )
+	item box : Set Alterable Value B to 3
+
+* Byte Icon is overlapping set item 3
+	Byte Icon : Set Alterable Value A to Alterable Value A( "set item 3" )
+	Byte Icon : Set Alterable Value B to 3
+
+* Mouse pointer is over item box
+	Active 5 : Set position at (0,0) from item box
+
+* checkl = 1
+	checkl : Set Counter to 0
+	have slot 1? : Set Counter to ItemValue( "Ini", "p" + Str$(Alterable Value A( "set item 1" )) )
+	have slot 2? : Set Counter to ItemValue( "Ini", "p" + Str$(Alterable Value A( "set item 2" )) )
+	have slot 3? : Set Counter to ItemValue( "Ini", "p" + Str$(Alterable Value A( "set item 3" )) )
+
+* have slot 1? = 1
+	sold out 1 : Reappear
+
+* have slot 2? = 1
+	sold out 2 : Reappear
+
+* have slot 3? = 1
+	sold out 3 : Reappear
+
+* User clicks with left button on item box
++ tokens >= 10
++ Run this event once
+	tokens : Subtract 10 from Counter
+	 Ini : Set value value( "tokens" ) to item "tokens"
+	 Sound : Play sample Cash_Register_Open_01 on channel #13
+	item box : Set Alterable Value G to 1
+
+* selection = 1
++ sold out 1 is invisible
++ tokens >= value( "current price" )
+	tokens : Subtract value( "current price" ) from Counter
+	have slot 1? : Set Counter to 1
+	 Ini : Set value 1 to item "p" + Str$(Alterable Value A( "set item 1" ))
+	 Ini : Set value value( "tokens" ) to item "tokens"
+	 Sound : Play sample Cash_Register_Open_01 on channel #13
+	bought : Set Counter to 1
+
+* selection = 2
++ sold out 2 is invisible
++ tokens >= value( "current price" )
+	tokens : Subtract value( "current price" ) from Counter
+	 Ini : Set value 1 to item "p" + Str$(Alterable Value A( "set item 2" ))
+	 Ini : Set value value( "tokens" ) to item "tokens"
+	have slot 2? : Set Counter to 1
+	 Sound : Play sample Cash_Register_Open_01 on channel #13
+	bought : Set Counter to 1
+
+* selection = 3
++ sold out 3 is invisible
++ tokens >= value( "current price" )
+	tokens : Subtract value( "current price" ) from Counter
+	 Ini : Set value 1 to item "p" + Str$(Alterable Value A( "set item 3" ))
+	 Ini : Set value value( "tokens" ) to item "tokens"
+	have slot 3? : Set Counter to 1
+	 Sound : Play sample Cash_Register_Open_01 on channel #13
+	bought : Set Counter to 1
+
+* Alterable Value G of item box = 1
++ Every 00''-50
+	storyboard controls : Next frame
+

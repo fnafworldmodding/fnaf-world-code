@@ -1,0 +1,186 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* NOT up is overlapping a backdrop
++ Repeat while "W" is pressed
++ Every 00''-20
+	center : Set position at (0,-30) from center
+
+* NOT down is overlapping a backdrop
++ Repeat while "S" is pressed
++ Every 00''-20
+	center : Set position at (0,30) from center
+
+* NOT right is overlapping a backdrop
++ Repeat while "D" is pressed
++ Every 00''-20
+	center : Set position at (30,0) from center
+
+* NOT left is overlapping a backdrop
++ Repeat while "A" is pressed
++ Every 00''-20
+	center : Set position at (-30,0) from center
+
+* Always
+	storyboard controls : Center display at (0,0) from center
+	up : Set position at (-1,-24) from center
+	down : Set position at (-1,24) from center
+	right : Set position at (29,-4) from center
+	left : Set position at (-27,-3) from center
+	Active : Set position at (0,0) from center
+
+* Start of Frame
+	Sound : Stop any sample
+	 Sound : Play sample Underneath1 (uninteruptable) on channel #1, 0 times
+
+* go = 1
++ Only one action when event loops
+	center : Set position at (0,0) from exit 1
+	go : Set Counter to 0
+
+* go = 4
++ Only one action when event loops
+	center : Set position at (0,0) from exit 2
+	go : Set Counter to 0
+
+* go = 8
++ Only one action when event loops
+	center : Set position at (1,0) from exit 3
+	go : Set Counter to 0
+
+* go = 9
++ Only one action when event loops
+	center : Set position at (0,0) from exit 4
+	go : Set Counter to 0
+
+* go = 14
++ Only one action when event loops
+	center : Set position at (0,0) from exit 5
+	go : Set Counter to 0
+
+* go = 20
++ Only one action when event loops
+	center : Set position at (0,0) from exit 6
+	go : Set Counter to 0
+
+* go = 22
++ Only one action when event loops
+	center : Set position at (0,0) from exit 7
+	go : Set Counter to 0
+
+* go = 32
++ Only one action when event loops
+	center : Set position at (0,0) from exit 8
+	go : Set Counter to 0
+
+* go = 40
++ Only one action when event loops
+	center : Set position at (0,0) from exit 9
+	go : Set Counter to 0
+
+* go = 42
++ Only one action when event loops
+	center : Set position at (0,0) from exit 10
+	go : Set Counter to 0
+
+* go = 44
++ Only one action when event loops
+	center : Set position at (0,0) from exit 11
+	go : Set Counter to 0
+
+* go = 46
++ Only one action when event loops
+	center : Set position at (0,0) from exit 12
+	go : Set Counter to 0
+
+* go = 49
++ Only one action when event loops
+	center : Set position at (0,0) from exit 13
+	go : Set Counter to 0
+
+* center is overlapping entrance 1
+	go : Set Counter to 2
+	storyboard controls : Jump to frame "wait" (10)
+
+* center is overlapping entrance 2
+	go : Set Counter to 3
+	storyboard controls : Jump to frame "wait" (10)
+
+* center is overlapping entrance 3
+	go : Set Counter to 5
+	storyboard controls : Jump to frame "wait" (10)
+
+* center is overlapping entrance 4
+	go : Set Counter to 6
+	storyboard controls : Jump to frame "wait" (10)
+
+* center is overlapping entrance 5
+	go : Set Counter to 10
+	storyboard controls : Jump to frame "wait" (10)
+
+* center is overlapping entrance 6
+	go : Set Counter to 11
+	storyboard controls : Jump to frame "wait" (10)
+
+* center is overlapping entrance 7
+	go : Set Counter to 12
+	storyboard controls : Jump to frame "wait" (10)
+
+* center is overlapping entrance 8
+	go : Set Counter to 15
+	storyboard controls : Jump to frame "wait" (10)
+
+* center is overlapping entrance 9
+	go : Set Counter to 34
+	storyboard controls : Jump to frame "wait" (10)
+
+* center is overlapping entrance 10
+	go : Set Counter to 50
+	storyboard controls : Jump to frame "wait" (10)
+
+* Every 00''-05
++ Pick one of scanline 3
++ Pick one of Active 3
+	scanline 3 : Set position at (0,0) from Active 3
+	 scanline 3 : Set alpha-blending coefficient to Random(200)
+
+* Every 00''-10
+	 portal 1 : Set alpha-blending coefficient to Random(6) * 40
+	 portal 2 : Set alpha-blending coefficient to Random(6) * 40
+	 portal 3 : Set alpha-blending coefficient to Random(6) * 20
+	 portal 4 : Set alpha-blending coefficient to Random(6) * 20
+	 portal 5 : Set alpha-blending coefficient to Random(6) * 20
+	 portal 6 : Set alpha-blending coefficient to Random(6) * 20
+	 portal 7 : Set alpha-blending coefficient to Random(6) * 20
+
+* center is overlapping portal 1
+	go : Set Counter to 7
+	storyboard controls : Jump to frame "underground 2" (11)
+
+* center is overlapping portal 2
+	go : Set Counter to 13
+	storyboard controls : Jump to frame "underground 2" (11)
+
+* center is overlapping portal 3
+	go : Set Counter to 21
+	storyboard controls : Jump to frame "underground 2" (11)
+
+* center is overlapping portal 4
+	go : Set Counter to 23
+	storyboard controls : Jump to frame "underground 2" (11)
+
+* center is overlapping portal 5
+	go : Set Counter to 41
+	storyboard controls : Jump to frame "underground 2" (11)
+
+* center is overlapping portal 6
+	go : Set Counter to 43
+	storyboard controls : Jump to frame "underground 2" (11)
+
+* center is overlapping portal 7
+	go : Set Counter to 45
+	storyboard controls : Jump to frame "underground 2" (11)
+
+* Every 01''-00
+	codefound : Set Alterable Value A to Random(10) + Random(10) + Random(10) + Random(10) + Random(10) + Random(10) + Random(10)
+

@@ -1,0 +1,16 @@
++ Object Definitions
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0xADB1
+	+ Backdrop 2
+		- Type: Backdrop
+		- Images hash: 0xAD51
+	+ Backdrop 3
+		- Type: Backdrop
+		- Images hash: 0x66AC
++ Layer #1 (Layer 1)
+	- Backdrop [-2, 117]
+	- Backdrop 2 [0, 198]
+	- Backdrop 2 [-3, 368]
+	- Backdrop 3 [-2, 51]
+	- Backdrop 3 [0, 403]

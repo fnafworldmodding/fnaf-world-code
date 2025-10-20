@@ -1,0 +1,412 @@
++ Object Definitions
+	+ Quick Backdrop 5
+		- Type: Quick Backdrop
+		- Images hash: 0x0F40
+	+ tree
+		- Type: Backdrop
+		- Images hash: 0x3B95
+	+ Quick Backdrop
+		- Type: Quick Backdrop
+		- Images hash: 0x3B95
+	+ Quick Backdrop 2
+		- Type: Quick Backdrop
+		- Images hash: 0x3B95
+	+ tree 2
+		- Type: Backdrop
+		- Images hash: 0xCF33
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0x58CB
+	+ Backdrop 2
+		- Type: Backdrop
+		- Images hash: 0x8E58
+	+ house
+		- Type: Backdrop
+		- Images hash: 0x9CFB
+	+ house 2
+		- Type: Backdrop
+		- Images hash: 0x2890
+	+ house 3
+		- Type: Backdrop
+		- Images hash: 0x92C7
+	+ house 4
+		- Type: Backdrop
+		- Images hash: 0x87E9
+	+ grave
+		- Type: Backdrop
+		- Images hash: 0x6191
+	+ Real
+		- Type: String
+		+ Texts
+			1: 
+	+ Fredbear icon
+		- Type: Active
+		- Images hash: 0xE3CB
+	+ center
+		- Type: Active
+		- Images hash: 0x60DC
+	+ up
+		- Type: Active
+		- Images hash: 0xB4EC
+	+ bottom
+		- Type: Active
+		- Images hash: 0xB4EC
+	+ right
+		- Type: Active
+		- Images hash: 0x2911
+	+ left
+		- Type: Active
+		- Images hash: 0x2911
+	+ go
+		- Type: Counter
+		- Images hash: 0x3262
+	+ H portal
+		- Type: Active
+		- Images hash: 0xE2BA
+	+ H portal 2
+		- Type: Active
+		- Images hash: 0xE2BA
+	+ H portal 5
+		- Type: Active
+		- Images hash: 0xE2BA
+	+ H portal 6
+		- Type: Active
+		- Images hash: 0xE2BA
+	+ H portal 3
+		- Type: Active
+		- Images hash: 0xE2BA
+	+ H portal 4
+		- Type: Active
+		- Images hash: 0xE2BA
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xD93C
+	+ entered game
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 3
+		- Type: Active
+		- Images hash: 0xD4C9
+	+ Active 4
+		- Type: Active
+		- Images hash: 0x0F6E
+	+ Active 5
+		- Type: Active
+		- Images hash: 0xE692
+	+ Active 10
+		- Type: Active
+		- Images hash: 0x8215
+	+ Active 9
+		- Type: Active
+		- Images hash: 0x1907
+	+ Active 16
+		- Type: Active
+		- Images hash: 0xD713
+	+ Fredbear icon 2
+		- Type: Active
+		- Images hash: 0x1688
+	+ Active 8
+		- Type: Active
+		- Images hash: 0x088B
+	+ Active 7
+		- Type: Active
+		- Images hash: 0xAF45
+	+ Active 6
+		- Type: Active
+		- Images hash: 0x6C0A
+	+ Active
+		- Type: Active
+		- Images hash: 0x9522
+	+ leaf gen
+		- Type: Active
+		- Images hash: 0xCC2D
+	+ play
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ black mask
+		- Type: Active
+		- Images hash: 0x8B3B
+	+ party
+		- Type: Active
+		- Images hash: 0x94D2
+	+ from H
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ remember X
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ remember Y
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Fake
+		- Type: String
+		+ Texts
+			1: 
+	+ talk text
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ is stopped
+		- Type: Counter
+		- Images hash: 0x1C7A
++ Layer #1 (Layer 1)
+	- Quick Backdrop 5 [0, 0]
+	- tree [500, 200]
+	- Quick Backdrop [350, 100]
+	- Quick Backdrop 2 [600, 150]
+	- Quick Backdrop [100, 50]
+	- Quick Backdrop 2 [250, 150]
+	- Quick Backdrop 2 [150, 250]
+	- Quick Backdrop 2 [50, 400]
+	- Quick Backdrop 2 [700, 250]
+	- Quick Backdrop [800, 350]
+	- Quick Backdrop [0, 600]
+	- tree [400, 200]
+	- tree [550, 250]
+	- tree [350, 250]
+	- tree [350, 350]
+	- tree [550, 350]
+	- Quick Backdrop 2 [150, 700]
+	- Quick Backdrop 2 [1050, 400]
+	- Quick Backdrop [450, 850]
+	- Quick Backdrop [650, 750]
+	- Quick Backdrop 2 [900, 700]
+	- Quick Backdrop 2 [150, 900]
+	- Quick Backdrop 2 [150, 1100]
+	- Quick Backdrop 2 [250, 1000]
+	- Quick Backdrop 2 [600, 950]
+	- Quick Backdrop 2 [150, 1300]
+	- Quick Backdrop [600, 1150]
+	- Quick Backdrop 2 [750, 1250]
+	- Quick Backdrop [200, 1500]
+	- Quick Backdrop [650, 1450]
+	- Quick Backdrop [450, 1550]
+	- tree [550, 950]
+	- tree [350, 1050]
+	- tree [250, 1200]
+	- tree [250, 1450]
+	- tree [700, 1400]
+	- tree [700, 1250]
+	- tree [600, 1500]
+	- tree [600, 800]
+	- Quick Backdrop 2 [250, 650]
+	- Quick Backdrop 2 [1050, 600]
+	- Quick Backdrop 2 [1050, 800]
+	- Quick Backdrop 2 [900, 900]
+	- Quick Backdrop [1000, 1100]
+	- Quick Backdrop [1050, 900]
+	- Quick Backdrop [1150, 700]
+	- Quick Backdrop [1450, 600]
+	- Quick Backdrop [1650, 700]
+	- Quick Backdrop 2 [1700, 800]
+	- Quick Backdrop 2 [1800, 900]
+	- Quick Backdrop 2 [1800, 1100]
+	- Quick Backdrop 2 [1700, 1200]
+	- Quick Backdrop [850, 1300]
+	- Quick Backdrop [1000, 1400]
+	- Quick Backdrop [1550, 1400]
+	- Quick Backdrop 2 [1450, 1350]
+	- Quick Backdrop [1300, 1550]
+	- Quick Backdrop 2 [1150, 1400]
+	- Quick Backdrop 2 [650, 1600]
+	- Quick Backdrop [750, 1750]
+	- Quick Backdrop [1000, 1700]
+	- Quick Backdrop [1350, 1700]
+	- Quick Backdrop 2 [1750, 1500]
+	- Quick Backdrop 2 [1850, 1600]
+	- Quick Backdrop [1750, 1800]
+	- Quick Backdrop [1500, 1800]
+	- Quick Backdrop [1200, 1800]
+	- tree [700, 850]
+	- tree [850, 850]
+	- tree [700, 1100]
+	- tree [850, 1250]
+	- tree [1150, 800]
+	- tree [1500, 750]
+	- tree [1650, 900]
+	- tree [1750, 1050]
+	- tree [1650, 1250]
+	- tree [1250, 1100]
+	- tree [1300, 950]
+	- tree [1400, 1500]
+	- tree [1450, 1300]
+	- tree [1100, 1350]
+	- tree [1250, 1300]
+	- tree [1350, 1200]
+	- tree [1550, 1100]
+	- tree [1500, 1050]
+	- tree [1550, 1500]
+	- tree [1750, 1700]
+	- tree [1700, 1500]
+	- tree [1600, 1750]
+	- tree [1300, 1750]
+	- tree [750, 1700]
+	- tree [1100, 1500]
+	- tree [950, 1400]
+	- tree [850, 1600]
+	- tree [1000, 1050]
+	- Quick Backdrop [1000, 450]
+	- Quick Backdrop [1000, 350]
+	- Quick Backdrop [1400, 250]
+	- Quick Backdrop 2 [1650, 250]
+	- Quick Backdrop 2 [1700, 550]
+	- tree [1450, 350]
+	- tree [1600, 350]
+	- tree [1650, 550]
+	- tree [1150, 550]
+	- tree [1300, 550]
+	- tree [1550, 550]
+	- Quick Backdrop [800, 450]
+	- tree [1000, 550]
+	- tree [150, 550]
+	- tree [350, 600]
+	- tree [250, 450]
+	- tree [750, 450]
+	- tree [750, 700]
+	- tree [250, 850]
+	- tree [550, 1050]
+	- tree [550, 1100]
+	- tree [250, 1300]
+	- tree [250, 1400]
+	- tree [450, 1500]
+	- tree [550, 750]
+	- tree [650, 450]
+	- tree 2 [500, 450]
+	- tree 2 [400, 550]
+	- tree 2 [600, 350]
+	- tree 2 [550, 550]
+	- tree 2 [300, 350]
+	- tree 2 [150, 450]
+	- tree 2 [250, 900]
+	- tree 2 [500, 950]
+	- tree 2 [350, 1100]
+	- tree 2 [550, 1150]
+	- tree 2 [700, 1300]
+	- tree 2 [950, 550]
+	- tree 2 [850, 700]
+	- tree 2 [1300, 900]
+	- tree 2 [1500, 1100]
+	- tree 2 [1600, 700]
+	- tree 2 [1350, 550]
+	- tree 2 [1150, 650]
+	- tree 2 [1400, 1450]
+	- tree 2 [1150, 1350]
+	- tree 2 [1650, 1300]
+	- tree 2 [900, 1600]
+	- Backdrop [250, 600]
+	- Backdrop [700, 450]
+	- Backdrop [300, 1200]
+	- Backdrop [600, 1450]
+	- Backdrop [850, 1200]
+	- Backdrop [950, 1100]
+	- Backdrop [750, 1100]
+	- Backdrop [1450, 950]
+	- Backdrop [1500, 900]
+	- Backdrop [1550, 1550]
+	- Backdrop [1600, 1700]
+	- Backdrop [1250, 1750]
+	- Backdrop 2 [700, 450]
+	- Backdrop 2 [330, 628]
+	- Backdrop 2 [1477, 919]
+	- house [1300, 250]
+	- house 2 [750, 1350]
+	- house 3 [1596, 1400]
+	- house 4 [710, 800]
+	- grave [350, 1300]
+	- grave [350, 1400]
+	- grave [450, 1300]
+	- grave [450, 1400]
+	- grave [550, 1400]
+	- grave [550, 1300]
+	- grave [1248, 1152]
+	- Quick Backdrop 2 [1150, 200]
+	- Quick Backdrop [1050, 200]
+	- Quick Backdrop [1200, 100]
+	- Quick Backdrop [1450, 100]
+	- Quick Backdrop [1700, 100]
+	- Quick Backdrop 2 [1850, 200]
+	- Quick Backdrop 2 [1900, 200]
+	- Quick Backdrop 2 [2000, 400]
+	- Quick Backdrop 2 [2000, 600]
+	- Quick Backdrop 2 [1950, 800]
+	- Quick Backdrop 2 [1900, 900]
+	- tree [1250, 550]
+	- Quick Backdrop 2 [1700, 400]
+	- Quick Backdrop 2 [1850, 400]
+	- Quick Backdrop 2 [1950, 600]
+	- Quick Backdrop 2 [1950, 400]
+	- Quick Backdrop 2 [1700, 250]
+	- tree [1300, 200]
+	- tree [900, 650]
+	- Real [50, -200]
+	- Fredbear icon [685, 624]
+	- center [476, 302]
+	- up [475, 281]
+	- bottom [475, 324]
+	- right [495, 302]
+	- left [455, 303]
+	- go [61, -23]
+	- H portal [475, 225]
+	- H portal 2 [1625, 569]
+	- H portal 5 [1825, 825]
+	- H portal 6 [725, 1040]
+	- H portal 3 [1817, 1721]
+	- H portal 4 [793, 1625]
+	- entered game [2240, 864]
+	- Active 3 [993, 1649]
+	- Active 4 [1238, 613]
+	- Active 5 [1582, 1646]
+	- Active 10 [1669, 522]
+	- Active 9 [1233, 852]
+	- Active 16 [473, 317]
+	- Fredbear icon 2 [934, 1286]
+	- Active 8 [1328, 1748]
+	- Active 7 [576, 1537]
+	- Active 6 [1823, 692]
++ Layer #2 (Layer 2)
+	- Quick Backdrop 2 [1200, 250]
+	- Quick Backdrop 2 [1800, 200]
+	- Quick Backdrop 2 [1800, 400]
+	- Active [574, 574]
+	- Active [524, 474]
+	- Active [424, 574]
+	- Active [174, 474]
+	- Active [324, 374]
+	- Active [974, 574]
+	- Active [874, 724]
+	- Active [274, 924]
+	- Active [524, 974]
+	- Active [374, 1124]
+	- Active [574, 1174]
+	- Active [724, 1324]
+	- Active [924, 1624]
+	- Active [1174, 1374]
+	- Active [1424, 1474]
+	- Active [1324, 924]
+	- Active [1524, 1124]
+	- Active [1674, 1324]
+	- Active [1174, 674]
+	- Active [1374, 574]
+	- Active [1624, 724]
+	- Active [624, 374]
+	- leaf gen [817, 69]
+	- leaf gen [817, 106]
+	- leaf gen [817, 143]
+	- leaf gen [817, 180]
+	- leaf gen [817, 217]
+	- leaf gen [817, 254]
+	- leaf gen [817, 291]
+	- leaf gen [817, 328]
+	- leaf gen [817, 365]
+	- leaf gen [817, 402]
+	- Active 2 [460, -40]
+	- play [200, -150]
++ Layer #3 (Layer 3)
+	- black mask [0, 0]
+	- party [89, 430]
+	- from H [-88, 168]
+	- remember X [-88, 218]
+	- remember Y [-88, 236]
++ Layer #4 (Layer 4)
+	- Fake [50, 17]
+	- talk text [250, -50]
+	- is stopped [600, -100]

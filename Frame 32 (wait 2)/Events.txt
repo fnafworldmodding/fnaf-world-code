@@ -1,0 +1,3 @@
+* Timer equals 00''-20
+	storyboard controls : Jump to frame "overworld" (6)
+

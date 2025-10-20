@@ -1,0 +1,159 @@
++ Object Definitions
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0xD924
+	+ Quick Backdrop
+		- Type: Quick Backdrop
+		- Images hash: 0xD924
+	+ Quick Backdrop 2
+		- Type: Quick Backdrop
+		- Images hash: 0xD924
+	+ Quick Backdrop 3
+		- Type: Quick Backdrop
+		- Images hash: 0xD924
+	+ Quick Backdrop 4
+		- Type: Quick Backdrop
+		- Images hash: 0xD924
+	+ Active
+		- Type: Active
+		- Images hash: 0xA485
+	+ up
+		- Type: Active
+		- Images hash: 0x899F
+	+ down
+		- Type: Active
+		- Images hash: 0x6273
+	+ center
+		- Type: Active
+		- Images hash: 0x5716
+	+ right
+		- Type: Active
+		- Images hash: 0x0C9B
+	+ left
+		- Type: Active
+		- Images hash: 0xB417
+	+ go
+		- Type: Counter
+		- Images hash: 0x3262
+	+ exit 1
+		- Type: Active
+		- Images hash: 0x34FA
+	+ exit 3
+		- Type: Active
+		- Images hash: 0x34FA
+	+ Active 3
+		- Type: Active
+		- Images hash: 0xAEDD
+	+ exit 2
+		- Type: Active
+		- Images hash: 0x9B58
+	+ exit 4
+		- Type: Active
+		- Images hash: 0x9B58
+	+ Active 4
+		- Type: Active
+		- Images hash: 0xD924
+	+ scanline 3
+		- Type: Active
+		- Images hash: 0x6CA1
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xC518
+	+ Perspective
+		- Type: Perspective
++ Layer #1 (Layer 1)
+	- Backdrop [800, 800]
+	- Quick Backdrop [900, 200]
+	- Quick Backdrop 2 [1000, 800]
+	- Quick Backdrop 3 [800, 200]
+	- Quick Backdrop [600, 500]
+	- Quick Backdrop 3 [1100, 300]
+	- Quick Backdrop 2 [1000, 600]
+	- Quick Backdrop 3 [600, 700]
+	- Quick Backdrop 2 [600, 1000]
+	- Quick Backdrop [800, 900]
+	- Quick Backdrop 3 [1400, 600]
+	- Quick Backdrop [1400, 900]
+	- Quick Backdrop [1200, 1000]
+	- Quick Backdrop 2 [1000, 1200]
+	- Quick Backdrop 2 [700, 1200]
+	- Quick Backdrop 2 [400, 1200]
+	- Quick Backdrop 3 [400, 900]
+	- Quick Backdrop 3 [400, 600]
+	- Quick Backdrop [1300, 400]
+	- Quick Backdrop 3 [300, 300]
+	- Quick Backdrop [600, 100]
+	- Quick Backdrop [300, 100]
+	- Quick Backdrop 2 [400, 0]
+	- Quick Backdrop 3 [400, 1400]
+	- Quick Backdrop 2 [600, 1600]
+	- Quick Backdrop 3 [800, 1400]
+	- Quick Backdrop 2 [900, 1400]
+	- Quick Backdrop 2 [300, 1400]
+	- Quick Backdrop 3 [200, 1200]
+	- Quick Backdrop 3 [200, 900]
+	- Quick Backdrop [200, 700]
+	- Quick Backdrop 2 [1200, 1400]
+	- Quick Backdrop 3 [1500, 1200]
+	- Quick Backdrop [1700, 1200]
+	- Quick Backdrop 3 [1700, 900]
+	- Quick Backdrop [1700, 700]
+	- Quick Backdrop [1600, 600]
+	- Quick Backdrop 3 [1600, 300]
+	- Quick Backdrop 2 [1400, 200]
+	- Quick Backdrop [1200, 100]
+	- Quick Backdrop 2 [400, 1600]
+	- Backdrop [600, 1400]
+	- Quick Backdrop 2 [900, 1600]
+	- Quick Backdrop 2 [1200, 1600]
+	- Quick Backdrop 2 [1500, 1600]
+	- Quick Backdrop 4 [1600, 1200]
+	- Quick Backdrop 4 [1600, 1300]
+	- Quick Backdrop 4 [1600, 1400]
+	- Quick Backdrop 3 [1700, 1400]
+	- Active [604, 321]
+	- up [908, 570]
+	- down [909, 637]
+	- center [909, 609]
+	- right [943, 608]
+	- left [868, 607]
+	- go [420, -70]
+	- exit 1 [764, 944]
+	- exit 3 [545, 1545]
+	- Active 3 [-1, 1]
+	- Active 3 [-1, 26]
+	- Active 3 [-1, 51]
+	- Active 3 [-1, 76]
+	- Active 3 [-1, 101]
+	- Active 3 [-1, 126]
+	- Active 3 [-1, 151]
+	- Active 3 [-1, 176]
+	- Active 3 [-1, 201]
+	- Active 3 [-1, 226]
+	- Active 3 [-1, 251]
+	- Active 3 [-1, 276]
+	- Active 3 [-1, 301]
+	- Active 3 [-1, 326]
+	- Active 3 [-1, 351]
+	- Active 3 [-1, 376]
+	- Active 3 [-1, 401]
+	- Active 3 [-1, 426]
+	- Active 3 [-1, 451]
+	- Active 3 [-1, 476]
+	- exit 2 [545, 145]
+	- exit 4 [1245, 545]
+	- Active 4 [900, 1500]
++ Layer #2 (Layer 2)
+	- scanline 3 [400, 44]
+	- scanline 3 [400, 78]
+	- scanline 3 [400, 112]
+	- scanline 3 [400, 146]
+	- scanline 3 [400, 180]
+	- scanline 3 [400, 214]
+	- scanline 3 [400, 248]
+	- scanline 3 [400, 282]
+	- scanline 3 [400, 316]
+	- scanline 3 [400, 350]
+	- Active 2 [0, 0]
++ Layer #3 (Layer 3)
+	- Perspective [0, 0]

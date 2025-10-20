@@ -1,0 +1,275 @@
++ Object Definitions
+	+ Active 2
+		- Type: Active
+		- Images hash: 0x7B42
+	+ Active 3
+		- Type: Active
+		- Images hash: 0x3815
+	+ muzzle
+		- Type: Active
+		- Images hash: 0xBD4D
+	+ Active 4
+		- Type: Active
+		- Images hash: 0x385A
+	+ POW
+		- Type: Active
+		- Images hash: 0xBEC3
+	+ Active 5
+		- Type: Active
+		- Images hash: 0x4E67
+	+ POW 2
+		- Type: Active
+		- Images hash: 0x3F1B
+	+ Active 6
+		- Type: Active
+		- Images hash: 0xA344
+	+ Active 8
+		- Type: Active
+		- Images hash: 0x6A3E
+	+ Active 7
+		- Type: Active
+		- Images hash: 0x00C3
+	+ Active 10
+		- Type: Active
+		- Images hash: 0x7439
+	+ laser
+		- Type: Active
+		- Images hash: 0xBD3C
+	+ ready2
+		- Type: Active
+		- Images hash: 0xD812
+	+ missile
+		- Type: Active
+		- Images hash: 0xF31D
+	+ laserball
+		- Type: Active
+		- Images hash: 0x512A
+	+ Active 14
+		- Type: Active
+		- Images hash: 0x5ECC
+	+ Active 9
+		- Type: Active
+		- Images hash: 0xEC1F
+	+ fast clouds
+		- Type: Active
+		- Images hash: 0x6BF1
+	+ fast clouds 2
+		- Type: Active
+		- Images hash: 0x07B2
+	+ fast clouds 3
+		- Type: Active
+		- Images hash: 0x2AE4
+	+ souldozer
+		- Type: Active
+		- Images hash: 0x7811
+	+ Active
+		- Type: Active
+		- Images hash: 0xB861
+	+ Chica plane
+		- Type: Active
+		- Images hash: 0x84ED
+	+ Chica plane 2
+		- Type: Active
+		- Images hash: 0x5E27
+	+ Chica plane 3
+		- Type: Active
+		- Images hash: 0xB430
+	+ move
+		- Type: Active
+		- Images hash: 0x334B
+	+ top wall
+		- Type: Active
+		- Images hash: 0xCBAC
+	+ left wall
+		- Type: Active
+		- Images hash: 0x0FEC
+	+ right wall
+		- Type: Active
+		- Images hash: 0x0FEC
+	+ bottom wall
+		- Type: Active
+		- Images hash: 0xCBAC
+	+ current weapon
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ bullet
+		- Type: Active
+		- Images hash: 0x6F8F
+	+ shoot from
+		- Type: Active
+		- Images hash: 0x465D
+	+ shoot from 2
+		- Type: Active
+		- Images hash: 0x465D
+	+ make enemies
+		- Type: Active
+		- Images hash: 0xCE82
+	+ drop rat
+		- Type: Active
+		- Images hash: 0xCE82
+	+ smoke gen
+		- Type: Active
+		- Images hash: 0xD700
+	+ Active 12
+		- Type: Active
+		- Images hash: 0x9C05
+	+ health
+		- Type: Counter
+	+ comm
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ what character 2
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ what character
+		- Type: Active
+		- Images hash: 0x12AE
+	+ close
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ phase
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ String
+		- Type: String
+		+ Texts
+			1: Text
+	+ make from
+		- Type: Active
+		- Images hash: 0x2314
+	+ plane follow 1
+		- Type: Active
+		- Images hash: 0x5FD7
+	+ plane follow 2
+		- Type: Active
+		- Images hash: 0x5FD7
+	+ plane follow 3
+		- Type: Active
+		- Images hash: 0x5FD7
+	+ stage progress
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ cannon 1
+		- Type: Active
+		- Images hash: 0xD700
+	+ beat
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 11
+		- Type: Active
+		- Images hash: 0xDDEB
+	+ ready
+		- Type: Active
+		- Images hash: 0x2AE1
+	+ score
+		- Type: Active
+		- Images hash: 0xC204
+	+ kills
+		- Type: Counter
+		- Images hash: 0x818E
+	+ health 2
+		- Type: Counter
+		- Images hash: 0x818E
+	+ minor kills
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ rank
+		- Type: Active
+		- Images hash: 0x4A43
+	+ Active 13
+		- Type: Active
+		- Images hash: 0xA986
+	+ found new
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ spin
+		- Type: Active
+		- Images hash: 0xB92A
+	+ spin 2
+		- Type: Active
+		- Images hash: 0xB14D
+	+ big
+		- Type: Active
+		- Images hash: 0x535E
++ Layer #1 (Layer 1)
+	- Active 2 [0, 0]
++ Layer #2 (Layer 2)
+	- Active 9 [-215, 306]
+	- fast clouds [0, 0]
+	- fast clouds [1000, 0]
++ Layer #3 (Layer 3)
+	- fast clouds 2 [1, 295]
+	- fast clouds 3 [1, -187]
+	- fast clouds 3 [1001, -254]
+	- fast clouds 2 [1001, 295]
++ Layer #4 (Layer 4)
+	- souldozer [1102, 614]
+	- Active [-146, 155]
+	- Chica plane [-86, 282]
+	- Chica plane 2 [-97, 42]
+	- Chica plane 3 [688, -72]
+	- move [-28, 214]
+	- top wall [376, 11]
+	- left wall [7, 224]
+	- right wall [791, 226]
+	- bottom wall [376, 470]
+	- current weapon [111, -72]
+	- shoot from [140, 300]
+	- shoot from 2 [140, 312]
+	- make enemies [838, -25]
+	- drop rat [460, -35]
+	- Active 5 [865, 404]
+	- Active 6 [791, -115]
+	- Active 7 [857, 76]
+	- smoke gen [720, 77]
+	- smoke gen [746, 129]
+	- smoke gen [709, 157]
+	- smoke gen [687, 363]
+	- smoke gen [770, 201]
+	- smoke gen [685, 268]
+	- smoke gen [704, 228]
+	- smoke gen [757, 281]
+	- smoke gen [727, 317]
+	- smoke gen [765, 375]
++ Layer #5 (Layer 5)
+	- Active 12 [107, 28]
+	- health [16, 22]
+	- Active 3 [11, 316]
+	- comm [-58, -18]
+	- what character 2 [-58, 0]
+	- what character [90, 391]
+	- close [-57, 24]
+	- phase [-71, 93]
+	- String [168, 333]
+	- make from [-36, 374]
+	- plane follow 1 [281, 137]
+	- plane follow 2 [282, 179]
+	- plane follow 3 [284, 219]
+	- POW [-84, -274]
+	- POW 2 [-109, -100]
+	- stage progress [-24, -86]
+	- cannon 1 [1044, 201]
+	- laser [91, -268]
+	- beat [-72, -160]
+	- Active 11 [115, 29]
+	- ready [1009, 194]
+	- score [393, 214]
+	- kills [572, 212]
+	- health 2 [572, 263]
+	- minor kills [589, -197]
+	- rank [536, 332]
+	- Active 13 [116, 93]
+	- found new [300, -238]
+	- bullet [326, -297]
++ Layer #6 (Layer 6)
+	- spin [107, 367]
+	- spin 2 [641, 163]
+	- big [386, 226]
+	- spin 2 [305, 300]
+	- spin 2 [136, 155]
+	- spin 2 [294, 20]
+	- spin 2 [497, 167]
+	- spin 2 [442, 363]
+	- spin 2 [629, 299]
+	- spin 2 [336, 157]
+	- spin 2 [156, 332]

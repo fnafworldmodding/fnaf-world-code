@@ -1,0 +1,131 @@
++ Object Definitions
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0xEDDD
+	+ prize line 1
+		- Type: Active
+		- Images hash: 0x886E
+	+ prize line 2
+		- Type: Active
+		- Images hash: 0x886E
+	+ prize line 3
+		- Type: Active
+		- Images hash: 0x886E
+	+ prize line 4
+		- Type: Active
+		- Images hash: 0x886E
+	+ prize line 5
+		- Type: Active
+		- Images hash: 0x886E
+	+ prize line 6
+		- Type: Active
+		- Images hash: 0x886E
+	+ prize line 7
+		- Type: Active
+		- Images hash: 0x886E
+	+ critter 4
+		- Type: Active
+		- Images hash: 0x602F
+	+ left side
+		- Type: Active
+		- Images hash: 0x5A58
+	+ right side
+		- Type: Active
+		- Images hash: 0x5A58
+	+ bottom
+		- Type: Active
+		- Images hash: 0x3B21
+	+ drop
+		- Type: Active
+		- Images hash: 0x48DD
+	+ Active
+		- Type: Active
+		- Images hash: 0x9991
+	+ hitbox
+		- Type: Active
+		- Images hash: 0xAFED
+	+ Active 2
+		- Type: Active
+		- Images hash: 0x217C
+	+ won 2
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ won
+		- Type: Counter
+		- Images hash: 0xEB7B
+	+ Counter
+		- Type: Counter
+		- Images hash: 0xFF5C
+	+ Active 3
+		- Type: Active
+		- Images hash: 0x26D1
+	+ Active 4
+		- Type: Active
+		- Images hash: 0x68EB
+	+ got pearl
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ pearl
+		- Type: Active
+		- Images hash: 0x012E
+	+ Active 5
+		- Type: Active
+		- Images hash: 0xD490
+	+ Active 6
+		- Type: Active
+		- Images hash: 0x2094
+	+ test
+		- Type: Counter
+		- Images hash: 0x1C7A
++ Layer #1 (Layer 1)
+	- Backdrop [0, 0]
+	- prize line 1 [375, 148]
+	- prize line 2 [375, 199]
+	- prize line 3 [375, 246]
+	- prize line 4 [379, 294]
+	- prize line 5 [379, 346]
+	- prize line 6 [379, 391]
+	- prize line 7 [379, 437]
+	- critter 4 [318, 150]
+	- critter 4 [87, 151]
+	- critter 4 [426, 151]
+	- left side [7, 228]
+	- right side [800, 230]
+	- bottom [391, 481]
+	- critter 4 [684, 150]
+	- critter 4 [141, 197]
+	- critter 4 [372, 200]
+	- critter 4 [262, 197]
+	- critter 4 [104, 253]
+	- critter 4 [218, 257]
+	- critter 4 [325, 251]
+	- critter 4 [656, 249]
+	- critter 4 [136, 298]
+	- critter 4 [262, 296]
+	- critter 4 [381, 297]
+	- critter 4 [501, 295]
+	- critter 4 [621, 294]
+	- critter 4 [489, 200]
+	- critter 4 [444, 250]
+	- drop [379, 9]
+	- Active [380, 8]
+	- hitbox [379, 49]
+	- Active 2 [380, 0]
+	- critter 4 [196, 152]
+	- critter 4 [540, 150]
+	- critter 4 [615, 203]
+	- critter 4 [206, 348]
+	- critter 4 [426, 350]
+	- critter 4 [320, 391]
+	- won 2 [604, -107]
+	- critter 4 [565, 351]
+	- critter 4 [389, 439]
+	- critter 4 [497, 391]
+	- Counter [81, 478]
+	- Active 3 [399, 116]
+	- Active 4 [95, 51]
+	- got pearl [651, -87]
+	- pearl [824, -126]
+	- Active 5 [533, 56]
+	- Active 6 [376, 56]
+	- test [712, -32]

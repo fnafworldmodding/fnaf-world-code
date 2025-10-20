@@ -1,0 +1,1213 @@
+* area = 1
++ Only one action when event loops
+	 Sound : Play sample Blaster Cluster (uninteruptable) on channel #1, 0 times
+	Perspective 2 : Make invisible
+	Perspective 3 : Make invisible
+	Active 9 : Destroy
+
+* area = 2
++ Only one action when event loops
+	 Sound : Play sample Boiling Point (uninteruptable) on channel #1, 0 times
+	Perspective 2 : Reappear
+	Perspective 3 : Reappear
+
+* area = 3
++ Only one action when event loops
+	 Sound : Play sample Darkness Ahead (uninteruptable) on channel #1, 0 times
+	Perspective 2 : Make invisible
+	Perspective 3 : Make invisible
+
+* final boss = 1
++ Only one action when event loops
+	 Sound : Play sample Boiling Boss (uninteruptable) on channel #1, 0 times
+	Perspective 2 : Make invisible
+	Perspective 3 : Make invisible
+
+* Always
+	Active : Set position at (0,34) from hit box
+	feel right : Set position at (14,10) from hit box
+	feel left : Set position at (-16,10) from hit box
+	floor 1 : Set position at (-1,30) from hit box
+	floor 2 : Set position at (-1,44) from hit box
+	ceiling : Set position at (0,-24) from hit box
+	floor 3 : Set position at (0,-2) from floor 1
+
+* Repeat while "Right Arrow" is pressed
++ NOT Repeat while "Left Arrow" is pressed
++ NOT feel right is overlapping a backdrop
+	hit box : Set position at (4,0) from hit box
+	Active : Set direction to ...........
+
+* Repeat while "Left Arrow" is pressed
++ NOT Repeat while "Right Arrow" is pressed
++ final boss = 0
++ NOT feel left is overlapping a backdrop
+	hit box : Set position at (-4,0) from hit box
+	Active : Set direction to ...............
+
+* Repeat while "Left Arrow" is pressed
++ NOT Repeat while "Right Arrow" is pressed
++ final boss = 1
++ NOT feel left is overlapping a backdrop
++ NOT feel left is overlapping back wall
+	hit box : Set position at (-4,0) from hit box
+	Active : Set direction to ...............
+
+* NOT Repeat while "Right Arrow" is pressed
++ NOT Repeat while "Left Arrow" is pressed
++ NOT Repeat while "Down Arrow" is pressed
++ floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Stopped
+
+* Repeat while "Right Arrow" is pressed
++ feel right is overlapping a backdrop
++ NOT Repeat while "Left Arrow" is pressed
++ NOT Repeat while "Down Arrow" is pressed
++ floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Stopped
+
+* Repeat while "Left Arrow" is pressed
++ feel left is overlapping a backdrop
++ NOT Repeat while "Right Arrow" is pressed
++ NOT Repeat while "Down Arrow" is pressed
++ floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Stopped
+
+* NOT Repeat while "Right Arrow" is pressed
++ NOT Repeat while "Left Arrow" is pressed
++ NOT floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Animation 12
+
+* NOT floor 1 is overlapping a backdrop
++ jumped = 0
+	hit box : Set position at (0,3) from hit box
+	fall : Add 1 to Counter
+
+* Upon pressing "Z"
++ floor 1 is overlapping a backdrop
++ spring 2 = 0
+	jumped : Set Counter to 1
+	going up : Set Counter to 40
+	 Sound : Play sample jump1 on channel #6
+
+* Upon pressing "Z"
++ floor 1 is overlapping a backdrop
++ spring 2 = 1
+	jumped : Set Counter to 1
+	going up : Set Counter to 60
+	 Sound : Play sample jump2 on channel #6
+
+* jumped = 1
++ NOT Repeat while "Z" is pressed
+	jumped : Set Counter to 0
+	going up : Set Counter to 0
+
+* jumped = 1
++ going up > 0
+	going up : Subtract 1 from Counter
+	hit box : Set position at (0,-1) from hit box
+
+* jumped = 1
++ going up > 10
+	hit box : Set position at (0,-2) from hit box
+
+* jumped = 1
++ going up > 20
+	hit box : Set position at (0,-2) from hit box
+
+* jumped = 1
++ going up > 30
+	hit box : Set position at (0,-2) from hit box
+
+* jumped = 1
++ going up > 35
+	hit box : Set position at (0,-2) from hit box
+
+* jumped = 1
++ going up = 0
+	jumped : Set Counter to 0
+
+* Repeat while "Right Arrow" is pressed
++ NOT feel right is overlapping a backdrop
++ floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Walking
+
+* Repeat while "Left Arrow" is pressed
++ NOT feel left is overlapping a backdrop
++ floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Walking
+
+* Repeat while "Right Arrow" is pressed
++ NOT floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Animation 12
+
+* Repeat while "Left Arrow" is pressed
++ NOT floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Animation 12
+
+* floor 1 is overlapping a backdrop
+	fall : Set Counter to 0
+
+* floor 2 is overlapping a backdrop
++ fall > 10
+	fall : Set Counter to 10
+
+* NOT floor 1 is overlapping a backdrop
++ fall > 0
+	hit box : Set position at (0,2) from hit box
+
+* NOT floor 1 is overlapping a backdrop
++ fall > 10
+	hit box : Set position at (0,2) from hit box
+
+* NOT floor 1 is overlapping a backdrop
++ fall > 20
+	hit box : Set position at (0,1) from hit box
+
+* ceiling is overlapping a backdrop
+	jumped : Set Counter to 0
+
+* gun power = 0
++ Upon pressing "X"
+	Active : Launch Active 2 at speed 100
+	 Sound : Play sample shot1 on channel #2
+
+* gun power = 1
++ Upon pressing "X"
+	Active : Launch Active 2 at speed 100
+	 Sound : Play sample shot2 on channel #2
+
+* gun power = 2
++ Upon pressing "X"
+	Active : Launch Active 2 at speed 100
+	 Sound : Play sample shot3 on channel #2
+
+* gun power = 3
++ Upon pressing "X"
+	Active : Launch Active 2 at speed 100
+	 Sound : Play sample shot4 on channel #2
+
+* gun power = 4
++ Upon pressing "X"
+	Active : Launch Active 2 at speed 100
+	 Sound : Play sample shot5 on channel #2
+
+* gun power = 5
++ Upon pressing "X"
+	Active : Launch Active 2 at speed 100
+	 Sound : Play sample shot6 on channel #2
+
+* gun power = 6
++ Upon pressing "X"
+	Active : Launch Active 2 at speed 100
+	 Sound : Play sample shot7 on channel #2
+
+* gun power = 7
++ Upon pressing "X"
+	Active : Launch Active 2 at speed 100
+	 Sound : Play sample shot8 on channel #2
+
+* gun power = 8
++ Upon pressing "X"
+	Active : Launch Active 2 at speed 100
+	 Sound : Play sample shot9 on channel #2
+
+* gun power = 9
++ Upon pressing "X"
+	Active : Launch Active 2 at speed 100
+	 Sound : Play sample shot9 on channel #2
+
+* gun power = 0
++ Repeat while "X" is pressed
++ Alterable Value A of hit box >= 20
+	Active : Launch Active 2 at speed 100
+	 Sound : Play sample shot1 on channel #2
+	hit box : Set Alterable Value A to 0
+
+* gun power = 1
++ Repeat while "X" is pressed
++ Alterable Value A of hit box >= 18
+	Active : Launch Active 2 at speed 100
+	hit box : Set Alterable Value A to 0
+	 Sound : Play sample shot2 on channel #2
+
+* gun power = 2
++ Repeat while "X" is pressed
++ Alterable Value A of hit box >= 16
+	Active : Launch Active 2 at speed 100
+	hit box : Set Alterable Value A to 0
+	 Sound : Play sample shot3 on channel #2
+
+* gun power = 3
++ Repeat while "X" is pressed
++ Alterable Value A of hit box >= 14
+	Active : Launch Active 2 at speed 100
+	hit box : Set Alterable Value A to 0
+	 Sound : Play sample shot4 on channel #2
+
+* gun power = 4
++ Repeat while "X" is pressed
++ Alterable Value A of hit box >= 10
+	Active : Launch Active 2 at speed 100
+	hit box : Set Alterable Value A to 0
+	 Sound : Play sample shot5 on channel #2
+
+* gun power = 5
++ Repeat while "X" is pressed
++ Alterable Value A of hit box >= 10
+	Active : Launch Active 2 at speed 100
+	hit box : Set Alterable Value A to 0
+	 Sound : Play sample shot6 on channel #2
+
+* gun power = 6
++ Repeat while "X" is pressed
++ Alterable Value A of hit box >= 10
+	Active : Launch Active 2 at speed 100
+	hit box : Set Alterable Value A to 0
+	 Sound : Play sample shot7 on channel #2
+
+* gun power = 7
++ Repeat while "X" is pressed
++ Alterable Value A of hit box >= 8
+	Active : Launch Active 2 at speed 100
+	hit box : Set Alterable Value A to 0
+	 Sound : Play sample shot8 on channel #2
+
+* gun power = 8
++ Repeat while "X" is pressed
++ Alterable Value A of hit box >= 7
+	Active : Launch Active 2 at speed 100
+	hit box : Set Alterable Value A to 0
+	 Sound : Play sample shot9 on channel #2
+
+* gun power = 9
++ Repeat while "X" is pressed
++ Alterable Value A of hit box >= 5
+	Active : Launch Active 2 at speed 100
+	hit box : Set Alterable Value A to 0
+	 Sound : Play sample shot9 on channel #2
+
+* Always
+	Active 2 : Add 1 to Alterable Value A
+
+* Alterable Value A of Active 2 > ( value( "gun power" ) * 3 ) + 10
+	Active 2 : Destroy
+
+* Repeat while "X" is pressed
+	hit box : Add 1 to Alterable Value A
+
+* NOT Repeat while "X" is pressed
+	hit box : Set Alterable Value A to 0
+
+* gun power = 0
+	Active 2 : Change animation sequence to Stopped
+
+* gun power = 1
+	Active 2 : Change animation sequence to Animation 12
+
+* gun power = 2
+	Active 2 : Change animation sequence to Animation 13
+
+* gun power = 3
+	Active 2 : Change animation sequence to Animation 14
+
+* gun power = 4
+	Active 2 : Change animation sequence to Animation 15
+
+* gun power = 5
+	Active 2 : Change animation sequence to Animation 16
+
+* gun power = 6
+	Active 2 : Change animation sequence to Animation 17
+
+* gun power = 7
+	Active 2 : Change animation sequence to Animation 18
+
+* gun power = 8
+	Active 2 : Change animation sequence to Animation 19
+
+* gun power = 9
+	Active 2 : Change animation sequence to Animation 19
+
+* Repeat while "Down Arrow" is pressed
++ NOT Repeat while "Right Arrow" is pressed
++ NOT Repeat while "Left Arrow" is pressed
++ floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Animation 13
+
+* Repeat while "Right Arrow" is pressed
++ Repeat while "Left Arrow" is pressed
++ floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Stopped
+
+* gun power > 9
+	gun power : Set Counter to 9
+
+* Always
+	current level : Set X position to X( "hit box" )
+
+* Y position of hit box > Y( "current level" ) + 240
++ Alterable Value A of current level = 0
+	current level : Set Alterable Value A to 48
+
+* Y position of hit box < Y( "current level" ) - 240
++ Alterable Value A of current level = 0
+	current level : Set Alterable Value A to -48
+
+* Alterable Value A of current level > 0
+	current level : Sub 2 from Alterable Value A
+	current level : Set position at (0,20) from current level
+
+* Alterable Value A of current level < 0
+	current level : Add 2 to Alterable Value A
+	current level : Set position at (0,-20) from current level
+
+* NOT follow is overlapping current level
++ NOT hit box is overlapping vertical
+	follow : Set speed to 30
+	follow : Look at (0,0) from current level
+
+* follow is overlapping current level
++ NOT hit box is overlapping vertical
+	follow : Set speed to 0
+
+* hit box is overlapping vertical
++ NOT follow is overlapping hit box
++ Alterable Value A of follow = 0
+	follow : Set speed to 45
+	follow : Look at (0,0) from hit box
+
+* NOT hit box is overlapping vertical
++ Only one action when event loops
+	follow : Set Alterable Value A to 0
+
+* hit box is overlapping vertical
++ follow is overlapping hit box
+	follow : Set Alterable Value A to 1
+
+* Alterable Value A of follow = 1
+	follow : Set position at (0,0) from hit box
+	follow : Set speed to 0
+
+* Y position of current level > Y( "follow" )
+	follow : Set Y position to Y( "follow" ) + 2
+
+* Y position of current level < Y( "follow" )
+	follow : Set Y position to Y( "follow" ) - 2
+
+* Always
+	Active 4 : Look at (0,0) from hit box
+	Active 6 : Look at (0,0) from hit box
+
+* Active 2 is overlapping Active 4
+	 Sound : Play sample hit on channel #12
+	Active 2 : Destroy
+	Active 4 : Sub 5 + value( "gun power" ) from Alterable Value A
+	Active 4 : Set Alterable Value B to 3
+
+* Active 2 is overlapping Active 6
++ Active 6 is visible
+	 Sound : Play sample hit on channel #12
+	Active 2 : Destroy
+	Active 6 : Sub 5 + value( "gun power" ) from Alterable Value A
+	Active 6 : Set Alterable Value B to 3
+
+* Active 2 is overlapping walker
++ walker is visible
+	 Sound : Play sample hit on channel #12
+	Active 2 : Destroy
+	walker : Sub 5 + value( "gun power" ) from Alterable Value A
+	walker : Set Alterable Value B to 3
+
+* Active 2 is overlapping Active 11
+	 Sound : Play sample hit on channel #12
+	Active 2 : Destroy
+	Active 11 : Sub 5 + value( "gun power" ) from Alterable Value A
+	Active 11 : Set Alterable Value B to 3
+
+* Active 2 is overlapping blob
++ blob is visible
+	 Sound : Play sample hit on channel #12
+	Active 2 : Destroy
+	blob : Sub 5 + value( "gun power" ) from Alterable Value A
+	blob : Set Alterable Value B to 3
+
+* Active 2 is overlapping rollertank
++ rollertank is visible
+	 Sound : Play sample hit on channel #12
+	Active 2 : Destroy
+	rollertank : Sub 5 + value( "gun power" ) from Alterable Value A
+	rollertank : Set Alterable Value B to 3
+
+* Active 2 is overlapping UFO
++ UFO is visible
+	 Sound : Play sample hit on channel #12
+	Active 2 : Destroy
+	UFO : Sub 5 + value( "gun power" ) from Alterable Value A
+	UFO : Set Alterable Value B to 3
+
+* Active 2 is overlapping Active 14
++ Number of Active 16 > 0
++ final boss = 1
+	 Sound : Play sample hit on channel #12
+	Active 2 : Destroy
+	Active 14 : Sub 5 + value( "gun power" ) from Alterable Value A
+	Active 14 : Set Alterable Value B to 3
+	Active 14 : Set Alterable Value G to 8
+
+* Active 2 is overlapping Active 13
++ Active 13 is visible
+	 Sound : Play sample hit on channel #12
+	Active 2 : Destroy
+	Active 13 : Sub 5 + value( "gun power" ) from Alterable Value A
+	Active 13 : Set Alterable Value B to 3
+
+* Alterable Value B of Active 4 > 0
+	 Active 4 : Set effect to "Inverted"
+	Active 4 : Sub 1 from Alterable Value B
+
+* Alterable Value B of Active 6 > 0
+	 Active 6 : Set effect to "Inverted"
+	Active 6 : Sub 1 from Alterable Value B
+
+* Alterable Value B of walker > 0
+	 walker : Set effect to "Inverted"
+	walker : Sub 1 from Alterable Value B
+
+* Alterable Value B of Active 11 > 0
+	 Active 11 : Set effect to "Inverted"
+	Active 11 : Sub 1 from Alterable Value B
+
+* Alterable Value B of blob > 0
+	 blob : Set effect to "Inverted"
+	blob : Sub 1 from Alterable Value B
+
+* Alterable Value B of rollertank > 0
+	 rollertank : Set effect to "Inverted"
+	rollertank : Sub 1 from Alterable Value B
+
+* Alterable Value B of UFO > 0
+	 UFO : Set effect to "Inverted"
+	UFO : Sub 1 from Alterable Value B
+
+* Alterable Value B of Active 14 > 0
+	 Active 14 : Set effect to "Inverted"
+	Active 14 : Sub 1 from Alterable Value B
+
+* Alterable Value B of Active 13 > 0
+	 Active 13 : Set effect to "Inverted"
+	Active 13 : Sub 1 from Alterable Value B
+
+* Alterable Value B of Active 4 = 0
+	 Active 4 : Set effect to "Semi-transparent"
+
+* Alterable Value B of Active 6 = 0
+	 Active 6 : Set effect to "Semi-transparent"
+
+* Alterable Value B of walker = 0
+	 walker : Set effect to "Semi-transparent"
+
+* Alterable Value B of Active 11 = 0
+	 Active 11 : Set effect to "Semi-transparent"
+
+* Alterable Value B of blob = 0
+	 blob : Set effect to "Semi-transparent"
+
+* Alterable Value B of rollertank = 0
+	 rollertank : Set effect to "Semi-transparent"
+
+* Alterable Value B of UFO = 0
+	 UFO : Set effect to "Semi-transparent"
+
+* Alterable Value B of Active 14 = 0
+	 Active 14 : Set effect to "Semi-transparent"
+
+* Alterable Value B of Active 13 = 0
+	 Active 13 : Set effect to "Semi-transparent"
+
+* Alterable Value A of Active 4 < -50
+	New Objects : Create big pow at (2,-69) from Active 4
+	Active 4 : Destroy
+	New Objects : Create Active 5 at (3,-71) from Active 4
+	 Sound : Play sample pow2 on channel #12
+
+* Alterable Value A of Active 6 < -25
++ Active 6 is visible
+	New Objects : Create Active 5 at (16,31) from Active 6
+	 Sound : Play sample pow2 on channel #12
+	Active 6 : Make invisible
+
+* Alterable Value A of walker < -25
++ walker is visible
+	New Objects : Create Active 5 at (1,-31) from walker
+	 Sound : Play sample pow2 on channel #12
+	walker : Make invisible
+
+* Alterable Value A of Active 11 < -25
+	New Objects : Create Active 5 at (-1,-22) from Active 11
+	 Sound : Play sample pow2 on channel #12
+	Active 11 : Destroy
+
+* Alterable Value A of blob < -25
++ blob is visible
+	New Objects : Create Active 5 at (0,0) from blob
+	 Sound : Play sample pow2 on channel #12
+	blob : Make invisible
+
+* Alterable Value A of rollertank < -200
+	New Objects : Create Active 5 at (23,-137) from rollertank
+	 Sound : Play sample pow2 on channel #12
+	rollertank : Destroy
+	New Objects : Create big pow at (22,-184) from rollertank
+	New Objects : Create big pow at (25,-121) from rollertank
+	New Objects : Create big pow at (25,-58) from rollertank
+
+* Alterable Value A of UFO < -50
+	New Objects : Create Active 5 at (0,0) from UFO
+	 Sound : Play sample pow2 on channel #12
+	New Objects : Create big pow at (0,0) from UFO
+	UFO : Destroy
+
+* Alterable Value A of Active 14 < -1000
++ Only one action when event loops
+	Sound : Stop any sample
+	New Objects : Create Active 5 at (-46,-105) from Active 14
+	 Sound : Play sample pow2 on channel #12
+	Active 16 : Destroy
+	Active 17 : Destroy
+	lazer mount 2 : Destroy
+	UFO : Destroy
+	Active 14 : Change animation sequence to Animation 13
+	New Objects : Create big pow at (-85,-166) from Active 14
+	New Objects : Create big pow at (4,-171) from Active 14
+	New Objects : Create big pow at (-75,-101) from Active 14
+	New Objects : Create big pow at (4,-83) from Active 14
+	Active 6 : Destroy
+	enemy bullet : Destroy
+	New Objects : Create big pow at (-17,-147) from Active 14
+	New Objects : Create big pow at (-21,-93) from Active 14
+	Active 14 : Next movement
+	Active 14 : Set speed to 5
+	Active 14 : Set direction to ..................
+
+* Alterable Value A of Active 13 < -50
++ Active 13 is visible
+	 Sound : Play sample pow2 on channel #12
+	Active 13 : Make invisible
+	New Objects : Create big pow at (-2,-123) from Active 13
+	New Objects : Create big pow at (-2,-49) from Active 13
+	New Objects : Create Active 5 at (1,-109) from Active 13
+	New Objects : Create Active 5 at (2,-56) from Active 13
+
+* Number of big pow > 0
+	New Objects : Create little pow at (-20,-20) from big pow
+	New Objects : Create little pow at (17,-19) from big pow
+	New Objects : Create little pow at (-15,14) from big pow
+	New Objects : Create little pow at (15,15) from big pow
+	New Objects : Create little pow at (-27,-1) from big pow
+	New Objects : Create little pow at (36,1) from big pow
+	New Objects : Create little pow at (0,-48) from big pow
+	big pow : Destroy
+
+* Number of little pow > 0
++ Every 00''-10
++ Pick one of little pow
+	New Objects : Create Active 5 at (0,0) from little pow
+	little pow : Destroy
+	 Sound : Play sample pow2 on channel #12
+
+* Active 5 animation Stopped is over
+	Active 5 : Destroy
+
+* Alterable Value A of Active 5 = 0
+	New Objects : Create flak at (0,0) from Active 5
+	New Objects : Create flak at (0,0) from Active 5
+	New Objects : Create flak at (0,0) from Active 5
+	New Objects : Create flak at (0,0) from Active 5
+	New Objects : Create flak at (0,0) from Active 5
+	Active 5 : Set Alterable Value A to 1
+
+* Number of flak > 0
+	flak : Add 1 to Alterable Value A
+	flak : Set position at (0,5) from flak
+	flak : Set speed to Speed( "flak" ) - 10
+
+* Alterable Value A of flak > 10
+	flak : Destroy
+
+* Alterable Value B of flak = 0
+	flak : Set Alterable Value B to 1
+	flak : Set speed to 50 + Random(150)
+
+* enemy bullet is getting closer than 0 pixels from window's edge
+	enemy bullet : Destroy
+
+* Alterable Value D of Active 4 > 100
++ Active 4 is facing a direction .................
+	New Objects : Create enemy bullet at (3,-81) from Active 4
+	enemy bullet : Set direction to ...............
+	Active 4 : Set Alterable Value D to 0
+
+* Alterable Value D of Active 11 > 100
+	New Objects : Create enemy bullet at (-20,-25) from Active 11
+	enemy bullet : Set direction to ...............
+	Active 11 : Set Alterable Value D to 0
+
+* Alterable Value D of Active 4 > 100
++ Active 4 is facing a direction ....................
+	New Objects : Create enemy bullet at (3,-81) from Active 4
+	enemy bullet : Set direction to ...........
+	Active 4 : Set Alterable Value D to 0
+
+* Number of enemy bullet > 0
+	enemy bullet : Add 1 to Alterable Value A
+
+* Alterable Value A of enemy bullet > 15
++ Alterable Value B of enemy bullet = 0
++ area = 1
+	enemy bullet : Set Alterable Value B to 1
+	enemy bullet : Set speed to 50
+	 Sound : Play sample laser2 on channel #16
+
+* Alterable Value A of enemy bullet > 15
++ Alterable Value B of enemy bullet = 0
++ area = 3
+	enemy bullet : Set Alterable Value B to 1
+	enemy bullet : Set speed to 50
+	 Sound : Play sample laser2 on channel #16
+
+* Alterable Value A of enemy bullet > 15
++ Alterable Value B of enemy bullet = 0
++ area = 2
+	enemy bullet : Set Alterable Value B to 1
+	enemy bullet : Set speed to 50
+	 Sound : Play sample lazer5 on channel #16
+
+* Always
+	Active 6 : Add 1 to Alterable Value D
+	Active 4 : Add 1 to Alterable Value D
+	Active 11 : Add 1 to Alterable Value D
+	rollertank : Add 1 to Alterable Value D
+	UFO : Add 1 to Alterable Value D
+
+* Alterable Value D of Active 6 > 75
++ Active 6 is facing a direction ...................
+	New Objects : Create enemy bullet at (0,3) from Active 6 (action point)
+	Active 6 : Set Alterable Value D to 0
+	enemy bullet : Set direction to ...................
+
+* Alterable Value D of Active 6 > 75
++ Active 6 is facing a direction .................
+	New Objects : Create enemy bullet at (0,3) from Active 6 (action point)
+	Active 6 : Set Alterable Value D to 0
+	enemy bullet : Set direction to .................
+
+* Active 6 is getting closer than 0 pixels from window's edge
+	Active 6 : Set Alterable Value D to 0
+
+* Active 4 is getting closer than 0 pixels from window's edge
+	Active 4 : Set Alterable Value D to 0
+
+* enemy bullet is overlapping a backdrop
+	New Objects : Create Active 7 at (0,0) from enemy bullet
+	enemy bullet : Destroy
+
+* Active 7 animation Stopped is over
+	Active 7 : Destroy
+
+* Number of enemy bullet > 0
++ Every 00''-03
+	New Objects : Create Active 8 at (0,0) from enemy bullet
+
+* Active 8 animation Stopped is over
+	Active 8 : Destroy
+
+* Active 5 is overlapping enemy bullet
+	enemy bullet : Destroy
+
+* Active is overlapping powerup
++ Only one action when event loops
+	 Sound : Play sample powerup on channel #15
+	powerup : Destroy
+	gun power : Add 1 to Counter
+
+* Start of Frame
+	The mouse pointer and keyboard : Hide Windows mouse pointer
+
+* Active is overlapping area 1
+	area : Set Counter to 1
+
+* Active is overlapping area 2
+	area : Set Counter to 2
+
+* Active is overlapping area 3
+	area : Set Counter to 3
+
+* area = 2
++ Number of Active 9 < 20
++ Every 00''-50
++ Pick one of make bubble
+	New Objects : Create Active 9 at (0,0) from make bubble
+
+* Active 9 is stopped
+	Active 9 : Destroy
+
+* Active 10 is overlapping a backdrop
+	Active 10 : Add 1 to Alterable Value A
+
+* lazer mount is getting closer than 0 pixels from window's edge
+	lazer mount : Set Alterable Value A to 0
+
+* Always
+	lazer mount : Add 1 to Alterable Value A
+	lazer mount 2 : Add 1 to Alterable Value A
+
+* Alterable Value A of lazer mount > 100
+	lazer mount : Set Alterable Value A to 0
+	lazer mount : Set Alterable Value B to 20
+
+* Alterable Value B of lazer mount > 0
+	New Objects : Create Active 10 at (0,31) from lazer mount
+	lazer mount : Sub 1 from Alterable Value B
+
+* Alterable Value B of lazer mount > 0
++ Only one action when event loops
+	 Sound : Play sample turret on channel #12
+
+* Alterable Value A of Active 10 > 1
+	Active 10 : Destroy
+
+* Active 10 is getting closer than 0 pixels from window's edge
+	Active 10 : Destroy
+
+* Active 11 is getting closer than 0 pixels from window's edge
+	Active 11 : Set Alterable Value D to 0
+
+* blob collides with the background 
+	blob : Bounce
+
+* Active is overlapping spring
+	spring : Destroy
+	spring 2 : Set Counter to 1
+	 Sound : Play sample powerup on channel #15
+
+* Always
+	 Perspective : Set zoom value: Alterable Value A( "area 3" )
+
+* area = 3
++ Alterable Value A of area 3 < 100
+	area 3 : Add 5 to Alterable Value A
+
+* area <> 3
++ Alterable Value A of area 3 > 75
+	area 3 : Sub 5 from Alterable Value A
+
+* Start of Frame
+	area 3 : Set Alterable Value A to 75
+
+* area = 1
++ Only one action when event loops
+	walker : Set Alterable Value A to 0
+	walker : Reappear
+	Active 6 : Set Alterable Value A to 0
+	Active 6 : Reappear
+
+* area = 2
++ Only one action when event loops
+	blob : Reappear
+	blob : Set Alterable Value A to 0
+	Active 13 : Reappear
+	Active 13 : Set Alterable Value A to 0
+
+* Active 6 is invisible
+	Active 6 : Set Alterable Value D to 0
+
+* Start of Frame
+	 Perspective : Bring to front
+	 Perspective 2 : Bring to front
+	 Perspective 3 : Bring to front
+
+* feel right is overlapping a backdrop
++ feel left is overlapping a backdrop
+	hit box : Set position at (0,-1) from hit box
+
+* floor 3 is overlapping a backdrop
+	hit box : Set position at (0,-1) from hit box
+
+* Active is overlapping teleport
+	 Sound : Play sample teleport on channel #8
+	hit box : Set position at (254,4584)
+	current level : Set position at (409,4581)
+	follow : Set position at (405,4643)
+
+* Every 00''-10
+	teleport : Set Alterable Value A to Random(20)
+
+* Alterable Value B of Active 5 = 0
++ Alterable Value A of teleport = 1
+	New Objects : Create heart at (0,0) from Active 5
+	Active 5 : Set Alterable Value B to 1
+
+* Alterable Value B of Active 5 = 0
++ Alterable Value A of teleport <> 1
+	Active 5 : Set Alterable Value B to 1
+
+* heart is getting closer than 0 pixels from window's edge
+	heart : Destroy
+
+* Collision between Active and heart
+	heart : Destroy
+	 Sound : Play sample heart on channel #9
+	life : Add 3 to Counter
+
+* life > 100
+	life : Set Counter to 100
+
+* hit box is overlapping enemy bullet
++ Alterable Value H of hit box = 0
+	 Sound : Play sample hurt on channel #12
+	enemy bullet : Destroy
+	hit box : Set Alterable Value H to 50
+	life : Subtract 3 from Counter
+
+* hit box is overlapping Active 6
++ Active 6 is visible
++ Alterable Value H of hit box = 0
+	 Sound : Play sample hurt on channel #12
+	hit box : Set Alterable Value H to 50
+	life : Subtract 5 from Counter
+
+* hit box is overlapping Active 4
++ Active 4 is visible
++ Alterable Value H of hit box = 0
+	 Sound : Play sample hurt on channel #12
+	hit box : Set Alterable Value H to 50
+	life : Subtract 10 from Counter
+
+* hit box is overlapping walker
++ walker is visible
++ Alterable Value H of hit box = 0
+	 Sound : Play sample hurt on channel #12
+	hit box : Set Alterable Value H to 50
+	life : Subtract 5 from Counter
+
+* hit box is overlapping Active 10
++ Alterable Value H of hit box = 0
+	 Sound : Play sample hurt on channel #12
+	hit box : Set Alterable Value H to 50
+	life : Subtract 3 from Counter
+
+* hit box is overlapping Active 11
++ Active 11 is visible
++ Alterable Value H of hit box = 0
+	 Sound : Play sample hurt on channel #12
+	hit box : Set Alterable Value H to 50
+	life : Subtract 5 from Counter
+
+* hit box is overlapping blob
++ blob is visible
++ Alterable Value H of hit box = 0
+	 Sound : Play sample hurt on channel #12
+	hit box : Set Alterable Value H to 50
+	life : Subtract 5 from Counter
+
+* hit box is overlapping rollertank
++ Alterable Value H of hit box = 0
+	 Sound : Play sample hurt on channel #12
+	hit box : Set Alterable Value H to 50
+	life : Subtract 10 from Counter
+
+* hit box is overlapping UFO
++ Alterable Value H of hit box = 0
+	 Sound : Play sample hurt on channel #12
+	hit box : Set Alterable Value H to 50
+	life : Subtract 5 from Counter
+
+* hit box is overlapping Active 16
++ Alterable Value H of hit box = 0
+	 Sound : Play sample hurt on channel #12
+	hit box : Set Alterable Value H to 50
+	life : Subtract 10 from Counter
+
+* hit box is overlapping Active 17
++ Alterable Value H of hit box = 0
+	 Sound : Play sample hurt on channel #12
+	hit box : Set Alterable Value H to 50
+	life : Subtract 10 from Counter
+
+* hit box is overlapping Active 13
++ Active 13 is visible
++ Alterable Value H of hit box = 0
+	 Sound : Play sample hurt on channel #12
+	hit box : Set Alterable Value H to 50
+	life : Subtract 10 from Counter
+
+* Alterable Value H of hit box > 0
+	hit box : Sub 1 from Alterable Value H
+
+* Alterable Value H of hit box > 0
++ Only one action when event loops
+	Active : Flash during 00''-05
+	 life : Set alpha-blending coefficient to 0
+	life : Flash during 00''-05
+	 heart 2 : Set alpha-blending coefficient to 0
+	heart 2 : Flash during 00''-05
+
+* Alterable Value H of hit box = 0
++ Only one action when event loops
+	Active : Reappear
+	life : Reappear
+	 life : Set alpha-blending coefficient to 150
+	heart 2 : Reappear
+	 heart 2 : Set alpha-blending coefficient to 150
+
+* NOT heart is overlapping a backdrop
+	heart : Set position at (0,2) from heart
+
+* life <= 0
+	storyboard controls : Next frame
+
+* rollertank is getting closer than 0 pixels from window's edge
+	rollertank : Set Alterable Value D to 0
+
+* Alterable Value D of rollertank > 100
+	rollertank : Set Alterable Value D to 0
+	rollertank : Set Alterable Value E to 1 + Random(6)
+
+* Alterable Value E of rollertank > 0
++ Every 00''-10
+	rollertank : Launch enemy bullet toward ............. at speed 100
+	rollertank : Sub 1 from Alterable Value E
+	 Sound : Play sample lazer6 on channel #13
+
+* Start of Frame
+	UFO : Stop
+
+* Alterable Value J of UFO = 0
++ Every 01''-00
++ Pick one of UFO
+	UFO : Start
+	UFO : Set Alterable Value J to 1
+
+* UFO is getting closer than 0 pixels from window's edge
+	UFO : Set Alterable Value D to 0
+
+* Alterable Value D of UFO > 40
+	UFO : Set Alterable Value D to 0
+	UFO : Set Alterable Value E to 3
+
+* Alterable Value E of UFO > 0
++ Every 00''-05
+	UFO : Launch Active 10 toward ............... at speed 100
+	UFO : Sub 1 from Alterable Value E
+	 Sound : Play sample lazer7 on channel #13
+
+* Collision between Active and trigger final
+	final boss : Set Counter to 1
+
+* final boss = 0
+	storyboard controls : Center display at (0,0) from follow
+
+* final boss = 1
+	storyboard controls : Center display at (7808,4641)
+
+* final boss = 1
++ Number of Active 15 < 30
++ Number of Active 16 > 0
++ Every 00''-05
++ Pick one of make bubble 2
+	New Objects : Create Active 15 at (0,0) from make bubble 2
+
+* Active 15 is stopped
+	Active 15 : Destroy
+
+* Alterable Value G of Active 14 > 0
+	Active 14 : Change animation sequence to Animation 12
+	Active 14 : Sub 1 from Alterable Value G
+
+* Alterable Value G of Active 14 = 0
+	Active 14 : Change animation sequence to Stopped
+
+* Current frame of Active 16 = 22
++ Random(3) = 1
++ final boss = 1
+	Active 16 : Launch enemy bullet toward ............ at speed 50
+	 Sound : Play sample lazer5 on channel #13
+
+* Current frame of Active 17 = 22
++ Random(3) = 1
++ final boss = 1
+	 Sound : Play sample lazer5 on channel #13
+	Active 17 : Launch enemy bullet toward ............ at speed 50
+
+* Every 00''-05
+	 Active 16 : Bring to front
+
+* lazer mount 2 is getting closer than 0 pixels from window's edge
+	lazer mount 2 : Set Alterable Value A to 0
+
+* Alterable Value A of lazer mount 2 > 90
+	lazer mount 2 : Set Alterable Value A to 0
+	lazer mount 2 : Set Alterable Value B to 10
+
+* Alterable Value B of lazer mount 2 > 0
++ Every 00''-05
+	New Objects : Create Active 10 at (0,23) from lazer mount 2
+	lazer mount 2 : Sub 1 from Alterable Value B
+	 Sound : Play sample lazer7 on channel #12
+
+* Alterable Value A of Active 14 < -1000
+	Active 14 : Change animation sequence to Animation 13
+	enemy bullet : Destroy
+	heart : Destroy
+	Active 18 : Set Alterable Value K to 1
+
+* Always
+	Active 18 : Set Alterable Value A to Random(2)
+
+* Alterable Value A of Active 18 = 0
+	Active 18 : Change animation sequence to Stopped
+
+* Alterable Value A of Active 18 = 1
+	Active 18 : Change animation sequence to Animation 12
+
+* Collision between cutscene and Active
++ Alterable Value A of cutscene = 0
+	cutscene : Set Alterable Value A to 1
+	Active 18 : Add 1 to Alterable Value B
+	text : Set Counter to Alterable Value B( "Active 18" )
+	Active 18 : Make invisible
+	textbox : Destroy
+	Active 18 : Set Alterable Value D to 0
+	Active 18 : Set Alterable Value E to 0
+	Active 19 : Destroy
+
+* Number of textbox = 0
+	Active 18 : Make invisible
+
+* textbox animation Stopped is over
+	textbox : Change animation sequence to Animation 12
+	Active 18 : Reappear
+	Active 18 : Set Alterable Value D to 1
+
+* Alterable Value D of Active 18 = 1
+	Active 18 : Add 1 to Alterable Value E
+
+* Alterable Value E of Active 18 > 300
+	Active 18 : Make invisible
+	textbox : Change animation sequence to Animation 13
+	 Sound : Play sample Walkie_Talkie_Squelch_05 on channel #18
+	Active 18 : Set Alterable Value E to 0
+	Active 18 : Set Alterable Value D to 0
+
+* textbox animation Animation 13 is over
+	textbox : Destroy
+
+* Active 18 is visible
+	String : Reappear
+
+* Active 18 is invisible
+	String : Make invisible
+
+* text = 1
++ Only one action when event loops
+	String : Set alterable string to "What are you doing here? This game isn't finished yet!"
+
+* text = 2
++ Only one action when event loops
+	String : Set alterable string to "This game isn't due for release until 2030! Get out!"
+
+* text = 3
++ Only one action when event loops
+	String : Set alterable string to "How did you access this game before release?"
+
+* text = 4
++ Only one action when event loops
+	String : Set alterable string to "So, you are here to stop me..."
+
+* text = 5
++ Only one action when event loops
+	String : Set alterable string to "You want to stop me from doing what? Making crazy spinoffs?"
+
+* text = 6
++ Only one action when event loops
+	String : Set alterable string to "HA HA HA! I will never stop making spinoffs!"
+
+* text = 7
++ Only one action when event loops
+	String : Set alterable string to "FNaF 57: Freddy in Space. Freddy was always destined for space."
+
+* text = 8
++ Only one action when event loops
+	String : Set alterable string to "Then FNaF 58: Poopets in Space."
+
+* text = 9
++ Only one action when event loops
+	String : Set alterable string to "FNaF 59: Cupcake Takes Manhattan."
+
+* text = 10
++ Only one action when event loops
+	String : Set alterable string to "FNaF 60: Breakfast at Chica's. It's a romantic comedy. She's a killer with a heart of gold!"
+
+* text = 11
++ Only one action when event loops
+	String : Set alterable string to "FNaF 61: Freddy v Bonnie. It's the beginning of the Freddy Cinematic Universe."
+
+* text = 12
++ Only one action when event loops
+	String : Set alterable string to "FNaF 61: Balloon Boy's Revenge. He steals EVERYONE'S flashlights; what a kidder."
+
+* text = 13
++ Only one action when event loops
+	String : Set alterable string to "Oh, dead end. Busted. You'll never find my hideout."
+
+* text = 14
++ Only one action when event loops
+	String : Set alterable string to "WRONG! Wrong, wrong, go back. I think you missed it back there."
+
+* text = 15
++ Only one action when event loops
+	String : Set alterable string to "No, seriously, you missed my hideout. It was back the other way."
+
+* text = 16
++ Only one action when event loops
+	String : Set alterable string to "Very well. Come to me. I will add your distictiveness to my own."
+
+* text = 17
++ Only one action when event loops
+	String : Set alterable string to "I will grind up your code and use it for the game over screen!"
+
+* text > 0
++ Only one action when event loops
+	New Objects : Create textbox at (264,3) from Active 18
+	 Active 18 : Bring to front
+	 Sound : Play sample Walkie_Talkie_Squelch_03 on channel #18
+	Active 18 : Set Alterable Value D to 0
+	Active 18 : Set Alterable Value E to 0
+	 String : Bring to front
+	text : Set Counter to 0
+
+* Alterable Value K of Active 18 = 1
++ gun power > 0
+	found new : Set Counter to 41
+
+* Alterable Value K of Active 18 = 1
++ gun power = 9
+	found new : Set Counter to 48
+
+* Alterable Value K of Active 18 = 1
++ gun power = 0
+	found new : Set Counter to 47
+
+* Alterable Value K of Active 18 = 1
++ Every 05''-00
+	storyboard controls : Jump to frame "earned new character" (44)
+
+* Start of Frame
+	Active 20 : Stop
+
+* Every 10''-00
++ Random(10) = 1
++ Run this event once
+	Active 20 : Start
+

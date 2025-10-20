@@ -1,0 +1,24 @@
++ Object Definitions
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0xD9D5
+	+ name
+		- Type: String
+		+ Texts
+			1: Freddy
+	+ name 2
+		- Type: String
+		+ Texts
+			1: Freddy
+	+ Active
+		- Type: Active
+		- Images hash: 0x10BC
+	+ attack 2
+		- Type: Active
+		- Images hash: 0xAA10
++ Layer #1 (Layer 1)
+	- Backdrop [0, 0]
+	- name [187, 35]
+	- name 2 [147, 335]
+	- Active [727, 418]
+	- attack 2 [398, 353]

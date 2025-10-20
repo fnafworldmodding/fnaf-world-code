@@ -1,0 +1,100 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* Start of Frame
+	text : Set Counter to 1
+	cooldown : Set Counter to 200
+	Sound : Stop any sample
+
+* cooldown > 0
+	cooldown : Subtract 1 from Counter
+	Active 2 : Make invisible
+
+* text > 0
++ cooldown = 0
++ Alterable Value B of Active = 1
++ Alterable Value E of Active = 0
+	Active 2 : Reappear
+
+* text = 1
++ cooldown = 0
++ Alterable Value E of Active = 0
++ Only one action when event loops
+	New Objects : Create black box at (-42,94) from make
+	Active : Change animation sequence to Animation 12
+	Active : Reappear
+
+* text > 0
++ cooldown = 0
++ Alterable Value E of Active = 0
++ Upon pressing "S"
+	text : Add 1 to Counter
+	cooldown : Set Counter to 200
+	New Objects : Create black box at (-42,94) from make
+	 Sound : Play sample clear on channel #2
+
+* text > 0
++ cooldown = 0
++ Alterable Value E of Active = 0
++ Upon pressing "Down Arrow"
+	text : Add 1 to Counter
+	cooldown : Set Counter to 200
+	New Objects : Create black box at (-42,94) from make
+	 Sound : Play sample clear on channel #2
+
+* text > 0
++ cooldown = 0
++ Alterable Value E of Active = 0
++ Upon pressing "Enter"
+	text : Add 1 to Counter
+	cooldown : Set Counter to 200
+	New Objects : Create black box at (-42,94) from make
+	 Sound : Play sample clear on channel #2
+
+* User clicks with left button
++ text > 0
++ cooldown = 0
++ Alterable Value E of Active = 0
+	text : Add 1 to Counter
+	cooldown : Set Counter to 200
+	New Objects : Create black box at (-42,94) from make
+	 Sound : Play sample clear on channel #2
+
+* black box animation Stopped is over
+	black box : Destroy
+
+* Active animation Animation 12 is over
+	Active : Change animation sequence to Stopped
+	String 2 : Reappear
+	Active : Set Alterable Value B to 1
+
+* text = 1
+	String 2 : Set alterable string to "Congratulations..."
+
+* text = 2
+	String 2 : Set alterable string to "You beat an imaginary monster in an imaginary game, without taking any risks, and without finding anything interesting."
+
+* text = 3
+	String 2 : Set alterable string to "...on the easiest possible difficulty."
+
+* text = 4
+	String 2 : Set alterable string to "So great job. I am still in control of you, and I say that you are finished here. You did away with a pretty powerful creation, but as for me- I remain out of your reach."
+
+* text = 5
+	String 2 : Set alterable string to "But I believe a more generic and cliched statement of appreciation is in order for your lackluster accomplishment..."
+
+* text = 6
+	String 2 : Set alterable string to "Thanks for playing! ;)"
+
+* text = 7
+	String 2 : Set alterable string to "the end"
+	Active : Set Alterable Value E to 1
+
+* Number of black box > 0
++ Only one action when event loops
+	 Sound : Play sample clear on channel #2
+
+* text = 7
++ Only one action when event loops
+	 Sound : Play sample broken 8bit theme (uninteruptable) on channel #1, 0 times
+

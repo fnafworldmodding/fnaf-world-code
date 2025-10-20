@@ -1,0 +1,6 @@
+* Timer equals 02''-00
+	storyboard controls : Jump to frame "title screen" (3)
+
+* Start of Frame
+	Sound : Stop any sample
+

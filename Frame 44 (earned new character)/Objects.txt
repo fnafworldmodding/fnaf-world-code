@@ -1,0 +1,21 @@
++ Object Definitions
+	+ new member
+		- Type: Active
+		- Images hash: 0xD850
+	+ Active
+		- Type: Active
+		- Images hash: 0x3068
+	+ found new
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ file slot
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Ini
+		- Type: Ini
++ Layer #1 (Layer 1)
+	- new member [408, 106]
+	- Active [406, 397]
+	- found new [-64, 0]
+	- file slot [-20, -46]
+	- Ini [-64, 64]

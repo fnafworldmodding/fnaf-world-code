@@ -1,0 +1,46 @@
++ Object Definitions
+	+ String 2
+		- Type: String
+		+ Texts
+			1: Well, congratulations. You beat a fictional monster from a fictional game. Bravo. Big deal.
+	+ black box
+		- Type: Active
+		- Images hash: 0x743A
+	+ make
+		- Type: Active
+		- Images hash: 0x5734
+	+ String
+		- Type: String
+		+ Texts
+			1: THE END 1
+	+ Active
+		- Type: Active
+		- Images hash: 0x27D1
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xE2A6
+	+ text
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ cooldown
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 4
+		- Type: Active
+		- Images hash: 0xD023
+	+ eye
+		- Type: Active
+		- Images hash: 0x2DF8
++ Layer #1 (Layer 1)
+	- String 2 [79, 44]
++ Layer #2 (Layer 2)
+	- make [101, -69]
++ Layer #3 (Layer 3)
+	- String [794, -153]
+	- Active [53, 25]
+	- Active 2 [697, 277]
+	- text [-53, -92]
+	- cooldown [-53, -74]
+	- Active 4 [389, 398]
+	- eye [385, 348]
+	- eye [445, 371]

@@ -1,0 +1,96 @@
++ Object Definitions
+	+ left border
+		- Type: Active
+		- Images hash: 0xF4A5
+	+ right border
+		- Type: Active
+		- Images hash: 0xF4A5
+	+ file slot
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ what game
+		- Type: Counter
+		- Images hash: 0xA8E8
+	+ timer
+		- Type: Counter
+		- Images hash: 0x4B8A
+	+ top border
+		- Type: Active
+		- Images hash: 0xC709
+	+ bottom border
+		- Type: Active
+		- Images hash: 0xC709
+	+ Active
+		- Type: Active
+		- Images hash: 0x2D33
+	+ make
+		- Type: Active
+		- Images hash: 0x5734
+	+ pixel bb
+		- Type: Active
+		- Images hash: 0x495D
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xCF49
+	+ trigger point
+		- Type: Active
+		- Images hash: 0x2204
+	+ button 1
+		- Type: Active
+		- Images hash: 0x0000
+	+ button 2
+		- Type: Active
+		- Images hash: 0x0000
+	+ button 3
+		- Type: Active
+		- Images hash: 0x0000
+	+ button 4
+		- Type: Active
+		- Images hash: 0x0000
+	+ cupcake box
+		- Type: Active
+		- Images hash: 0x0881
+	+ cupcake
+		- Type: Active
+		- Images hash: 0xE179
+	+ cake lock
+		- Type: Active
+		- Images hash: 0x2314
+	+ numbers 1
+		- Type: Active
+		- Images hash: 0x67D9
+	+ numbers 2
+		- Type: Active
+		- Images hash: 0x67D9
+	+ numbers 3
+		- Type: Active
+		- Images hash: 0x67D9
+	+ code
+		- Type: Counter
+		- Images hash: 0x4B8A
+	+ hotspot
+		- Type: Active
+		- Images hash: 0x5C85
+	+ Active 3
+		- Type: Active
+		- Images hash: 0xCF49
+	+ SB
+		- Type: Active
+		- Images hash: 0xD9AA
+	+ SB trigger
+		- Type: Active
+		- Images hash: 0x2204
+	+ Ini
+		- Type: Ini
++ Layer #1 (Layer 1)
+	- left border [-50, 0]
+	- right border [750, 0]
+	- file slot [12, -82]
+	- what game [124, 135]
+	- timer [750, 114]
+	- top border [0, -50]
+	- bottom border [0, 450]
+	- Active [624, 375]
+	- make [115, -85]
+	- hotspot [627, 384]
+	- Ini [50, -150]

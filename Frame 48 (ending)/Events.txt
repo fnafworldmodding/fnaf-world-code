@@ -1,0 +1,125 @@
+* Start of Frame
+	Fake : Set alterable string to ""
+	Sound : Stop any sample
+	The mouse pointer and keyboard : Hide Windows mouse pointer
+	in room : Set Counter to 1
+
+* Every 00''-07
++ Len(string$( "Real" )) > Len(string$( "Fake" ))
+	Fake : Set alterable string to Left$(string$( "Real" ), Len(string$( "Fake" )) + 1)
+	cooldown : Set Counter to 0
+
+* Len(string$( "Real" )) >= Len(string$( "Fake" ))
+	cooldown : Add 1 to Counter
+
+* cooldown = 200
+	text : Add 1 to Counter
+	Fake : Set alterable string to ""
+
+* text = 1
++ Only one action when event loops
+	Real : Set alterable string to "I'm impressed."
+
+* text = 2
++ Only one action when event loops
+	Real : Set alterable string to "What are you doing here? Can't you see that I'm busy?"
+
+* text = 3
++ Only one action when event loops
+	Real : Set alterable string to "You deactivated my games?"
+
+* text = 4
++ Only one action when event loops
+	Real : Set alterable string to "I didn't know what else to do. I don't want to disappoint people."
+
+* text = 5
++ Only one action when event loops
+	Real : Set alterable string to "But my mind isn't right. I've made something terrible."
+
+* text = 6
++ Only one action when event loops
+	Real : Set alterable string to "Her name is Baby."
+
+* text = 7
++ Only one action when event loops
+	Real : Set alterable string to "It's too late to deactivate her."
+
+* text = 8
++ Only one action when event loops
+	Real : Set alterable string to "I'm sorry."
+
+* text = 9
++ Only one action when event loops
+	Real : Set alterable string to ""
+	Active : Set Alterable Value B to 1
+
+* white is overlapping exit
+	storyboard controls : Jump to frame "wait" (10)
+
+* Every 05''-00
+	Active : Set Alterable Value A to Random(2)
+
+* Alterable Value A of Active = 0
++ Alterable Value B of Active <> 2
+	Active : Change animation sequence to Stopped
+
+* Alterable Value A of Active = 1
++ Alterable Value B of Active <> 2
+	Active : Change animation sequence to Animation 12
+
+* Alterable Value B of Active = 1
+	Active : Add 1 to Alterable Value C
+
+* Alterable Value C of Active = 100
+	Active 2 : Flash during 00''-05
+
+* Alterable Value C of Active = 150
+	Active 2 : Reappear
+
+* Alterable Value C of Active = 300
++ Only one action when event loops
+	 Sound : Play sample show (uninteruptable) on channel #8
+	Active 3 : Reappear
+	Active 3 : Change animation sequence to Animation 13
+
+* Alterable Value C of Active > 500
++ show (uninteruptable) is not playing
++ Run this event once
+	 Sound : Play sample show2 (uninteruptable) on channel #8
+	Active 3 : Make invisible
+
+* Alterable Value C of Active > 1000
++ show2 (uninteruptable) is not playing
++ Run this event once
+	Active : Set Alterable Value B to 2
+	Active 2 : Flash during 00''-05
+	Active : Change animation sequence to Animation 13
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+	 Ini : Set value 0 to item "showend"
+
+* Alterable Value B of Active = 2
++ Every 00''-50
+	Active 2 : Make invisible
+
+* Start of Frame
+	Active 2 : Set position at (0,0)
+
+* Active 3 animation Animation 13 is over
+	Active 3 : Change animation sequence to Animation 12
+
+* Alterable Value B of Active = 2
++ Every 10''-00
+	storyboard controls : Jump to frame "to be continued" (49)
+
+* Timer equals 01''-00
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+	 Ini : Set value 1 to item "beatgame7"
+	 Ini : Set value 1 to item "resetpos"
+	 Ini : Set value 1 to item "showend"
+	file slot 5 : Set Counter to ItemValue( "Ini", "showend" )
+	Ini : Set current file to "info"
+	Ini : Set current group to "info"
+	 Ini : Set value 1 to item "beatgame7"
+

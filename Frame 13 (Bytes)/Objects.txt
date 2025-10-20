@@ -1,0 +1,114 @@
++ Object Definitions
+	+ selected 1
+		- Type: Active
+		- Images hash: 0x31B6
+	+ selected 2
+		- Type: Active
+		- Images hash: 0x31B6
+	+ selected 3
+		- Type: Active
+		- Images hash: 0x31B6
+	+ selected 4
+		- Type: Active
+		- Images hash: 0x31B6
+	+ chip slot
+		- Type: Active
+		- Images hash: 0xF941
+	+ chip slot 2
+		- Type: Active
+		- Images hash: 0xF941
+	+ chip slot 3
+		- Type: Active
+		- Images hash: 0xF941
+	+ chip slot 4
+		- Type: Active
+		- Images hash: 0xF941
+	+ Byte Icon
+		- Type: Active
+		- Images hash: 0x38D9
+	+ set
+		- Type: Active
+		- Images hash: 0x2322
+	+ reset
+		- Type: Active
+		- Images hash: 0x9AC7
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xB8E8
+	+ String
+		- Type: String
+		+ Texts
+			1: Select up to four Bytes to activate.\nChoose RESET to clear selections.
+	+ Active 5
+		- Type: Active
+		- Images hash: 0xBD64
+	+ test
+		- Type: Counter
+		- Images hash: 0xE6BC
+	+ test 2
+		- Type: Counter
+		- Images hash: 0xE6BC
+	+ test 3
+		- Type: Counter
+		- Images hash: 0xE6BC
+	+ test 4
+		- Type: Counter
+		- Images hash: 0xE6BC
+	+ file slot
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ blue out
+		- Type: Active
+		- Images hash: 0x9ED1
+	+ demo
+		- Type: Active
+		- Images hash: 0x197F
+	+ demo?
+		- Type: Counter
+		- Images hash: 0xF3AC
+	+ Ini
+		- Type: Ini
++ Layer #2 (Layer 2)
+	- selected 1 [-150, 0]
+	- selected 2 [-150, 100]
+	- selected 3 [-150, 200]
+	- selected 4 [-150, 300]
+	- chip slot [300, 400]
+	- chip slot 2 [350, 400]
+	- chip slot 3 [400, 400]
+	- chip slot 4 [450, 400]
+	- Byte Icon [50, 50]
+	- Byte Icon [150, 50]
+	- Byte Icon [250, 50]
+	- Byte Icon [350, 50]
+	- Byte Icon [450, 50]
+	- Byte Icon [550, 50]
+	- Byte Icon [650, 50]
+	- Byte Icon [50, 150]
+	- Byte Icon [150, 150]
+	- Byte Icon [250, 150]
+	- Byte Icon [350, 150]
+	- Byte Icon [450, 150]
+	- Byte Icon [550, 150]
+	- Byte Icon [650, 150]
+	- Byte Icon [50, 250]
+	- Byte Icon [150, 250]
+	- Byte Icon [250, 250]
+	- Byte Icon [350, 250]
+	- Byte Icon [450, 250]
+	- Byte Icon [550, 250]
+	- Byte Icon [650, 250]
+	- set [98, 97]
+	- reset [119, 422]
+	- Active 2 [669, 422]
+	- String [150, -150]
+	- Active 5 [166, 7]
+	- test [30, -34]
+	- test 2 [69, -31]
+	- test 3 [102, -29]
+	- test 4 [132, -25]
+	- file slot [-201, 167]
+	- blue out [403, 294]
+	- demo [405, 294]
+	- demo? [78, -52]
+	- Ini [800, 50]

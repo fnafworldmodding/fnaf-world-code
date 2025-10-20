@@ -1,0 +1,6 @@
+* Timer equals 03''-00
+	storyboard controls : Next frame
+
+* Upon pressing "Enter"
+	storyboard controls : Next frame
+

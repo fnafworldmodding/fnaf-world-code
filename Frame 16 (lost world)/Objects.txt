@@ -1,0 +1,101 @@
++ Object Definitions
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0xAE0B
+	+ Backdrop 2
+		- Type: Backdrop
+		- Images hash: 0x9A23
+	+ Quick Backdrop
+		- Type: Quick Backdrop
+		- Images hash: 0xAE0B
+	+ Quick Backdrop 2
+		- Type: Quick Backdrop
+		- Images hash: 0xAE0B
+	+ Quick Backdrop 3
+		- Type: Quick Backdrop
+		- Images hash: 0xAE0B
+	+ Active
+		- Type: Active
+		- Images hash: 0x7516
+	+ center
+		- Type: Active
+		- Images hash: 0x2314
+	+ top
+		- Type: Active
+		- Images hash: 0x140F
+	+ bottom
+		- Type: Active
+		- Images hash: 0x140F
+	+ right
+		- Type: Active
+		- Images hash: 0x1D4D
+	+ left
+		- Type: Active
+		- Images hash: 0x1D4D
+	+ Active 2
+		- Type: Active
+		- Images hash: 0x5F5E
+	+ Active 3
+		- Type: Active
+		- Images hash: 0x16FE
+	+ String
+		- Type: String
+		+ Texts
+			1: the end
+	+ chat
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ chat 2
+		- Type: Active
+		- Images hash: 0x4240
+	+ chat 3
+		- Type: Active
+		- Images hash: 0x6890
+	+ Active 4
+		- Type: Active
+		- Images hash: 0x340C
+	+ Active 6
+		- Type: Active
+		- Images hash: 0x18B9
+	+ Active 5
+		- Type: Active
+		- Images hash: 0x7A57
+	+ Active 7
+		- Type: Active
+		- Images hash: 0x40A3
+	+ Ini
+		- Type: Ini
++ Layer #1 (Layer 1)
+	- Backdrop [118, 69]
+	- Backdrop 2 [188, 209]
+	- Quick Backdrop [-22, -1]
+	- Quick Backdrop 2 [118, -1]
+	- Quick Backdrop 3 [-22, 139]
+	- Quick Backdrop [-22, 349]
+	- Quick Backdrop [678, -1]
+	- Quick Backdrop [678, 349]
+	- Quick Backdrop 2 [118, 419]
+	- Quick Backdrop 2 [328, 419]
+	- Quick Backdrop 3 [748, 209]
+	- Quick Backdrop [328, -1]
+	- Quick Backdrop 2 [468, -1]
+	- Quick Backdrop 3 [48, 209]
+	- Backdrop [-22, 279]
+	- Backdrop [118, 349]
+	- Backdrop [748, 139]
+	- Backdrop [538, 419]
+	- Quick Backdrop 3 [608, 349]
+	- Active [626, 227]
+	- center [624, 225]
+	- top [202, 203]
+	- bottom [203, 269]
+	- right [237, 236]
+	- left [167, 236]
+	- Active 2 [340, 220]
+	- Active 3 [196, 235]
+	- String [-50, -278]
+	- chat [7, -74]
+	- chat 2 [146, 242]
+	- chat 3 [340, 280]
+	- Active 7 [0, 3]
+	- Ini [293, -67]

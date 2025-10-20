@@ -1,0 +1,46 @@
++ Object Definitions
+	+ Active
+		- Type: Active
+		- Images hash: 0xE5AE
+	+ damage
+		- Type: Counter
+		- Images hash: 0x8CEC
+	+ pow
+		- Type: Active
+		- Images hash: 0xDB3A
+	+ make
+		- Type: Active
+		- Images hash: 0x2314
+	+ Active 2
+		- Type: Active
+		- Images hash: 0x955D
+	+ Active 3
+		- Type: Active
+		- Images hash: 0x21E3
+	+ make damage
+		- Type: Active
+		- Images hash: 0x2314
+	+ Active 4
+		- Type: Active
+		- Images hash: 0x5859
+	+ Active 5
+		- Type: Active
+		- Images hash: 0xC011
++ Layer #1 (Layer 1)
+	- Active [508, 224]
++ Layer #2 (Layer 2)
+	- make [0, 0]
+	- Active 2 [0, 0]
+	- Active 3 [298, 167]
+	- make damage [605, 180]
+	- make damage [705, 248]
+	- make damage [578, 335]
+	- make damage [657, 392]
+	- damage [582, -158]
+	- Active 4 [324, 143]
+	- make damage [625, 268]
+	- make damage [520, 251]
+	- make damage [484, 366]
+	- make damage [687, 323]
++ Layer #3 (Layer 3)
+	- Active 5 [0, 0]

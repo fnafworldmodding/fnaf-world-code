@@ -1,0 +1,167 @@
++ Object Definitions
+	+ background
+		- Type: Active
+		- Images hash: 0xB2AE
+	+ cooldown
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ portal
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ text2
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ line
+		- Type: Active
+		- Images hash: 0xB6BE
+	+ Active
+		- Type: Active
+		- Images hash: 0x8AE5
+	+ what shop
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ character
+		- Type: Active
+		- Images hash: 0x4FB5
+	+ tokens
+		- Type: Counter
+		- Images hash: 0x22B4
+	+ selection
+		- Type: Counter
+		- Images hash: 0x4306
+	+ current price
+		- Type: Counter
+		- Images hash: 0x4306
+	+ shopkeeper
+		- Type: Active
+		- Images hash: 0xF40C
+	+ item box
+		- Type: Active
+		- Images hash: 0x89CA
+	+ price 1
+		- Type: Counter
+		- Images hash: 0x32EC
+	+ set item 1
+		- Type: Active
+		- Images hash: 0x2204
+	+ set item 2
+		- Type: Active
+		- Images hash: 0x2204
+	+ set item 3
+		- Type: Active
+		- Images hash: 0x2204
+	+ Active 5
+		- Type: Active
+		- Images hash: 0xC3EE
+	+ have slot 1?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ have slot 2?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ have slot 3?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ checkl
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ bought
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Byte Icon
+		- Type: Active
+		- Images hash: 0x38D9
+	+ sold out 3
+		- Type: Active
+		- Images hash: 0x0BFA
+	+ sold out 2
+		- Type: Active
+		- Images hash: 0x0BFA
+	+ sold out 1
+		- Type: Active
+		- Images hash: 0x0BFA
+	+ name
+		- Type: String
+		+ Texts
+			1: Play
+	+ file slot
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 9
+		- Type: Active
+		- Images hash: 0x217C
+	+ Active 10
+		- Type: Active
+		- Images hash: 0x9EA5
+	+ cinematic
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ next
+		- Type: Active
+		- Images hash: 0xE2A6
+	+ text stage
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xB8E8
+	+ text box 2
+		- Type: Active
+		- Images hash: 0x55FE
+	+ Ini
+		- Type: Ini
+	+ Real
+		- Type: String
+		+ Texts
+			1: 
+	+ Fake
+		- Type: String
+		+ Texts
+			1: 
+	+ dialoge
+		- Type: String
+		+ Texts
+			1: \n
++ Layer #1 (Layer 1)
+	- background [0, 0]
+	- cooldown [369, -232]
+	- portal [369, -214]
+	- text2 [375, -254]
++ Layer #2 (Layer 2)
+	- line [242, 253]
+	- Active [403, 130]
+	- what shop [-26, -113]
+	- character [1025, 489]
+	- tokens [909, -27]
+	- selection [781, -85]
+	- current price [782, -33]
+	- shopkeeper [113, 441]
+	- item box [1031, -125]
+	- price 1 [698, -181]
+	- set item 1 [908, 141]
+	- set item 2 [887, 217]
+	- set item 3 [877, 274]
+	- Active 5 [158, -131]
+	- have slot 1? [424, -104]
+	- have slot 2? [424, -86]
+	- have slot 3? [424, -68]
+	- checkl [548, -95]
+	- bought [548, -77]
+	- Byte Icon [904, -32]
+	- sold out 3 [872, -192]
+	- sold out 2 [918, -200]
+	- sold out 1 [928, -200]
+	- name [529, -205]
+	- file slot [2, -133]
+	- Active 9 [544, -177]
+	- Active 10 [607, -203]
+	- cinematic [-42, -35]
+	- next [373, -86]
+	- text stage [-40, -4]
+	- Active 2 [459, -73]
+	- text box 2 [385, 100]
+	- Ini [300, -100]
++ Layer #3 (Layer 3)
+	- Real [290, -373]
+	- Fake [107, 47]
+	- dialoge [151, 24]

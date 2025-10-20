@@ -1,0 +1,310 @@
++ Object Definitions
+	+ Active
+		- Type: Active
+		- Images hash: 0x7D6D
+	+ file slot 1
+		- Type: Active
+		- Images hash: 0xE0DA
+	+ file slot 2
+		- Type: Active
+		- Images hash: 0x30D6
+	+ file slot 3
+		- Type: Active
+		- Images hash: 0x8663
+	+ adventure button
+		- Type: Active
+		- Images hash: 0x05EE
+	+ fixed party text
+		- Type: Active
+		- Images hash: 0x57AE
+	+ file slot
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ menu stage
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ mode
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ difficulty
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ cooldown
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Xco
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ file
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ file 2
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ slot 1 mode
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ slot 2 mode
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ slot 3 mode
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ beat 2
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ beat 3
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ slot diff 1
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ slot diff 2
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ slot diff 3
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ minutes slot 1
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ minutes slot 2
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ minutes slot 3
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ hours slot 1
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ hours slot 2
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ hours slot 3
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ started
+		- Type: Counter
+		- Images hash: 0xD3E8
+	+ create buttons
+		- Type: Active
+		- Images hash: 0x5734
+	+ create buttons 2
+		- Type: Active
+		- Images hash: 0x5734
+	+ file slot 4
+		- Type: Active
+		- Images hash: 0x1A91
+	+ new game
+		- Type: Active
+		- Images hash: 0x4B87
+	+ continue
+		- Type: Active
+		- Images hash: 0xDAE0
+	+ YES
+		- Type: Active
+		- Images hash: 0x1F97
+	+ NO
+		- Type: Active
+		- Images hash: 0x53C7
+	+ String
+		- Type: String
+		+ Texts
+			1: GAME MODE
+	+ pick file
+		- Type: Active
+		- Images hash: 0xA802
+	+ erase
+		- Type: Active
+		- Images hash: 0x88A0
+	+ String 2
+		- Type: String
+		+ Texts
+			1: Start with two fixed teams.\n(more difficult)
+	+ game mode text
+		- Type: Active
+		- Images hash: 0xEAB1
+	+ find new text
+		- Type: Active
+		- Images hash: 0xAD0B
+	+ start with two text
+		- Type: Active
+		- Images hash: 0x375B
+	+ normal
+		- Type: Active
+		- Images hash: 0x03A1
+	+ hard
+		- Type: Active
+		- Images hash: 0xC242
+	+ text mode 1
+		- Type: String
+		+ Texts
+			1: Text
+	+ summary text 1
+		- Type: String
+		+ Texts
+			1: Text
+	+ summary text 2
+		- Type: String
+		+ Texts
+			1: Text
+	+ summary text 3
+		- Type: String
+		+ Texts
+			1: Text
+	+ text mode 2
+		- Type: String
+		+ Texts
+			1: Text
+	+ text mode 3
+		- Type: String
+		+ Texts
+			1: Text
+	+ minutes display
+		- Type: String
+		+ Texts
+			1: Text
+	+ minutes display 2
+		- Type: String
+		+ Texts
+			1: Text
+	+ minutes display 3
+		- Type: String
+		+ Texts
+			1: Text
+	+ text diff 1
+		- Type: String
+		+ Texts
+			1: 
+	+ text diff 2
+		- Type: String
+		+ Texts
+			1: 
+	+ text diff 3
+		- Type: String
+		+ Texts
+			1: 
+	+ background
+		- Type: Active
+		- Images hash: 0xB2AE
+	+ seconds
+		- Type: Counter
+		- Images hash: 0xD3E8
+	+ minutes
+		- Type: Counter
+		- Images hash: 0xD3E8
+	+ hours
+		- Type: Counter
+		- Images hash: 0xD3E8
+	+ have all
+		- Type: Counter
+		- Images hash: 0xD3E8
+	+ fan
+		- Type: Active
+		- Images hash: 0xB51B
+	+ pearl 2
+		- Type: Active
+		- Images hash: 0xF992
+	+ trophy1
+		- Type: Active
+		- Images hash: 0xBE05
+	+ trophy 2
+		- Type: Active
+		- Images hash: 0xFD7E
+	+ trophy 4
+		- Type: Active
+		- Images hash: 0x3967
+	+ trophy 3
+		- Type: Active
+		- Images hash: 0x9DBB
+	+ end trophy
+		- Type: Active
+		- Images hash: 0x02F1
+	+ pixel trophy
+		- Type: Active
+		- Images hash: 0xF788
+	+ spirit trophy
+		- Type: Active
+		- Images hash: 0x1C32
+	+ demo?
+		- Type: Counter
+		- Images hash: 0xF3AC
+	+ Ini
+		- Type: Ini
+	+ not available 1
+		- Type: Active
+		- Images hash: 0xB653
+	+ not available 2
+		- Type: Active
+		- Images hash: 0xB653
++ Layer #1 (Layer 1)
+	- Active [0, 0]
+	- file slot 1 [766, -221]
+	- file slot 2 [766, -144]
+	- file slot 3 [766, -68]
+	- adventure button [391, 172]
+	- fixed party text [391, 284]
+	- file slot [26, -63]
+	- menu stage [72, -52]
+	- mode [72, -34]
+	- difficulty [72, -16]
+	- cooldown [118, -52]
+	- Xco [89, -134]
+	- file [89, -116]
+	- file 2 [152, -104]
+	- slot 1 mode [338, -150]
+	- slot 2 mode [338, -132]
+	- slot 3 mode [338, -114]
+	- beat 2 [287, -100]
+	- beat 3 [287, -82]
+	- slot diff 1 [374, -145]
+	- slot diff 2 [374, -127]
+	- slot diff 3 [374, -109]
+	- minutes slot 1 [-100, 157]
+	- minutes slot 2 [-100, 175]
+	- minutes slot 3 [-100, 193]
+	- hours slot 1 [-54, 163]
+	- hours slot 2 [-54, 181]
+	- hours slot 3 [-54, 199]
+	- started [-7, -51]
+	- create buttons [186, 67]
+	- create buttons 2 [186, 99]
+	- String [130, -249]
+	- String 2 [228, -263]
+	- game mode text [304, 75]
+	- find new text [276, 207]
+	- start with two text [208, 327]
+	- normal [391, 187]
+	- hard [391, 263]
+	- text mode 1 [416, -200]
+	- summary text 1 [643, -217]
+	- summary text 2 [642, -139]
+	- summary text 3 [641, -64]
+	- text mode 2 [414, -165]
+	- text mode 3 [409, -144]
+	- minutes display [404, -119]
+	- minutes display 2 [404, -102]
+	- minutes display 3 [404, -85]
+	- text diff 1 [432, -177]
+	- text diff 2 [459, -156]
+	- text diff 3 [462, -164]
+	- background [845, -13]
+	- file slot 4 [-25, -155]
+	- seconds [-93, 24]
+	- minutes [-93, 54]
+	- hours [-97, 84]
+	- have all [221, -108]
+	- fan [723, 455]
+	- pearl 2 [656, 455]
+	- trophy1 [71, 451]
+	- trophy 2 [159, 451]
+	- trophy 4 [123, 297]
+	- trophy 3 [256, 451]
+	- end trophy [348, 453]
+	- pixel trophy [579, 454]
+	- spirit trophy [485, 452]
+	- demo? [-106, 267]
+	- Ini [197, -61]
++ Layer #2 (Layer 2)
+	- not available 1 [399, 262]
+	- not available 2 [399, 285]

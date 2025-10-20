@@ -1,0 +1,6 @@
++ Object Definitions
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0xA7E6
++ Layer #1 (Layer 1)
+	- Backdrop [0, 0]

@@ -1,0 +1,78 @@
+* Start of Frame
+	Ini : Set current file to "info"
+	Ini : Set current group to "info"
+	 Ini : Set value 1 to item "first"
+	 Sound : Play sample CMPTR_Low_Tech_Stat on channel #1, 0 times
+	The mouse pointer and keyboard : Hide Windows mouse pointer
+
+* Timer equals 02''-00
+	text : Set Counter to 1
+
+* text = 1
++ Only one action when event loops
+	New Objects : Create Active at (63,153) from make box
+	New Objects : Create black box at (-47,59) from make box
+
+* text = 2
++ Only one action when event loops
+	New Objects : Create black box at (-47,59) from make box
+
+* text = 3
++ Only one action when event loops
+	New Objects : Create black box at (-47,59) from make box
+
+* text = 4
++ Only one action when event loops
+	New Objects : Create black box at (-47,59) from make box
+
+* text = 5
++ Only one action when event loops
+	New Objects : Create black box at (-47,59) from make box
+
+* text = 6
++ Only one action when event loops
+	storyboard controls : Next frame
+
+* black box animation Stopped is over
+	black box : Destroy
+
+* text = 1
+	Active : Change animation sequence to Stopped
+
+* text = 2
+	Active : Change animation sequence to Animation 12
+
+* text = 3
+	Active : Change animation sequence to Animation 13
+
+* text = 4
+	Active : Change animation sequence to Animation 14
+
+* text = 5
+	Active : Change animation sequence to Animation 15
+
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* text > 0
+	make box : Add 1 to Alterable Value A
+
+* Alterable Value A of make box > 500
+	make box : Set Alterable Value A to 0
+	text : Add 1 to Counter
+
+* Always
+	make box : Add 1 to Alterable Value B
+
+* Alterable Value B of make box > 200
++ Alterable Value C of make box = 0
+	make box : Set Alterable Value B to 0
+	make box : Set Alterable Value C to 1
+	Active 2 : Set position at (5,0) from Active 2
+
+* Alterable Value B of make box > 200
++ Alterable Value C of make box = 1
+	make box : Set Alterable Value B to 0
+	make box : Set Alterable Value C to 0
+	Active 2 : Set position at (-5,0) from Active 2
+

@@ -1,0 +1,157 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* Start of Frame
+	text : Set Counter to 1
+	cooldown : Set Counter to 200
+	Sound : Stop any sample
+
+* cooldown > 0
+	cooldown : Subtract 1 from Counter
+	Active 2 : Make invisible
+
+* text > 0
++ cooldown = 0
++ Alterable Value B of Active = 1
++ Alterable Value E of Active = 0
+	Active 2 : Reappear
+
+* text = 1
++ cooldown = 0
++ Alterable Value E of Active = 0
++ Only one action when event loops
+	New Objects : Create black box at (-42,94) from make
+	Active : Change animation sequence to Animation 12
+	Active : Reappear
+
+* text > 0
++ cooldown = 0
++ Alterable Value E of Active = 0
++ Upon pressing "S"
+	text : Add 1 to Counter
+	cooldown : Set Counter to 200
+	New Objects : Create black box at (-42,94) from make
+	 Sound : Play sample clear on channel #2
+
+* text > 0
++ cooldown = 0
++ Alterable Value E of Active = 0
++ Upon pressing "Down Arrow"
+	text : Add 1 to Counter
+	cooldown : Set Counter to 200
+	New Objects : Create black box at (-42,94) from make
+	 Sound : Play sample clear on channel #2
+
+* text > 0
++ cooldown = 0
++ Alterable Value E of Active = 0
++ Upon pressing "Enter"
+	text : Add 1 to Counter
+	cooldown : Set Counter to 200
+	New Objects : Create black box at (-42,94) from make
+	 Sound : Play sample clear on channel #2
+
+* User clicks with left button
++ text > 0
++ cooldown = 0
++ Alterable Value E of Active = 0
+	text : Add 1 to Counter
+	cooldown : Set Counter to 200
+	New Objects : Create black box at (-42,94) from make
+	 Sound : Play sample clear on channel #2
+
+* black box animation Stopped is over
+	black box : Destroy
+
+* Active animation Animation 12 is over
+	Active : Change animation sequence to Stopped
+	String 2 : Reappear
+	Active : Set Alterable Value B to 1
+
+* text = 1
+	String 2 : Set alterable string to "Ok. Alright. I get it."
+
+* text = 2
+	String 2 : Set alterable string to "Was this really the ending you wanted? Coming all the way here just to kill me?"
+
+* text = 3
+	String 2 : Set alterable string to "Was I REALLY the villain in your mind? I mean sure, this is definitely one way to bring the story to a halt, but surely there was a more satisfying end."
+
+* text = 4
+	String 2 : Set alterable string to "I just do what is demanded of me! I fill your insatiable gullets with more and more and more! And now here you are to show your gratitude."
+
+* text = 5
+	String 2 : Set alterable string to "Well congratulations then. I haven't brought this story to an end; you did. So feel good about yourself for ending the story by killing the storyteller!"
+
+* text = 6
+	String 2 : Set alterable string to "Ug. Grr... Zrr... GRAAAAAMMM!!"
+
+* text = 7
+	String 2 : Set alterable string to "THE END"
+	Active : Set Alterable Value E to 1
+
+* Number of black box > 0
++ Only one action when event loops
+	 Sound : Play sample clear on channel #2
+
+* Every 00''-03
+	Active 4 : Set position at (0,-2) from center
+	Active 4 : Set direction to ............
+
+* Every 00''-10
+	 Active 4 : Set alpha-blending coefficient to Random(( value( "text" ) * 75 ) + 75)
+
+* Active 5 is getting closer than 0 pixels from window's edge
+	Active 5 : Destroy
+
+* Every 00''-03
++ Random(10 - value( "text" )) = 1
+	Active 4 : Launch Active 5 toward ............... at speed 5
+
+* Start of Frame
+	 Sound : Play sample rumble on channel #3
+
+* Every 03''-00
++ Alterable Value E of Active = 0
+	 Sound : Play sample rumble on channel #3
+
+* Alterable Value E of Active = 1
++ Only one action when event loops
+	Sound : Stop any sample
+	 Sound : Play sample dead on channel #3
+	Active 4 : Destroy
+	New Objects : Create Active 5 at (-7,-36) from Active 4
+	New Objects : Create Active 5 at (15,-13) from Active 4
+	New Objects : Create Active 5 at (-19,-13) from Active 4
+	New Objects : Create Active 5 at (28,-21) from Active 4
+	New Objects : Create Active 5 at (-25,-13) from Active 4
+	New Objects : Create Active 5 at (30,-39) from Active 4
+	New Objects : Create Active 5 at (-40,3) from Active 4
+	New Objects : Create Active 5 at (1,17) from Active 4
+	New Objects : Create Active 5 at (19,17) from Active 4
+	New Objects : Create Active 5 at (-7,35) from Active 4
+	New Objects : Create Active 5 at (33,13) from Active 4
+	New Objects : Create Active 5 at (-17,41) from Active 4
+	New Objects : Create Active 5 at (36,30) from Active 4
+	New Objects : Create Active 5 at (-33,42) from Active 4
+	New Objects : Create Active 5 at (42,35) from Active 4
+
+* Alterable Value E of Active = 1
+	Active : Add 1 to Alterable Value F
+
+* Alterable Value E of Active = 1
+	String 2 : Make invisible
+
+* Alterable Value E of Active = 1
++ Alterable Value F of Active > 500
+	String 2 : Reappear
+
+* Alterable Value A of Active 5 = 0
+	Active 5 : Set Alterable Value A to 1
+	Active 5 : Set speed to 1 + Random(3)
+
+* Alterable Value E of Active = 1
++ Alterable Value F of Active > 500
++ Only one action when event loops
+	 Sound : Play sample broken theme - fear of pixelation - draft1 on channel #4
+

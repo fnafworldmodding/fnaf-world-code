@@ -1,0 +1,111 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* Always
+	top : Set position at (-1,-33) from center
+	bottom : Set position at (0,33) from center
+	right : Set position at (34,0) from center
+	left : Set position at (-36,0) from center
+	Active : Set position at (0,0) from center
+
+* Repeat while "D" is pressed
+	Active : Set direction to ...........
+
+* Repeat while "A" is pressed
+	Active : Set direction to ...............
+
+* NOT top is overlapping a backdrop
++ Repeat while "W" is pressed
++ Every 00''-10
++ chat = 0
+	center : Set position at (0,-10) from center
+
+* NOT top is overlapping a backdrop
++ Repeat while "W" is pressed
++ Every 00''-40
++ chat = 0
+	 Sound : Play sample step2 on channel #3
+
+* NOT bottom is overlapping a backdrop
++ Repeat while "S" is pressed
++ Every 00''-10
++ chat = 0
+	center : Set position at (0,10) from center
+
+* NOT bottom is overlapping a backdrop
++ Repeat while "S" is pressed
++ Every 00''-40
++ chat = 0
+	 Sound : Play sample step2 on channel #3
+
+* NOT right is overlapping a backdrop
++ Repeat while "D" is pressed
++ Every 00''-10
++ chat = 0
+	center : Set position at (10,0) from center
+
+* NOT right is overlapping a backdrop
++ Repeat while "D" is pressed
++ Every 00''-40
++ chat = 0
+	 Sound : Play sample step2 on channel #3
+
+* NOT left is overlapping a backdrop
++ Repeat while "A" is pressed
++ Every 00''-10
++ chat = 0
+	center : Set position at (-10,0) from center
+
+* NOT left is overlapping a backdrop
++ Repeat while "A" is pressed
++ Every 00''-40
++ chat = 0
+	 Sound : Play sample step2 on channel #3
+
+* center is overlapping Active 2
++ Upon pressing "A"
+	center : Set position at (0,1) from center
+
+* center is overlapping Active 2
++ Upon pressing "D"
+	center : Set position at (0,1) from center
+
+* center is overlapping chat 2
++ Run this event once
+	chat : Set Counter to 1
+
+* chat = 1
++ Only one action when event loops
+	New Objects : Create Active 4 at (225,-162) from chat 2
+	chat 2 : Set Alterable Value A to 100
+	New Objects : Create Active 5 at (-272,-52) from Active 4
+
+* Alterable Value A of chat 2 > 0
+	chat 2 : Sub 1 from Alterable Value A
+
+* chat > 0
++ chat < 3
++ Alterable Value A of chat 2 = 0
++ Only one action when event loops
+	New Objects : Create Active 6 at (242,47) from Active 4
+
+* User clicks with left button on Active 6
+	chat : Add 1 to Counter
+	Active 6 : Destroy
+	chat 2 : Set Alterable Value A to 100
+
+* chat = 2
+	Active 5 : Change animation sequence to Animation 12
+
+* chat = 3
+	Active 5 : Change animation sequence to Animation 13
+
+* Start of Frame
+	Sound : Stop any sample
+	Ini : Set current file to "info"
+	Ini : Set current group to "info"
+	 Ini : Set value 1 to item "beatgame4"
+
+* center is overlapping chat 3
+	storyboard controls : Jump to frame "lost 2" (17)
+

@@ -1,0 +1,16 @@
+* Len(string$( "Real" )) > Len(string$( "Fake" ))
++ Every 00''-15
+	Fake : Set alterable string to Left$(string$( "Real" ), Len(string$( "Fake" )) + 1)
+
+* Timer equals 01''-00
+	Real : Set alterable string to "to be continued..."
+
+* Repeat while "Escape" is pressed
+	storyboard controls : Next frame
+
+* Timer equals 10''-00
+	storyboard controls : Next frame
+
+* Start of Frame
+	The mouse pointer and keyboard : Hide Windows mouse pointer
+

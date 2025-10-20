@@ -1,0 +1,31 @@
+* Number of Active > 0
++ Every 00''-10
+	 Sound : Play sample pow2 on channel #19
+	New Objects : Create POW 2 at (-6,13) from Active
+
+* Start of Frame
+	Sound : Stop any sample
+
+* Active is stopped
+	New Objects : Create POW at (18,9) from Active
+	Active : Destroy
+
+* POW animation Stopped is over
+	POW : Destroy
+
+* POW 2 animation Stopped is over
+	POW 2 : Destroy
+
+* Always
+	POW : Set position at (-10,0) from POW
+	POW 2 : Set position at (-10,0) from POW 2
+
+* Number of Active = 0
++ Every 01''-00
++ Run this event once
+	Active 2 : Reappear
+
+* Number of Active = 0
++ Every 03''-00
+	storyboard controls : Jump to frame "halloween land" (35)
+

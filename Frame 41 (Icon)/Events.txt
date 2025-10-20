@@ -1,0 +1,31 @@
+* Player 1 Pressed fire 1
++ Active is overlapping Active 2
++ Alterable Value A of Active 2 = 0
++ Alterable Value B of Active 2 = 0
+	Active 4 : Reappear
+	Active 2 : Set Alterable Value A to 15
+	Active 2 : Set Alterable Value B to 2
+
+* Player 1 Pressed fire 1
++ Active is overlapping Active 2
++ Alterable Value A of Active 2 > 0
++ Alterable Value B of Active 2 = 0
+	Active 5 : Set Alterable Value A to 10
+
+* Alterable Value A of Active 2 > 0
+	Active 2 : Sub 1 from Alterable Value A
+
+* Alterable Value B of Active 2 > 0
+	Active 2 : Sub 1 from Alterable Value B
+
+* Start of Frame
+	Sound : Stop any sample
+	 Sound : Play sample boot on channel #1
+
+* Alterable Value A of Active 5 > 1
+	Active 5 : Change animation sequence to Animation 12
+	Active 5 : Sub 1 from Alterable Value A
+
+* Alterable Value A of Active 5 = 1
+	storyboard controls : Jump to frame "FoxyEXE" (42)
+

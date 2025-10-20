@@ -1,0 +1,71 @@
++ Object Definitions
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0x59B7
+	+ Backdrop 3
+		- Type: Backdrop
+		- Images hash: 0xC808
+	+ Backdrop 2
+		- Type: Backdrop
+		- Images hash: 0xD1C3
+	+ Real
+		- Type: String
+		+ Texts
+			1: 
+	+ Fake
+		- Type: String
+		+ Texts
+			1: 
+	+ text
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ in room
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ cooldown
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ exit
+		- Type: Active
+		- Images hash: 0xFB49
+	+ Active
+		- Type: Active
+		- Images hash: 0x4687
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xBE32
+	+ white
+		- Type: Active
+		- Images hash: 0xBB3D
+	+ Active 3
+		- Type: Active
+		- Images hash: 0x242F
+	+ file slot
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ file slot 5
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Ini
+		- Type: Ini
++ Layer #1 (Layer 1)
+	- Backdrop [-2, -5]
+	- Backdrop 3 [-2, 449]
+	- Backdrop 3 [517, 450]
+	- Backdrop 2 [-2, 27]
+	- Backdrop 2 [775, 14]
+	- Real [43, -274]
+	- Fake [35, 35]
+	- text [262, -82]
+	- in room [312, -32]
+	- cooldown [112, -82]
+	- exit [403, 501]
+	- Active [277, 95]
+	- Active 2 [650, -650]
++ Layer #2 (Layer 2)
+	- white [408, 388]
+	- Active 3 [580, 73]
+	- Active 3 [624, 73]
+	- file slot [-38, 118]
+	- file slot 5 [-38, 168]
+	- Ini [-100, 0]

@@ -1,0 +1,10 @@
+* Start of Frame
+	Sound : Stop any sample
+	 Sound : Play sample death on channel #1
+
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* Timer equals 05''-00
+	storyboard controls : Jump to frame "character select" (5)
+

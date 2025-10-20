@@ -1,0 +1,405 @@
++ Object Definitions
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0x66A1
+	+ Quick Backdrop
+		- Type: Quick Backdrop
+		- Images hash: 0x66A1
+	+ Quick Backdrop 2
+		- Type: Quick Backdrop
+		- Images hash: 0x66A1
+	+ Quick Backdrop 3
+		- Type: Quick Backdrop
+		- Images hash: 0x66A1
+	+ Active
+		- Type: Active
+		- Images hash: 0x2A7B
+	+ up
+		- Type: Active
+		- Images hash: 0x02E4
+	+ down
+		- Type: Active
+		- Images hash: 0xF0B2
+	+ center
+		- Type: Active
+		- Images hash: 0x5716
+	+ right
+		- Type: Active
+		- Images hash: 0x790D
+	+ left
+		- Type: Active
+		- Images hash: 0xF092
+	+ entrance 1
+		- Type: Active
+		- Images hash: 0x47A2
+	+ entrance 2
+		- Type: Active
+		- Images hash: 0x47A2
+	+ entrance 5
+		- Type: Active
+		- Images hash: 0x47A2
+	+ entrance 9
+		- Type: Active
+		- Images hash: 0x47A2
+	+ entrance 6
+		- Type: Active
+		- Images hash: 0x47A2
+	+ entrance 8
+		- Type: Active
+		- Images hash: 0x47A2
+	+ entrance 7
+		- Type: Active
+		- Images hash: 0x47A2
+	+ entrance 10
+		- Type: Active
+		- Images hash: 0x47A2
+	+ entrance 4
+		- Type: Active
+		- Images hash: 0x47A2
+	+ go
+		- Type: Counter
+		- Images hash: 0x3262
+	+ exit 1
+		- Type: Active
+		- Images hash: 0x4995
+	+ exit 6
+		- Type: Active
+		- Images hash: 0x4995
+	+ scanline
+		- Type: Active
+		- Images hash: 0xED77
+	+ scanline 2
+		- Type: Active
+		- Images hash: 0x8DF5
+	+ Active 3
+		- Type: Active
+		- Images hash: 0xAEDD
+	+ exit 2
+		- Type: Active
+		- Images hash: 0x4995
+	+ exit 8
+		- Type: Active
+		- Images hash: 0x4995
+	+ exit 9
+		- Type: Active
+		- Images hash: 0x4995
+	+ exit 12
+		- Type: Active
+		- Images hash: 0x4995
+	+ exit 5
+		- Type: Active
+		- Images hash: 0x4995
+	+ exit 10
+		- Type: Active
+		- Images hash: 0x4995
+	+ exit 11
+		- Type: Active
+		- Images hash: 0x4995
+	+ exit 13
+		- Type: Active
+		- Images hash: 0x4995
+	+ portal 1
+		- Type: Active
+		- Images hash: 0x66A1
+	+ portal 4
+		- Type: Active
+		- Images hash: 0x66A1
+	+ portal 3
+		- Type: Active
+		- Images hash: 0x66A1
+	+ portal 2
+		- Type: Active
+		- Images hash: 0x66A1
+	+ exit 3
+		- Type: Active
+		- Images hash: 0x4995
+	+ entrance 3
+		- Type: Active
+		- Images hash: 0x47A2
+	+ exit 4
+		- Type: Active
+		- Images hash: 0x4995
+	+ exit 7
+		- Type: Active
+		- Images hash: 0x4995
+	+ portal 5
+		- Type: Active
+		- Images hash: 0x66A1
+	+ portal 6
+		- Type: Active
+		- Images hash: 0x66A1
+	+ portal 7
+		- Type: Active
+		- Images hash: 0x66A1
+	+ codefound
+		- Type: Active
+		- Images hash: 0xFA9A
+	+ scanline 3
+		- Type: Active
+		- Images hash: 0xB98C
+	+ Active 2
+		- Type: Active
+		- Images hash: 0x56F1
+	+ Perspective
+		- Type: Perspective
++ Layer #1 (Layer 1)
+	- Backdrop [280, 420]
+	- Quick Backdrop [280, 70]
+	- Quick Backdrop 2 [280, 490]
+	- Quick Backdrop 3 [210, 280]
+	- Quick Backdrop [280, 210]
+	- Quick Backdrop 2 [420, 70]
+	- Quick Backdrop 3 [630, 140]
+	- Quick Backdrop 2 [700, 350]
+	- Quick Backdrop 2 [560, 490]
+	- Backdrop [980, 630]
+	- Backdrop [700, 280]
+	- Quick Backdrop [980, 280]
+	- Quick Backdrop [1120, 350]
+	- Quick Backdrop [1120, 700]
+	- Quick Backdrop 2 [770, 560]
+	- Quick Backdrop 2 [1190, 490]
+	- Quick Backdrop 2 [1400, 700]
+	- Quick Backdrop 3 [1050, 560]
+	- Quick Backdrop [1260, 770]
+	- Quick Backdrop 2 [1400, 420]
+	- Quick Backdrop [1680, 350]
+	- Quick Backdrop [1890, 560]
+	- Quick Backdrop [1750, 840]
+	- Backdrop [1820, 490]
+	- Backdrop [1470, 560]
+	- Quick Backdrop [1820, 700]
+	- Backdrop [1400, 770]
+	- Quick Backdrop [1470, 840]
+	- Quick Backdrop [1400, 980]
+	- Quick Backdrop [1540, 1050]
+	- Quick Backdrop [1680, 1120]
+	- Quick Backdrop [1820, 980]
+	- Quick Backdrop 2 [840, 1190]
+	- Quick Backdrop [720, 1260]
+	- Quick Backdrop 2 [840, 1400]
+	- Quick Backdrop 2 [1120, 1260]
+	- Quick Backdrop 2 [1120, 1470]
+	- Quick Backdrop 2 [1400, 1260]
+	- Quick Backdrop 2 [1330, 1540]
+	- Quick Backdrop [1680, 1400]
+	- Quick Backdrop 2 [1820, 1400]
+	- Quick Backdrop 3 [2030, 1190]
+	- Quick Backdrop [1890, 1260]
+	- Quick Backdrop 2 [1960, 980]
+	- Quick Backdrop 2 [2380, 1260]
+	- Quick Backdrop [2240, 910]
+	- Quick Backdrop [2380, 1120]
+	- Quick Backdrop 3 [2520, 910]
+	- Quick Backdrop 3 [2590, 770]
+	- Quick Backdrop 2 [2310, 770]
+	- Quick Backdrop 2 [2100, 700]
+	- Quick Backdrop [1960, 700]
+	- Quick Backdrop [2100, 560]
+	- Quick Backdrop [2450, 630]
+	- Quick Backdrop 3 [2240, 280]
+	- Quick Backdrop 3 [2450, 420]
+	- Quick Backdrop [2520, 350]
+	- Quick Backdrop [2310, 210]
+	- Quick Backdrop [2660, 280]
+	- Quick Backdrop [2450, 70]
+	- Quick Backdrop [2660, 140]
+	- Backdrop [2590, 70]
+	- Quick Backdrop [1610, 1540]
+	- Quick Backdrop 3 [1540, 1610]
+	- Quick Backdrop [1610, 1820]
+	- Quick Backdrop 2 [1680, 1960]
+	- Quick Backdrop [1820, 1680]
+	- Quick Backdrop [1960, 1820]
+	- Quick Backdrop [2100, 1190]
+	- Backdrop [1470, 1610]
+	- Backdrop [1470, 1330]
+	- Quick Backdrop [2380, 1330]
+	- Quick Backdrop [2240, 1400]
+	- Quick Backdrop [2100, 1540]
+	- Quick Backdrop [1960, 1610]
+	- Quick Backdrop [140, 560]
+	- Quick Backdrop 2 [210, 700]
+	- Quick Backdrop 3 [630, 560]
+	- Quick Backdrop [350, 770]
+	- Quick Backdrop [630, 840]
+	- Quick Backdrop 3 [420, 910]
+	- Quick Backdrop [490, 1050]
+	- Quick Backdrop 2 [700, 980]
+	- Quick Backdrop 3 [560, 1190]
+	- Quick Backdrop 2 [980, 1050]
+	- Quick Backdrop 2 [1120, 980]
+	- Quick Backdrop [980, 910]
+	- Quick Backdrop [560, 1470]
+	- Quick Backdrop [700, 1540]
+	- Quick Backdrop 2 [840, 1610]
+	- Quick Backdrop [1190, 1680]
+	- Quick Backdrop 3 [1330, 1890]
+	- Quick Backdrop [1120, 1820]
+	- Quick Backdrop [980, 1960]
+	- Quick Backdrop 3 [1050, 2100]
+	- Quick Backdrop 3 [1260, 2030]
+	- Quick Backdrop 3 [1190, 2240]
+	- Quick Backdrop [1050, 2380]
+	- Quick Backdrop [1470, 2030]
+	- Quick Backdrop [1610, 2100]
+	- Quick Backdrop [1750, 2100]
+	- Quick Backdrop 2 [1890, 2100]
+	- Quick Backdrop [2170, 1960]
+	- Quick Backdrop 3 [2240, 1680]
+	- Quick Backdrop [1330, 2170]
+	- Quick Backdrop [840, 1890]
+	- Quick Backdrop [700, 1820]
+	- Quick Backdrop 3 [490, 1540]
+	- Quick Backdrop [560, 1750]
+	- Backdrop [1890, 1820]
+	- Quick Backdrop [1820, 2240]
+	- Quick Backdrop 3 [1540, 2170]
+	- Quick Backdrop [1890, 2380]
+	- Quick Backdrop [1470, 2450]
+	- Quick Backdrop 3 [1820, 2380]
+	- Quick Backdrop 3 [1750, 2520]
+	- Quick Backdrop 3 [1540, 2520]
+	- Quick Backdrop [1750, 2800]
+	- Quick Backdrop 2 [1470, 2940]
+	- Quick Backdrop 2 [1190, 2870]
+	- Quick Backdrop 2 [1120, 2800]
+	- Quick Backdrop 2 [1260, 2590]
+	- Quick Backdrop [1120, 2660]
+	- Backdrop [1610, 2240]
+	- Backdrop [1750, 2240]
+	- Backdrop [1470, 2660]
+	- Quick Backdrop [910, 1680]
+	- Backdrop [770, 1050]
+	- Backdrop [560, 560]
+	- Backdrop [1330, 1820]
+	- Quick Backdrop [840, 1050]
+	- Quick Backdrop [700, 70]
+	- Quick Backdrop 2 [840, 0]
+	- Quick Backdrop 2 [1050, 70]
+	- Quick Backdrop 2 [1190, 140]
+	- Quick Backdrop 2 [1330, 210]
+	- Quick Backdrop [1960, 350]
+	- Quick Backdrop [1890, 210]
+	- Quick Backdrop [2030, 140]
+	- Quick Backdrop [1610, 140]
+	- Quick Backdrop [1750, 0]
+	- Quick Backdrop 2 [1890, 0]
+	- Quick Backdrop 2 [2170, 0]
+	- Quick Backdrop 2 [2240, 70]
+	- Backdrop [840, 700]
+	- Backdrop [840, 770]
+	- Quick Backdrop 2 [630, 2520]
+	- Quick Backdrop [840, 2380]
+	- Quick Backdrop [490, 2380]
+	- Quick Backdrop 3 [770, 2100]
+	- Quick Backdrop 3 [490, 2100]
+	- Quick Backdrop [490, 2170]
+	- Quick Backdrop [70, 1960]
+	- Quick Backdrop [420, 1820]
+	- Quick Backdrop 3 [840, 2030]
+	- Quick Backdrop 2 [140, 1890]
+	- Quick Backdrop 2 [210, 2100]
+	- Quick Backdrop 3 [210, 2170]
+	- Quick Backdrop [350, 2590]
+	- Quick Backdrop [490, 2660]
+	- Quick Backdrop 2 [630, 2730]
+	- Quick Backdrop 2 [700, 2660]
+	- Quick Backdrop [980, 2590]
+	- Quick Backdrop 2 [1890, 2800]
+	- Quick Backdrop [2030, 2660]
+	- Quick Backdrop 3 [2100, 2380]
+	- Quick Backdrop 3 [2170, 2170]
+	- Backdrop [1330, 2380]
+	- Backdrop [2100, 2310]
+	- Backdrop [2100, 2170]
+	- Quick Backdrop 2 [70, 2450]
+	- Quick Backdrop [70, 2520]
+	- Quick Backdrop [70, 2660]
+	- Backdrop [280, 2590]
+	- Backdrop [280, 2660]
+	- Backdrop [280, 2380]
+	- Backdrop [420, 2170]
+	- Quick Backdrop 2 [2310, 2170]
+	- Quick Backdrop 2 [2240, 2380]
+	- Quick Backdrop [2520, 2240]
+	- Quick Backdrop [2520, 2310]
+	- Quick Backdrop 3 [2380, 1890]
+	- Quick Backdrop 3 [2380, 1610]
+	- Quick Backdrop [2380, 1470]
+	- Quick Backdrop 2 [70, 2800]
+	- Quick Backdrop 2 [350, 2800]
+	- Active [525, 315]
+	- up [505, 282]
+	- down [504, 362]
+	- center [499, 289]
+	- right [435, 222]
+	- left [434, 292]
+	- entrance 1 [1363, 732]
+	- entrance 2 [1783, 1082]
+	- entrance 5 [593, 1712]
+	- entrance 9 [243, 1992]
+	- entrance 6 [1433, 2132]
+	- entrance 8 [1293, 2692]
+	- entrance 7 [2203, 1712]
+	- entrance 10 [2273, 1572]
+	- entrance 4 [1923, 1922]
+	- go [420, -70]
+	- exit 1 [519, 268]
+	- exit 6 [919, 288]
+	- scanline [400, 28]
+	- scanline 2 [400, 29]
+	- Active 3 [-1, 1]
+	- Active 3 [-1, 26]
+	- Active 3 [-1, 51]
+	- Active 3 [-1, 76]
+	- Active 3 [-1, 101]
+	- Active 3 [-1, 126]
+	- Active 3 [-1, 151]
+	- Active 3 [-1, 176]
+	- Active 3 [-1, 201]
+	- Active 3 [-1, 226]
+	- Active 3 [-1, 251]
+	- Active 3 [-1, 276]
+	- Active 3 [-1, 301]
+	- Active 3 [-1, 326]
+	- Active 3 [-1, 351]
+	- Active 3 [-1, 376]
+	- Active 3 [-1, 401]
+	- Active 3 [-1, 426]
+	- Active 3 [-1, 451]
+	- Active 3 [-1, 476]
+	- exit 2 [929, 1348]
+	- exit 8 [739, 2448]
+	- exit 9 [369, 2268]
+	- exit 12 [442, 2760]
+	- exit 5 [1699, 2398]
+	- exit 10 [1909, 2748]
+	- exit 11 [1924, 2202]
+	- exit 13 [2469, 2328]
+	- portal 1 [1890, 910]
+	- portal 4 [700, 560]
+	- portal 3 [2030, 630]
+	- portal 2 [1960, 1750]
+	- exit 3 [2329, 648]
+	- entrance 3 [2623, 172]
+	- exit 4 [369, 618]
+	- exit 7 [1432, 932]
+	- portal 5 [910, 2030]
+	- portal 6 [1470, 2170]
+	- portal 7 [2100, 2240]
+	- codefound [173, -209]
++ Layer #2 (Layer 2)
+	- scanline 3 [400, 86]
+	- scanline 3 [400, 120]
+	- scanline 3 [400, 154]
+	- scanline 3 [400, 188]
+	- scanline 3 [400, 222]
+	- scanline 3 [400, 256]
+	- scanline 3 [400, 290]
+	- scanline 3 [400, 324]
+	- scanline 3 [400, 358]
+	- scanline 3 [400, 392]
+	- Active 2 [0, 0]
++ Layer #3 (Layer 3)
+	- Perspective [0, 0]

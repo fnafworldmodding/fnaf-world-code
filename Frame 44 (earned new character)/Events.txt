@@ -1,0 +1,57 @@
+* Start of Frame
+	Sound : Stop any sample
+	 Sound : Play sample FANTASY_TONAL_SP_DSL32001 on channel #1
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+
+* found new = 41
++ Only one action when event loops
+	Active : Change animation sequence to Stopped
+	 Ini : Set value 1 to item Str$(value( "found new" )) + "have"
+	found new : Set Counter to 0
+
+* found new = 42
++ Only one action when event loops
+	Active : Change animation sequence to Animation 12
+	 Ini : Set value 1 to item Str$(value( "found new" )) + "have"
+	found new : Set Counter to 0
+
+* found new = 43
++ Only one action when event loops
+	Active : Change animation sequence to Animation 13
+	 Ini : Set value 1 to item Str$(value( "found new" )) + "have"
+	found new : Set Counter to 0
+
+* found new = 44
++ Only one action when event loops
+	Active : Change animation sequence to Animation 14
+	 Ini : Set value 1 to item Str$(value( "found new" )) + "have"
+	found new : Set Counter to 0
+
+* found new = 45
++ Only one action when event loops
+	Active : Change animation sequence to Animation 15
+	 Ini : Set value 1 to item Str$(value( "found new" )) + "have"
+	found new : Set Counter to 0
+
+* found new = 46
++ Only one action when event loops
+	Active : Change animation sequence to Animation 16
+	 Ini : Set value 1 to item Str$(value( "found new" )) + "have"
+	found new : Set Counter to 0
+
+* found new = 47
++ Only one action when event loops
+	Active : Change animation sequence to Animation 17
+	 Ini : Set value 1 to item Str$(value( "found new" )) + "have"
+	found new : Set Counter to 0
+
+* found new = 48
++ Only one action when event loops
+	Active : Change animation sequence to Animation 18
+	 Ini : Set value 1 to item Str$(value( "found new" )) + "have"
+	found new : Set Counter to 0
+
+* Timer equals 04''-00
+	storyboard controls : Jump to frame "halloween land" (35)
+

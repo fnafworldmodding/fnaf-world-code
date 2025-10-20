@@ -1,0 +1,724 @@
+* Start of Frame
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+	character : Set Alterable Value A to ItemValue( "Ini", "s1" )
+	Sound : Stop any sample
+	 Sound : Play sample City theme - Running lights draft1 loop (uninteruptable) on channel #1, 0 times
+	item box : Set Alterable Value G to 0
+	Active : Change animation sequence to Animation 12
+	Active : Reappear
+
+* Alterable Value A of character = 1
+	character : Change animation sequence to Stopped
+
+* Alterable Value A of character = 2
+	character : Change animation sequence to Animation 12
+
+* Alterable Value A of character = 3
+	character : Change animation sequence to Animation 13
+
+* Alterable Value A of character = 4
+	character : Change animation sequence to Animation 14
+
+* Alterable Value A of character = 5
+	character : Change animation sequence to Animation 15
+
+* Alterable Value A of character = 6
+	character : Change animation sequence to Animation 16
+
+* Alterable Value A of character = 7
+	character : Change animation sequence to Animation 17
+
+* Alterable Value A of character = 8
+	character : Change animation sequence to Animation 18
+
+* Alterable Value A of character = 9
+	character : Change animation sequence to Animation 19
+
+* Alterable Value A of character = 10
+	character : Change animation sequence to Animation 20
+
+* Alterable Value A of character = 11
+	character : Change animation sequence to Animation 21
+
+* Alterable Value A of character = 12
+	character : Change animation sequence to Animation 22
+
+* Alterable Value A of character = 13
+	character : Change animation sequence to Animation 23
+
+* Alterable Value A of character = 14
+	character : Change animation sequence to Animation 24
+
+* Alterable Value A of character = 15
+	character : Change animation sequence to Animation 25
+
+* Alterable Value A of character = 16
+	character : Change animation sequence to Animation 26
+
+* Alterable Value A of character = 17
+	character : Change animation sequence to Animation 27
+
+* Alterable Value A of character = 18
+	character : Change animation sequence to Animation 28
+
+* Alterable Value A of character = 19
+	character : Change animation sequence to Animation 29
+
+* Alterable Value A of character = 20
+	character : Change animation sequence to Animation 30
+
+* Alterable Value A of character = 21
+	character : Change animation sequence to Animation 31
+
+* Alterable Value A of character = 22
+	character : Change animation sequence to Animation 32
+
+* Alterable Value A of character = 23
+	character : Change animation sequence to Animation 33
+
+* Alterable Value A of character = 24
+	character : Change animation sequence to Animation 34
+
+* Alterable Value A of character = 25
+	character : Change animation sequence to Animation 35
+
+* Alterable Value A of character = 26
+	character : Change animation sequence to Animation 36
+
+* Alterable Value A of character = 27
+	character : Change animation sequence to Animation 37
+
+* Alterable Value A of character = 28
+	character : Change animation sequence to Animation 38
+
+* Alterable Value A of character = 29
+	character : Change animation sequence to Animation 39
+
+* Alterable Value A of character = 30
+	character : Change animation sequence to Animation 40
+
+* Alterable Value A of character = 31
+	character : Change animation sequence to Animation 41
+
+* Alterable Value A of character = 32
+	character : Change animation sequence to Animation 42
+
+* Alterable Value A of character = 33
+	character : Change animation sequence to Animation 43
+
+* Alterable Value A of character = 34
+	character : Change animation sequence to Animation 44
+
+* Alterable Value A of character = 35
+	character : Change animation sequence to Animation 45
+
+* Alterable Value A of character = 36
+	character : Change animation sequence to Animation 46
+
+* Alterable Value A of character = 37
+	character : Change animation sequence to Animation 47
+
+* Alterable Value A of character = 38
+	character : Change animation sequence to Animation 48
+
+* Alterable Value A of character = 39
+	character : Change animation sequence to Animation 49
+
+* Alterable Value A of character = 39
++ Every 02''-00
+	storyboard controls : Jump to frame "Frame 31" (31)
+
+* Alterable Value A of character = 40
+	character : Change animation sequence to Animation 50
+
+* User clicks with left button on Active 2
++ Active 2 is visible
+	storyboard controls : Jump to frame "wait" (10)
+
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* Start of Frame
+	tokens : Set Counter to ItemValue( "Ini", "tokens" )
+	cinematic : Set Counter to ItemValue( "Ini", "cine" ) + 1
+
+* Start of Frame
+	tokens : Set Counter to ItemValue( "Ini", "tokens" )
+	 Ini : Set value value( "cinematic" ) to item "cine"
+
+* what shop = 1
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 1
+	set item 2 : Set Alterable Value A to 2
+	set item 3 : Set Alterable Value A to 3
+	checkl : Set Counter to 1
+
+* what shop = 2
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 4
+	set item 2 : Set Alterable Value A to 5
+	set item 3 : Set Alterable Value A to 6
+	checkl : Set Counter to 1
+
+* what shop = 5
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 7
+	set item 2 : Set Alterable Value A to 8
+	set item 3 : Set Alterable Value A to 9
+	checkl : Set Counter to 1
+
+* what shop = 20
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 10
+	set item 2 : Set Alterable Value A to 11
+	set item 3 : Set Alterable Value A to 12
+	checkl : Set Counter to 1
+
+* what shop = 11
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 13
+	set item 2 : Set Alterable Value A to 14
+	set item 3 : Set Alterable Value A to 15
+	checkl : Set Counter to 1
+
+* what shop = 14
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 16
+	set item 2 : Set Alterable Value A to 17
+	set item 3 : Set Alterable Value A to 18
+	checkl : Set Counter to 1
+
+* what shop = 17
++ Only one action when event loops
+	set item 1 : Set Alterable Value A to 19
+	set item 2 : Set Alterable Value A to 20
+	set item 3 : Set Alterable Value A to 21
+	checkl : Set Counter to 1
+
+* item box is overlapping set item 1
+	item box : Set Alterable Value A to Alterable Value A( "set item 1" )
+	item box : Set Alterable Value B to 1
+
+* Byte Icon is overlapping set item 1
+	Byte Icon : Set Alterable Value A to Alterable Value A( "set item 1" )
+	Byte Icon : Set Alterable Value B to 1
+
+* item box is overlapping set item 2
+	item box : Set Alterable Value A to Alterable Value A( "set item 2" )
+	item box : Set Alterable Value B to 2
+
+* Byte Icon is overlapping set item 2
+	Byte Icon : Set Alterable Value A to Alterable Value A( "set item 2" )
+	Byte Icon : Set Alterable Value B to 2
+
+* item box is overlapping set item 3
+	item box : Set Alterable Value A to Alterable Value A( "set item 3" )
+	item box : Set Alterable Value B to 3
+
+* Byte Icon is overlapping set item 3
+	Byte Icon : Set Alterable Value A to Alterable Value A( "set item 3" )
+	Byte Icon : Set Alterable Value B to 3
+
+* Mouse pointer is over item box
+	Active 5 : Set position at (0,0) from item box
+
+* checkl = 1
+	checkl : Set Counter to 0
+	have slot 1? : Set Counter to ItemValue( "Ini", "p" + Str$(Alterable Value A( "set item 1" )) )
+	have slot 2? : Set Counter to ItemValue( "Ini", "p" + Str$(Alterable Value A( "set item 2" )) )
+	have slot 3? : Set Counter to ItemValue( "Ini", "p" + Str$(Alterable Value A( "set item 3" )) )
+
+* have slot 1? = 1
+	sold out 1 : Reappear
+
+* have slot 2? = 1
+	sold out 2 : Reappear
+
+* have slot 3? = 1
+	sold out 3 : Reappear
+
+* User clicks with left button on item box
++ tokens >= 10
++ Run this event once
+	tokens : Subtract 10 from Counter
+	 Ini : Set value value( "tokens" ) to item "tokens"
+	 Sound : Play sample Cash_Register_Open_01 on channel #13
+	item box : Set Alterable Value G to 1
+
+* selection = 1
++ sold out 1 is invisible
++ tokens >= value( "current price" )
+	tokens : Subtract value( "current price" ) from Counter
+	have slot 1? : Set Counter to 1
+	 Ini : Set value 1 to item "p" + Str$(Alterable Value A( "set item 1" ))
+	 Ini : Set value value( "tokens" ) to item "tokens"
+	 Sound : Play sample Cash_Register_Open_01 on channel #13
+	bought : Set Counter to 1
+
+* selection = 2
++ sold out 2 is invisible
++ tokens >= value( "current price" )
+	tokens : Subtract value( "current price" ) from Counter
+	 Ini : Set value 1 to item "p" + Str$(Alterable Value A( "set item 2" ))
+	 Ini : Set value value( "tokens" ) to item "tokens"
+	have slot 2? : Set Counter to 1
+	 Sound : Play sample Cash_Register_Open_01 on channel #13
+	bought : Set Counter to 1
+
+* selection = 3
++ sold out 3 is invisible
++ tokens >= value( "current price" )
+	tokens : Subtract value( "current price" ) from Counter
+	 Ini : Set value 1 to item "p" + Str$(Alterable Value A( "set item 3" ))
+	 Ini : Set value value( "tokens" ) to item "tokens"
+	have slot 3? : Set Counter to 1
+	 Sound : Play sample Cash_Register_Open_01 on channel #13
+	bought : Set Counter to 1
+
+* Alterable Value G of item box = 1
++ Every 00''-50
+	storyboard controls : Next frame
+
+* Active animation Animation 12 is over
+	Active : Change animation sequence to Animation 13
+	dialoge : Reappear
+	line : Reappear
+
+* text stage = 0
+	dialoge : Make invisible
+
+* text stage > 0
+	Active : Add 1 to Alterable Value A
+
+* Alterable Value A of Active > 100
++ Active 2 is invisible
+	next : Reappear
+
+* Alterable Value A of Active < 100
+	next : Make invisible
+
+* cinematic = 1
++ text stage = 1
+	dialoge : Set alterable string to "I know you may feel like going out and taking a stroll, but something seems very wrong today."
+
+* User clicks with left button
++ Alterable Value A of Active > 100
++ Active 2 is invisible
+	Active : Set Alterable Value A to 0
+	text stage : Add 1 to Counter
+	Active : Change animation sequence to Animation 12
+
+* Upon pressing "Enter"
++ Alterable Value A of Active > 100
++ Active 2 is invisible
+	text stage : Add 1 to Counter
+	Active : Set Alterable Value A to 0
+	Active : Change animation sequence to Animation 12
+
+* cinematic = 1
++ text stage = 2
+	dialoge : Set alterable string to "All is NOT well in Animatronica. Animatronic Village? Village-tronica? (We are working on it.) The point is that something is horribly wrong!"
+
+* cinematic = 1
++ text stage = 3
+	dialoge : Set alterable string to "There have been a lot of bizarre creatures roaming around lately, even some that look like... *gulp*  ...us."
+
+* cinematic = 1
++ text stage = 4
+	dialoge : Set alterable string to "We aren't prepared to deal with situations like this. Something bad must have happened on the flipside."
+
+* cinematic = 1
++ text stage = 5
+	dialoge : Set alterable string to "Go see what you can find. Be careful though, our wood-cutting Auto-Chipper has gone haywire! It has been jumpscaring me all day!"
+	Active 2 : Reappear
+
+* Active animation Animation 12 is over
++ text stage = 0
+	text stage : Set Counter to 1
+
+* Active animation Animation 12 is playing
+	dialoge : Make invisible
+	line : Make invisible
+
+* Alterable Value A of shopkeeper = 1
+	shopkeeper : Change animation sequence to Animation 12
+
+* Alterable Value A of shopkeeper <> 1
+	shopkeeper : Change animation sequence to Stopped
+
+* Active 2 is visible
++ Alterable Value A of Active > 800
+	text stage : Add 1 to Counter
+	 Sound : Play sample Computer_Noise_04_-_Stati (uninteruptable) on channel #1, 0 times
+	shopkeeper : Set Alterable Value D to 1
+	Active : Set Alterable Value A to 0
+	Active : Change animation sequence to Animation 12
+	dialoge : Make invisible
+
+* Alterable Value D of shopkeeper = 1
++ Alterable Value A of Active > 400
+	Active : Set Alterable Value A to 0
+	Active : Change animation sequence to Animation 12
+	text stage : Add 1 to Counter
+	 Sound : Play sample Computer_Noise_04_-_Stati (uninteruptable) on channel #1, 0 times
+	dialoge : Make invisible
+
+* cinematic = 1
++ text stage = 6
+	dialoge : Set alterable string to "But you don't really believe that do you?"
+
+* cinematic = 1
++ text stage = 7
+	dialoge : Set alterable string to "There is a task for you to complete. You have to leave breadcrumbs for him, to help him find his way."
+
+* cinematic = 1
++ text stage = 8
+	storyboard controls : Jump to frame "wait" (10)
+
+* text stage > 6
++ cinematic = 1
+	shopkeeper : Set Alterable Value D to 1
+
+* Alterable Value D of shopkeeper = 1
++ Every 00''-10
+	shopkeeper : Set Alterable Value C to Random(3)
+
+* Alterable Value D of shopkeeper = 1
++ Alterable Value C of shopkeeper = 0
+	shopkeeper : Change animation sequence to Animation 12
+
+* Alterable Value D of shopkeeper = 1
++ Alterable Value C of shopkeeper = 1
+	shopkeeper : Change animation sequence to Animation 13
+
+* Alterable Value D of shopkeeper = 1
++ Alterable Value C of shopkeeper = 2
+	shopkeeper : Change animation sequence to Animation 14
+
+* Alterable Value D of shopkeeper = 1
++ Only one action when event loops
+	background : Destroy
+	Active 2 : Destroy
+
+* cinematic = 2
++ text stage = 1
+	dialoge : Set alterable string to "I think I found a clue as to what is happening! Look behind me, there is a tree that is distorted and glitched."
+
+* cinematic = 2
++ text stage = 2
+	dialoge : Set alterable string to "You don't know as much as I do, but I will tell you that this is a safe haven, a sanctuary. Whatever has gone wrong, we have to fix it. It will be an adventure!"
+
+* cinematic = 2
++ text stage = 3
+	dialoge : Set alterable string to "Something horrible must have happened on the flipside, because it's causing this world to fracture. Objects like the tree behind me have broken."
+
+* cinematic = 2
++ text stage = 4
+	Active 2 : Reappear
+	dialoge : Set alterable string to "But I think you can use these fractures to get to places you couldn't reach before. You have to go and find the source of these fractures!"
+
+* cinematic = 3
++ text stage = 5
+	Active 2 : Reappear
+
+* cinematic = 4
++ text stage = 5
+	Active 2 : Reappear
+
+* cinematic = 2
++ text stage = 5
+	dialoge : Set alterable string to "Yes, the world beneath the surface world."
+
+* cinematic = 2
++ text stage = 6
+	dialoge : Set alterable string to "This is a safe place- a sanctuary. The truth is that there is no safe place. You don't understand that; you were made for one thing."
+
+* cinematic = 2
++ text stage = 7
+	dialoge : Set alterable string to "There is a task for you to complete. Before you follow this passage, go back. Find the clock."
+	 Ini : Set value 1 to item "find"
+
+* cinematic = 2
++ text stage = 8
+	dialoge : Set alterable string to "If you keep following him, you will only finish a story. There is something more important for you to do."
+	storyboard controls : Jump to frame "wait" (10)
+
+* Alterable Value D of shopkeeper = 1
+	next : Destroy
+
+* cinematic = 3
++ text stage = 1
+	dialoge : Set alterable string to "Great! Be sure to press that button behind you to clear the path for later. That way you won't have to take the long way again!"
+
+* cinematic = 3
++ text stage = 2
+	dialoge : Set alterable string to "I think that a lot of these 'monsters' are misguided side-effects of whatever has happened on the flipside."
+
+* cinematic = 3
++ text stage = 3
+	dialoge : Set alterable string to "It looks like you can knock some sense into them and then they'll join you. How wonderfully convenient!"
+
+* cinematic = 3
++ text stage = 4
+	dialoge : Set alterable string to "You need to find another sub-tunnel under the game, and it's probably hidden inside another glitched object!"
+
+* cinematic = 3
++ text stage = 5
+	dialoge : Set alterable string to "Ahead are the Dusting Fields, you will probably find the next glitched object there. Be careful; things only get more dangerous from here!"
+
+* cinematic = 3
++ text stage = 6
+	dialoge : Set alterable string to "Things don't get more dangerous. You are being played."
+
+* cinematic = 3
++ text stage = 7
+	dialoge : Set alterable string to "You are being led through hoops. Meanwhile the puppet-master is laughing at you."
+
+* cinematic = 3
++ text stage = 8
+	dialoge : Set alterable string to "You do need to find the Dusting Fields, but not because there is any urgent adventure ahead. Find the clock."
+	 Ini : Set value 2 to item "find"
+
+* cinematic = 3
++ text stage = 9
+	storyboard controls : Jump to frame "wait" (10)
+	dialoge : Set alterable string to "You do need to find the Dusting Fields, but not because there is any urgent adventure ahead. Find the clock."
+
+* cinematic = 4
++ text stage = 1
+	dialoge : Set alterable string to "The sub-tunnel must be up ahead. However, it looks like something is blocking the path. I'm sure it's nothing you can't handle!"
+
+* cinematic = 4
++ text stage = 2
+	dialoge : Set alterable string to "I do need to warn you of something, though. When you enter a glitched object into a sub-tunnel, it's possible to find yet another glitched object inside."
+
+* cinematic = 4
++ text stage = 3
+	dialoge : Set alterable string to "That will take you into a subtunnel beneath the subtunnel! There may even be more glitched objects there!"
+
+* cinematic = 4
++ text stage = 4
+	dialoge : Set alterable string to "Just be sure to never go more than three glitches down! I'm not sure if you would find your way back up!"
+
+* cinematic = 4
++ text stage = 5
+	dialoge : Set alterable string to "Be sure to always search for new Chips and Bytes; they will be a huge help against monsters like the one up ahead!"
+
+* cinematic = 4
++ text stage = 6
+	dialoge : Set alterable string to "Play along for now. You are being pulled on a string for his amusement."
+
+* cinematic = 4
++ text stage = 7
+	dialoge : Set alterable string to "Don't enter the glitch yet; you need to go into the mine. Find the clock."
+	 Ini : Set value 3 to item "find"
+
+* cinematic = 4
++ text stage = 8
+	storyboard controls : Jump to frame "wait" (10)
+	dialoge : Set alterable string to "Don't enter the glitch yet; you need to go into the mine. Find the clock."
+
+* cinematic = 5
++ text stage = 1
+	dialoge : Set alterable string to "You've reached Lilygear Lake! From here I don't know where your adventure will take you!"
+
+* cinematic = 5
++ text stage = 2
+	dialoge : Set alterable string to "You should be keeping your eyes open for another glitched object. They are the only way to get to places that are otherwise unreachable!"
+
+* cinematic = 5
++ text stage = 3
+	dialoge : Set alterable string to "Be careful in the waters of Lilygear Lake! I hear there is a seamonster that attacks at random! Be ready to fight! Good luck!"
+	Active 2 : Reappear
+
+* cinematic = 5
++ text stage = 4
+	dialoge : Set alterable string to "Yes, well, everything attacks at random. Doesn't it?"
+
+* cinematic = 5
++ text stage = 5
+	dialoge : Set alterable string to "The one who pulls the strings is always watching. He allows you to progress."
+
+* cinematic = 5
++ text stage = 6
+	dialoge : Set alterable string to "Follow the trail that they have created for you; play along. There is another mine that you must find before you enter the glitched object."
+
+* cinematic = 5
++ text stage = 7
+	dialoge : Set alterable string to "Find the clock."
+	 Ini : Set value 4 to item "find"
+
+* cinematic = 5
++ text stage = 8
+	storyboard controls : Jump to frame "wait" (10)
+	dialoge : Set alterable string to "Find the clock."
+
+* cinematic = 6
++ text stage = 1
+	dialoge : Set alterable string to "This is a horribly spooky place. I think I'll stay right here."
+
+* cinematic = 6
++ text stage = 2
+	dialoge : Set alterable string to "You, however, need to keep going! This is a graveyard for broken and unwanted creations. It's full of nastiness and traps."
+
+* cinematic = 6
++ text stage = 3
+	dialoge : Set alterable string to "I don't think everything here is as it seems. Check the graves and the trees. This whole place is full of illusion!"
+	Active 2 : Reappear
+
+* cinematic = 6
++ text stage = 4
+	dialoge : Set alterable string to "One thing is true. Nothing here is as it seems."
+
+* cinematic = 6
++ text stage = 5
+	dialoge : Set alterable string to "You need to find another clock, but the passage will not be easy. There is a secret sub-corridor that leads to Pinwheel Circus under this graveyard."
+
+* cinematic = 6
++ text stage = 6
+	dialoge : Set alterable string to "Find the clock. Everything else is a deception."
+
+* cinematic = 6
++ text stage = 7
+	dialoge : Set alterable string to "Find the clock. Everything else is a deception."
+	storyboard controls : Jump to frame "wait" (10)
+
+* cinematic = 7
++ text stage = 1
+	dialoge : Set alterable string to "Looks like trouble up ahead, but you should be used to that by now."
+
+* cinematic = 7
++ text stage = 2
+	dialoge : Set alterable string to "They say that there is a secret funhouse hidden here in the circus. It must be inside one of the tents!"
+
+* cinematic = 7
++ text stage = 3
+	dialoge : Set alterable string to "I have to warn you, I've seen two giant animatronics roaming the fairgrounds- a giant bear and a giant pig. They look like abominations to me!"
+
+* cinematic = 7
++ text stage = 4
+	dialoge : Set alterable string to "Also, the funhouse is full of false walls and secret doors! Don't get lost! You are getting close to the core of the game! That is where the problem is!"
+	Active 2 : Reappear
+
+* cinematic = 7
++ text stage = 5
+	dialoge : Set alterable string to "Another clock should be inside the funhouse. Nothing else matters."
+	 Ini : Set value 5 to item "find"
+
+* cinematic = 7
++ text stage = 6
+	dialoge : Set alterable string to "Don't be deceived by the one pulling the strings."
+
+* cinematic = 7
++ text stage = 7
+	dialoge : Set alterable string to "Don't be deceived by the one pulling the strings."
+	storyboard controls : Jump to frame "wait" (10)
+
+* cinematic = 8
++ text stage = 1
+	dialoge : Set alterable string to "You found the exit! That's amazing. The giant pig lies on the other side of this sub-tunnel. He guards a key that opens the locks to the final guardians!"
+
+* cinematic = 8
++ text stage = 2
+	dialoge : Set alterable string to "Each guardian protects a button. Once you have found and pressed the buttons, the gates protecting the game's security system will be lowered!"
+
+* cinematic = 8
++ text stage = 3
+	dialoge : Set alterable string to "That's when you can strike at the heart of whatever is corrupting this world!"
+
+* cinematic = 8
++ text stage = 4
+	dialoge : Set alterable string to "Navigate your way through the sub-tunnels, but remember, don't go more than three glitches down! Good luck!"
+	Active 2 : Reappear
+
+* cinematic = 8
++ text stage = 5
+	dialoge : Set alterable string to "Attacking the game's security system will not accomplish anything."
+
+* cinematic = 8
++ text stage = 6
+	dialoge : Set alterable string to "Get the key, but ignore the guardians. If you have succeeded in setting the clocks, then your true goal will be revealed once you have the key."
+
+* cinematic = 8
++ text stage = 7
+	dialoge : Set alterable string to "Get the key, but ignore the guardians. If you have succeeded in setting the clocks, then your true goal will be revealed once you have the key."
+	storyboard controls : Jump to frame "wait" (10)
+
+* cinematic = 9
++ text stage = 1
+	dialoge : Set alterable string to "This is it! This is the path to the game's security system! If you have found all of the buttons, then your path should be clear!"
+
+* cinematic = 9
++ text stage = 2
+	dialoge : Set alterable string to "The security system has powerful defenses. Make sure you have someone with a shield ability! You won't survive without it!"
+	Active 2 : Reappear
+
+* cinematic = 9
++ text stage = 3
+	dialoge : Set alterable string to "I will tell you a secret."
+
+* cinematic = 9
++ text stage = 4
+	dialoge : Set alterable string to "There are powerful chips that can only be attained by breaking the game- the red chests."
+
+* cinematic = 9
++ text stage = 5
+	dialoge : Set alterable string to "There are objects that you can press against, and it will break your collision detection. One is a yellow bird on a tree stump."
+
+* cinematic = 9
++ text stage = 6
+	dialoge : Set alterable string to "Another is a gravestone."
+
+* cinematic = 9
++ text stage = 7
+	dialoge : Set alterable string to "Find these places to gain an unfair advantage. That is, if you insist on following this path that has been forcefully placed before you."
+
+* cinematic = 9
++ text stage = 8
+	dialoge : Set alterable string to "Something terrible is coming."
+
+* cinematic = 9
++ text stage = 9
+	storyboard controls : Jump to frame "wait" (10)
+	dialoge : Set alterable string to "Something terrible is coming."
+
+* cinematic = 1
++ Only one action when event loops
+	background : Change animation sequence to Stopped
+
+* cinematic = 2
++ Only one action when event loops
+	background : Change animation sequence to Animation 15
+
+* cinematic = 3
++ Only one action when event loops
+	background : Change animation sequence to Animation 15
+
+* cinematic = 4
++ Only one action when event loops
+	background : Change animation sequence to Animation 17
+
+* cinematic = 5
++ Only one action when event loops
+	background : Change animation sequence to Animation 15
+
+* cinematic = 6
++ Only one action when event loops
+	background : Change animation sequence to Animation 13
+
+* cinematic = 7
++ Only one action when event loops
+	background : Change animation sequence to Animation 16
+
+* cinematic = 8
++ Only one action when event loops
+	background : Change animation sequence to Animation 13
+
+* cinematic = 9
++ Only one action when event loops
+	background : Change animation sequence to Animation 16
+
+* Active animation Animation 12 is playing
+	Active 2 : Make invisible
+

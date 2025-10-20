@@ -1,0 +1,634 @@
+* Start of Frame
+	 Sound : Play sample Rainbow2 (uninteruptable) on channel #1, 0 times
+	 Sound : Play sample voice01 on channel #2
+	The mouse pointer and keyboard : Show Windows mouse pointer
+
+* Repeat while "Right Arrow" is pressed
++ NOT feel right is overlapping a backdrop
+	hit box : Set position at (4,0) from hit box
+	Active : Set direction to ...........
+
+* Repeat while "Right Arrow" is pressed
++ feel right is overlapping a backdrop
++ floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Stopped
+
+* Repeat while "Left Arrow" is pressed
++ feel left is overlapping a backdrop
++ floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Stopped
+
+* Repeat while "Left Arrow" is pressed
++ NOT feel left is overlapping a backdrop
+	hit box : Set position at (-4,0) from hit box
+	Active : Set direction to ...............
+
+* NOT Repeat while "Right Arrow" is pressed
++ NOT Repeat while "Left Arrow" is pressed
++ floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Stopped
+
+* NOT Repeat while "Right Arrow" is pressed
++ NOT Repeat while "Left Arrow" is pressed
++ NOT floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Animation 12
+
+* NOT floor 1 is overlapping a backdrop
++ jumped = 0
+	hit box : Set position at (0,3) from hit box
+	fall : Add 1 to Counter
+
+* Upon pressing "Z"
++ floor 1 is overlapping a backdrop
+	jumped : Set Counter to 1
+	going up : Set Counter to 50
+	 Sound : Play sample cjump2 on channel #3
+	Active 19 : Destroy
+
+* jumped = 1
++ NOT Repeat while "Z" is pressed
+	jumped : Set Counter to 0
+	going up : Set Counter to 0
+
+* jumped = 1
++ going up > 0
+	going up : Subtract 1 from Counter
+	hit box : Set position at (0,-1) from hit box
+
+* jumped = 1
++ going up > 10
+	hit box : Set position at (0,-2) from hit box
+
+* jumped = 1
++ going up > 20
+	hit box : Set position at (0,-2) from hit box
+
+* jumped = 1
++ going up > 30
+	hit box : Set position at (0,-2) from hit box
+
+* jumped = 1
++ going up > 35
+	hit box : Set position at (0,-2) from hit box
+
+* jumped = 1
++ going up = 0
+	jumped : Set Counter to 0
+
+* Repeat while "Right Arrow" is pressed
++ NOT feel right is overlapping a backdrop
++ floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Walking
+
+* Repeat while "Left Arrow" is pressed
++ NOT feel left is overlapping a backdrop
++ floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Walking
+
+* Repeat while "Right Arrow" is pressed
++ NOT floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Animation 12
+
+* Repeat while "Left Arrow" is pressed
++ NOT floor 1 is overlapping a backdrop
+	Active : Change animation sequence to Animation 12
+
+* floor 1 is overlapping a backdrop
+	fall : Set Counter to 0
+
+* floor 2 is overlapping a backdrop
++ fall > 10
+	fall : Set Counter to 10
+
+* NOT floor 1 is overlapping a backdrop
++ fall > 0
+	hit box : Set position at (0,2) from hit box
+
+* NOT floor 1 is overlapping a backdrop
++ fall > 10
+	hit box : Set position at (0,2) from hit box
+
+* NOT floor 1 is overlapping a backdrop
++ fall > 20
+	hit box : Set position at (0,2) from hit box
+
+* NOT floor 1 is overlapping a backdrop
++ fall > 30
+	hit box : Set position at (0,2) from hit box
+
+* ceiling is overlapping a backdrop
+	jumped : Set Counter to 0
+
+* Repeat while "X" is pressed
+	hit box : Add 1 to Alterable Value A
+
+* NOT Repeat while "X" is pressed
+	hit box : Set Alterable Value A to 0
+
+* floor 3 is overlapping a backdrop
+	hit box : Set position at (0,-1) from hit box
+
+* Always
+	storyboard controls : Center display at (1,-98) from Active
+
+* X position of magic_rainbow > X( "Active" )
+	magic_rainbow : Set X position to X( "magic_rainbow" ) - 1
+
+* X position of magic_rainbow > X( "Active" ) + 100
+	magic_rainbow : Set X position to X( "magic_rainbow" ) - 1
+
+* X position of magic_rainbow > X( "Active" ) + 300
+	magic_rainbow : Set X position to X( "magic_rainbow" ) - 1
+
+* X position of magic_rainbow > X( "Active" ) + 500
+	magic_rainbow : Set X position to X( "magic_rainbow" ) - 1
+
+* X position of magic_rainbow < X( "Active" )
+	magic_rainbow : Set X position to X( "magic_rainbow" ) + 1
+
+* X position of magic_rainbow < X( "Active" ) - 100
+	magic_rainbow : Set X position to X( "magic_rainbow" ) + 1
+
+* X position of magic_rainbow < X( "Active" ) - 300
+	magic_rainbow : Set X position to X( "magic_rainbow" ) + 1
+
+* X position of magic_rainbow < X( "Active" ) - 500
+	magic_rainbow : Set X position to X( "magic_rainbow" ) + 1
+
+* Always
+	Active 3 : Look at (-3,-14) from Active
+	Active 4 : Set direction to Dir( "Active 3" )
+
+* Active is overlapping Active 5
++ Number of hit box > 0
++ NOT Active 5 is overlapping checkpoint
+	checkpoint : Set position at (0,0) from hit box
+	 Sound : Play sample checkpoint on channel #4
+	New Objects : Create Active 13 at (21,-99) from Active 5
+
+* Alterable Value D of hit box = 1
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (-4,-26) from Active
+	New Objects : Create blood at (1,-48) from Active
+	New Objects : Create blood at (1,-48) from Active
+	New Objects : Create blood at (1,-48) from Active
+	New Objects : Create blood at (1,-48) from Active
+	New Objects : Create blood at (1,-48) from Active
+	New Objects : Create blood at (1,-48) from Active
+	New Objects : Create blood at (1,-48) from Active
+	 Sound : Play sample die on channel #5
+	hit box : Destroy
+
+* Always
+	blood : Set position at (0,4) from blood
+
+* blood is overlapping a backdrop
+	blood : Paste into background (not an obstacle)
+	blood : Destroy
+
+* Active 9 is overlapping hit box
+	hit box : Set Alterable Value D to 1
+
+* Active 10 is overlapping hit box
+	hit box : Set Alterable Value D to 1
+
+* Number of hit box = 0
++ deaths < 34
++ Every 01''-00
+	New Objects : Create hit box at (1,-16) from checkpoint
+	 Sound : Play sample respawn on channel #5
+	trigger : Set Alterable Value A to 0
+	trigger 2 : Set Alterable Value A to 0
+	magic_rainbow : Set Alterable Value B to 0
+	trigger 5 : Set Alterable Value A to 0
+	trigger 6 : Set Alterable Value A to 0
+	trigger 7 : Set Alterable Value A to 0
+	trigger 8 : Set Alterable Value A to 0
+	Active 9 : Destroy
+	trigger 9 : Set Alterable Value A to 0
+	Active 10 : Destroy
+	magic_rainbow : Set X position to X( "hit box" )
+	storyboard controls : Center display at (0,-58) from hit box
+
+* Always
+	Active : Set position at (0,34) from hit box
+	feel right : Set position at (25,6) from hit box
+	feel left : Set position at (-26,6) from hit box
+	floor 1 : Set position at (-1,30) from hit box
+	floor 2 : Set position at (-1,44) from hit box
+	ceiling : Set position at (0,-24) from hit box
+	floor 3 : Set position at (-1,30) from hit box
+	Active 3 : Set position at (-32,-47) from magic_rainbow
+	Active 4 : Set position at (30,-48) from magic_rainbow
+
+* Number of hit box = 0
+	Active : Make invisible
+
+* Number of hit box > 0
+	Active : Reappear
+
+* Alterable Value A of blood = 0
+	blood : Set Alterable Value A to 1
+	blood : Set speed to 10 + Random(70)
+
+* Number of hit box = 0
++ Only one action when event loops
+	deaths : Add 1 to Counter
+	magic_rainbow : Set Alterable Value B to 0
+
+* deaths = 1
++ Only one action when event loops
+	 Sound : Play sample voice02 on channel #2
+
+* deaths = 2
++ Only one action when event loops
+	 Sound : Play sample voice03 on channel #2
+
+* deaths = 3
++ Only one action when event loops
+	 Sound : Play sample voice04 on channel #2
+
+* deaths = 4
++ Only one action when event loops
+	 Sound : Play sample voice05 on channel #2
+
+* deaths = 5
++ Only one action when event loops
+	 Sound : Play sample voice06 on channel #2
+
+* deaths = 6
++ Only one action when event loops
+	 Sound : Play sample voice07 on channel #2
+
+* deaths = 7
++ Only one action when event loops
+	 Sound : Play sample voice08 on channel #2
+
+* deaths = 8
++ Only one action when event loops
+	 Sound : Play sample voice09 on channel #2
+
+* deaths = 9
++ Only one action when event loops
+	 Sound : Play sample voice10 on channel #2
+
+* deaths = 10
++ Only one action when event loops
+	 Sound : Play sample voice11 on channel #2
+
+* deaths = 11
++ Only one action when event loops
+	 Sound : Play sample voice12 on channel #2
+
+* deaths = 12
++ Only one action when event loops
+	 Sound : Play sample voice13 on channel #2
+
+* deaths = 13
++ Only one action when event loops
+	 Sound : Play sample voice14 on channel #2
+
+* deaths = 14
++ Only one action when event loops
+	 Sound : Play sample voice15 on channel #2
+
+* deaths = 15
++ Only one action when event loops
+	 Sound : Play sample voice16 on channel #2
+
+* deaths = 16
++ Only one action when event loops
+	 Sound : Play sample voice17 on channel #2
+
+* deaths = 17
++ Only one action when event loops
+	 Sound : Play sample voice18 on channel #2
+
+* deaths = 18
++ Only one action when event loops
+	 Sound : Play sample voice19 on channel #2
+
+* deaths = 19
++ Only one action when event loops
+	 Sound : Play sample voice20 on channel #2
+
+* deaths = 20
++ Only one action when event loops
+	 Sound : Play sample Ug on channel #2
+
+* deaths = 21
++ Only one action when event loops
+	 Sound : Play sample voice22 on channel #2
+
+* deaths = 22
++ Only one action when event loops
+	 Sound : Play sample voice23 on channel #2
+
+* deaths = 23
++ Only one action when event loops
+	 Sound : Play sample voice24 on channel #2
+
+* deaths = 24
++ Only one action when event loops
+	 Sound : Play sample voice25 on channel #2
+
+* deaths = 25
++ Only one action when event loops
+	 Sound : Play sample voice26 on channel #2
+
+* deaths = 26
++ Only one action when event loops
+	 Sound : Play sample HA on channel #2
+
+* deaths = 27
++ Only one action when event loops
+	 Sound : Play sample voice28 on channel #2
+
+* deaths = 28
++ Only one action when event loops
+	 Sound : Play sample voice29 on channel #2
+
+* deaths = 29
++ Only one action when event loops
+	 Sound : Play sample voice30 on channel #2
+
+* deaths = 30
++ Only one action when event loops
+	 Sound : Play sample voice31 on channel #2
+
+* deaths = 31
++ Only one action when event loops
+	 Sound : Play sample voice32 on channel #2
+
+* deaths = 32
++ Only one action when event loops
+	 Sound : Play sample voice33 on channel #2
+
+* deaths = 33
++ Only one action when event loops
+	 Sound : Play sample voice34 on channel #2
+
+* deaths = 34
++ Only one action when event loops
+	 Sound : Play sample voice17 (uninteruptable) on channel #2
+	game over : Set Counter to 1
+
+* hit box is overlapping trigger
++ Alterable Value A of trigger = 0
++ Only one action when event loops
+	Active 2 : Launch Active 6 toward .......... at speed 100
+	Active 2 : Launch Active 6 toward ........ at speed 100
+	Active 2 : Launch Active 6 toward ............... at speed 100
+	Active 2 : Launch Active 6 toward ............ at speed 100
+	Active 2 : Launch Active 6 toward ......... at speed 100
+	Active 2 : Launch Active 6 toward ................ at speed 100
+	Active 2 : Launch Active 6 toward .............. at speed 100
+	Active 2 : Launch Active 6 toward ........... at speed 100
+	 Sound : Play sample petal on channel #8
+	trigger : Set Alterable Value A to 1
+
+* Active 6 is getting closer than 0 pixels from window's edge
+	Active 6 : Destroy
+
+* Active 6 is overlapping hit box
+	hit box : Set Alterable Value D to 1
+
+* lazer is overlapping hit box
+	hit box : Set Alterable Value D to 1
+
+* spikes is overlapping hit box
++ WIN = 0
+	hit box : Set Alterable Value D to 1
+
+* spikes 2 is overlapping hit box
++ Alterable Value A of spikes 2 > 0
+	hit box : Set Alterable Value D to 1
+
+* spikes 2 is overlapping hit box
++ Alterable Value B of spikes 2 > 0
+	hit box : Set Alterable Value D to 1
+
+* Active 7 is overlapping hit box
+	hit box : Set Alterable Value D to 1
+
+* hit box is overlapping trigger 2
++ Alterable Value A of trigger 2 = 0
+	magic_rainbow : Set Alterable Value B to 50
+	trigger 2 : Set Alterable Value A to 1
+
+* Alterable Value B of magic_rainbow > 0
++ Every 00''-05
+	magic_rainbow : Sub 1 from Alterable Value B
+	magic_rainbow : Launch Active 7 toward ............... at speed 100
+	magic_rainbow : Launch Active 7 toward ............... at speed 100
+	magic_rainbow : Launch Active 7 toward .............. at speed 100
+	magic_rainbow : Launch Active 7 toward .............. at speed 100
+	magic_rainbow : Launch Active 7 toward ................ at speed 100
+	magic_rainbow : Launch Active 7 toward ................. at speed 100
+	magic_rainbow : Launch Active 7 toward ............. at speed 100
+
+* Active 7 is overlapping a backdrop
+	Active 7 : Destroy
+
+* Alterable Value B of magic_rainbow > 0
++ Every 00''-05
+	 Sound : Play sample rainbow on channel #12
+
+* Alterable Value A of lazer > 5
+	lazer : Destroy
+
+* lazer is getting closer than 0 pixels from window's edge
+	lazer : Destroy
+
+* hit box is overlapping trigger 3
+	Active 8 : Set Alterable Value A to 1
+
+* Alterable Value A of Active 8 = 1
+	Active 8 : Add 2 to Alterable Value B
+
+* Alterable Value B of Active 8 > 60
+	Active 8 : Launch lazer toward ............... at speed 100
+
+* Alterable Value B of Active 8 > 100
+	Active 8 : Set Alterable Value B to 0
+
+* Alterable Value B of Active 8 > 50
++ Only one action when event loops
+	 Sound : Play sample blazer on channel #15
+
+* hit box is overlapping trigger 4
+	Active 8 : Set Alterable Value A to 0
+	Active 8 : Set Alterable Value B to 0
+
+* hit box is overlapping trigger 5
++ Alterable Value A of trigger 5 = 0
+	trigger 5 : Set Alterable Value A to 1
+	spikes : Set Alterable Value A to 11
+	 Sound : Play sample spikes on channel #16
+
+* hit box is overlapping trigger 6
++ Alterable Value A of trigger 6 = 0
+	 Sound : Play sample spikes on channel #16
+	spikes 2 : Set Alterable Value A to 11
+	trigger 6 : Set Alterable Value A to 1
+
+* hit box is overlapping trigger 7
++ Alterable Value A of trigger 7 = 0
+	 Sound : Play sample logs on channel #16
+	log shoot : Launch Active 9 toward ............ at speed 100
+	trigger 7 : Set Alterable Value A to 1
+
+* hit box is overlapping trigger 8
++ Alterable Value A of trigger 8 = 0
+	 Sound : Play sample logs on channel #16
+	log shoot : Launch Active 9 toward ............ at speed 100
+	log shoot 2 : Launch Active 9 toward ............ at speed 100
+	trigger 8 : Set Alterable Value A to 1
+
+* hit box is overlapping trigger 9
++ Alterable Value A of trigger 9 = 0
+	trigger 9 : Set Alterable Value A to 1
+	magic_rainbow : Set Alterable Value G to 1
+
+* Alterable Value A of spikes > 0
+	spikes : Sub 1 from Alterable Value A
+	spikes : Set position at (0,-30) from spikes
+
+* Alterable Value A of spikes 2 > 0
+	spikes 2 : Sub 1 from Alterable Value A
+	spikes 2 : Set position at (0,40) from spikes 2
+
+* Alterable Value A of spikes = 1
+	spikes : Set Alterable Value B to 11
+
+* Alterable Value A of spikes 2 = 1
+	spikes 2 : Set Alterable Value B to 11
+
+* Alterable Value B of spikes > 0
+	spikes : Sub 1 from Alterable Value B
+	spikes : Set position at (0,30) from spikes
+
+* Alterable Value B of spikes 2 > 0
+	spikes 2 : Sub 1 from Alterable Value B
+	spikes 2 : Set position at (0,-40) from spikes 2
+
+* Alterable Value A of spikes = 0
++ Alterable Value B of spikes = 0
+	spikes : Set X position to X( "hit box" )
+
+* Alterable Value A of spikes 2 = 0
++ Alterable Value B of spikes 2 = 0
+	spikes 2 : Set X position to X( "hit box" )
+
+* Number of Active 9 > 0
+	Active 9 : Add 1 to Alterable Value A
+
+* Alterable Value A of Active 9 > 200
+	Active 9 : Destroy
+
+* Alterable Value G of magic_rainbow = 1
++ WIN = 0
++ Every 01''-00
+	New Objects : Create Active 10 at (0,0) from Active 3
+	New Objects : Create Active 10 at (0,0) from Active 4
+	 Sound : Play sample eye on channel #11
+
+* Active 10 is stopped
+	Active 10 : Set speed to 100
+	Active 10 : Look at (0,0) from hit box
+
+* Active 10 is overlapping a backdrop
+	Active 10 : Destroy
+
+* spikes is overlapping Active 10
+	New Objects : Create blood at (0,0) from Active 10
+	New Objects : Create blood at (0,0) from Active 10
+	New Objects : Create blood at (0,0) from Active 10
+	Active 10 : Destroy
+
+* hit box is overlapping win
++ WIN = 0
++ Counter = 0
+	WIN : Set Counter to 1
+	 Sound : Play sample voice29 (uninteruptable) on channel #2
+	found new : Set Counter to 43
+
+* hit box is overlapping win
++ WIN = 0
++ Counter > 0
+	WIN : Set Counter to 1
+	 Sound : Play sample voice34 (uninteruptable) on channel #2
+	found new : Set Counter to 44
+
+* WIN = 1
+	hit box : Set position at (11794,572)
+
+* WIN = 1
+	Active 10 : Destroy
+	Active 3 : Make invisible
+	Active 4 : Make invisible
+	magic_rainbow : Change animation sequence to Animation 12
+	great job : Reappear
+	Date & Time : Stop chrono
+
+* game over = 1
+	you suck : Reappear
+
+* deaths = 33
+	magic_rainbow : Change animation sequence to Animation 12
+	Active 3 : Make invisible
+	Active 4 : Make invisible
+
+* deaths = 34
+	magic_rainbow : Change animation sequence to Stopped
+	Active 3 : Reappear
+	Active 4 : Reappear
+
+* deaths = 33
++ Number of hit box > 0
++ Every 00''-25
++ mutesounds is not playing
+	Active 3 : Launch lazer at speed 100 toward (0,0) from hit box
+	 Sound : Play sample rainbow on channel #6
+	Active 4 : Launch lazer at speed 100 toward (0,0) from hit box
+
+* WIN = 1
++ Every 03''-00
+	storyboard controls : Jump to frame "earned new character" (44)
+
+* game over = 1
++ Every 02''-00
+	storyboard controls : Jump to frame "halloween land" (35)
+
+* Counter > 0
++ Every 01''-00
+	Counter : Subtract 1 from Counter
+
+* Start of Frame
+	Date & Time : Reset chrono
+	Date & Time : Start chrono
+
+* User clicks with left button on Active 12
++ deaths < 33
+	Sound : Stop any sample
+	Active 12 : Destroy
+	deaths : Set Counter to 33
+	 Sound : Play sample mutesounds (uninteruptable) on channel #2
+	 Sound : Play sample RecordScratch_S08MU_1244 (uninteruptable) on channel #3
+
+* Active 13 is stopped
+	Active 13 : Destroy
+

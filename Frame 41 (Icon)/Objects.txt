@@ -1,0 +1,27 @@
++ Object Definitions
+	+ Active 5
+		- Type: Active
+		- Images hash: 0xF8AC
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xBAB6
+	+ String
+		- Type: String
+		+ Texts
+			1: Foxy.EXE
+	+ Active 3
+		- Type: Active
+		- Images hash: 0xCA1F
+	+ Active 4
+		- Type: Active
+		- Images hash: 0x03C7
+	+ Active
+		- Type: Active
+		- Images hash: 0xB67C
++ Layer #1 (Layer 1)
+	- Active 5 [0, 0]
+	- Active 2 [63, 63]
+	- String [352, -128]
+	- Active 3 [30, 99]
+	- Active 4 [62, 69]
+	- Active [530, 306]

@@ -1,0 +1,8 @@
+* Start of Frame
+	Sound : Stop any sample
+	 Sound : Play sample base (uninteruptable) on channel #1
+
+* base is not playing
++ Every 00''-10
+	storyboard controls : Jump to frame "halloween land" (35)
+

@@ -1,0 +1,172 @@
++ Object Definitions
+	+ background
+		- Type: Active
+		- Images hash: 0xB2AE
+	+ Active 8
+		- Type: Active
+		- Images hash: 0x959B
+	+ Active 6
+		- Type: Active
+		- Images hash: 0x27A4
+	+ Active 7
+		- Type: Active
+		- Images hash: 0x2287
+	+ item box 2
+		- Type: Active
+		- Images hash: 0x9B67
+	+ Active
+		- Type: Active
+		- Images hash: 0x4174
+	+ what shop
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ character
+		- Type: Active
+		- Images hash: 0x4FB5
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xB8E8
+	+ tokens
+		- Type: Counter
+		- Images hash: 0x22B4
+	+ selection
+		- Type: Counter
+		- Images hash: 0x4306
+	+ current price
+		- Type: Counter
+		- Images hash: 0x4306
+	+ String
+		- Type: String
+		+ Texts
+			1: Welcome to Mendo's Endo-Upgrades!
+	+ Active 3
+		- Type: Active
+		- Images hash: 0x08A8
+	+ item box
+		- Type: Active
+		- Images hash: 0x89CA
+	+ item box 3
+		- Type: Active
+		- Images hash: 0x89CA
+	+ set item 1
+		- Type: Active
+		- Images hash: 0x2204
+	+ set item 2
+		- Type: Active
+		- Images hash: 0x2204
+	+ set item 3
+		- Type: Active
+		- Images hash: 0x2204
+	+ Active 5
+		- Type: Active
+		- Images hash: 0xC3EE
+	+ have slot 1?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ have slot 2?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ have slot 3?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ checkl
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Byte Icon
+		- Type: Active
+		- Images hash: 0x38D9
+	+ name
+		- Type: String
+		+ Texts
+			1: name
+	+ name 2
+		- Type: String
+		+ Texts
+			1: Equipped:
+	+ name 3
+		- Type: String
+		+ Texts
+			1: Equipped:
+	+ shopkeeper
+		- Type: Active
+		- Images hash: 0x9A57
+	+ Active 4
+		- Type: Active
+		- Images hash: 0x421A
+	+ armor item
+		- Type: Active
+		- Images hash: 0x24BB
+	+ armor item 4
+		- Type: Active
+		- Images hash: 0x4243
+	+ armor item 2
+		- Type: Active
+		- Images hash: 0x7D3B
+	+ armor item 3
+		- Type: Active
+		- Images hash: 0x4673
+	+ sold out 1
+		- Type: Active
+		- Images hash: 0x0BFA
+	+ sold out 2
+		- Type: Active
+		- Images hash: 0x0BFA
+	+ sold out 3
+		- Type: Active
+		- Images hash: 0x0BFA
+	+ price 1
+		- Type: Counter
+		- Images hash: 0x32EC
+	+ file slot
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Ini
+		- Type: Ini
++ Layer #1 (Layer 1)
+	- background [0, 0]
++ Layer #2 (Layer 2)
+	- Active 8 [82, 296]
+	- Active 6 [162, 337]
+	- Active 7 [50, 351]
+	- item box 2 [386, 222]
+	- Active [401, 99]
+	- what shop [12, -32]
+	- character [1025, 478]
+	- Active 2 [710, 443]
+	- tokens [516, 238]
+	- selection [781, -85]
+	- current price [782, -33]
+	- String [96, -227]
+	- Active 3 [255, 214]
+	- item box [183, 113]
+	- item box [398, 113]
+	- item box [613, 113]
+	- item box 3 [383, 328]
+	- set item 1 [179, 110]
+	- set item 2 [396, 112]
+	- set item 3 [615, 112]
+	- Active 5 [155, -88]
+	- have slot 1? [424, -104]
+	- have slot 2? [424, -86]
+	- have slot 3? [424, -68]
+	- checkl [548, -95]
+	- Byte Icon [600, -200]
+	- name [95, 47]
+	- name 2 [295, 264]
+	- name 3 [295, 371]
+	- name [313, 47]
+	- name [527, 47]
+	- shopkeeper [123, 459]
+	- Active 4 [110, 14]
+	- armor item [137, 66]
+	- armor item 4 [339, 285]
+	- armor item 2 [350, 66]
+	- armor item 3 [564, 69]
+	- sold out 1 [183, 117]
+	- sold out 2 [396, 115]
+	- sold out 3 [614, 111]
+	- price 1 [702, 178]
+	- price 1 [486, 178]
+	- price 1 [271, 178]
+	- file slot [351, -41]
+	- Ini [300, -100]

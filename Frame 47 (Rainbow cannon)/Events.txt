@@ -1,0 +1,54 @@
+* Start of Frame
+	 Sound : Play sample overload (uninteruptable) on channel #19
+
+* Always
+	Active : Set position at (-1,0) from Active
+	Active : Add 1 to Alterable Value A
+
+* Alterable Value A of Active >= 200
++ Only one action when event loops
+	Active 2 : Reappear
+	Active 3 : Reappear
+	Active 3 : Set Alterable Value B to 1
+	Active 4 : Reappear
+
+* damage is stopped
+	damage : Destroy
+
+* Alterable Value B of Active 3 = 1
++ Random(3) = 1
++ Pick one of make damage
+	New Objects : Create damage at (16,14) from make damage
+	damage : Set Counter to 99999
+	New Objects : Create pow at (0,0) from make damage
+	Active : Set Alterable Value D to Random(3) + 1
+
+* Always
+	Active 4 : Set position at (26,-24) from Active 3
+	 Active 5 : Set alpha-blending coefficient to 255 - Alterable Value C( "Active 3" )
+
+* pow animation Stopped is over
+	pow : Destroy
+
+* Alterable Value A of Active > 500
+	Active 3 : Add 1 to Alterable Value C
+
+* Alterable Value D of Active = 1
++ Only one action when event loops
+	Active : Set Alterable Value D to 0
+	 Sound : Play sample rpow1 on channel #4
+
+* Alterable Value D of Active = 2
++ Only one action when event loops
+	Active : Set Alterable Value D to 0
+	 Sound : Play sample rpow2 on channel #5
+
+* Alterable Value D of Active = 3
++ Only one action when event loops
+	Active : Set Alterable Value D to 0
+	 Sound : Play sample rpow3 on channel #6
+
+* Alterable Value C of Active 3 > 300
++ Only one action when event loops
+	storyboard controls : Jump to frame "game over" (7)
+

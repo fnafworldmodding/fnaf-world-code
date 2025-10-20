@@ -1,0 +1,219 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* Alterable Value A of critter 4 = 0
+	critter 4 : Set speed to 5 + Random(10)
+	critter 4 : Set Alterable Value A to 1
+
+* critter 4 is overlapping left side
+	critter 4 : Set direction to ...........
+	critter 4 : Set Alterable Value A to 0
+
+* critter 4 is overlapping right side
+	critter 4 : Set direction to ...............
+	critter 4 : Set Alterable Value A to 0
+
+* critter 4 is overlapping prize line 1
+	critter 4 : Change animation sequence to Stopped
+	critter 4 : Set Alterable Value A to 1
+
+* critter 4 is overlapping prize line 2
+	critter 4 : Change animation sequence to Animation 12
+	critter 4 : Set Alterable Value A to 2
+
+* critter 4 is overlapping prize line 3
+	critter 4 : Change animation sequence to Animation 13
+	critter 4 : Set Alterable Value A to 5
+
+* critter 4 is overlapping prize line 4
+	critter 4 : Change animation sequence to Animation 14
+	critter 4 : Set Alterable Value A to 10
+
+* critter 4 is overlapping prize line 5
+	critter 4 : Change animation sequence to Animation 15
+	critter 4 : Set Alterable Value A to 20
+
+* critter 4 is overlapping prize line 6
+	critter 4 : Change animation sequence to Animation 16
+	critter 4 : Set Alterable Value A to 50
+
+* critter 4 is overlapping prize line 7
+	critter 4 : Change animation sequence to Animation 18
+	critter 4 : Set Alterable Value A to 100
+
+* Start of Frame
++ Pick one of critter 4
+	critter 4 : Set direction to ...............
+
+* Start of Frame
++ Pick one of critter 4
+	critter 4 : Set direction to ...............
+
+* Start of Frame
++ Pick one of critter 4
+	critter 4 : Set direction to ...............
+
+* Start of Frame
++ Pick one of critter 4
+	critter 4 : Set direction to ...............
+
+* Start of Frame
++ Pick one of critter 4
+	critter 4 : Set direction to ...............
+
+* Start of Frame
++ Pick one of critter 4
+	critter 4 : Set direction to ...............
+
+* Start of Frame
++ Pick one of critter 4
+	critter 4 : Set direction to ...............
+
+* Start of Frame
++ Pick one of critter 4
+	critter 4 : Set direction to ...............
+
+* Start of Frame
++ Pick one of critter 4
+	critter 4 : Set direction to ...............
+
+* Start of Frame
++ Pick one of critter 4
+	critter 4 : Set direction to ...............
+
+* Start of Frame
++ Pick one of critter 4
+	critter 4 : Set direction to ...............
+
+* Start of Frame
++ Pick one of critter 4
+	critter 4 : Set direction to ...............
+
+* Alterable Value A of drop = 0
++ NOT drop is overlapping left side
++ NOT Active 2 is overlapping left side
++ Repeat while "A" is pressed
+	drop : Set position at (-10,0) from drop
+	Active 5 : Destroy
+	Active 6 : Destroy
+
+* Alterable Value A of drop = 0
++ NOT drop is overlapping right side
++ NOT Active 2 is overlapping right side
++ Repeat while "D" is pressed
+	drop : Set position at (10,0) from drop
+	Active 6 : Destroy
+	Active 5 : Destroy
+
+* User clicks with left button on Active 4
++ Alterable Value A of drop = 0
+	drop : Set Alterable Value A to 1
+
+* Alterable Value A of drop = 1
++ Alterable Value A of Active 2 = 0
+	drop : Set position at (0,10) from drop
+	Active 5 : Destroy
+	Active 6 : Destroy
+
+* hitbox is overlapping critter 4
++ Run this event once
+	drop : Set Alterable Value A to 2
+	left side : Destroy
+	right side : Destroy
+	bottom : Destroy
+	Active 2 : Set Alterable Value A to 1
+	won 2 : Set Counter to Alterable Value A( "critter 4" )
+	New Objects : Create won at (16,-23) from critter 4
+	won : Set Counter to Alterable Value A( "critter 4" )
+	 Sound : Play sample FANTASY_TONAL_SP_DSL31904 on channel #2
+
+* hitbox is overlapping bottom
+	drop : Set Alterable Value A to 2
+	left side : Destroy
+	right side : Destroy
+	bottom : Destroy
+	Active 2 : Set Alterable Value A to 1
+	 Sound : Play sample CARTOON_POP_DOUB_40013706 on channel #2
+
+* Counter = 0
+	drop : Set Alterable Value A to 2
+	left side : Destroy
+	right side : Destroy
+	bottom : Destroy
+	Active 2 : Set Alterable Value A to 1
+
+* Always
+	Active : Set position at (1,-1) from drop
+	hitbox : Set position at (0,40) from drop
+
+* Alterable Value A of drop = 0
+	Active 2 : Set position at (1,-9) from drop
+
+* Alterable Value A of Active 2 = 1
+	critter 4 : Set speed to 0
+
+* Every 01''-00
++ Counter > 0
++ Alterable Value A of drop = 0
+	Counter : Subtract 1 from Counter
+
+* Start of Frame
+	Sound : Stop any sample
+	 Sound : Play sample Water theme - Emerald Waterfalls (uninteruptable) on channel #1, 0 times
+
+* Alterable Value A of drop = 2
+	drop : Add 1 to Alterable Value D
+
+* Alterable Value D of drop > 150
+	storyboard controls : Jump to frame "wait" (10)
+
+* won 2 = 100
+	got pearl : Set Counter to 1
+
+* Alterable Value A of pearl <= 4
++ critter 4 is overlapping prize line 1
++ Pick one of critter 4
++ Only one action when event loops
+	critter 4 : Destroy
+
+* Alterable Value A of pearl <= 3
++ critter 4 is overlapping prize line 2
++ Pick one of critter 4
++ Only one action when event loops
+	critter 4 : Destroy
+
+* Alterable Value A of pearl <= 2
++ critter 4 is overlapping prize line 3
++ Pick one of critter 4
++ Only one action when event loops
+	critter 4 : Destroy
+
+* Alterable Value A of pearl <= 1
++ critter 4 is overlapping prize line 1
++ Pick one of critter 4
++ Only one action when event loops
+	critter 4 : Destroy
+
+* Alterable Value A of pearl = 0
++ critter 4 is overlapping prize line 1
++ Pick one of critter 4
++ Only one action when event loops
+	critter 4 : Destroy
+
+* Alterable Value A of pearl = 0
++ critter 4 is overlapping prize line 1
++ Pick one of critter 4
++ Only one action when event loops
+	critter 4 : Destroy
+
+* Upon pressing "S"
++ Alterable Value A of drop = 0
+	drop : Set Alterable Value A to 1
+
+* Always
+	Active 6 : Set position at (-4,56) from Active 2
+	Active 5 : Set position at (153,56) from Active 2
+
+* Always
+	test : Set Counter to Alterable Value A( "pearl" )
+

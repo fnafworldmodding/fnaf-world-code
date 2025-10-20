@@ -1,0 +1,28 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* Start of Frame
+	Sound : Stop any sample
+	 Sound : Play sample Computer_Noise_04_-_Stati (uninteruptable) on channel #1, 0 times
+	Ini : Set current file to "info"
+	Ini : Set current group to "info"
+	 Ini : Set value 1 to item "beatgame6"
+
+* Timer equals 02''-00
+	Active 3 : Reappear
+
+* Timer equals 07''-00
+	Active : Change animation sequence to Animation 12
+	Active 2 : Change animation sequence to Animation 12
+	New Objects : Create pow at (3,-105) from Active 2
+	New Objects : Create pow at (5,-109) from Active
+	Sound : Stop any sample
+	 Sound : Play sample comet1 on channel #2
+	Active 3 : Destroy
+
+* pow animation Stopped is over
+	pow : Destroy
+
+* Timer equals 14''-00
+	Active 4 : Reappear
+

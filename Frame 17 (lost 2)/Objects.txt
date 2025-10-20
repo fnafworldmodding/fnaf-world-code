@@ -1,0 +1,19 @@
++ Object Definitions
+	+ white
+		- Type: Active
+		- Images hash: 0x6010
+	+ fall
+		- Type: Counter
+		- Images hash: 0xE6BC
+	+ Active
+		- Type: Active
+		- Images hash: 0x5734
+	+ Active 7
+		- Type: Active
+		- Images hash: 0x40A3
++ Layer #1 (Layer 1)
+	- white [393, -51]
+	- fall [1, -36]
+	- Active [174, -67]
++ Layer #2 (Layer 2)
+	- Active 7 [0, -1]

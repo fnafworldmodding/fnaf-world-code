@@ -1,0 +1,13 @@
+* Always
+	white : Set position at (0,75) from white
+
+* Y position of white > 500
+	white : Set position at (219,16) from Active
+	fall : Add 1 to Counter
+
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* fall > 1000
+	storyboard controls : Next frame
+

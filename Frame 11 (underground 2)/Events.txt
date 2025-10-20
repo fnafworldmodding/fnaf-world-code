@@ -1,0 +1,130 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* NOT up is overlapping a backdrop
++ Repeat while "W" is pressed
++ Every 00''-30
+	center : Set position at (0,-30) from center
+
+* NOT down is overlapping a backdrop
++ Repeat while "S" is pressed
++ Every 00''-30
+	center : Set position at (0,30) from center
+
+* NOT right is overlapping a backdrop
++ Repeat while "D" is pressed
++ Every 00''-30
+	center : Set position at (30,0) from center
+
+* NOT left is overlapping a backdrop
++ Repeat while "A" is pressed
++ Every 00''-30
+	center : Set position at (-30,0) from center
+
+* Always
+	storyboard controls : Center display at (0,0) from center
+	up : Set position at (-1,-30) from center
+	down : Set position at (-1,27) from center
+	right : Set position at (37,3) from center
+	left : Set position at (-30,-1) from center
+	Active : Set position at (0,0) from center
+
+* Start of Frame
+	Sound : Stop any sample
+	 Sound : Play sample Underneath2b on channel #1, 0 times
+
+* go = 7
++ Only one action when event loops
+	center : Set position at (0,0) from exit 1
+	go : Set Counter to 0
+
+* go = 13
++ Only one action when event loops
+	center : Set position at (0,0) from exit 3
+	go : Set Counter to 0
+
+* go = 21
++ Only one action when event loops
+	center : Set position at (0,0) from exit 5
+	go : Set Counter to 0
+
+* go = 23
++ Only one action when event loops
+	center : Set position at (0,0) from exit 7
+	go : Set Counter to 0
+
+* go = 31
++ Only one action when event loops
+	center : Set position at (1,0) from exit 8
+	go : Set Counter to 0
+
+* go = 41
++ Only one action when event loops
+	center : Set position at (0,0) from exit 10
+	go : Set Counter to 0
+
+* go = 43
++ Only one action when event loops
+	center : Set position at (0,0) from exit 12
+	go : Set Counter to 0
+
+* go = 45
++ Only one action when event loops
+	center : Set position at (0,0) from exit 14
+	go : Set Counter to 0
+
+* go = 48
++ Only one action when event loops
+	center : Set position at (0,0) from exit 16
+	go : Set Counter to 0
+
+* Every 00''-05
++ Pick one of scanline 3
++ Pick one of Active 3
+	scanline 3 : Set position at (0,0) from Active 3
+	 scanline 3 : Set alpha-blending coefficient to 150 + Random(100)
+
+* center is overlapping exit 2
+	go : Set Counter to 8
+	storyboard controls : Jump to frame "underground 1" (9)
+
+* center is overlapping exit 4
+	go : Set Counter to 14
+	storyboard controls : Jump to frame "underground 1" (9)
+
+* center is overlapping exit 6
+	go : Set Counter to 22
+	storyboard controls : Jump to frame "underground 1" (9)
+
+* center is overlapping exit 9
+	go : Set Counter to 32
+	storyboard controls : Jump to frame "underground 1" (9)
+
+* center is overlapping exit 11
+	go : Set Counter to 42
+	storyboard controls : Jump to frame "underground 1" (9)
+
+* center is overlapping exit 13
+	go : Set Counter to 44
+	storyboard controls : Jump to frame "underground 1" (9)
+
+* center is overlapping exit 15
+	go : Set Counter to 46
+	storyboard controls : Jump to frame "underground 1" (9)
+
+* center is overlapping exit 17
+	go : Set Counter to 49
+	storyboard controls : Jump to frame "underground 1" (9)
+
+* Every 00''-10
+	 Active 4 : Set alpha-blending coefficient to Random(10) * 15
+	 Active 5 : Set alpha-blending coefficient to Random(10) * 15
+
+* center is overlapping Active 4
+	go : Set Counter to 30
+	storyboard controls : Jump to frame "underground 3" (12)
+
+* center is overlapping Active 5
+	go : Set Counter to 47
+	storyboard controls : Jump to frame "underground 3" (12)
+

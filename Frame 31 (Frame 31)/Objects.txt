@@ -1,0 +1,29 @@
++ Object Definitions
+	+ Active
+		- Type: Active
+		- Images hash: 0x1F8D
+	+ Active 2
+		- Type: Active
+		- Images hash: 0x0716
+	+ Active 3
+		- Type: Active
+		- Images hash: 0x611B
+	+ pow
+		- Type: Active
+		- Images hash: 0x3317
+	+ String
+		- Type: String
+		+ Texts
+			1: Universe end.
+	+ Active 4
+		- Type: Active
+		- Images hash: 0x778C
+	+ Ini
+		- Type: Ini
++ Layer #1 (Layer 1)
+	- Active [628, 413]
+	- Active 2 [178, 413]
+	- Active 3 [104, 50]
+	- String [100, -250]
+	- Active 4 [278, 150]
+	- Ini [-50, -100]

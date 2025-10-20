@@ -1,0 +1,56 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* User clicks with left button on Active
+	storyboard controls : Next frame
+
+* Alterable Value A of Active 3 < 415
+	Active 3 : Add 4 to Alterable Value A
+	Active 3 : Set position at (0,-4) from Active 3
+
+* Alterable Value A of Active 2 < 800
+	Active 2 : Add 5 to Alterable Value A
+	Active 2 : Set position at (5,0) from Active 2
+
+* Always
+	Active 4 : Add 2 to Alterable Value A
+	 Active 4 : Set alpha-blending coefficient to 255 - Alterable Value A( "Active 4" )
+	Active 6 : Add 2 to Alterable Value A
+	 Active 6 : Set alpha-blending coefficient to 255 - ( Alterable Value A( "Active 6" ) - 200 )
+	nose : Set position at (-37,-55) from Active 3
+
+* Alterable Value A of Active < 550
+	Active : Add 5 to Alterable Value A
+	Active : Set position at (-5,0) from Active
+
+* Every 00''-10
+	New Objects : Create sparkle 2 at (0,0) from spray
+
+* sparkle 2 is getting closer than 0 pixels from window's edge
+	sparkle 2 : Destroy
+
+* Alterable Value A of sparkle 2 = 0
+	sparkle 2 : Set Alterable Value A to 1
+	sparkle 2 : Set speed to 5 + Random(10)
+
+* Always
+	sparkle 2 : Reappear
+
+* sparkle 2 is overlapping invid
+	sparkle 2 : Make invisible
+
+* Alterable Value A of Active 2 >= 800
+	Active 2 : Change animation sequence to Stand up
+
+* Start of Frame
+	Sound : Stop any sample
+	 Sound : Play sample Title screen theme - One for the road draft1 (uninteruptable) on channel #1, 0 times
+	The mouse pointer and keyboard : Show Windows mouse pointer
+	 Cursor : Set shape from Active object "Active 32"
+
+* demo? = 1
+	Active 8 : Reappear
+
+* User clicks with left button on nose
+	 Sound : Play sample honk on channel #5
+

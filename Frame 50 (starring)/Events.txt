@@ -1,0 +1,17 @@
+* Start of Frame
+	 Sound : Play sample Fearless Fighter2 (uninteruptable) on channel #1, 0 times
+
+* Always
+	 Active 2 : Set alpha-blending coefficient to 255 - Alterable Value A( "Active 2" )
+	 Active 3 : Set alpha-blending coefficient to 255 - Alterable Value A( "Active 2" )
+
+* Timer is greater than 30''-00
+	Active 2 : Add 1 to Alterable Value A
+
+* Timer is greater than 05''-00
+	Active : Set position at (0,-1) from Active
+
+* Timer is greater than 30''-00
++ Upon pressing "Escape"
+	storyboard controls : End the application
+

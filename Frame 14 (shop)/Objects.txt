@@ -1,0 +1,157 @@
++ Object Definitions
+	+ background
+		- Type: Active
+		- Images hash: 0xB2AE
+	+ Active 8
+		- Type: Active
+		- Images hash: 0x959B
+	+ Active 6
+		- Type: Active
+		- Images hash: 0x27A4
+	+ Active 7
+		- Type: Active
+		- Images hash: 0x2287
+	+ item box 2
+		- Type: Active
+		- Images hash: 0x9B67
+	+ Active
+		- Type: Active
+		- Images hash: 0x4174
+	+ what shop
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ character
+		- Type: Active
+		- Images hash: 0x4FB5
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xB8E8
+	+ tokens
+		- Type: Counter
+		- Images hash: 0x22B4
+	+ selection
+		- Type: Counter
+		- Images hash: 0x4306
+	+ current price
+		- Type: Counter
+		- Images hash: 0x4306
+	+ shopkeeper
+		- Type: Active
+		- Images hash: 0xCD84
+	+ shop small
+		- Type: Active
+		- Images hash: 0x0CB9
+	+ String
+		- Type: String
+		+ Texts
+			1: Welcome to Lolbit's Byte Store!
+	+ String 2
+		- Type: String
+		+ Texts
+			1: 
+	+ Active 3
+		- Type: Active
+		- Images hash: 0x08A8
+	+ item box
+		- Type: Active
+		- Images hash: 0x89CA
+	+ price 1
+		- Type: Counter
+		- Images hash: 0x32EC
+	+ set item 1
+		- Type: Active
+		- Images hash: 0x2204
+	+ set item 2
+		- Type: Active
+		- Images hash: 0x2204
+	+ set item 3
+		- Type: Active
+		- Images hash: 0x2204
+	+ Active 5
+		- Type: Active
+		- Images hash: 0xC3EE
+	+ have slot 1?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ have slot 2?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ have slot 3?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ checkl
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ bought
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 4
+		- Type: Active
+		- Images hash: 0x5401
+	+ Byte Icon
+		- Type: Active
+		- Images hash: 0x38D9
+	+ sold out 3
+		- Type: Active
+		- Images hash: 0x0BFA
+	+ sold out 2
+		- Type: Active
+		- Images hash: 0x0BFA
+	+ sold out 1
+		- Type: Active
+		- Images hash: 0x0BFA
+	+ name
+		- Type: String
+		+ Texts
+			1: name
+	+ file slot
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Ini
+		- Type: Ini
++ Layer #1 (Layer 1)
+	- background [0, 0]
++ Layer #2 (Layer 2)
+	- Active 8 [82, 296]
+	- Active 6 [162, 337]
+	- Active 7 [50, 351]
+	- item box 2 [386, 222]
+	- Active [401, 99]
+	- what shop [12, -32]
+	- character [1025, 476]
+	- Active 2 [710, 443]
+	- tokens [516, 238]
+	- selection [781, -85]
+	- current price [782, -33]
+	- shopkeeper [117, 424]
+	- shop small [-136, 167]
+	- String [102, -311]
+	- String 2 [227, 252]
+	- Active 3 [255, 214]
+	- item box [183, 113]
+	- item box [398, 113]
+	- item box [613, 113]
+	- price 1 [271, 178]
+	- price 1 [486, 178]
+	- price 1 [702, 178]
+	- set item 1 [179, 110]
+	- set item 2 [396, 112]
+	- set item 3 [615, 112]
+	- Active 5 [155, -88]
+	- have slot 1? [424, -104]
+	- have slot 2? [424, -86]
+	- have slot 3? [424, -68]
+	- checkl [548, -95]
+	- bought [548, -77]
+	- Active 4 [127, 14]
+	- Byte Icon [131, 65]
+	- Byte Icon [351, 64]
+	- Byte Icon [566, 63]
+	- sold out 3 [614, 111]
+	- sold out 2 [396, 115]
+	- sold out 1 [183, 117]
+	- name [95, 47]
+	- name [313, 47]
+	- name [527, 47]
+	- file slot [-13, -67]
+	- Ini [300, -100]

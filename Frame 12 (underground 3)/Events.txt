@@ -1,0 +1,65 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* NOT up is overlapping a backdrop
++ Repeat while "W" is pressed
++ Every 00''-40
+	center : Set position at (0,-40) from center
+
+* NOT down is overlapping a backdrop
++ Repeat while "S" is pressed
++ Every 00''-40
+	center : Set position at (0,40) from center
+
+* NOT right is overlapping a backdrop
++ Repeat while "D" is pressed
++ Every 00''-40
+	center : Set position at (40,0) from center
+
+* NOT left is overlapping a backdrop
++ Repeat while "A" is pressed
++ Every 00''-40
+	center : Set position at (-40,0) from center
+
+* Always
+	storyboard controls : Center display at (0,0) from center
+	up : Set position at (-1,-34) from center
+	down : Set position at (0,25) from center
+	right : Set position at (28,-1) from center
+	left : Set position at (-33,-2) from center
+	Active : Set position at (0,0) from center
+
+* Start of Frame
+	Sound : Stop any sample
+	 Sound : Play sample Underneath3 on channel #1, 0 times
+
+* go = 30
++ Only one action when event loops
+	center : Set position at (1,0) from exit 1
+	go : Set Counter to 0
+
+* go = 47
++ Only one action when event loops
+	center : Set position at (0,0) from exit 3
+	go : Set Counter to 0
+
+* Every 00''-05
++ Pick one of scanline 3
++ Pick one of Active 3
+	scanline 3 : Set position at (0,0) from Active 3
+	 scanline 3 : Set alpha-blending coefficient to Random(10) * 30
+
+* center is overlapping exit 2
+	go : Set Counter to 31
+	storyboard controls : Jump to frame "underground 2" (11)
+
+* center is overlapping exit 4
+	go : Set Counter to 48
+	storyboard controls : Jump to frame "underground 2" (11)
+
+* Always
+	 Active 4 : Set alpha-blending coefficient to Random(10) * 5
+
+* center is overlapping Active 4
+	storyboard controls : Jump to frame "lost world" (16)
+

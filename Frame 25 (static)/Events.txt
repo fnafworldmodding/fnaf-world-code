@@ -1,0 +1,6 @@
+* Timer equals 02''-00
+	storyboard controls : Next frame
+
+* Start of Frame
+	 Sound : Play sample Computer_Noise_04_-_Stati on channel #1
+

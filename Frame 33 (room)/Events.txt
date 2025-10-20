@@ -1,0 +1,72 @@
+* Start of Frame
+	Fake : Set alterable string to ""
+	Sound : Stop any sample
+	The mouse pointer and keyboard : Hide Windows mouse pointer
+	in room : Set Counter to 1
+
+* Every 00''-10
++ Len(string$( "Real" )) > Len(string$( "Fake" ))
+	Fake : Set alterable string to Left$(string$( "Real" ), Len(string$( "Fake" )) + 1)
+	 Sound : Play sample text on channel #1
+	cooldown : Set Counter to 0
+
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* Len(string$( "Real" )) >= Len(string$( "Fake" ))
+	cooldown : Add 1 to Counter
+
+* cooldown = 200
++ Alterable Value B of star 1 = 0
+	text : Add 1 to Counter
+	Fake : Set alterable string to ""
+
+* text = 1
++ Only one action when event loops
+	Real : Set alterable string to "It's a vicious cycle, you know."
+
+* text = 2
++ Only one action when event loops
+	Real : Set alterable string to "But then, most things in life are."
+
+* text = 3
++ Only one action when event loops
+	Real : Set alterable string to "The pendulum swings one way, then it swings the other."
+
+* text = 4
++ Only one action when event loops
+	Real : Set alterable string to "Now we return to darkness."
+
+* text = 5
++ Only one action when event loops
+	Real : Set alterable string to "Something terrible is coming."
+
+* text = 6
++ Only one action when event loops
+	Real : Set alterable string to "Come back later. Maybe I will tell you more."
+
+* text = 7
++ Only one action when event loops
+	Real : Set alterable string to ""
+
+* Repeat while "S" is pressed
++ Every 00''-10
+	white : Set position at (0,10) from white
+
+* white is overlapping exit
+	storyboard controls : Jump to frame "wait" (10)
+
+* Every 05''-00
+	Active : Set Alterable Value A to Random(2)
+
+* Alterable Value A of Active = 0
++ Alterable Value B of star 1 = 0
+	Active : Change animation sequence to Stopped
+
+* Alterable Value A of Active = 1
++ Alterable Value B of star 1 = 0
+	Active : Change animation sequence to Animation 12
+
+* Alterable Value B of star 1 = 1
+	Active : Change animation sequence to Animation 13
+

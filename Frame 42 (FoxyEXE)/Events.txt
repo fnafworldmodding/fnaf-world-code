@@ -1,0 +1,166 @@
+* Repeat while "D" is pressed
++ X position of Active < 7800
++ area <> 4
+	Active : Set position at (3,0) from Active
+	Active : Set direction to ...........
+	Active : Change animation sequence to Walking
+	Active 3 : Add 1 to Alterable Value A
+	Active 13 : Destroy
+
+* Repeat while "A" is pressed
++ X position of Active > 200
++ area <> 4
+	Active : Set position at (-3,0) from Active
+	Active : Set direction to ...............
+	Active : Change animation sequence to Walking
+	Active 3 : Add 1 to Alterable Value A
+	Active 13 : Destroy
+
+* NOT Repeat while "D" is pressed
++ NOT Repeat while "A" is pressed
+	Active : Change animation sequence to Stopped
+
+* area = 1
++ Only one action when event loops
+	 Sound : Play sample Listen (uninteruptable) on channel #1, 0 times
+
+* area = 2
++ Only one action when event loops
+	 Sound : Play sample Flee (uninteruptable) on channel #1, 0 times
+
+* area = 3
++ Only one action when event loops
+	 Sound : Play sample Sure Step (uninteruptable) on channel #1, 0 times
+
+* area = 4
++ Only one action when event loops
+	Active : Change animation sequence to Stopped
+	Active 8 : Destroy
+	 Sound : Play sample scream2 (uninteruptable) on channel #1
+
+* Always
+	storyboard controls : Center display at (0,-210) from Active
+	 Perspective : Set zoom value: Alterable Value A( "trigger 2" )
+	Active 4 : Look at (0,0) from Active
+	Counter : Set Counter to Alterable Value A( "Active 3" )
+
+* Every 00''-10
+	 Active 2 : Set alpha-blending coefficient to Random(100)
+	 Active 3 : Set alpha-blending coefficient to Random(100)
+	 Active 5 : Set alpha-blending coefficient to Random(100)
+
+* Active is overlapping trigger
+	Active 2 : Change animation sequence to Animation 12
+
+* Repeat while "D" is pressed
++ Every 00''-10
++ area <> 4
+	trigger 2 : Add 1 to Alterable Value A
+
+* Repeat while "A" is pressed
++ Every 00''-10
++ X position of Active > 200
++ area <> 4
+	trigger 2 : Sub 1 from Alterable Value A
+
+* Alterable Value A of trigger 2 > 900
+	trigger 2 : Set Alterable Value A to 900
+
+* Active is overlapping trigger 2
++ Only one action when event loops
+	Active : Set Y position to Y( "Active" ) + 480
+	Active : Set X position to 1000
+	area : Add 1 to Counter
+
+* Start of Frame
+	The mouse pointer and keyboard : Hide Windows mouse pointer
+
+* Active 4 is getting closer than 0 pixels from window's edge
++ Alterable Value A of Active 4 = 0
+	Active 4 : Destroy
+	Active 4 : Set Alterable Value A to 1
+
+* area = 2
++ Alterable Value A of Active 3 > 200
++ Number of Active 4 = 0
++ Repeat while "D" is pressed
++ Every 01''-00
++ Random(10) = 1
+	 Sound : Play sample XSCREAM2 on channel #4
+	New Objects : Create Active 4 at (200,0) from Active
+	Active 3 : Set Alterable Value A to 0
+	Active 4 : Look at (0,0) from Active
+
+* area = 2
++ Alterable Value A of Active 3 > 200
++ Number of Active 4 = 0
++ Repeat while "A" is pressed
++ Every 01''-00
++ Random(10) = 1
+	 Sound : Play sample XSCREAM2 on channel #4
+	New Objects : Create Active 4 at (-200,0) from Active
+	Active 3 : Set Alterable Value A to 0
+	Active 4 : Look at (0,0) from Active
+
+* NOT Repeat while "D" is pressed
++ NOT Repeat while "A" is pressed
+	Active 3 : Set Alterable Value A to 0
+
+* X position of Active >= 7800
+	Active 3 : Set Alterable Value A to 0
+
+* X position of Active <= 200
+	Active 3 : Set Alterable Value A to 0
+
+* area = 3
++ Only one action when event loops
+	Perspective : Make invisible
+	Perspective 2 : Reappear
+
+* X position of Active 6 < X( "Active" ) + 400
++ area = 3
+	Active 6 : Set Alterable Value A to 1
+
+* Active is overlapping Active 6
++ NOT Active is overlapping Active 7
++ Only one action when event loops
+	 Sound : Play sample scream (2) (uninteruptable) on channel #5
+	lives : Subtract 1 from Counter
+	Active 9 : Set Alterable Value A to 0
+
+* Alterable Value A of Active 6 = 1
+	Active 6 : Set position at (-1,0) from Active 6
+
+* area = 4
++ Only one action when event loops
+	Perspective : Make invisible
+	Perspective 2 : Make invisible
+
+* area = 4
++ Every 04''-00
++ Run this event once
+	storyboard controls : Jump to frame "earned new character" (44)
+
+* Active is overlapping Active 4
++ Alterable Value A of Active 4 = 0
+	lives : Subtract 1 from Counter
+	Active 4 : Destroy
+	Active 4 : Set Alterable Value A to 1
+	 Sound : Play sample scream (2) (uninteruptable) on channel #5
+	Active 9 : Set Alterable Value A to 0
+
+* Start of Frame
+	Active 9 : Set Alterable Value A to 255
+
+* Alterable Value A of Active 9 < 255
+	 Active 9 : Set alpha-blending coefficient to Alterable Value A( "Active 9" )
+	Active 9 : Add 5 to Alterable Value A
+
+* lives = 0
++ Only one action when event loops
+	storyboard controls : Jump to frame "game over" (43)
+
+* area = 4
++ Only one action when event loops
+	found new : Set Counter to 46
+

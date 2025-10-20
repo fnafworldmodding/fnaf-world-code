@@ -1,0 +1,30 @@
++ Object Definitions
+	+ String
+		- Type: String
+		+ Texts
+			1: I will put you back together.
+	+ make box
+		- Type: Active
+		- Images hash: 0xC844
+	+ text
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active
+		- Type: Active
+		- Images hash: 0xD6C1
+	+ black box
+		- Type: Active
+		- Images hash: 0x743A
+	+ Ini
+		- Type: Ini
+	+ Active 2
+		- Type: Active
+		- Images hash: 0x3737
++ Layer #1 (Layer 1)
+	- String [97, -257]
+	- make box [106, -34]
+	- text [311, -65]
+	- Ini [-41, -78]
++ Layer #2 (Layer 2)
+	- Active 2 [374, 307]
+	- Active 2 [408, 307]

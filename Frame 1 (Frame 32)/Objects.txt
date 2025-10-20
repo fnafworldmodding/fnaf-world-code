@@ -1,0 +1,11 @@
++ Object Definitions
+	+ String
+		- Type: String
+		+ Texts
+			1: WARNING:\n\nThis game contains flashing lights\nand disorienting effects.
+	+ Active
+		- Type: Active
+		- Images hash: 0x6B6A
++ Layer #1 (Layer 1)
+	- String [151, -312]
+	- Active [153, 135]

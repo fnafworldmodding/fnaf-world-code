@@ -1,0 +1,1476 @@
+* Start of Frame
+	Sound : Stop any sample
+	 Sound : Play sample Fearless Fighter2 on channel #1, 0 times
+
+* Repeat while "D" is pressed
++ NOT move is overlapping right wall
++ Alterable Value A of move = 1
++ beat = 0
+	move : Set position at (5,0) from move
+
+* Repeat while "A" is pressed
++ NOT move is overlapping left wall
++ Alterable Value A of move = 1
++ beat = 0
+	move : Set position at (-5,0) from move
+
+* Repeat while "W" is pressed
++ NOT move is overlapping top wall
++ Alterable Value A of move = 1
++ beat = 0
+	move : Set position at (0,-5) from move
+	Active : Change animation sequence to Animation 12
+
+* Repeat while "S" is pressed
++ NOT move is overlapping bottom wall
++ Alterable Value A of move = 1
++ beat = 0
+	move : Set position at (0,5) from move
+	Active : Change animation sequence to Animation 13
+
+* Always
+	Active : Set position at (0,0) from move
+
+* NOT Repeat while "W" is pressed
++ NOT Repeat while "S" is pressed
+	Active : Change animation sequence to Stopped
+
+* bullet is getting closer than 0 pixels from window's edge
+	bullet : Destroy
+
+* current weapon = 0
++ Repeat while "Shift" is pressed
++ Every 00''-13
++ beat = 0
+	 Sound : Play sample shot on channel #9
+	shoot from : Launch bullet toward ........ at speed 100
+	shoot from 2 : Launch bullet toward ........ at speed 100
+
+* current weapon = 4
++ Repeat while "Shift" is pressed
++ Every 00''-08
++ beat = 0
+	 Sound : Play sample shot on channel #9
+	shoot from : Launch bullet toward ........ at speed 100
+	shoot from 2 : Launch bullet toward ........ at speed 100
+
+* current weapon = 1
++ Repeat while "Shift" is pressed
++ Every 00''-22
++ beat = 0
+	 Sound : Play sample laser on channel #9
+	move : Launch bullet toward ........ at speed 200
+	move : Launch bullet toward ........ at speed 200
+	move : Launch bullet toward .................. at speed 200
+	move : Launch bullet toward ................ at speed 200
+	move : Launch bullet toward ................. at speed 200
+	move : Launch bullet toward ........ at speed 200
+	move : Launch bullet toward ........ at speed 200
+	move : Launch bullet toward ......... at speed 200
+	move : Launch bullet toward ................ at speed 200
+	bullet : Set Alterable Value A to 1
+
+* current weapon = 3
++ Repeat while "Shift" is pressed
++ Every 00''-09
++ beat = 0
+	 Sound : Play sample homing on channel #9
+	New Objects : Create bullet at (41,34) from Active
+	bullet : Set Alterable Value A to 3
+
+* current weapon = 2
++ Repeat while "Shift" is pressed
++ Every 00''-50
++ Number of laserball < 2
++ beat = 0
+	 Sound : Play sample firelaser on channel #19
+	New Objects : Create laserball at (67,17) from Active
+
+* Alterable Value A of bullet = 0
+	bullet : Set position at (10,0) from bullet
+
+* Active animation Stopped is playing
+	shoot from : Set position at (30,23) from Active
+	shoot from 2 : Set position at (30,35) from Active
+
+* Active animation Animation 12 is playing
+	shoot from : Set position at (30,7) from Active
+	shoot from 2 : Set position at (30,48) from Active
+
+* Active animation Animation 13 is playing
+	shoot from : Set position at (30,7) from Active
+	shoot from 2 : Set position at (30,48) from Active
+
+* Every 00''-20
++ X position of Active 2 > -1300
+	Active 2 : Set position at (-1,0) from Active 2
+
+* Every 00''-01
+	fast clouds : Set position at (-5,0) from fast clouds
+	fast clouds 2 : Set position at (-10,0) from fast clouds 2
+	fast clouds 3 : Set position at (-20,0) from fast clouds 3
+
+* X position of fast clouds <= -1000
+	fast clouds : Set position at (1000,0)
+
+* X position of fast clouds 2 <= -1000
+	fast clouds 2 : Set X position to 1000
+
+* X position of fast clouds 3 <= -1000
+	fast clouds 3 : Set X position to 1000
+
+* phase = 1
++ Every 02''-00
++ Run this event once
+	what character 2 : Set Counter to 1
+	comm : Set Counter to value( "phase" )
+
+* phase = 2
++ Every 03''-00
++ Run this event once
+	what character 2 : Set Counter to 3
+	Chica plane : Next movement
+	comm : Set Counter to value( "phase" )
+
+* phase = 3
++ Every 01''-00
++ Run this event once
+	what character 2 : Set Counter to 4
+	Chica plane 2 : Next movement
+	comm : Set Counter to value( "phase" )
+
+* phase = 4
++ Every 01''-00
++ Run this event once
+	what character 2 : Set Counter to 2
+	Chica plane 3 : Next movement
+	comm : Set Counter to value( "phase" )
+
+* phase = 5
++ Every 04''-00
++ Run this event once
+	what character 2 : Set Counter to 6
+	comm : Set Counter to value( "phase" )
+
+* phase = 6
++ Every 00''-50
++ Run this event once
+	what character 2 : Set Counter to 5
+	comm : Set Counter to value( "phase" )
+
+* phase = 7
++ Every 00''-50
++ Run this event once
+	what character 2 : Set Counter to 6
+	comm : Set Counter to value( "phase" )
+
+* phase = 8
++ Every 00''-50
++ Run this event once
+	what character 2 : Set Counter to 5
+	comm : Set Counter to value( "phase" )
+
+* phase = 9
++ Every 00''-10
++ Run this event once
+	what character 2 : Set Counter to 3
+	comm : Set Counter to value( "phase" )
+
+* phase = 10
++ Every 00''-10
++ Run this event once
+	what character 2 : Set Counter to 3
+	comm : Set Counter to value( "phase" )
+
+* phase = 11
++ Every 00''-10
++ Run this event once
+	what character 2 : Set Counter to 3
+	comm : Set Counter to value( "phase" )
+
+* phase = 12
++ Every 00''-10
++ Run this event once
+	what character 2 : Set Counter to 3
+	comm : Set Counter to value( "phase" )
+
+* comm > 0
++ Only one action when event loops
+	Active 3 : Destroy
+	New Objects : Create Active 3 at (47,-58) from make from
+	 Sound : Play sample Walkie_Talkie_Squelch_05 (uninteruptable) on channel #3
+	 what character : Bring to front
+	 String : Bring to front
+
+* Start of Frame
+	Active 3 : Destroy
+	The mouse pointer and keyboard : Hide Windows mouse pointer
+
+* Active 3 animation Stopped is over
+	Active 3 : Change animation sequence to Animation 13
+
+* Active 3 animation Animation 12 is over
+	Active 3 : Destroy
+
+* Active 3 animation Animation 13 is playing
+	what character : Reappear
+	String : Reappear
+
+* NOT Active 3 animation Animation 13 is playing
+	what character : Make invisible
+	String : Make invisible
+
+* Number of Active 3 = 0
+	what character : Make invisible
+
+* comm = 1
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample Fredbear1b on channel #4
+
+* comm = 2
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample ToyChica1 on channel #4
+
+* comm = 3
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample NChica1 on channel #4
+
+* comm = 4
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample JJ1 on channel #4
+
+* comm = 5
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample Villain_Line_1_Take_2 on channel #4
+
+* comm = 6
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample Foxy1 on channel #4
+
+* comm = 7
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample Villain_Line_3_Take_1 on channel #4
+
+* comm = 8
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample Foxy2 on channel #4
+
+* comm = 9
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample ToyChica2_2 on channel #4
+
+* comm = 10
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample ToyChica3_2 on channel #4
+
+* comm = 30
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample barrelroll on channel #4
+
+* comm = 31
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample ToyChica2_2 on channel #4
+
+* comm = 32
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample Villain_Line_4_Take_1 on channel #4
+
+* comm = 50
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample Villain_Line_5_Take_2 (uninteruptable) on channel #4
+
+* comm = 51
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample NChica2 on channel #4
+
+* comm = 52
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample ToyChicaNO2 on channel #4
+
+* comm = 55
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample Foxy3 on channel #4
+
+* comm = 11
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample ToyChica3c_2 on channel #4
+	spin : Reappear
+
+* comm = 12
++ what character is visible
++ Only one action when event loops
+	 Sound : Play sample ToyChica3b_2 on channel #4
+	big : Reappear
+	spin : Make invisible
+	spin 2 : Make invisible
+
+* Fredbear1b is not playing
++ comm = 1
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	phase : Add 1 to Counter
+	make enemies : Set Alterable Value A to 10
+
+* ToyChica1 is not playing
++ comm = 2
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	phase : Add 1 to Counter
+
+* NChica1 is not playing
++ comm = 3
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	phase : Add 1 to Counter
+
+* JJ1 is not playing
++ comm = 4
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	phase : Add 1 to Counter
+	make enemies : Set Alterable Value A to 15
+
+* Villain_Line_1_Take_2 is not playing
++ comm = 5
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	phase : Add 1 to Counter
+
+* Foxy1 is not playing
++ comm = 6
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	phase : Add 1 to Counter
+
+* Villain_Line_3_Take_1 is not playing
++ comm = 7
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	phase : Add 1 to Counter
+
+* Foxy2 is not playing
++ comm = 8
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	make enemies : Set Alterable Value A to 15
+
+* ToyChica2_2 is not playing
++ comm = 9
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	phase : Add 1 to Counter
+
+* ToyChica3_2 is not playing
++ comm = 10
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	phase : Add 1 to Counter
+
+* ToyChica3c_2 is not playing
++ comm = 11
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	phase : Add 1 to Counter
+	spin : Make invisible
+	spin 2 : Make invisible
+
+* ToyChica3b_2 is not playing
++ comm = 12
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	phase : Add 1 to Counter
+	big : Make invisible
+
+* barrelroll is not playing
++ comm = 30
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+
+* ToyChica2_2 is not playing
++ comm = 31
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+
+* Villain_Line_4_Take_1 is not playing
++ comm = 32
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+
+* Villain_Line_5_Take_2 is not playing
++ comm = 50
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+
+* NChica2 is not playing
++ comm = 51
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+
+* ToyChicaNO2 is not playing
++ comm = 52
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+
+* Foxy3 is not playing
++ comm = 55
++ what character is visible
++ Every 00''-11
+	close : Set Counter to 1
+	comm : Set Counter to 0
+	beat : Set Counter to 1
+
+* close = 1
+	 Sound : Play sample Walkie_Talkie_Squelch_05 (uninteruptable) on channel #3
+	what character : Make invisible
+	Active 3 : Change animation sequence to Animation 12
+	comm : Set Counter to 0
+	close : Set Counter to 0
+
+* what character is visible
++ Only one action when event loops
+	 Sound : Set volume of channel #1 to 25
+	Active 3 : Set Alterable Value A to 0
+	 Sound : Set volume of channel #9 to 25
+	 Sound : Set volume of channel #8 to 25
+	 Sound : Set volume of channel #12 to 25
+	 Sound : Set volume of channel #14 to 25
+	 Sound : Set volume of channel #19 to 10
+
+* what character is invisible
++ Only one action when event loops
+	 Sound : Set volume of channel #1 to 100
+	 Sound : Set volume of channel #9 to 100
+	 Sound : Set volume of channel #8 to 100
+	 Sound : Set volume of channel #12 to 100
+	 Sound : Set volume of channel #14 to 100
+	 Sound : Set volume of channel #19 to 100
+
+* what character is visible
+	Active 3 : Add 1 to Alterable Value A
+
+* comm = 1
++ Only one action when event loops
+	String : Set alterable string to "What's this, a space shooter?"
+
+* comm = 2
++ Only one action when event loops
+	String : Set alterable string to "Alrighty! I'm ready for action!"
+
+* comm = 3
++ Only one action when event loops
+	String : Set alterable string to "Sorry I'm late for the party; fashionably late of course!"
+
+* comm = 4
++ Only one action when event loops
+	String : Set alterable string to "Let's kick this party into high gear!"
+
+* comm = 5
++ Only one action when event loops
+	String : Set alterable string to "Fools! How dare you challenge me!"
+	Active 9 : Set speed to 3
+
+* comm = 6
++ Only one action when event loops
+	String : Set alterable string to "Souldozer! I should have known it was you!"
+
+* comm = 7
++ Only one action when event loops
+	String : Set alterable string to "I wasn't fully appreciated in my last outing..."
+
+* comm = 8
++ Only one action when event loops
+	String : Set alterable string to "Well, we're here to take back what's ours!"
+
+* comm = 9
++ Only one action when event loops
+	String : Set alterable string to "Bingo! Got him!"
+
+* comm = 10
++ Only one action when event loops
+	String : Set alterable string to "You won't get tired of my voice, will you?"
+
+* comm = 30
++ Only one action when event loops
+	String : Set alterable string to "Do a barrel roll!"
+
+* comm = 31
++ Only one action when event loops
+	String : Set alterable string to "Bingo! Got him!"
+
+* comm = 32
++ Only one action when event loops
+	String : Set alterable string to "Fools! Turn back now and I'll spare your lives!"
+
+* comm = 50
++ Only one action when event loops
+	String : Set alterable string to "IMPOSSIBLE! You haven't seen the last of me!"
+
+* comm = 51
++ Only one action when event loops
+	String : Set alterable string to "At least I went down in a blaze of glory!"
+	what character 2 : Set Counter to 4
+
+* comm = 52
++ Only one action when event loops
+	String : Set alterable string to "NOOOOOOOOOOOOOOOOOOOOO!!!"
+	what character 2 : Set Counter to 3
+
+* comm = 55
++ Only one action when event loops
+	String : Set alterable string to "Great job guys, err.... GALS!"
+	what character 2 : Set Counter to 5
+
+* comm = 1
++ Alterable Value A of Active 3 = 150
++ Only one action when event loops
+	String : Set alterable string to "Holy crap! Is that my voice?!"
+
+* comm = 1
++ Alterable Value A of Active 3 = 300
++ Only one action when event loops
+	String : Set alterable string to "Voice acting?! NOOOOO! He's gone too far this time!"
+
+* comm = 1
++ Alterable Value A of Active 3 = 550
++ Only one action when event loops
+	String : Set alterable string to "You need to shut this game DOWN!"
+
+* comm = 6
++ Alterable Value A of Active 3 = 200
++ Only one action when event loops
+	String : Set alterable string to "You're not even in the right game!"
+
+* comm = 7
++ Alterable Value A of Active 3 = 200
++ Only one action when event loops
+	String : Set alterable string to "But now I'm back to show you my full power!"
+
+* comm = 8
++ Alterable Value A of Active 3 = 150
++ Only one action when event loops
+	String : Set alterable string to "This will be your last cameo!"
+	stage progress : Set Counter to 1
+
+* comm = 30
++ Alterable Value A of Active 3 = 100
++ Only one action when event loops
+	String : Set alterable string to "Sorry, I'm not sure what came over me."
+
+* comm = 32
++ Alterable Value A of Active 3 = 250
++ Only one action when event loops
+	String : Set alterable string to "Or, more likely, I'll just chase you around and kill you anyway!"
+
+* comm = 50
++ Alterable Value A of Active 3 = 250
++ Only one action when event loops
+	String : Set alterable string to "Well, actually yes this is the last you'll see of me."
+
+* comm = 55
++ Alterable Value A of Active 3 = 200
++ Only one action when event loops
+	String : Set alterable string to "I see the processing core! Let's blow it up and get out of here!"
+
+* comm = 11
++ Alterable Value A of Active 3 > 200
++ Every 00''-25
++ spin 2 is invisible
++ Pick one of spin 2
+	spin 2 : Reappear
+
+* Start of Frame
+	String : Make invisible
+
+* what character 2 = 1
+	what character : Change animation sequence to Stopped
+
+* what character 2 = 2
+	what character : Change animation sequence to Animation 12
+
+* what character 2 = 3
+	what character : Change animation sequence to Animation 13
+
+* what character 2 = 4
+	what character : Change animation sequence to Animation 14
+
+* what character 2 = 5
+	what character : Change animation sequence to Animation 15
+
+* what character 2 = 6
+	what character : Change animation sequence to Animation 16
+
+* Start of Frame
+	phase : Set Counter to 1
+
+* Chica plane has reached the end of its path
+	Chica plane : Next movement
+	Chica plane : Set speed to 10
+	Chica plane : Set Alterable Value A to 1
+
+* Chica plane 2 has reached the end of its path
++ Run this event once
+	Chica plane 2 : Next movement
+	Chica plane 2 : Set speed to 10
+	Chica plane 2 : Set Alterable Value A to 1
+
+* Chica plane 3 has reached the end of its path
+	Chica plane 3 : Next movement
+	Chica plane 3 : Set speed to 10
+	Chica plane 3 : Set Alterable Value A to 1
+
+* Alterable Value A of Chica plane = 1
+	Chica plane : Look at (0,0) from plane follow 1
+
+* Alterable Value A of Chica plane 2 = 1
+	Chica plane 2 : Look at (0,0) from plane follow 2
+
+* Alterable Value A of Chica plane 3 = 1
+	Chica plane 3 : Look at (0,0) from plane follow 3
+
+* Alterable Value A of Chica plane = 1
++ Every 02''-00
++ Random(2) = 1
+	Chica plane : Set Alterable Value B to 10
+
+* Alterable Value A of Chica plane 2 = 1
++ Every 02''-00
++ Random(2) = 1
+	Chica plane 2 : Set Alterable Value B to 10
+
+* Alterable Value A of Chica plane 3 = 1
++ Every 01''-00
++ Random(2) = 1
+	Chica plane 3 : Set Alterable Value B to 5
+
+* Alterable Value B of Chica plane > 0
++ Every 00''-10
++ beat = 0
+	 Sound : Play sample shot on channel #9
+	Chica plane : Launch bullet toward ........ at speed 100
+	Chica plane : Sub 1 from Alterable Value B
+
+* Alterable Value B of Chica plane 2 > 0
++ Every 00''-10
++ beat = 0
+	 Sound : Play sample shot on channel #9
+	Chica plane 2 : Launch bullet toward ........ at speed 100
+	Chica plane 2 : Sub 1 from Alterable Value B
+
+* Alterable Value B of Chica plane 3 > 0
++ Every 00''-10
++ beat = 0
+	 Sound : Play sample shot on channel #9
+	Chica plane 3 : Launch bullet toward ........ at speed 100
+	Chica plane 3 : Sub 1 from Alterable Value B
+
+* Every 01''-00
+	 Active : Bring to front
+
+* Alterable Value D of bullet = 0
+	New Objects : Create muzzle at (0,-3) from bullet
+	bullet : Set Alterable Value D to 1
+
+* muzzle animation Stopped is over
+	muzzle : Destroy
+
+* Active 4 is getting closer than 0 pixels from window's edge
+	Active 4 : Destroy
+
+* Number of Active > 0
++ Every 00''-05
+	New Objects : Create Active 4 at (-44,8) from Active
+
+* Number of Chica plane > 0
++ Every 00''-05
+	New Objects : Create Active 4 at (-45,15) from Chica plane
+
+* Number of Chica plane 2 > 0
++ Every 00''-05
+	New Objects : Create Active 4 at (-38,23) from Chica plane 2
+
+* Number of Chica plane 3 > 0
++ Every 00''-05
+	New Objects : Create Active 4 at (-39,19) from Chica plane 3
+
+* Always
+	Active 4 : Set position at (-10,0) from Active 4
+
+* Active 4 animation Stopped is over
+	Active 4 : Destroy
+
+* move has reached the end of its path
+	move : Set Alterable Value A to 1
+
+* Collision between bullet and Active 5
+	Active 5 : Sub 1 from Alterable Value A
+	Active 5 : Set Alterable Value B to 3
+	bullet : Destroy
+	 Sound : Play sample hit4 on channel #12
+	Active 13 : Make invisible
+
+* Alterable Value B of Active 5 = 0
+	 Active 5 : Set effect to "Semi-transparent"
+
+* Alterable Value B of Active 5 > 0
+	 Active 5 : Set effect to "Add"
+	Active 5 : Sub 1 from Alterable Value B
+
+* Active 5 is overlapping left wall
+	Active 5 : Destroy
+	minor kills : Subtract 1 from Counter
+
+* Alterable Value A of Active 5 < -1
+	 Sound : Play sample pow2 on channel #8
+	Active 5 : Destroy
+	New Objects : Create POW 2 at (0,0) from Active 5
+	minor kills : Add 1 to Counter
+
+* POW animation Stopped is over
+	POW : Destroy
+
+* stage progress > 0
++ what character is invisible
++ comm = 0
++ Number of Active 7 = 0
++ Number of Active 6 = 0
++ Number of Active 5 = 0
++ Alterable Value A of make enemies = 0
++ Alterable Value B of make enemies = 0
++ Alterable Value A of drop rat = 0
++ Every 01''-00
+	stage progress : Add 1 to Counter
+
+* Alterable Value A of make enemies > 0
++ Alterable Value C of make enemies = 0
++ Every 00''-20
+	make enemies : Sub 1 from Alterable Value A
+	New Objects : Create Active 5 at (15,86) from make enemies
+
+* Alterable Value A of make enemies > 0
++ Alterable Value C of make enemies = 1
++ Every 00''-20
+	make enemies : Sub 1 from Alterable Value A
+	New Objects : Create Active 5 at (20,402) from make enemies
+	Active 5 : Select movement Movement #5 (number 1)
+
+* POW 2 animation Stopped is over
+	POW 2 : Destroy
+
+* Number of POW 2 > 0
+	POW 2 : Set position at (-10,0) from POW 2
+
+* Number of POW > 0
+	POW : Set position at (-5,0) from POW
+
+* Every 01''-00
+	make enemies : Set Alterable Value C to Random(2)
+
+* Start of Frame
+	Active 5 : Destroy
+	Active 6 : Destroy
+	Active 7 : Destroy
+
+* Alterable Value A of drop rat > 0
++ Every 01''-00
+	New Objects : Create Active 6 at (0,0) from drop rat
+	drop rat : Sub 1 from Alterable Value A
+
+* Active 6 is overlapping bottom wall
+	Active 6 : Set Alterable Value E to 1
+
+* Alterable Value E of Active 6 = 0
+	Active 6 : Set speed to 10 + Random(10)
+	Active 6 : Set Alterable Value D to 1
+
+* Every 01''-00
+	Active 6 : Set direction to ..................
+
+* Alterable Value E of Active 6 = 1
++ Active 6 is getting closer than 0 pixels from window's edge
+	Active 6 : Destroy
+
+* bullet is overlapping Active 6
+	Active 6 : Sub 1 from Alterable Value A
+	Active 6 : Set Alterable Value B to 3
+	bullet : Destroy
+	 Sound : Play sample hit4 on channel #12
+
+* Alterable Value B of Active 6 = 0
+	 Active 6 : Set effect to "Semi-transparent"
+
+* Alterable Value B of Active 6 > 0
+	 Active 6 : Set effect to "Add"
+	Active 6 : Sub 1 from Alterable Value B
+
+* Alterable Value A of Active 6 < -8
+	New Objects : Create POW 2 at (-2,18) from Active 6
+	Active 6 : Destroy
+	 Sound : Play sample pow2 on channel #8
+	kills : Add 1 to Counter
+
+* bullet is overlapping Active 7
+	bullet : Destroy
+	 Sound : Play sample hit4 on channel #12
+	Active 7 : Sub 1 from Alterable Value A
+	Active 7 : Set Alterable Value B to 3
+
+* Alterable Value B of Active 7 = 0
+	 Active 7 : Set effect to "Semi-transparent"
+
+* Alterable Value B of Active 7 > 0
+	 Active 7 : Set effect to "Add"
+	Active 7 : Sub 1 from Alterable Value B
+
+* Alterable Value A of Active 7 < -60
+	 Sound : Play sample pow2 on channel #8
+	New Objects : Create POW at (0,0) from Active 7
+	Active 7 : Destroy
+	New Objects : Create muzzle at (-45,-17) from Active 7
+	kills : Add 1 to Counter
+
+* Every 03''-00
+	Active 7 : Set Alterable Value E to 3
+
+* Alterable Value E of Active 7 > 0
++ Every 00''-25
+	Active 7 : Launch Active 8 toward ............ at speed 75
+	Active 7 : Sub 1 from Alterable Value E
+	 Sound : Play sample laser on channel #14
+
+* Active 8 is getting closer than 0 pixels from window's edge
+	Active 8 : Destroy
+
+* Number of Active 6 > 0
+	Active 6 : Add 1 to Alterable Value G
+
+* Alterable Value G of Active 6 > 100
+	Active 6 : Set Alterable Value G to 0
+	Active 6 : Launch Active 8 at speed 50 toward (0,0) from Active
+	 Sound : Play sample laser on channel #14
+
+* Active 8 is overlapping move
+	Active 8 : Destroy
+	Active : Set Alterable Value C to 5
+	 Sound : Play sample hurt on channel #14
+	health : Subtract 1 from Counter
+
+* missile is overlapping move
+	Active : Set Alterable Value C to 5
+	 Sound : Play sample hurt on channel #14
+	health : Subtract 1 from Counter
+	missile : Destroy
+
+* laser is overlapping move
++ Only one action when event loops
+	Active : Set Alterable Value C to 5
+	 Sound : Play sample hurt on channel #14
+	health : Subtract 1 from Counter
+
+* Alterable Value C of Active = 0
+	 Active : Set effect to "Semi-transparent"
+
+* Alterable Value C of Chica plane = 0
+	 Chica plane : Set effect to "Semi-transparent"
+
+* Alterable Value C of Chica plane 2 = 0
+	 Chica plane 2 : Set effect to "Semi-transparent"
+
+* Alterable Value C of Chica plane 3 = 0
+	 Chica plane 3 : Set effect to "Semi-transparent"
+
+* Alterable Value C of Active > 0
+	Active : Sub 1 from Alterable Value C
+	 Active : Set effect to "Add"
+
+* Alterable Value C of Chica plane > 0
+	Chica plane : Sub 1 from Alterable Value C
+	 Chica plane : Set effect to "Add"
+
+* Alterable Value C of Chica plane 2 > 0
+	Chica plane 2 : Sub 1 from Alterable Value C
+	 Chica plane 2 : Set effect to "Add"
+
+* Alterable Value C of Chica plane 3 > 0
+	Chica plane 3 : Sub 1 from Alterable Value C
+	 Chica plane 3 : Set effect to "Add"
+
+* Active 5 is overlapping Active
+	 Sound : Play sample hurt on channel #14
+	Active : Set Alterable Value C to 5
+	Active 5 : Sub 10 from Alterable Value A
+	health : Subtract 1 from Counter
+
+* Active 5 is overlapping Chica plane
+	 Sound : Play sample hurt on channel #14
+	Chica plane : Set Alterable Value C to 5
+	Active 5 : Sub 10 from Alterable Value A
+
+* Active 5 is overlapping Chica plane 2
+	 Sound : Play sample hurt on channel #14
+	Chica plane 2 : Set Alterable Value C to 5
+	Active 5 : Sub 10 from Alterable Value A
+
+* Active 5 is overlapping Chica plane 3
+	 Sound : Play sample hurt on channel #14
+	Chica plane 3 : Set Alterable Value C to 5
+	Active 5 : Sub 10 from Alterable Value A
+
+* Active 6 is overlapping Active
+	Active : Set Alterable Value C to 5
+	Active 6 : Sub 10 from Alterable Value A
+	 Sound : Play sample hurt on channel #14
+	health : Subtract 1 from Counter
+
+* Active 6 is overlapping Chica plane
++ Speed of Chica plane > 0
+	Chica plane : Set Alterable Value C to 5
+	Active 6 : Sub 10 from Alterable Value A
+	 Sound : Play sample hurt on channel #14
+
+* Active 6 is overlapping Chica plane 2
++ Speed of Chica plane 2 > 0
+	Chica plane 2 : Set Alterable Value C to 5
+	Active 6 : Sub 10 from Alterable Value A
+	 Sound : Play sample hurt on channel #14
+
+* Active 6 is overlapping Chica plane 3
++ Speed of Chica plane 3 > 0
+	Chica plane 3 : Set Alterable Value C to 5
+	Active 6 : Sub 10 from Alterable Value A
+	 Sound : Play sample hurt on channel #14
+
+* stage progress = 3
++ Only one action when event loops
+	make enemies : Set Alterable Value A to 5
+
+* stage progress = 5
++ Only one action when event loops
+	make enemies : Set Alterable Value A to 5
+	drop rat : Set Alterable Value A to 2
+
+* stage progress = 7
++ Only one action when event loops
+	make enemies : Set Alterable Value A to 15
+
+* stage progress = 9
++ Only one action when event loops
+	drop rat : Set Alterable Value A to 10
+
+* stage progress = 10
++ Only one action when event loops
+	make enemies : Set Alterable Value A to 15
+
+* stage progress = 12
++ Only one action when event loops
+	make enemies : Set Alterable Value A to 10
+	drop rat : Set Alterable Value A to 10
+
+* stage progress = 14
++ Only one action when event loops
+	make enemies : Set Alterable Value B to 2
+
+* Alterable Value B of make enemies > 0
++ Every 03''-00
+	make enemies : Sub 1 from Alterable Value B
+	New Objects : Create Active 7 at (19,101) from make enemies
+
+* stage progress = 16
++ Only one action when event loops
+	make enemies : Set Alterable Value B to 2
+	drop rat : Set Alterable Value A to 10
+
+* stage progress = 17
++ Only one action when event loops
+	phase : Set Counter to 9
+
+* Every 15''-00
++ what character is invisible
++ Alterable Value B of souldozer < 4
+	make enemies : Set Alterable Value A to 5 + Random(10)
+
+* stage progress = 8
++ Only one action when event loops
+	comm : Set Counter to 30
+	what character 2 : Set Counter to 1
+
+* stage progress = 13
++ Only one action when event loops
+	comm : Set Counter to 31
+	what character 2 : Set Counter to 3
+
+* stage progress = 18
++ Only one action when event loops
+	make enemies : Set Alterable Value B to 1
+	drop rat : Set Alterable Value A to 10
+	make enemies : Set Alterable Value A to 30
+
+* stage progress = 20
++ Only one action when event loops
+	comm : Set Counter to 32
+	souldozer : Select movement Movement #5 (number 1)
+	souldozer : Set Alterable Value B to 1
+	what character 2 : Set Counter to 6
+
+* souldozer is stopped
++ Alterable Value B of souldozer = 1
+	souldozer : Select movement Movement #5 (number 2)
+	souldozer : Set Alterable Value B to 2
+
+* Always
+	cannon 1 : Set position at (-56,-411) from souldozer
+
+* Alterable Value B of souldozer = 2
++ Every 05''-00
+	souldozer : Launch Active 8 toward ............ at speed 75
+	souldozer : Launch Active 8 toward ............ at speed 75
+	souldozer : Launch Active 8 toward ............ at speed 75
+	souldozer : Launch Active 8 toward ............. at speed 75
+	souldozer : Launch Active 8 toward ........... at speed 75
+	 Sound : Play sample laser on channel #14
+
+* Alterable Value B of souldozer = 2
++ Every 09''-00
+	cannon 1 : Launch Active 8 toward ............ at speed 75
+	cannon 1 : Launch Active 8 toward ............ at speed 75
+	cannon 1 : Launch Active 8 toward ............ at speed 75
+	cannon 1 : Launch Active 8 toward ............. at speed 75
+	cannon 1 : Launch Active 8 toward ............. at speed 75
+	 Sound : Play sample laser on channel #14
+
+* bullet is overlapping souldozer
++ Alterable Value B of souldozer < 4
++ stage progress >= 20
+	souldozer : Sub 1 from Alterable Value A
+	souldozer : Set Alterable Value C to 1
+	bullet : Destroy
+
+* Alterable Value C of souldozer = 0
+	 souldozer : Set effect to "Semi-transparent"
+
+* Alterable Value C of souldozer > 0
+	souldozer : Sub 1 from Alterable Value C
+	 souldozer : Set effect to "Add"
+
+* Alterable Value A of souldozer < -200
++ Every 01''-00
++ Pick one of smoke gen
+	New Objects : Create Active 10 at (0,0) from smoke gen
+
+* Alterable Value A of souldozer < -400
++ Every 00''-95
++ Pick one of smoke gen
+	New Objects : Create Active 10 at (0,0) from smoke gen
+
+* Alterable Value A of souldozer < -500
++ Every 00''-90
++ Pick one of smoke gen
+	New Objects : Create Active 10 at (0,0) from smoke gen
+
+* Alterable Value A of souldozer < -600
++ Every 00''-85
++ Pick one of smoke gen
+	New Objects : Create Active 10 at (0,0) from smoke gen
+
+* Alterable Value A of souldozer < -750
++ Every 00''-80
++ Pick one of smoke gen
+	New Objects : Create Active 10 at (0,0) from smoke gen
+
+* Alterable Value A of souldozer < -1000
++ Every 00''-10
++ Pick one of smoke gen
+	New Objects : Create Active 10 at (0,0) from smoke gen
+
+* Alterable Value A of souldozer < -1250
++ Every 00''-50
++ Pick one of smoke gen
+	New Objects : Create POW 2 at (0,0) from smoke gen
+
+* Alterable Value A of souldozer < -1500
++ Every 00''-20
++ Pick one of smoke gen
+	New Objects : Create POW 2 at (0,0) from smoke gen
+
+* Alterable Value A of souldozer < -2000
++ Every 00''-10
++ Pick one of smoke gen
+	New Objects : Create POW at (0,0) from smoke gen
+	 Sound : Play sample pow2 on channel #8
+
+* Alterable Value A of souldozer < -2000
++ Every 00''-75
+	New Objects : Create POW 2 at (8,-362) from souldozer
+	New Objects : Create POW 2 at (-136,-282) from souldozer
+	New Objects : Create POW 2 at (58,-234) from souldozer
+
+* Alterable Value A of souldozer < -2000
++ Every 00''-90
+	New Objects : Create POW 2 at (-34,-261) from souldozer
+	New Objects : Create POW 2 at (43,-299) from souldozer
+	New Objects : Create POW 2 at (-5,-191) from souldozer
+
+* Alterable Value A of souldozer < -2000
++ Every 01''-10
+	New Objects : Create POW 2 at (-186,-215) from souldozer
+	New Objects : Create POW 2 at (-90,-385) from souldozer
+	New Objects : Create POW 2 at (131,-393) from souldozer
+
+* Number of Active 10 > 0
+	Active 10 : Set position at (-3,0) from Active 10
+
+* Active 10 animation Stopped is over
+	Active 10 : Destroy
+
+* Alterable Value A of souldozer < -2000
++ Only one action when event loops
+	souldozer : Select movement Movement #5 (number 3)
+	souldozer : Set position at (-1,1) from souldozer
+	souldozer : Change speed of animation to 0
+	souldozer : Set Alterable Value B to 4
+	comm : Set Counter to 50
+
+* Alterable Value A of souldozer < -2000
++ Every 00''-10
+	souldozer : Set position at (-1,1) from souldozer
+	smoke gen : Set position at (-1,1) from smoke gen
+
+* comm = 50
++ Only one action when event loops
+	what character 2 : Set Counter to 6
+
+* comm = 51
++ Only one action when event loops
+	what character 2 : Set Counter to 4
+
+* comm = 52
++ Only one action when event loops
+	what character 2 : Set Counter to 3
+
+* comm = 55
++ Only one action when event loops
+	what character 2 : Set Counter to 5
+
+* Alterable Value A of souldozer < -1000
++ Only one action when event loops
+	 Sound : Play sample laser2 on channel #15
+	New Objects : Create laser at (-250,-324) from souldozer
+
+* laser is getting closer than 0 pixels from window's edge
+	laser : Destroy
+
+* Collision between laser and Chica plane 2
+	 Sound : Play sample hit5 on channel #15
+	laser : Destroy
+	Chica plane 2 : Set Alterable Value F to 1
+	Chica plane 2 : Select movement Movement #5 (number 3)
+	New Objects : Create POW at (53,8) from Chica plane 2
+
+* Alterable Value F of Chica plane 2 = 1
++ Every 00''-10
+	 Sound : Play sample pow2 on channel #8
+	New Objects : Create POW 2 at (-1,17) from Chica plane 2
+
+* Alterable Value F of Chica plane 2 = 1
++ Chica plane 2 is stopped
+	Chica plane 2 : Destroy
+
+* Alterable Value F of Chica plane 2 = 1
++ Every 01''-00
++ Run this event once
+	comm : Set Counter to 51
+
+* Alterable Value F of Chica plane 2 = 1
++ Every 06''-00
++ Run this event once
+	comm : Set Counter to 52
+
+* Alterable Value A of souldozer < -2000
++ Every 15''-00
++ Run this event once
+	souldozer : Destroy
+	comm : Set Counter to 55
+
+* beat = 1
+	Chica plane : Select movement Movement #0 (number 0)
+	Chica plane 3 : Select movement Movement #0 (number 0)
+	Chica plane : Set position at (5,0) from Chica plane
+	Chica plane 3 : Set position at (5,0) from Chica plane 3
+	move : Set position at (5,0) from move
+
+* Alterable Value Z of Chica plane 3 = 1
++ Run this event once
+	 Sound : Play sample badinfluence (uninteruptable) on channel #16
+
+* beat = 1
++ Only one action when event loops
+	 Sound : Play sample launch on channel #17
+	health : Make invisible
+	Active 11 : Make invisible
+	Active 12 : Make invisible
+
+* Number of laser > 0
+	laser : Look at (0,0) from Chica plane 2
+
+* Active is overlapping souldozer
++ Every 01''-00
+	health : Subtract 1 from Counter
+	 Sound : Play sample hurt on channel #14
+	Active : Set Alterable Value C to 5
+
+* phase = 5
++ Only one action when event loops
+	Active 11 : Reappear
+	Active 12 : Reappear
+	health : Reappear
+
+* health <= 0
+	storyboard controls : Jump to frame "Frame 2" (37)
+
+* ready is stopped
+	ready : Add 1 to Alterable Value A
+
+* Alterable Value A of ready > 75
+	New Objects : Create ready2 at (0,0) from ready
+	ready : Destroy
+
+* ready2 animation Stopped is over
+	ready2 : Destroy
+
+* Always
+	souldozer : Add 1 to Alterable Value M
+
+* Alterable Value A of souldozer < -500
++ Alterable Value M of souldozer = 300
++ Alterable Value A of souldozer > -2000
++ beat = 0
+	 Sound : Play sample rocket2 on channel #8
+	New Objects : Create missile at (-25,-161) from right wall
+	New Objects : Create missile at (-25,15) from right wall
+	New Objects : Create missile at (-25,191) from right wall
+
+* Alterable Value A of souldozer < -750
++ Alterable Value M of souldozer = 600
++ Alterable Value A of souldozer > -2000
++ beat = 0
+	New Objects : Create missile at (-25,-73) from right wall
+	New Objects : Create missile at (-25,103) from right wall
+	 Sound : Play sample rocket2 on channel #8
+
+* Alterable Value M of souldozer > 600
+	souldozer : Set Alterable Value M to 0
+
+* Number of missile > 0
+	missile : Add 3 to Alterable Value A
+	missile : Set speed to Alterable Value A( "missile" )
+
+* missile is getting closer than 0 pixels from window's edge
++ Alterable Value A of missile > 50
+	missile : Destroy
+
+* Number of missile > 0
++ Every 00''-05
+	New Objects : Create Active 4 at (38,2) from missile
+
+* Alterable Value A of souldozer < -1200
++ Alterable Value A of souldozer > -2000
++ Every 10''-00
++ beat = 0
+	souldozer : Set Alterable Value L to 5
+
+* Alterable Value L of souldozer > 0
++ Alterable Value A of souldozer > -2000
++ Every 00''-25
+	souldozer : Sub 1 from Alterable Value L
+	souldozer : Launch laser toward ............ at speed 100
+	 Sound : Play sample laser2 on channel #8
+
+* beat = 1
++ Every 03''-00
++ Run this event once
+	score : Reappear
+	 Sound : Play sample stat2 on channel #15
+
+* Always
+	health 2 : Set Counter to value( "health" )
+	rank : Set Alterable Value A to value( "kills" ) + value( "health 2" )
+
+* minor kills > 103
+	minor kills : Set Counter to 103
+
+* score is visible
+	score : Add 1 to Alterable Value A
+
+* Alterable Value A of score > 50
++ Run this event once
+	kills : Reappear
+	kills : Add value( "minor kills" ) to Counter
+	 Sound : Play sample stat2 on channel #15
+
+* Alterable Value A of score > 100
++ Run this event once
+	health 2 : Reappear
+	 Sound : Play sample stat2 on channel #15
+
+* Alterable Value A of score > 150
++ Run this event once
+	 Sound : Play sample stat2 on channel #15
+	rank : Reappear
+
+* Alterable Value A of rank < 160
+	rank : Change animation sequence to Animation 13
+
+* Alterable Value A of rank >= 160
++ Alterable Value A of rank < 175
+	rank : Change animation sequence to Animation 12
+
+* Alterable Value A of rank >= 175
+	rank : Change animation sequence to Stopped
+
+* comm = 1
++ Only one action when event loops
+	Active 13 : Reappear
+
+* rank is visible
++ Alterable Value A of rank < 175
+	found new : Set Counter to 42
+
+* rank is visible
++ Alterable Value A of rank >= 175
+	found new : Set Counter to 45
+
+* rank is visible
++ Every 03''-00
+	storyboard controls : Jump to frame "earned new character" (44)
+
+* current weapon > 4
+	current weapon : Set Counter to 0
+
+* Alterable Value A of bullet = 0
+	bullet : Change animation sequence to Stopped
+
+* Alterable Value A of bullet = 4
+	bullet : Change animation sequence to Stopped
+
+* Alterable Value A of bullet = 1
+	bullet : Change animation sequence to Animation 12
+
+* Alterable Value A of bullet = 2
+	bullet : Change animation sequence to Animation 13
+
+* Alterable Value A of bullet = 3
+	bullet : Change animation sequence to Animation 14
+	bullet : Select movement Movement #4 (number 1)
+
+* Alterable Value A of laserball > -30
++ Every 00''-03
+	laserball : Launch bullet toward ........ at speed 200
+	laserball : Sub 1 from Alterable Value A
+	bullet : Set Alterable Value A to 2
+
+* Alterable Value A of laserball <= -30
+	laserball : Destroy
+
+* Alterable Value A of bullet = 3
+	bullet : Look at (0,0) from Active 5
+
+* Alterable Value A of bullet = 3
+	bullet : Look at (0,0) from Active 6
+
+* Alterable Value A of bullet = 3
+	bullet : Look at (0,0) from Active 7
+
+* Alterable Value C of POW 2 = 0
+	POW 2 : Set Alterable Value C to Random(15) + 1
+
+* Alterable Value C of POW 2 = 1
++ Number of Active 14 = 0
++ Alterable Value A of souldozer > -1500
+	POW 2 : Set Alterable Value C to 2
+	New Objects : Create Active 14 at (0,0) from POW 2
+
+* Active 14 is getting closer than 0 pixels from window's edge
+	Active 14 : Destroy
+
+* Always
+	Active 14 : Set position at (-3,0) from Active 14
+
+* Active is overlapping Active 14
+	current weapon : Set Counter to Alterable Value A( "Active 14" )
+	Active 14 : Destroy
+	 Sound : Play sample powerup55 on channel #21
+
+* Alterable Value A of Active 14 = 0
+	Active 14 : Set Alterable Value A to Random(4) + 1
+
+* Alterable Value A of Active 14 = 1
+	Active 14 : Change animation sequence to Animation 12
+
+* Alterable Value A of Active 14 = 2
+	Active 14 : Change animation sequence to Stopped
+
+* Alterable Value A of Active 14 = 3
+	Active 14 : Change animation sequence to Animation 13
+
+* Alterable Value A of Active 14 = 4
+	Active 14 : Change animation sequence to Animation 14
+
+* Alterable Value A of Active 14 > 4
+	Active 14 : Set Alterable Value A to 1
+
+* Alterable Value A of Active 14 = value( "current weapon" )
+	Active 14 : Add 1 to Alterable Value A
+

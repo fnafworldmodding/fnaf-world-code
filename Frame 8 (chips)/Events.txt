@@ -1,0 +1,401 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* set is overlapping Active
++ Alterable Value A of Active = 0
+	set : Add 1 to Alterable Value A
+	Active : Set Alterable Value A to Alterable Value A( "set" )
+	set : Set position at (100,0) from set
+	set : Add 1 to Alterable Value B
+	Active : Set Alterable Value H to ItemValue( "Ini", "c" + Str$(Alterable Value A( "set" )) )
+
+* Alterable Value B of set >= 7
+	set : Set position at (-700,100) from set
+	set : Set Alterable Value B to 0
+	set : Add 1 to Alterable Value D
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 1
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Start battle with a temporary defense boost."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 2
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Start battle with a temporary strength boost."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 3
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Start battle with a temporary speed boost."
+
+* Alterable Value A of Active = 1
+	Active : Change animation sequence to Stopped
+
+* Alterable Value A of Active = 2
+	Active : Change animation sequence to Animation 12
+
+* Alterable Value A of Active = 3
+	Active : Change animation sequence to Animation 13
+
+* Alterable Value A of Active = 4
+	Active : Change animation sequence to Animation 14
+
+* Alterable Value A of Active = 5
+	Active : Change animation sequence to Animation 15
+
+* Alterable Value A of Active = 6
+	Active : Change animation sequence to Animation 16
+
+* Alterable Value A of Active = 7
+	Active : Change animation sequence to Animation 17
+
+* Alterable Value A of Active = 8
+	Active : Change animation sequence to Animation 18
+
+* Alterable Value A of Active = 9
+	Active : Change animation sequence to Animation 19
+
+* Alterable Value A of Active = 10
+	Active : Change animation sequence to Animation 20
+
+* Alterable Value A of Active = 11
+	Active : Change animation sequence to Animation 21
+
+* Alterable Value A of Active = 12
+	Active : Change animation sequence to Animation 22
+
+* Alterable Value A of Active = 13
+	Active : Change animation sequence to Animation 23
+
+* Alterable Value A of Active = 14
+	Active : Change animation sequence to Animation 24
+
+* Alterable Value A of Active = 15
+	Active : Change animation sequence to Animation 25
+
+* Alterable Value A of Active = 16
+	Active : Change animation sequence to Animation 26
+
+* Alterable Value A of Active = 17
+	Active : Change animation sequence to Animation 27
+
+* Alterable Value A of Active = 18
+	Active : Change animation sequence to Animation 28
+
+* Alterable Value A of Active = 19
+	Active : Change animation sequence to Animation 29
+
+* Alterable Value A of Active = 20
+	Active : Change animation sequence to Animation 30
+
+* Alterable Value A of Active = 21
+	Active : Change animation sequence to Animation 31
+
+* Alterable Value A of Active = 0
+	Active : Make invisible
+
+* Alterable Value A of Active > 0
+	Active : Reappear
+
+* User clicks with left button on Active 3
+	chip slot : Set Alterable Value A to 0
+	chip slot 2 : Set Alterable Value A to 0
+	chip slot 3 : Set Alterable Value A to 0
+	chip slot 4 : Set Alterable Value A to 0
+	selected 1 : Set Alterable Value A to 0
+	selected 2 : Set Alterable Value A to 0
+	selected 3 : Set Alterable Value A to 0
+	selected 4 : Set Alterable Value A to 0
+	Active : Set Alterable Value O to 0
+	 Ini : Set value 0 to item "active1"
+	 Ini : Set value 0 to item "active2"
+	 Ini : Set value 0 to item "active3"
+	 Ini : Set value 0 to item "active4"
+	 Sound : Play sample clear on channel #2
+	Active : Set Alterable Value U to 0
+
+* Alterable Value A of chip slot = 0
+	selected 1 : Set position at (-146,-21)
+	chip slot : Change animation sequence to Stopped
+
+* Alterable Value A of chip slot 2 = 0
+	selected 2 : Set position at (-146,-21)
+	chip slot 2 : Change animation sequence to Stopped
+
+* Alterable Value A of chip slot 3 = 0
+	selected 3 : Set position at (-146,-21)
+	chip slot 3 : Change animation sequence to Stopped
+
+* Alterable Value A of chip slot 4 = 0
+	selected 4 : Set position at (-146,-21)
+	chip slot 4 : Change animation sequence to Stopped
+
+* User clicks with left button on Active
++ Alterable Value O of Active = 0
++ Alterable Value H of Active = 1
++ Alterable Value Z of Active = 0
++ Alterable Value U of Active = 0
++ Alterable Value A of chip slot = 0
++ Alterable Value C of set = 0
++ Alterable Value D of set >= 3
+	set : Set Alterable Value C to 10
+	selected 1 : Set Alterable Value A to Alterable Value A( "Active" )
+	chip slot : Set Alterable Value A to 1
+	Active : Set Alterable Value O to 1
+	 Ini : Set value Alterable Value A( "Active" ) to item "active1"
+	 Sound : Play sample pickchip on channel #2
+
+* User clicks with left button on Active
++ Alterable Value H of Active = 1
++ Alterable Value O of Active = 0
++ Alterable Value Z of Active = 0
++ Alterable Value U of Active = 0
++ Alterable Value A of chip slot 2 = 0
++ Alterable Value C of set = 0
++ Alterable Value D of set >= 3
+	chip slot 2 : Set Alterable Value A to 1
+	selected 2 : Set Alterable Value A to Alterable Value A( "Active" )
+	set : Set Alterable Value C to 10
+	Active : Set Alterable Value O to 1
+	 Ini : Set value Alterable Value A( "Active" ) to item "active2"
+	 Sound : Play sample pickchip on channel #2
+
+* User clicks with left button on Active
++ Alterable Value O of Active = 0
++ Alterable Value H of Active = 1
++ Alterable Value Z of Active = 0
++ Alterable Value U of Active = 0
++ Alterable Value A of chip slot 3 = 0
++ Alterable Value C of set = 0
++ Alterable Value D of set >= 3
+	chip slot 3 : Set Alterable Value A to 1
+	selected 3 : Set Alterable Value A to Alterable Value A( "Active" )
+	set : Set Alterable Value C to 10
+	Active : Set Alterable Value O to 1
+	 Ini : Set value Alterable Value A( "Active" ) to item "active3"
+	 Sound : Play sample pickchip on channel #2
+
+* User clicks with left button on Active
++ Alterable Value O of Active = 0
++ Alterable Value H of Active = 1
++ Alterable Value Z of Active = 0
++ Alterable Value U of Active = 0
++ Alterable Value A of chip slot 4 = 0
++ Alterable Value C of set = 0
++ Alterable Value D of set >= 3
+	chip slot 4 : Set Alterable Value A to 1
+	selected 4 : Set Alterable Value A to Alterable Value A( "Active" )
+	set : Set Alterable Value C to 10
+	Active : Set Alterable Value O to 1
+	 Ini : Set value Alterable Value A( "Active" ) to item "active4"
+	 Sound : Play sample pickchip on channel #2
+
+* Alterable Value C of set > 0
+	set : Sub 1 from Alterable Value C
+
+* Alterable Value A of Active = Alterable Value A( "selected 1" )
+	selected 1 : Set position at (0,0) from Active
+
+* Alterable Value A of Active = Alterable Value A( "selected 2" )
+	selected 2 : Set position at (0,0) from Active
+
+* Alterable Value A of Active = Alterable Value A( "selected 3" )
+	selected 3 : Set position at (0,0) from Active
+
+* Alterable Value A of Active = Alterable Value A( "selected 4" )
+	selected 4 : Set position at (0,0) from Active
+
+* Alterable Value A of chip slot = 1
+	chip slot : Change animation sequence to Animation 12
+
+* Alterable Value A of chip slot 2 = 1
+	chip slot 2 : Change animation sequence to Animation 12
+
+* Alterable Value A of chip slot 3 = 1
+	chip slot 3 : Change animation sequence to Animation 12
+
+* Alterable Value A of chip slot 4 = 1
+	chip slot 4 : Change animation sequence to Animation 12
+
+* Start of Frame
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+
+* Alterable Value H of Active = 0
+	 Active : Set effect to "Monochrome"
+	 Active : Set alpha-blending coefficient to 245
+
+* Alterable Value H of Active = 1
+	 Active : Set effect to "Semi-transparent"
+	 Active : Set alpha-blending coefficient to 0
+
+* Start of Frame
+	selected 1 : Set Alterable Value A to ItemValue( "Ini", "active1" )
+	selected 2 : Set Alterable Value A to ItemValue( "Ini", "active2" )
+	selected 3 : Set Alterable Value A to ItemValue( "Ini", "active3" )
+	selected 4 : Set Alterable Value A to ItemValue( "Ini", "active4" )
+
+* User clicks with left button on Active 2
+	storyboard controls : Jump to frame "wait" (10)
+
+* Alterable Value A of selected 1 > 0
+	chip slot : Set Alterable Value A to 1
+
+* Alterable Value A of selected 2 > 0
+	chip slot 2 : Set Alterable Value A to 1
+
+* Alterable Value A of selected 3 > 0
+	chip slot 3 : Set Alterable Value A to 1
+
+* Alterable Value A of selected 4 > 0
+	chip slot 4 : Set Alterable Value A to 1
+
+* Alterable Value D of set >= 3
+	selected 1 : Reappear
+	selected 2 : Reappear
+	selected 3 : Reappear
+	selected 4 : Reappear
+
+* demo? = 1
+	demo : Reappear
+	blue out : Reappear
+
+* demo? = 1
++ Active is overlapping blue out
+	Active : Set Alterable Value Z to 1
+
+* Active is overlapping selected 1
++ Alterable Value A of chip slot = 1
+	Active : Set Alterable Value U to 1
+
+* Active is overlapping selected 2
++ Alterable Value A of chip slot 2 = 1
+	Active : Set Alterable Value U to 1
+
+* Active is overlapping selected 3
++ Alterable Value A of chip slot 3 = 1
+	Active : Set Alterable Value U to 1
+
+* Active is overlapping selected 4
++ Alterable Value A of chip slot 4 = 1
+	Active : Set Alterable Value U to 1
+
+* Mouse pointer is over Active
++ Alterable Value H of Active = 0
+	String 2 : Make invisible
+
+* NOT Mouse pointer is over Active
+	String 2 : Make invisible
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 4
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Comets may occasionally fall."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 5
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Your party has the element of surprise!"
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 6
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Makes you immune to Jumpscare."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 7
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Running away is more successful."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 8
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Permanent defense boost."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 9
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Permanent strength boost."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 10
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Permanent speed boost."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 11
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Frequent comets will fall."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 12
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Your party begins each battle with an extra life."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 13
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Your party regenerates life."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 14
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "More luck for finding new characters!"
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 15
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Enemies begin battle with all status ailments."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 16
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Freddles constantly attack!"
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 17
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Shield automatically activates."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 18
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "A Mimic Ball automatically activates."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 19
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Enemy attacks are countered with a damaging bite!"
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 20
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "A steady stream of pizzas keeps rolling in."
+
+* Mouse pointer is over Active
++ Alterable Value A of Active = 21
++ Alterable Value H of Active = 1
+	String 2 : Reappear
+	String 2 : Set alterable string to "Unscrew and Esc Key are blocked."
+

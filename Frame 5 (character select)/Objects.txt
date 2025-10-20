@@ -1,0 +1,388 @@
++ Object Definitions
+	+ background
+		- Type: Active
+		- Images hash: 0xB2AE
+	+ area
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0x60CC
+	+ Backdrop 3
+		- Type: Backdrop
+		- Images hash: 0x9E8C
+	+ Backdrop 2
+		- Type: Backdrop
+		- Images hash: 0x4F50
+	+ char
+		- Type: Active
+		- Images hash: 0xD00E
+	+ reset 1
+		- Type: Active
+		- Images hash: 0x446E
+	+ reset 2
+		- Type: Active
+		- Images hash: 0x446E
+	+ reset 3
+		- Type: Active
+		- Images hash: 0x446E
+	+ reset 4
+		- Type: Active
+		- Images hash: 0x446E
+	+ reset 5
+		- Type: Active
+		- Images hash: 0x446E
+	+ reset 6
+		- Type: Active
+		- Images hash: 0x446E
+	+ reset 7
+		- Type: Active
+		- Images hash: 0x446E
+	+ reset 8
+		- Type: Active
+		- Images hash: 0x446E
+	+ slot 1
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ reset pos
+		- Type: Counter
+		- Images hash: 0xD3E8
+	+ slot 2
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ slot 3
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ slot 4
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ slot 5
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ slot 6
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ slot 7
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ slot 8
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ file slot
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ party lock
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ new game?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ temp
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ g1 p 1
+		- Type: Active
+		- Images hash: 0x382A
+	+ g1 p 2
+		- Type: Active
+		- Images hash: 0xD414
+	+ g1 p 3
+		- Type: Active
+		- Images hash: 0x1219
+	+ g1 p 4
+		- Type: Active
+		- Images hash: 0x94FE
+	+ g1 p 5
+		- Type: Active
+		- Images hash: 0xC2D3
+	+ g1 p 6
+		- Type: Active
+		- Images hash: 0x1528
+	+ g1 p 7
+		- Type: Active
+		- Images hash: 0x4F87
+	+ g1 p 8
+		- Type: Active
+		- Images hash: 0xF42A
+	+ Active
+		- Type: Active
+		- Images hash: 0x2204
+	+ test
+		- Type: Counter
+		- Images hash: 0xE6BC
+	+ select
+		- Type: Active
+		- Images hash: 0x04E0
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xB8E8
+	+ Active 3
+		- Type: Active
+		- Images hash: 0x9AC7
+	+ String 2
+		- Type: String
+		+ Texts
+			1: Strength
+	+ wait
+		- Type: Active
+		- Images hash: 0x6D33
+	+ Active 4
+		- Type: Active
+		- Images hash: 0x9E22
+	+ create
+		- Type: Active
+		- Images hash: 0x98ED
+	+ level
+		- Type: Counter
+		- Images hash: 0xC53B
+	+ next
+		- Type: Counter
+		- Images hash: 0xA2FE
+	+ strength
+		- Type: Counter
+		- Images hash: 0xA2FE
+	+ Xco
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ file
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ test 5
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ file 2
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ have all
+		- Type: Counter
+		- Images hash: 0xD3E8
+	+ mode
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ fixed
+		- Type: Active
+		- Images hash: 0x372C
+	+ difficulty
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ hard mode
+		- Type: Active
+		- Images hash: 0x1F8B
+	+ Fredbear icon
+		- Type: Active
+		- Images hash: 0xE3CB
+	+ demo?
+		- Type: Counter
+		- Images hash: 0xF3AC
+	+ blue out
+		- Type: Active
+		- Images hash: 0xB627
+	+ demo
+		- Type: Active
+		- Images hash: 0x197F
+	+ free to pick?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ character
+		- Type: Active
+		- Images hash: 0x4FB5
+	+ Active 5
+		- Type: Active
+		- Images hash: 0x377E
+	+ Active 6
+		- Type: Active
+		- Images hash: 0x2E87
+	+ Active 7
+		- Type: Active
+		- Images hash: 0x3FC9
+	+ mini button
+		- Type: Active
+		- Images hash: 0x0F4D
+	+ button 1
+		- Type: Active
+		- Images hash: 0x8023
+	+ button 2
+		- Type: Active
+		- Images hash: 0x8023
+	+ button 3
+		- Type: Active
+		- Images hash: 0x8023
+	+ String
+		- Type: String
+		+ Texts
+			1: HARD MODE
+	+ level 2
+		- Type: Counter
+		- Images hash: 0xA2FE
+	+ from H
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ showend
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Ini
+		- Type: Ini
++ Layer #1 (Layer 1)
+	- background [0, 0]
+	- area [324, -73]
++ Layer #2 (Layer 2)
+	- Backdrop [20, 17]
+	- Backdrop 3 [625, 11]
+	- Backdrop 2 [0, 0]
+	- char [28, 21]
+	- char [101, 21]
+	- char [174, 21]
+	- char [247, 21]
+	- char [320, 21]
+	- char [393, 21]
+	- char [466, 21]
+	- char [539, 21]
+	- char [28, 94]
+	- char [101, 94]
+	- char [174, 94]
+	- char [247, 94]
+	- char [320, 94]
+	- char [393, 94]
+	- char [466, 94]
+	- char [539, 94]
+	- char [28, 167]
+	- char [101, 167]
+	- char [174, 167]
+	- char [247, 167]
+	- char [320, 167]
+	- char [393, 167]
+	- char [466, 167]
+	- char [539, 167]
+	- char [28, 240]
+	- char [101, 240]
+	- char [174, 240]
+	- char [247, 240]
+	- char [320, 240]
+	- char [393, 240]
+	- char [466, 240]
+	- char [539, 240]
+	- char [28, 313]
+	- char [28, 386]
+	- char [101, 386]
+	- char [174, 386]
+	- char [247, 386]
+	- char [320, 386]
+	- char [393, 386]
+	- char [466, 386]
+	- char [539, 386]
+	- reset 1 [850, 50]
+	- reset 2 [950, 50]
+	- reset 3 [850, 150]
+	- reset 4 [950, 150]
+	- reset 5 [850, 250]
+	- reset 6 [950, 250]
+	- reset 7 [850, 350]
+	- reset 8 [950, 350]
+	- char [101, 313]
+	- char [174, 313]
+	- char [247, 313]
+	- char [320, 313]
+	- char [393, 313]
+	- char [466, 313]
+	- char [539, 313]
+	- slot 1 [-18, -50]
+	- reset pos [-15, -89]
+	- slot 2 [13, -45]
+	- slot 3 [50, -44]
+	- slot 4 [88, -44]
+	- slot 5 [137, -46]
+	- slot 6 [161, -45]
+	- slot 7 [189, -46]
+	- slot 8 [210, -45]
+	- file slot [250, -44]
+	- party lock [325, -15]
+	- new game? [424, -71]
+	- temp [424, -46]
+	- g1 p 1 [-94, -18]
+	- g1 p 2 [-94, 52]
+	- g1 p 3 [-94, 122]
+	- g1 p 4 [-94, 192]
+	- g1 p 5 [-94, 262]
+	- g1 p 6 [-94, 332]
+	- g1 p 7 [-94, 402]
+	- g1 p 8 [-94, 472]
+	- Active [62, 56]
+	- test [720, -161]
+	- select [155, 492]
+	- Active 2 [705, 441]
+	- Active 3 [706, 397]
+	- String 2 [71, -302]
+	- wait [104, 420]
+	- Active 4 [149, -190]
+	- create [155, 419]
+	- level [792, -245]
+	- level [865, -245]
+	- level [938, -245]
+	- level [1011, -245]
+	- level [1084, -245]
+	- level [1157, -245]
+	- level [1230, -245]
+	- level [1303, -245]
+	- next [759, 290]
+	- strength [740, 533]
+	- level [792, -172]
+	- level [865, -172]
+	- level [938, -172]
+	- level [1011, -172]
+	- level [1084, -172]
+	- level [1157, -172]
+	- level [1230, -172]
+	- level [1303, -172]
+	- level [792, -99]
+	- level [865, -99]
+	- level [938, -99]
+	- level [1011, -99]
+	- level [1084, -99]
+	- level [1157, -99]
+	- level [1230, -99]
+	- level [1303, -99]
+	- level [792, -26]
+	- level [865, -26]
+	- level [938, -26]
+	- level [1011, -26]
+	- level [1084, -26]
+	- level [1157, -26]
+	- level [1230, -26]
+	- level [1303, -26]
+	- level [827, -74]
+	- level [865, 47]
+	- level [938, 47]
+	- level [1011, 47]
+	- level [1084, 47]
+	- level [1157, 47]
+	- level [1230, 47]
+	- level [1303, 47]
+	- Xco [800, -58]
+	- file [662, -82]
+	- test 5 [793, -109]
+	- file 2 [837, -2]
+	- have all [867, -61]
+	- mode [289, -39]
+	- fixed [113, 427]
+	- difficulty [593, -61]
+	- hard mode [764, 528]
+	- Fredbear icon [74, -75]
+	- demo? [-175, -20]
+	- blue out [660, -292]
+	- demo [645, -205]
+	- free to pick? [900, -50]
+	- character [699, 275]
+	- Active 5 [501, 235]
+	- Active 6 [499, 254]
+	- Active 7 [495, 496]
+	- mini button [700, 307]
+	- mini button [700, 331]
+	- mini button [700, 355]
+	- button 1 [700, 304]
+	- button 2 [705, 332]
+	- button 3 [703, 357]
+	- String [627, 13]
+	- level 2 [759, 272]
+	- from H [-116, -78]
+	- showend [-38, -82]
+	- Ini [484, -85]

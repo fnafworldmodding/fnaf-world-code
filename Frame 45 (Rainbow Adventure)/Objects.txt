@@ -1,0 +1,315 @@
++ Object Definitions
+	+ Backdrop 2
+		- Type: Backdrop
+		- Images hash: 0xF601
+	+ blood
+		- Type: Active
+		- Images hash: 0x790B
+	+ hit box
+		- Type: Active
+		- Images hash: 0x2314
+	+ Active 6
+		- Type: Active
+		- Images hash: 0x781C
+	+ Active 7
+		- Type: Active
+		- Images hash: 0x8A86
+	+ lazer
+		- Type: Active
+		- Images hash: 0x8739
+	+ Active 9
+		- Type: Active
+		- Images hash: 0xE2DF
+	+ Active 10
+		- Type: Active
+		- Images hash: 0xEEF0
+	+ Active 13
+		- Type: Active
+		- Images hash: 0x2A4E
+	+ Backdrop 4
+		- Type: Backdrop
+		- Images hash: 0x9C49
+	+ Quick Backdrop 3
+		- Type: Quick Backdrop
+		- Images hash: 0x9C49
+	+ Backdrop 5
+		- Type: Backdrop
+		- Images hash: 0xE91E
+	+ gun power
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Quick Backdrop 2
+		- Type: Quick Backdrop
+		- Images hash: 0xC37E
+	+ Backdrop 3
+		- Type: Backdrop
+		- Images hash: 0xE6CE
+	+ Quick Backdrop
+		- Type: Quick Backdrop
+		- Images hash: 0xF265
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0x2404
+	+ Backdrop 6
+		- Type: Backdrop
+		- Images hash: 0xC477
+	+ Date & Time
+		- Type: Date & Time
+	+ magic_rainbow
+		- Type: Active
+		- Images hash: 0xFDBD
+	+ Active 4
+		- Type: Active
+		- Images hash: 0xEEF0
+	+ Active 3
+		- Type: Active
+		- Images hash: 0xEEF0
+	+ floor 1
+		- Type: Active
+		- Images hash: 0x63D9
+	+ ceiling
+		- Type: Active
+		- Images hash: 0x87EF
+	+ floor 2
+		- Type: Active
+		- Images hash: 0xF475
+	+ floor 3
+		- Type: Active
+		- Images hash: 0xF475
+	+ feel right
+		- Type: Active
+		- Images hash: 0x1BC1
+	+ feel left
+		- Type: Active
+		- Images hash: 0x1BC1
+	+ jumped
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ going up
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ fall
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 5
+		- Type: Active
+		- Images hash: 0xC477
+	+ checkpoint
+		- Type: Active
+		- Images hash: 0x2314
+	+ Active
+		- Type: Active
+		- Images hash: 0xF76E
+	+ deaths
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ trigger
+		- Type: Active
+		- Images hash: 0x4C71
+	+ Active 2
+		- Type: Active
+		- Images hash: 0x1ACE
+	+ trigger 2
+		- Type: Active
+		- Images hash: 0x4C71
+	+ trigger 4
+		- Type: Active
+		- Images hash: 0x4C71
+	+ trigger 5
+		- Type: Active
+		- Images hash: 0x4C71
+	+ trigger 3
+		- Type: Active
+		- Images hash: 0x4C71
+	+ Active 8
+		- Type: Active
+		- Images hash: 0x0BCE
+	+ spikes
+		- Type: Active
+		- Images hash: 0x7B38
+	+ spikes 2
+		- Type: Active
+		- Images hash: 0xDAD2
+	+ trigger 7
+		- Type: Active
+		- Images hash: 0x4C71
+	+ trigger 8
+		- Type: Active
+		- Images hash: 0x4C71
+	+ trigger 9
+		- Type: Active
+		- Images hash: 0x4C71
+	+ trigger 6
+		- Type: Active
+		- Images hash: 0x4C71
+	+ log shoot
+		- Type: Active
+		- Images hash: 0x2204
+	+ log shoot 2
+		- Type: Active
+		- Images hash: 0x2204
+	+ win
+		- Type: Active
+		- Images hash: 0xA856
+	+ WIN
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ great job
+		- Type: Active
+		- Images hash: 0x77EC
+	+ you suck
+		- Type: Active
+		- Images hash: 0xE272
+	+ game over
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ found new
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 19
+		- Type: Active
+		- Images hash: 0x847B
+	+ Counter
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 11
+		- Type: Active
+		- Images hash: 0x8834
+	+ Active 12
+		- Type: Active
+		- Images hash: 0x8F7E
++ Layer #1 (Layer 1)
+	- Backdrop 2 [0, 0]
++ Layer #2 (Layer 2)
+	- Backdrop 4 [3950, -150]
+	- Quick Backdrop 3 [3950, 350]
+	- Quick Backdrop 3 [900, 350]
+	- Quick Backdrop 3 [2100, 350]
+	- Quick Backdrop 3 [2500, 350]
+	- Quick Backdrop 3 [5000, 350]
+	- Quick Backdrop 3 [5400, 350]
+	- Backdrop 5 [1350, 400]
+	- Backdrop 5 [1950, 400]
+	- Backdrop 5 [3000, 400]
+	- Backdrop 5 [4450, 400]
+	- Backdrop 5 [4600, 400]
+	- Backdrop 5 [7200, 400]
+	- Backdrop 5 [6750, 400]
+	- Backdrop 5 [8300, 400]
++ Layer #3 (Layer 3)
+	- gun power [130, -51]
++ Layer #4 (Layer 4)
+	- Quick Backdrop 2 [1745, 409]
+	- Quick Backdrop 2 [350, 409]
+	- Quick Backdrop 2 [11450, 410]
+	- Quick Backdrop 2 [10055, 409]
+	- Quick Backdrop 2 [8350, 410]
+	- Quick Backdrop 2 [3140, 409]
+	- Quick Backdrop 2 [4535, 409]
+	- Quick Backdrop 2 [5930, 409]
+	- Backdrop 3 [250, 250]
+	- Backdrop 3 [350, 350]
+	- Backdrop 3 [650, 250]
+	- Backdrop 3 [450, 250]
+	- Backdrop 3 [550, 350]
+	- Quick Backdrop [0, 450]
+	- Backdrop [0, -50]
+	- Backdrop 3 [1900, 250]
+	- Backdrop 3 [2300, 250]
+	- Backdrop 3 [3050, 300]
+	- Backdrop 3 [7100, 250]
+	- Backdrop 3 [8019, 250]
+	- Quick Backdrop 3 [9650, 350]
+	- Quick Backdrop 3 [8750, 350]
+	- Quick Backdrop 3 [7700, 350]
+	- Backdrop 4 [10850, 350]
+	- Backdrop 6 [11950, 400]
+	- Date & Time [683, -8]
+	- magic_rainbow [339, 92]
+	- Active 4 [369, 60]
+	- Active 3 [307, 61]
+	- hit box [254, 405]
+	- floor 1 [253, 433]
+	- ceiling [254, 379]
+	- floor 2 [253, 447]
+	- floor 3 [253, 435]
+	- feel right [279, 411]
+	- feel left [228, 411]
+	- jumped [-44, 482]
+	- going up [-44, 500]
+	- fall [-44, 518]
+	- Active 5 [101, 450]
+	- checkpoint [116, 416]
+	- Active 5 [851, 450]
+	- Active 5 [1851, 450]
+	- Active 5 [2801, 450]
+	- Active 5 [3801, 450]
+	- Active 5 [4801, 450]
+	- Active 5 [5851, 450]
+	- Active 5 [7001, 450]
+	- Active 5 [8201, 450]
+	- Active [166, 439]
+	- deaths [212, -82]
+	- trigger [1272, 217]
+	- Active 2 [1123, 246]
+	- Active 2 [1423, 246]
+	- trigger [1572, 217]
+	- Active 2 [1773, 396]
+	- Active 2 [2023, 246]
+	- Active 2 [2223, 246]
+	- Active 2 [2423, 246]
+	- Active 2 [2623, 246]
+	- Active 2 [2523, 446]
+	- trigger [1972, 217]
+	- trigger [2372, 217]
+	- trigger [2722, 217]
+	- trigger 2 [2972, 217]
+	- trigger 2 [3372, 217]
+	- trigger 2 [4222, 217]
+	- trigger 4 [4822, 217]
+	- trigger 5 [5072, 217]
+	- trigger 5 [5472, 217]
+	- trigger 5 [5672, 217]
+	- Active 2 [2123, 446]
+	- Active 2 [3573, 246]
+	- trigger [3722, 217]
+	- trigger 3 [3822, 217]
+	- Active 8 [3965, 114]
+	- Active 8 [4615, 114]
+	- Active 8 [4465, 164]
+	- Active 8 [4165, 164]
+	- Active 8 [4715, 114]
+	- spikes [5255, 869]
+	- spikes 2 [6155, -372]
+	- Active 2 [5473, 396]
+	- trigger [5472, 217]
+	- trigger 2 [6172, 217]
+	- trigger 5 [6342, 217]
+	- trigger 5 [6522, 217]
+	- trigger 5 [6945, 217]
+	- trigger 7 [7772, 217]
+	- trigger 8 [7372, 217]
+	- trigger 8 [8126, 217]
+	- trigger 9 [8322, 217]
+	- trigger 6 [6422, 217]
+	- log shoot [8415, 265]
+	- log shoot [8415, 97]
+	- log shoot 2 [8415, 178]
+	- log shoot 2 [8415, 337]
+	- log shoot [8415, 415]
+	- trigger 5 [7822, 217]
+	- trigger 5 [10022, 217]
+	- trigger 5 [9672, 217]
+	- Active 2 [11023, 246]
+	- trigger [11172, 217]
+	- trigger 5 [10872, 217]
+	- win [12015, 251]
+	- WIN [11662, -82]
+	- great job [403, 210]
+	- you suck [410, 209]
+	- game over [450, -50]
+	- found new [512, -82]
+	- Active 19 [89, 79]
+	- Counter [786, -32]
+	- Active 11 [38, 466]
+	- Active 12 [13, 467]

@@ -1,0 +1,206 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* Start of Frame
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+	Sound : Stop any sample
+
+* Start of Frame
+	what game : Set Counter to ItemValue( "Ini", "find" )
+
+* Start of Frame
+	 Ini : Set value 0 to item "find"
+
+* Repeat while "A" is pressed
+	Active : Set direction to ...............
+
+* Repeat while "D" is pressed
+	Active : Set direction to ...........
+
+* NOT Active is overlapping top border
++ Repeat while "W" is pressed
++ Every 00''-20
+	Active : Set position at (0,-20) from Active
+	 Sound : Play sample clear on channel #2
+
+* NOT Active is overlapping bottom border
++ Repeat while "S" is pressed
++ Every 00''-20
+	Active : Set position at (0,20) from Active
+	 Sound : Play sample clear on channel #2
+
+* NOT Active is overlapping left border
++ Repeat while "A" is pressed
++ Every 00''-20
+	Active : Set position at (-20,0) from Active
+	 Sound : Play sample clear on channel #2
+
+* NOT Active is overlapping right border
++ Repeat while "D" is pressed
++ Every 00''-20
+	Active : Set position at (20,0) from Active
+	 Sound : Play sample clear on channel #2
+
+* Every 01''-00
+	timer : Subtract 1 from Counter
+
+* timer < 0
+	storyboard controls : Jump to frame "wait" (10)
+
+* what game = 1
++ Alterable Value A of make = 0
++ Only one action when event loops
+	New Objects : Create pixel bb at (212,433) from make
+	New Objects : Create Active 2 at (214,217) from make
+	New Objects : Create trigger point at (221,216) from make
+	make : Set Alterable Value A to 1
+
+* what game = 2
++ Alterable Value A of make = 0
++ Only one action when event loops
+	make : Set Alterable Value A to 1
+	New Objects : Create button 1 at (195,270) from make
+	New Objects : Create button 2 at (195,370) from make
+	New Objects : Create button 3 at (345,320) from make
+	New Objects : Create button 4 at (345,420) from make
+	Active : Set position at (128,247)
+	 Active : Bring to front
+
+* what game = 3
++ Alterable Value A of make = 0
++ Only one action when event loops
+	make : Set Alterable Value A to 1
+	New Objects : Create cupcake box at (56,285) from make
+	New Objects : Create cupcake box at (209,285) from make
+	New Objects : Create cupcake box at (362,285) from make
+	New Objects : Create cupcake box at (515,285) from make
+
+* what game = 4
++ Alterable Value A of make = 0
++ Only one action when event loops
+	make : Set Alterable Value A to 1
+	New Objects : Create numbers 1 at (-7,449) from make
+	New Objects : Create numbers 2 at (159,449) from make
+	New Objects : Create numbers 3 at (330,449) from make
+	New Objects : Create code at (443,301) from make
+
+* what game = 5
++ Alterable Value A of make = 0
++ Only one action when event loops
+	make : Set Alterable Value A to 1
+	New Objects : Create Active 3 at (176,202) from make
+	New Objects : Create SB at (174,416) from make
+	New Objects : Create SB trigger at (182,201) from make
+
+* Active is overlapping pixel bb
++ Alterable Value A of pixel bb = 0
+	pixel bb : Set position at (0,-20) from pixel bb
+	 Sound : Play sample clear on channel #2
+
+* Active is overlapping SB
++ Alterable Value A of SB = 0
+	 Sound : Play sample clear on channel #2
+	SB : Set position at (0,-20) from SB
+
+* pixel bb is overlapping trigger point
++ Only one action when event loops
+	pixel bb : Set position at (9,0) from Active 2
+	 Sound : Play sample got on channel #3
+	 Ini : Set value 1 to item "g1"
+	pixel bb : Set Alterable Value A to 1
+
+* Active is overlapping button 1
++ Alterable Value C of Active = 0
++ Alterable Value C of make = 0
+	Active : Add 1 to Alterable Value C
+	button 1 : Change animation sequence to Animation 12
+	 Sound : Play sample got on channel #3
+	make : Set Alterable Value C to 30
+
+* Active is overlapping button 2
++ Alterable Value C of Active = 1
++ Alterable Value C of make = 0
+	Active : Add 1 to Alterable Value C
+	button 2 : Change animation sequence to Animation 12
+	 Sound : Play sample got on channel #3
+	make : Set Alterable Value C to 30
+
+* Active is overlapping button 3
++ Alterable Value C of Active = 2
++ Alterable Value C of make = 0
+	Active : Add 1 to Alterable Value C
+	button 3 : Change animation sequence to Animation 12
+	 Sound : Play sample got on channel #3
+	make : Set Alterable Value C to 30
+
+* Active is overlapping button 4
++ Alterable Value C of Active = 3
++ Alterable Value C of make = 0
+	Active : Add 1 to Alterable Value C
+	button 4 : Change animation sequence to Animation 12
+	 Sound : Play sample got on channel #3
+	 Ini : Set value 1 to item "g2"
+	make : Set Alterable Value C to 30
+
+* Alterable Value C of make > 0
+	make : Sub 1 from Alterable Value C
+
+* Always
+	hotspot : Set position at (3,9) from Active
+
+* timer <= 0
+	timer : Make invisible
+
+* Active is overlapping cupcake
++ Alterable Value A of cupcake = 0
++ Every 00''-10
+	cupcake : Set position at (0,-20) from cupcake
+
+* Alterable Value A of cupcake box = 0
+	New Objects : Create cupcake at (3,158) from cupcake box
+	New Objects : Create cake lock at (7,8) from cupcake box
+	cupcake box : Set Alterable Value A to 1
+
+* cupcake is overlapping cake lock
++ Alterable Value A of cupcake = 0
++ Only one action when event loops
+	 Sound : Play sample got on channel #3
+	cupcake : Set Alterable Value A to 1
+	cupcake : Set position at (0,0) from cake lock
+	make : Add 1 to Alterable Value E
+
+* Alterable Value E of make = 4
++ Only one action when event loops
+	 Ini : Set value 1 to item "g3"
+
+* hotspot is overlapping numbers 1
++ Only one action when event loops
+	code : Set Counter to 153458
+	 Sound : Play sample got on channel #3
+	hotspot : Set Alterable Value C to 1
+
+* hotspot is overlapping numbers 2
++ Only one action when event loops
+	code : Set Counter to 395248
+	 Sound : Play sample got on channel #3
+	hotspot : Set Alterable Value C to 2
+
+* hotspot is overlapping numbers 3
++ Only one action when event loops
+	code : Set Counter to 928746
+	 Sound : Play sample got on channel #3
+	hotspot : Set Alterable Value C to 3
+
+* SB is overlapping SB trigger
++ Only one action when event loops
+	SB : Set Alterable Value A to 1
+	SB : Set position at (2,1) from SB trigger
+	 Ini : Set value 1 to item "g5"
+	 Sound : Play sample got on channel #3
+
+* timer = 0
++ Alterable Value C of hotspot = 2
++ Only one action when event loops
+	 Ini : Set value 1 to item "g4"
+

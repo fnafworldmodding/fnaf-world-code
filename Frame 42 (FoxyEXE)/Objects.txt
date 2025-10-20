@@ -1,0 +1,90 @@
++ Object Definitions
+	+ area
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 4
+		- Type: Active
+		- Images hash: 0x4CC9
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xFFE0
+	+ Active 3
+		- Type: Active
+		- Images hash: 0xF914
+	+ Active 5
+		- Type: Active
+		- Images hash: 0xB6AC
+	+ Quick Backdrop
+		- Type: Quick Backdrop
+		- Images hash: 0xB8A0
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0x3A2B
+	+ Active 8
+		- Type: Active
+		- Images hash: 0xE852
+	+ Active 6
+		- Type: Active
+		- Images hash: 0x6AA5
+	+ Active 7
+		- Type: Active
+		- Images hash: 0xCE5C
+	+ trigger
+		- Type: Active
+		- Images hash: 0xDA63
+	+ trigger 2
+		- Type: Active
+		- Images hash: 0x46F2
+	+ Counter
+		- Type: Counter
+		- Images hash: 0xE6BC
+	+ Active
+		- Type: Active
+		- Images hash: 0x4B01
+	+ Perspective 2
+		- Type: Perspective
+	+ Perspective
+		- Type: Perspective
+	+ lives
+		- Type: Counter
+		- Images hash: 0x1FE7
+	+ Active 9
+		- Type: Active
+		- Images hash: 0xE9C9
+	+ found new
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 13
+		- Type: Active
+		- Images hash: 0xEFAC
++ Layer #1 (Layer 1)
+	- area [96, -64]
++ Layer #2 (Layer 2)
+	- Active 2 [773, 239]
+	- Active 3 [773, 719]
+	- Active 5 [773, 1199]
++ Layer #4 (Layer 4)
+	- Quick Backdrop [-32, 160]
++ Layer #5 (Layer 5)
+	- Backdrop [32, 0]
+	- Active 8 [997, 1679]
+	- Active 6 [1575, 1280]
+	- Active 6 [2951, 1280]
+	- Active 6 [4327, 1280]
+	- Active 6 [5863, 1312]
+	- Active 7 [1319, 1273]
+	- trigger [6415, 458]
+	- trigger 2 [7823, 900]
+	- Active 4 [-131, 913]
+	- Counter [180, -25]
+	- Active 7 [2503, 1273]
+	- Active 7 [3399, 1273]
+	- Active 7 [5319, 1273]
+	- Active [402, 450]
++ Layer #6 (Layer 6)
+	- Perspective 2 [0, 0]
+	- Perspective [0, 0]
+	- lives [-30, 65]
+	- Active 9 [399, 239]
+	- found new [268, -46]
+	- Active 13 [699, 84]

@@ -1,0 +1,246 @@
+* Timer equals 00''-50
+	storyboard controls : Jump to frame "overworld" (6)
+
+* Start of Frame
+	attack 2 : Set Alterable Value A to Random(47) + 1
+
+* Alterable Value A of attack 2 > 0
+	attack 2 : Reappear
+	name : Reappear
+	name 2 : Reappear
+
+* Alterable Value A of attack 2 = 1
+	attack 2 : Change animation sequence to Stopped
+	name : Set alterable string to "Freddy"
+	name 2 : Set alterable string to "Back to basics!"
+
+* Alterable Value A of attack 2 = 2
+	attack 2 : Change animation sequence to Animation 12
+	name : Set alterable string to "Bonnie"
+	name 2 : Set alterable string to "Jammin!"
+
+* Alterable Value A of attack 2 = 3
+	attack 2 : Change animation sequence to Animation 13
+	name : Set alterable string to "Chica"
+	name 2 : Set alterable string to "Let's Eat!"
+
+* Alterable Value A of attack 2 = 4
+	attack 2 : Change animation sequence to Animation 14
+	name : Set alterable string to "Foxy"
+	name 2 : Set alterable string to "Back-In-Order!"
+
+* Alterable Value A of attack 2 = 5
+	attack 2 : Change animation sequence to Animation 15
+	name : Set alterable string to "Toy Bonnie"
+	name 2 : Set alterable string to "Something new!"
+
+* Alterable Value A of attack 2 = 6
+	attack 2 : Change animation sequence to Animation 16
+	name : Set alterable string to "Toy Chica"
+	name 2 : Set alterable string to "Let's Party!"
+
+* Alterable Value A of attack 2 = 7
+	attack 2 : Change animation sequence to Animation 17
+	name : Set alterable string to "Toy Freddy"
+	name 2 : Set alterable string to "Still Freddy- but shiny."
+
+* Alterable Value A of attack 2 = 8
+	attack 2 : Change animation sequence to Animation 18
+	name : Set alterable string to "Mangle"
+	name 2 : Set alterable string to "Kids can be so cruel..."
+
+* Alterable Value A of attack 2 = 9
+	attack 2 : Change animation sequence to Animation 19
+	name : Set alterable string to "Balloon Boy"
+	name 2 : Set alterable string to "Everyone's favorite!"
+
+* Alterable Value A of attack 2 = 10
+	attack 2 : Change animation sequence to Animation 20
+	name : Set alterable string to "JJ"
+	name 2 : Set alterable string to "Because one wasn't enough!"
+
+* Alterable Value A of attack 2 = 11
+	attack 2 : Change animation sequence to Animation 21
+	name : Set alterable string to "Phantom Freddy"
+	name 2 : Set alterable string to "Just taking a stroll."
+
+* Alterable Value A of attack 2 = 12
+	attack 2 : Change animation sequence to Animation 22
+	name : Set alterable string to "Phantom Chica"
+	name 2 : Set alterable string to "Stop calling me a watermelon."
+
+* Alterable Value A of attack 2 = 13
+	attack 2 : Change animation sequence to Animation 23
+	name : Set alterable string to "Phantom BB"
+	name 2 : Set alterable string to "Because reasons."
+
+* Alterable Value A of attack 2 = 14
+	attack 2 : Change animation sequence to Animation 24
+	name : Set alterable string to "Phantom Foxy"
+	name 2 : Set alterable string to "Because you can never have too much Foxy."
+
+* Alterable Value A of attack 2 = 15
+	attack 2 : Change animation sequence to Animation 25
+	name : Set alterable string to "Phantom Mangle"
+	name 2 : Set alterable string to "Because he needed to be weirder."
+
+* Alterable Value A of attack 2 = 16
+	attack 2 : Change animation sequence to Animation 26
+	name : Set alterable string to "Withered Bonnie"
+	name 2 : Set alterable string to "Look into my eye!"
+
+* Alterable Value A of attack 2 = 17
+	attack 2 : Change animation sequence to Animation 27
+	name : Set alterable string to "Withered Chica"
+	name 2 : Set alterable string to "What happened to Chica?!"
+
+* Alterable Value A of attack 2 = 18
+	attack 2 : Change animation sequence to Animation 28
+	name : Set alterable string to "Withered Freddy"
+	name 2 : Set alterable string to "Because we needed one more."
+
+* Alterable Value A of attack 2 = 19
+	attack 2 : Change animation sequence to Animation 29
+	name : Set alterable string to "Withered Foxy"
+	name 2 : Set alterable string to "Still Foxy- but more YAAARG!"
+
+* Alterable Value A of attack 2 = 20
+	attack 2 : Change animation sequence to Animation 30
+	name : Set alterable string to "Shadow Freddy"
+	name 2 : Set alterable string to "I will eat your soul."
+
+* Alterable Value A of attack 2 = 21
+	attack 2 : Change animation sequence to Animation 31
+	name : Set alterable string to "Marionette"
+	name 2 : Set alterable string to "Think outside the box!"
+
+* Alterable Value A of attack 2 = 22
+	attack 2 : Change animation sequence to Animation 32
+	name : Set alterable string to "Phantom Marionette"
+	name 2 : Set alterable string to "Put it back in the box!"
+
+* Alterable Value A of attack 2 = 23
+	attack 2 : Change animation sequence to Animation 33
+	name : Set alterable string to "Golden Freddy"
+	name 2 : Set alterable string to "It's me."
+
+* Alterable Value A of attack 2 = 24
+	attack 2 : Change animation sequence to Animation 34
+	name : Set alterable string to "Paperpals"
+	name 2 : Set alterable string to "Huh?"
+
+* Alterable Value A of attack 2 = 25
+	attack 2 : Change animation sequence to Animation 35
+	name : Set alterable string to "Nightmare Freddy"
+	name 2 : Set alterable string to "The more, the merrier."
+
+* Alterable Value A of attack 2 = 26
+	attack 2 : Change animation sequence to Animation 36
+	name : Set alterable string to "Nightmare Bonnie"
+	name 2 : Set alterable string to "Let's get mean!"
+
+* Alterable Value A of attack 2 = 27
+	attack 2 : Change animation sequence to Animation 37
+	name : Set alterable string to "Nightmare Chica"
+	name 2 : Set alterable string to "Making you a sandwich."
+
+* Alterable Value A of attack 2 = 28
+	attack 2 : Change animation sequence to Animation 38
+	name : Set alterable string to "Nightmare Foxy"
+	name 2 : Set alterable string to "Out of order since FNaF 1."
+
+* Alterable Value A of attack 2 = 29
+	attack 2 : Change animation sequence to Animation 39
+	name : Set alterable string to "Endo 01"
+	name 2 : Set alterable string to "Because look at him!"
+
+* Alterable Value A of attack 2 = 30
+	attack 2 : Change animation sequence to Animation 40
+	name : Set alterable string to "Endo 02"
+	name 2 : Set alterable string to "Not as cute, but more useful."
+
+* Alterable Value A of attack 2 = 31
+	attack 2 : Change animation sequence to Animation 41
+	name : Set alterable string to "Plushtrap"
+	name 2 : Set alterable string to "Because the world needed a plush version."
+
+* Alterable Value A of attack 2 = 32
+	attack 2 : Change animation sequence to Animation 42
+	name : Set alterable string to "Endoplush"
+	name 2 : Set alterable string to "Because character quota."
+
+* Alterable Value A of attack 2 = 33
+	attack 2 : Change animation sequence to Animation 43
+	name : Set alterable string to "Springtrap"
+	name 2 : Set alterable string to "Cuter in person; still a killer."
+
+* Alterable Value A of attack 2 = 34
+	attack 2 : Change animation sequence to Animation 44
+	name : Set alterable string to "RWQFSFASXC"
+	name 2 : Set alterable string to "SAY MY NAME!"
+
+* Alterable Value A of attack 2 = 35
+	attack 2 : Change animation sequence to Animation 45
+	name : Set alterable string to "Crying Child"
+	name 2 : Set alterable string to "Still sad."
+
+* Alterable Value A of attack 2 = 36
+	attack 2 : Change animation sequence to Animation 46
+	name : Set alterable string to "Funtime Foxy"
+	name 2 : Set alterable string to "It wasn't meant to last."
+
+* Alterable Value A of attack 2 = 37
+	attack 2 : Change animation sequence to Animation 47
+	name : Set alterable string to "Nightmare Fredbear"
+	name 2 : Set alterable string to "Getting down to business."
+
+* Alterable Value A of attack 2 = 38
+	attack 2 : Change animation sequence to Animation 48
+	name : Set alterable string to "Nightmare"
+	name 2 : Set alterable string to "This is why you wake up."
+
+* Alterable Value A of attack 2 = 39
+	attack 2 : Change animation sequence to Animation 49
+	name : Set alterable string to "Fredbear"
+	name 2 : Set alterable string to "Where it all started."
+
+* Alterable Value A of attack 2 = 40
+	attack 2 : Change animation sequence to Animation 50
+	name : Set alterable string to "Spring Bonnie"
+	name 2 : Set alterable string to "Male? Female? It's a rabbit, who cares."
+
+* Alterable Value A of attack 2 = 41
+	attack 2 : Change animation sequence to Animation 51
+	name : Set alterable string to "Virtua-Freddy"
+	name 2 : Set alterable string to "Blink, and you'll miss him!"
+
+* Alterable Value A of attack 2 = 42
+	attack 2 : Change animation sequence to Animation 25
+	name : Set alterable string to "Phantom Mangle"
+	name 2 : Set alterable string to "Because she needed to be weirder."
+
+* Alterable Value A of attack 2 = 43
+	attack 2 : Change animation sequence to Animation 52
+	name : Set alterable string to "Jack-O-Bonnie"
+	name 2 : Set alterable string to "Not canon, but still here."
+
+* Alterable Value A of attack 2 = 44
+	attack 2 : Change animation sequence to Animation 53
+	name 2 : Set alterable string to "Feeling empty inside."
+	name : Set alterable string to "Jack-O-Chica"
+
+* Alterable Value A of attack 2 = 45
+	attack 2 : Change animation sequence to Animation 54
+	name 2 : Set alterable string to "Some things can't be made cute."
+	name : Set alterable string to "Nightmare BB"
+
+* Alterable Value A of attack 2 = 46
+	attack 2 : Change animation sequence to Animation 55
+	name : Set alterable string to "Nightmarionne"
+	name 2 : Set alterable string to "I'm taller in person."
+
+* Alterable Value A of attack 2 = 47
+	attack 2 : Change animation sequence to Animation 56
+	name : Set alterable string to "Purpleguy"
+	name 2 : Set alterable string to "I take 10 seconds to draw!"
+

@@ -1,0 +1,9 @@
++ Object Definitions
+	+ first?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Ini
+		- Type: Ini
++ Layer #1 (Layer 1)
+	- first? [201, -54]
+	- Ini [97, -80]

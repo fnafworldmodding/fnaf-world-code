@@ -1,0 +1,12 @@
++ Object Definitions
+	+ Real
+		- Type: String
+		+ Texts
+			1: 
+	+ Fake
+		- Type: String
+		+ Texts
+			1: 
++ Layer #1 (Layer 1)
+	- Real [100, -150]
+	- Fake [116, 150]

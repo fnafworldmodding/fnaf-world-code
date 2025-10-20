@@ -1,0 +1,429 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* cooldown > 0
+	cooldown : Subtract 1 from Counter
+
+* cooldown = 0
++ menu stage = 0
++ Only one action when event loops
+	New Objects : Create file slot 1 at (203,85) from create buttons
+	New Objects : Create file slot 2 at (203,161) from create buttons
+	New Objects : Create file slot 3 at (203,237) from create buttons
+	New Objects : Create summary text 1 at (-123,4) from file slot 1
+	New Objects : Create summary text 2 at (-124,5) from file slot 2
+	New Objects : Create summary text 3 at (-125,4) from file slot 3
+	summary text 1 : Set alterable string to string$( "text mode 1" ) + ": " + string$( "text diff 1" ) + ": " + Str$(value( "hours slot 1" )) + ":" + string$( "minutes display" )
+	summary text 2 : Set alterable string to string$( "text mode 2" ) + ": " + string$( "text diff 2" ) + ": " + Str$(value( "hours slot 2" )) + ":" + string$( "minutes display 2" )
+	summary text 3 : Set alterable string to string$( "text mode 3" ) + ": " + string$( "text diff 3" ) + ": " + Str$(value( "hours slot 3" )) + ":" + string$( "minutes display 3" )
+
+* cooldown = 0
++ menu stage = 1
++ Only one action when event loops
+	New Objects : Create new game at (203,114) from create buttons
+	New Objects : Create continue at (203,190) from create buttons
+
+* cooldown = 0
++ menu stage = 2
++ Only one action when event loops
+	New Objects : Create YES at (204,113) from create buttons
+	New Objects : Create NO at (204,189) from create buttons
+
+* User clicks with left button on file slot 1
+	file slot : Set Counter to 1
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+	New Objects : Create file slot 4 at (0,0) from file slot 1
+	cooldown : Set Counter to 20
+	menu stage : Set Counter to 1
+	started : Set Counter to ItemValue( "Ini", "started" )
+	mode : Set Counter to ItemValue( "Ini", "mode" )
+	difficulty : Set Counter to ItemValue( "Ini", "diff" )
+	minutes : Set Counter to value( "minutes slot 1" )
+	hours : Set Counter to value( "hours slot 1" )
+	beat 2 : Set Counter to ItemValue( "Ini", "beatgame2" )
+	beat 3 : Set Counter to ItemValue( "Ini", "beatgame3" )
+
+* User clicks with left button on file slot 2
+	file slot : Set Counter to 2
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+	New Objects : Create file slot 4 at (0,0) from file slot 2
+	menu stage : Set Counter to 1
+	cooldown : Set Counter to 20
+	started : Set Counter to ItemValue( "Ini", "started" )
+	mode : Set Counter to ItemValue( "Ini", "mode" )
+	difficulty : Set Counter to ItemValue( "Ini", "diff" )
+	minutes : Set Counter to value( "minutes slot 2" )
+	hours : Set Counter to value( "hours slot 2" )
+	beat 2 : Set Counter to ItemValue( "Ini", "beatgame2" )
+	beat 3 : Set Counter to ItemValue( "Ini", "beatgame3" )
+
+* User clicks with left button on file slot 3
+	file slot : Set Counter to 3
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+	New Objects : Create file slot 4 at (0,0) from file slot 3
+	menu stage : Set Counter to 1
+	cooldown : Set Counter to 20
+	started : Set Counter to ItemValue( "Ini", "started" )
+	mode : Set Counter to ItemValue( "Ini", "mode" )
+	difficulty : Set Counter to ItemValue( "Ini", "diff" )
+	minutes : Set Counter to value( "minutes slot 2" )
+	hours : Set Counter to value( "hours slot 3" )
+	beat 2 : Set Counter to ItemValue( "Ini", "beatgame2" )
+	beat 3 : Set Counter to ItemValue( "Ini", "beatgame3" )
+
+* cooldown > 0
++ Only one action when event loops
+	file slot 1 : Destroy
+	file slot 2 : Destroy
+	file slot 3 : Destroy
+	new game : Destroy
+	continue : Destroy
+	YES : Destroy
+	NO : Destroy
+	adventure button : Destroy
+	fixed party text : Destroy
+	game mode text : Destroy
+	find new text : Destroy
+	start with two text : Destroy
+	normal : Destroy
+	hard : Destroy
+	summary text 1 : Destroy
+	summary text 2 : Destroy
+	summary text 3 : Destroy
+
+* file slot 4 animation Stopped is over
+	file slot 4 : Destroy
+
+* User clicks with left button on new game
+	menu stage : Set Counter to 2
+	New Objects : Create file slot 4 at (0,0) from new game
+	cooldown : Set Counter to 20
+
+* User clicks with left button on continue
++ started = 1
+	menu stage : Set Counter to 3
+	New Objects : Create file slot 4 at (0,0) from continue
+	cooldown : Set Counter to 20
+
+* cooldown = 0
++ menu stage = 3
+	storyboard controls : Next frame
+
+* cooldown = 0
++ menu stage = 4
++ Only one action when event loops
+	New Objects : Create adventure button at (205,73) from create buttons 2
+	New Objects : Create fixed party text at (205,185) from create buttons 2
+	New Objects : Create game mode text at (118,-58) from create buttons 2
+	New Objects : Create start with two text at (22,228) from create buttons 2
+	New Objects : Create find new text at (90,108) from create buttons 2
+
+* cooldown = 0
++ menu stage = 5
++ Only one action when event loops
+	New Objects : Create normal at (205,88) from create buttons 2
+	New Objects : Create hard at (205,164) from create buttons 2
+	New Objects : Create game mode text at (118,-24) from create buttons 2
+
+* cooldown = 0
++ menu stage = 6
++ Only one action when event loops
+	New Objects : Create normal at (205,88) from create buttons 2
+	New Objects : Create hard at (205,164) from create buttons 2
+	New Objects : Create game mode text at (118,-24) from create buttons 2
+
+* User clicks with left button on NO
+	menu stage : Set Counter to 0
+	cooldown : Set Counter to 20
+	New Objects : Create file slot 4 at (0,0) from NO
+
+* User clicks with left button on YES
+	cooldown : Set Counter to 20
+	menu stage : Set Counter to 4
+	 Ini : Delete group "fnafw"
+	Ini : Set current group to "fnafw"
+	 Ini : Set value 1 to item "newgame"
+	New Objects : Create file slot 4 at (0,0) from YES
+	 Ini : Set value 1 to item "1have"
+	 Ini : Set value 1 to item "2have"
+	 Ini : Set value 1 to item "3have"
+	 Ini : Set value 1 to item "4have"
+	 Ini : Set value 1 to item "5have"
+	 Ini : Set value 1 to item "6have"
+	 Ini : Set value 1 to item "7have"
+	 Ini : Set value 1 to item "8have"
+
+* file slot 2 is visible
+	pick file : Reappear
+
+* Number of file slot 2 = 0
+	pick file : Make invisible
+
+* YES is visible
+	erase : Reappear
+
+* Number of YES = 0
+	erase : Make invisible
+
+* started = 0
+	 continue : Set alpha-blending coefficient to 200
+
+* User clicks with left button on adventure button
+	menu stage : Set Counter to 5
+	New Objects : Create file slot 4 at (0,0) from adventure button
+	cooldown : Set Counter to 20
+	mode : Set Counter to 1
+	 Ini : Set value 1 to item "mode"
+
+* User clicks with left button on fixed party text
++ have all = 0
++ demo? = 0
+	menu stage : Set Counter to 6
+	New Objects : Create file slot 4 at (0,0) from fixed party text
+	cooldown : Set Counter to 20
+	mode : Set Counter to 2
+	 Ini : Set value 2 to item "mode"
+	 Ini : Set value 1 to item "9have"
+	 Ini : Set value 1 to item "10have"
+	 Ini : Set value 1 to item "11have"
+	 Ini : Set value 1 to item "12have"
+	 Ini : Set value 1 to item "13have"
+	 Ini : Set value 1 to item "14have"
+	 Ini : Set value 1 to item "15have"
+	 Ini : Set value 1 to item "16have"
+
+* User clicks with left button on fixed party text
++ have all = 1
++ demo? = 0
+	menu stage : Set Counter to 6
+	New Objects : Create file slot 4 at (0,0) from fixed party text
+	cooldown : Set Counter to 20
+	mode : Set Counter to 2
+	 Ini : Set value 2 to item "mode"
+	 Ini : Set value 1 to item "9have"
+	 Ini : Set value 1 to item "10have"
+	 Ini : Set value 1 to item "11have"
+	 Ini : Set value 1 to item "12have"
+	 Ini : Set value 1 to item "13have"
+	 Ini : Set value 1 to item "14have"
+	 Ini : Set value 1 to item "15have"
+	 Ini : Set value 1 to item "16have"
+	 Ini : Set value 1 to item "17have"
+	 Ini : Set value 1 to item "18have"
+	 Ini : Set value 1 to item "19have"
+	 Ini : Set value 1 to item "20have"
+	 Ini : Set value 1 to item "21have"
+	 Ini : Set value 1 to item "22have"
+	 Ini : Set value 1 to item "23have"
+	 Ini : Set value 1 to item "24have"
+	 Ini : Set value 1 to item "25have"
+	 Ini : Set value 1 to item "26have"
+	 Ini : Set value 1 to item "27have"
+	 Ini : Set value 1 to item "28have"
+	 Ini : Set value 1 to item "29have"
+	 Ini : Set value 1 to item "30have"
+	 Ini : Set value 1 to item "31have"
+	 Ini : Set value 1 to item "32have"
+	 Ini : Set value 1 to item "33have"
+	 Ini : Set value 1 to item "34have"
+	 Ini : Set value 1 to item "35have"
+	 Ini : Set value 1 to item "36have"
+	 Ini : Set value 1 to item "37have"
+	 Ini : Set value 1 to item "38have"
+	 Ini : Set value 1 to item "39have"
+	 Ini : Set value 1 to item "40have"
+
+* started = 1
+	 continue : Set alpha-blending coefficient to 0
+
+* Timer equals 00''-10
+	New Objects : Create pick file at (84,-16) from create buttons
+	New Objects : Create erase at (113,14) from create buttons
+
+* User clicks with left button on normal
+	New Objects : Create file slot 4 at (0,0) from normal
+	cooldown : Set Counter to 20
+	menu stage : Set Counter to 7
+	difficulty : Set Counter to 1
+	 Ini : Set value 1 to item "diff"
+	minutes : Set Counter to 0
+	hours : Set Counter to 0
+
+* User clicks with left button on hard
++ demo? = 0
+	New Objects : Create file slot 4 at (0,0) from hard
+	cooldown : Set Counter to 20
+	menu stage : Set Counter to 7
+	difficulty : Set Counter to 2
+	 Ini : Set value 2 to item "diff"
+	hours : Set Counter to 0
+	minutes : Set Counter to 0
+
+* cooldown = 0
++ menu stage = 7
+	storyboard controls : Next frame
+
+* menu stage = 7
++ Only one action when event loops
+	Ini : Set current file to "info"
+	Ini : Set current group to "info"
+	 Ini : Set value value( "mode" ) to item "mode" + Str$(value( "file slot" ))
+	 Ini : Set value value( "difficulty" ) to item "diff" + Str$(value( "file slot" ))
+
+* Start of Frame
+	Ini : Set current file to "info"
+	Ini : Set current group to "info"
+	slot 1 mode : Set Counter to ItemValue( "Ini", "mode1" )
+	slot 2 mode : Set Counter to ItemValue( "Ini", "mode2" )
+	slot 3 mode : Set Counter to ItemValue( "Ini", "mode3" )
+	slot diff 1 : Set Counter to ItemValue( "Ini", "diff1" )
+	slot diff 2 : Set Counter to ItemValue( "Ini", "diff2" )
+	slot diff 3 : Set Counter to ItemValue( "Ini", "diff3" )
+	minutes slot 1 : Set Counter to ItemValue( "Ini", "min1" )
+	minutes slot 2 : Set Counter to ItemValue( "Ini", "min2" )
+	minutes slot 3 : Set Counter to ItemValue( "Ini", "min3" )
+	hours slot 1 : Set Counter to ItemValue( "Ini", "hour1" )
+	hours slot 2 : Set Counter to ItemValue( "Ini", "hour2" )
+	hours slot 3 : Set Counter to ItemValue( "Ini", "hour3" )
+	have all : Set Counter to ItemValue( "Ini", "all" )
+	fan : Set Alterable Value A to ItemValue( "Ini", "all" )
+	pearl 2 : Set Alterable Value A to ItemValue( "Ini", "gotpearl" )
+	trophy1 : Set Alterable Value A to ItemValue( "Ini", "beatgame1" )
+	trophy 2 : Set Alterable Value A to ItemValue( "Ini", "beatgame2" )
+	trophy 3 : Set Alterable Value A to ItemValue( "Ini", "beatgame3" )
+	pixel trophy : Set Alterable Value A to ItemValue( "Ini", "beatgame4" )
+	spirit trophy : Set Alterable Value A to ItemValue( "Ini", "beatgame5" )
+	end trophy : Set Alterable Value A to ItemValue( "Ini", "beatgame6" )
+	trophy 4 : Set Alterable Value A to ItemValue( "Ini", "beatgame7" )
+
+* slot 1 mode = 0
+	text mode 1 : Set alterable string to "Empty"
+
+* slot 2 mode = 0
+	text mode 2 : Set alterable string to "Empty"
+
+* slot 3 mode = 0
+	text mode 3 : Set alterable string to "Empty"
+
+* slot 1 mode = 1
+	text mode 1 : Set alterable string to "Adventure"
+
+* slot 2 mode = 1
+	text mode 2 : Set alterable string to "Adventure"
+
+* slot 3 mode = 1
+	text mode 3 : Set alterable string to "Adventure"
+
+* slot 1 mode = 2
+	text mode 1 : Set alterable string to "Fixed Party"
+
+* slot 2 mode = 2
+	text mode 2 : Set alterable string to "Fixed Party"
+
+* slot 3 mode = 2
+	text mode 3 : Set alterable string to "Fixed Party"
+
+* slot diff 1 = 1
+	text diff 1 : Set alterable string to "Normal Mode"
+
+* slot diff 1 = 2
+	text diff 1 : Set alterable string to "Hard Mode"
+
+* slot diff 2 = 1
+	text diff 2 : Set alterable string to "Normal Mode"
+
+* slot diff 2 = 2
+	text diff 2 : Set alterable string to "Hard Mode"
+
+* slot diff 3 = 1
+	text diff 3 : Set alterable string to "Normal Mode"
+
+* slot diff 3 = 2
+	text diff 3 : Set alterable string to "Hard Mode"
+
+* minutes slot 1 >= 10
+	minutes display : Set alterable string to Str$(value( "minutes slot 1" ))
+
+* minutes slot 2 >= 10
+	minutes display 2 : Set alterable string to Str$(value( "minutes slot 2" ))
+
+* minutes slot 3 >= 10
+	minutes display 3 : Set alterable string to Str$(value( "minutes slot 3" ))
+
+* minutes slot 1 < 10
+	minutes display : Set alterable string to "0" + Str$(value( "minutes slot 1" ))
+
+* minutes slot 2 < 10
+	minutes display 2 : Set alterable string to "0" + Str$(value( "minutes slot 2" ))
+
+* minutes slot 3 < 10
+	minutes display 3 : Set alterable string to "0" + Str$(value( "minutes slot 3" ))
+
+* Alterable Value A of fan = 1
+	fan : Reappear
+
+* Alterable Value A of pearl 2 = 1
+	pearl 2 : Reappear
+
+* Alterable Value A of trophy1 = 1
+	trophy1 : Reappear
+
+* Alterable Value A of trophy 2 = 1
+	trophy 2 : Reappear
+
+* Alterable Value A of trophy 3 = 1
+	trophy 3 : Reappear
+
+* Alterable Value A of pixel trophy = 1
+	pixel trophy : Reappear
+
+* Alterable Value A of spirit trophy = 1
+	spirit trophy : Reappear
+
+* Alterable Value A of end trophy = 1
+	end trophy : Reappear
+
+* Repeat while "End" is pressed
++ Every 05''-00
++ Run this event once
+	Ini : Set current file to "info"
+	 Ini : Delete group "info"
+	Ini : Set current file to "fnafw1"
+	 Ini : Delete group "fnafw"
+	Ini : Set current file to "fnafw2"
+	 Ini : Delete group "fnafw"
+	Ini : Set current file to "fnafw3"
+	 Ini : Delete group "fnafw"
+
+* Repeat while "End" is pressed
++ Every 05''-00
++ Run this event once
+	storyboard controls : End the application
+
+* Number of hard > 0
++ demo? = 1
+	not available 1 : Reappear
+
+* Number of fixed party text > 0
++ demo? = 1
+	not available 2 : Reappear
+
+* Number of hard = 0
+	not available 1 : Make invisible
+
+* demo? = 0
+	not available 1 : Make invisible
+	not available 2 : Make invisible
+
+* Number of fixed party text = 0
+	not available 2 : Make invisible
+
+* Alterable Value A of trophy 4 = 1
+	trophy 4 : Reappear
+
+* Start of Frame
+	The mouse pointer and keyboard : Show Windows mouse pointer
+

@@ -1,0 +1,14 @@
++ Object Definitions
+	+ Active 2
+		- Type: Active
+		- Images hash: 0x3903
+	+ Active
+		- Type: Active
+		- Images hash: 0x6751
+	+ pow
+		- Type: Active
+		- Images hash: 0xDB3A
++ Layer #1 (Layer 1)
+	- Active 2 [0, 0]
++ Layer #2 (Layer 2)
+	- Active [399, 232]

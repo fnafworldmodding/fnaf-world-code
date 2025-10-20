@@ -1,0 +1,103 @@
++ Object Definitions
+	+ selected 1
+		- Type: Active
+		- Images hash: 0x0000
+	+ selected 2
+		- Type: Active
+		- Images hash: 0x0000
+	+ selected 3
+		- Type: Active
+		- Images hash: 0x0000
+	+ selected 4
+		- Type: Active
+		- Images hash: 0x0000
+	+ chip slot
+		- Type: Active
+		- Images hash: 0xF941
+	+ chip slot 2
+		- Type: Active
+		- Images hash: 0xF941
+	+ chip slot 3
+		- Type: Active
+		- Images hash: 0xF941
+	+ chip slot 4
+		- Type: Active
+		- Images hash: 0xF941
+	+ Active
+		- Type: Active
+		- Images hash: 0xAF39
+	+ set
+		- Type: Active
+		- Images hash: 0x2322
+	+ Active 3
+		- Type: Active
+		- Images hash: 0x9AC7
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xB8E8
+	+ String
+		- Type: String
+		+ Texts
+			1: Select up to four chips to activate.\nChoose RESET to clear selections.
+	+ String 2
+		- Type: String
+		+ Texts
+			1: 
+	+ Active 4
+		- Type: Active
+		- Images hash: 0x92EE
+	+ file slot
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ blue out
+		- Type: Active
+		- Images hash: 0x1F03
+	+ demo
+		- Type: Active
+		- Images hash: 0x197F
+	+ demo?
+		- Type: Counter
+		- Images hash: 0xF3AC
+	+ Ini
+		- Type: Ini
++ Layer #2 (Layer 2)
+	- selected 1 [-150, 0]
+	- selected 2 [-150, 100]
+	- selected 3 [-150, 200]
+	- selected 4 [-150, 300]
+	- chip slot [300, 400]
+	- chip slot 2 [350, 400]
+	- chip slot 3 [400, 400]
+	- chip slot 4 [450, 400]
+	- Active [50, 50]
+	- Active [150, 50]
+	- Active [250, 50]
+	- Active [350, 50]
+	- Active [450, 50]
+	- Active [550, 50]
+	- Active [650, 50]
+	- Active [50, 150]
+	- Active [150, 150]
+	- Active [250, 150]
+	- Active [350, 150]
+	- Active [450, 150]
+	- Active [550, 150]
+	- Active [650, 150]
+	- Active [50, 250]
+	- Active [150, 250]
+	- Active [250, 250]
+	- Active [350, 250]
+	- Active [450, 250]
+	- Active [550, 250]
+	- Active [650, 250]
+	- set [98, 97]
+	- Active 3 [119, 422]
+	- Active 2 [669, 422]
+	- String [152, -208]
+	- String 2 [53, 346]
+	- Active 4 [164, 8]
+	- file slot [30, -46]
+	- blue out [399, 299]
+	- demo [396, 300]
+	- demo? [-18, -73]
+	- Ini [800, 50]

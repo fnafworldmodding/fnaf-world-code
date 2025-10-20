@@ -1,0 +1,15 @@
++ Object Definitions
+	+ Backdrop
+		- Type: Backdrop
+		- Images hash: 0x2FFB
+	+ String
+		- Type: String
+		+ Texts
+			1: PRESS ENTER
+	+ Active
+		- Type: Active
+		- Images hash: 0xE996
++ Layer #1 (Layer 1)
+	- Backdrop [0, 0]
+	- String [192, -128]
+	- Active [253, 406]

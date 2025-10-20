@@ -1,0 +1,14 @@
+* Start of Frame
+	Active : Flash during 00''-10
+	Sound : Stop any sample
+	 Sound : Play sample Darkness Ahead (uninteruptable) on channel #1, 0 times
+
+* Upon pressing "Enter"
+	storyboard controls : Next frame
+
+* Upon pressing "Space bar"
+	storyboard controls : Next frame
+
+* Upon pressing "Shift"
+	storyboard controls : Next frame
+

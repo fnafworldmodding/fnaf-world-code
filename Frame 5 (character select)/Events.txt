@@ -1,0 +1,1489 @@
+* Active is overlapping char
++ Alterable Value A of char = 0
+	Active : Add 1 to Alterable Value A
+	char : Set Alterable Value A to Alterable Value A( "Active" )
+	Active : Add 1 to Alterable Value B
+	Active : Set position at (75,0) from Active
+	char : Set Alterable Value B to ItemValue( "Ini", Str$(Alterable Value A( "Active" )) + "have" )
+
+* Alterable Value B of Active = 8
+	Active : Set position at (-600,78) from Active
+	Active : Set Alterable Value B to 0
+	Active : Add 1 to Alterable Value R
+
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* User clicks with left button on char
+	test : Set Counter to Alterable Value A( "char" )
+
+* Alterable Value A of char = value( "slot 1" )
+	g1 p 1 : Set position at (0,0) from char
+
+* Alterable Value A of char = value( "slot 2" )
+	g1 p 2 : Set position at (0,0) from char
+
+* Alterable Value A of char = value( "slot 3" )
+	g1 p 3 : Set position at (0,0) from char
+
+* Alterable Value A of char = value( "slot 4" )
+	g1 p 4 : Set position at (0,0) from char
+
+* Start of Frame
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+	slot 1 : Set Counter to ItemValue( "Ini", "s1" )
+	slot 2 : Set Counter to ItemValue( "Ini", "s2" )
+	slot 3 : Set Counter to ItemValue( "Ini", "s3" )
+	slot 4 : Set Counter to ItemValue( "Ini", "s4" )
+	slot 5 : Set Counter to ItemValue( "Ini", "s5" )
+	slot 6 : Set Counter to ItemValue( "Ini", "s6" )
+	slot 7 : Set Counter to ItemValue( "Ini", "s7" )
+	slot 8 : Set Counter to ItemValue( "Ini", "s8" )
+	new game? : Set Counter to ItemValue( "Ini", "newgame" )
+	reset pos : Set Counter to ItemValue( "Ini", "resetpos" )
+	party lock : Set Counter to ItemValue( "Ini", "locked" )
+	showend : Set Counter to ItemValue( "Ini", "showend" )
+
+* Alterable Value A of char = value( "slot 5" )
+	g1 p 5 : Set position at (0,0) from char
+
+* Alterable Value A of char = value( "slot 6" )
+	g1 p 6 : Set position at (0,0) from char
+
+* Alterable Value A of char = value( "slot 7" )
+	g1 p 7 : Set position at (0,0) from char
+
+* Alterable Value A of char = value( "slot 8" )
+	g1 p 8 : Set position at (0,0) from char
+
+* Start of Frame
+	select : Set Alterable Value C to 30
+
+* Alterable Value C of select > 0
+	select : Sub 1 from Alterable Value C
+
+* User clicks with left button on g1 p 1
++ Alterable Value C of select = 0
++ party lock = 0
++ free to pick? = 1
+	select : Set Alterable Value C to 30
+	select : Reappear
+	select : Set position at (0,0) from g1 p 1
+	select : Set Alterable Value A to 1
+
+* User clicks with left button on g1 p 2
++ Alterable Value C of select = 0
++ party lock = 0
++ free to pick? = 1
+	select : Set Alterable Value C to 30
+	select : Reappear
+	select : Set position at (0,0) from g1 p 2
+	select : Set Alterable Value A to 2
+
+* User clicks with left button on g1 p 3
++ Alterable Value C of select = 0
++ party lock = 0
++ free to pick? = 1
+	select : Set Alterable Value C to 30
+	select : Set Alterable Value A to 3
+	select : Reappear
+	select : Set position at (0,0) from g1 p 3
+
+* User clicks with left button on g1 p 4
++ Alterable Value C of select = 0
++ party lock = 0
++ free to pick? = 1
+	select : Set Alterable Value C to 30
+	select : Set Alterable Value A to 4
+	select : Reappear
+	select : Set position at (0,0) from g1 p 4
+
+* User clicks with left button on g1 p 5
++ Alterable Value C of select = 0
++ party lock = 0
++ free to pick? = 1
+	select : Set Alterable Value C to 30
+	select : Set Alterable Value A to 5
+	select : Reappear
+	select : Set position at (0,0) from g1 p 5
+
+* User clicks with left button on g1 p 6
++ Alterable Value C of select = 0
++ party lock = 0
++ free to pick? = 1
+	select : Set Alterable Value C to 30
+	select : Set Alterable Value A to 6
+	select : Reappear
+	select : Set position at (0,0) from g1 p 6
+
+* User clicks with left button on g1 p 7
++ Alterable Value C of select = 0
++ party lock = 0
++ free to pick? = 1
+	select : Set Alterable Value C to 30
+	select : Set Alterable Value A to 7
+	select : Reappear
+	select : Set position at (0,0) from g1 p 7
+
+* User clicks with left button on g1 p 8
++ Alterable Value C of select = 0
++ party lock = 0
++ free to pick? = 1
+	select : Set Alterable Value C to 30
+	select : Set Alterable Value A to 8
+	select : Reappear
+	select : Set position at (0,0) from g1 p 8
+
+* User clicks with left button on char
++ Alterable Value C of select = 0
++ Alterable Value A of select = 1
++ Alterable Value B of char = 1
++ Alterable Value E of char = 0
++ Alterable Value D of char = 0
+	slot 1 : Set Counter to Alterable Value A( "char" )
+	select : Set Alterable Value A to 0
+	select : Set Alterable Value C to 30
+
+* User clicks with left button on char
++ Alterable Value C of select = 0
++ Alterable Value A of select = 2
++ Alterable Value B of char = 1
++ Alterable Value E of char = 0
++ Alterable Value D of char = 0
+	select : Set Alterable Value A to 0
+	select : Set Alterable Value C to 30
+	slot 2 : Set Counter to Alterable Value A( "char" )
+
+* User clicks with left button on char
++ Alterable Value C of select = 0
++ Alterable Value A of select = 3
++ Alterable Value B of char = 1
++ Alterable Value E of char = 0
++ Alterable Value D of char = 0
+	select : Set Alterable Value A to 0
+	select : Set Alterable Value C to 30
+	slot 3 : Set Counter to Alterable Value A( "char" )
+
+* User clicks with left button on char
++ Alterable Value C of select = 0
++ Alterable Value A of select = 4
++ Alterable Value B of char = 1
++ Alterable Value E of char = 0
++ Alterable Value D of char = 0
+	select : Set Alterable Value A to 0
+	select : Set Alterable Value C to 30
+	slot 4 : Set Counter to Alterable Value A( "char" )
+
+* User clicks with left button on char
++ Alterable Value C of select = 0
++ Alterable Value A of select = 5
++ Alterable Value B of char = 1
++ Alterable Value E of char = 0
++ Alterable Value D of char = 0
+	select : Set Alterable Value A to 0
+	select : Set Alterable Value C to 30
+	slot 5 : Set Counter to Alterable Value A( "char" )
+
+* User clicks with left button on char
++ Alterable Value C of select = 0
++ Alterable Value A of select = 6
++ Alterable Value B of char = 1
++ Alterable Value E of char = 0
++ Alterable Value D of char = 0
+	select : Set Alterable Value A to 0
+	select : Set Alterable Value C to 30
+	slot 6 : Set Counter to Alterable Value A( "char" )
+
+* User clicks with left button on char
++ Alterable Value C of select = 0
++ Alterable Value A of select = 7
++ Alterable Value B of char = 1
++ Alterable Value E of char = 0
++ Alterable Value D of char = 0
+	select : Set Alterable Value A to 0
+	select : Set Alterable Value C to 30
+	slot 7 : Set Counter to Alterable Value A( "char" )
+
+* User clicks with left button on char
++ Alterable Value C of select = 0
++ Alterable Value A of select = 8
++ Alterable Value B of char = 1
++ Alterable Value E of char = 0
++ Alterable Value D of char = 0
+	select : Set Alterable Value A to 0
+	select : Set Alterable Value C to 30
+	slot 8 : Set Counter to Alterable Value A( "char" )
+
+* Alterable Value A of select = 0
+	select : Make invisible
+
+* Alterable Value A of select > 0
+	select : Reappear
+
+* Alterable Value C of select > 10
+	select : Set Alterable Value C to 10
+
+* User clicks with left button on Active 2
++ Alterable Value F of Active 2 > 0
+	 Ini : Set value value( "slot 1" ) to item "s1"
+	 Ini : Set value value( "slot 2" ) to item "s2"
+	 Ini : Set value value( "slot 3" ) to item "s3"
+	 Ini : Set value value( "slot 4" ) to item "s4"
+	 Ini : Set value value( "slot 5" ) to item "s5"
+	 Ini : Set value value( "slot 6" ) to item "s6"
+	 Ini : Set value value( "slot 7" ) to item "s7"
+	 Ini : Set value value( "slot 8" ) to item "s8"
+	Active : Set Alterable Value D to 20
+	select : Destroy
+	create : Make invisible
+	 Ini : Set value 1 to item "started"
+	 Ini : Set value 1 to item "locked"
+
+* User clicks with left button on Active 2
++ Alterable Value F of Active 2 = 0
+	wait : Set Alterable Value A to 300
+
+* Alterable Value D of Active > 0
+	Active : Sub 1 from Alterable Value D
+
+* Alterable Value D of Active = 1
++ Alterable Value A of Fredbear icon > 0
++ from H = 0
+	storyboard controls : Jump to frame "wait" (10)
+
+* Alterable Value D of Active = 1
++ Alterable Value A of Fredbear icon > 0
++ from H = 1
+	from H : Set Counter to 0
+	storyboard controls : Jump to frame "halloween land" (35)
+
+* Alterable Value D of Active = 1
++ Alterable Value A of Fredbear icon = 0
+	storyboard controls : Jump to frame "cinematic" (28)
+
+* Alterable Value B of char = 0
+	 char : Set effect to "Monochrome"
+	 char : Set alpha-blending coefficient to 200
+
+* Alterable Value B of char = 1
+	 char : Set effect to "Semi-transparent"
+	 char : Set alpha-blending coefficient to 0
+
+* new game? = 1
++ Only one action when event loops
+	new game? : Set Counter to 0
+	 Ini : Set value 0 to item "newgame"
+	create : Reappear
+	Ini : Set current file to "info"
+	Ini : Set current group to "info"
+	 Ini : Set value 0 to item "hour" + Str$(value( "file slot" ))
+	 Ini : Set value 0 to item "min" + Str$(value( "file slot" ))
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+	slot 1 : Set Counter to 1
+	slot 2 : Set Counter to 2
+	slot 3 : Set Counter to 3
+	slot 4 : Set Counter to 4
+	slot 5 : Set Counter to 5
+	slot 6 : Set Counter to 6
+	slot 7 : Set Counter to 7
+	slot 8 : Set Counter to 8
+
+* User clicks with left button on Active 3
++ party lock = 0
+	slot 1 : Set Counter to 0
+	slot 2 : Set Counter to 0
+	slot 3 : Set Counter to 0
+	slot 4 : Set Counter to 0
+	slot 5 : Set Counter to 0
+	slot 6 : Set Counter to 0
+	slot 7 : Set Counter to 0
+	slot 8 : Set Counter to 0
+	create : Make invisible
+
+* slot 1 = 0
+	g1 p 1 : Set position at (0,0) from reset 1
+	free to pick? : Set Counter to 0
+
+* slot 2 = 0
+	g1 p 2 : Set position at (0,0) from reset 3
+	free to pick? : Set Counter to 0
+
+* slot 3 = 0
+	g1 p 3 : Set position at (0,0) from reset 5
+	free to pick? : Set Counter to 0
+
+* slot 4 = 0
+	g1 p 4 : Set position at (0,0) from reset 7
+	free to pick? : Set Counter to 0
+
+* slot 5 = 0
+	g1 p 5 : Set position at (0,0) from reset 2
+	free to pick? : Set Counter to 0
+
+* slot 6 = 0
+	g1 p 6 : Set position at (0,0) from reset 4
+	free to pick? : Set Counter to 0
+
+* slot 7 = 0
+	g1 p 7 : Set position at (0,0) from reset 6
+	free to pick? : Set Counter to 0
+
+* slot 8 = 0
+	g1 p 8 : Set position at (0,0) from reset 8
+	free to pick? : Set Counter to 0
+
+* Alterable Value A of char = 1
+	char : Change animation sequence to Stopped
+
+* Alterable Value A of char = 2
+	char : Change animation sequence to Animation 12
+
+* Alterable Value A of char = 3
+	char : Change animation sequence to Animation 13
+
+* Alterable Value A of char = 4
+	char : Change animation sequence to Animation 14
+
+* Alterable Value A of char = 5
+	char : Change animation sequence to Animation 15
+
+* Alterable Value A of char = 6
+	char : Change animation sequence to Animation 16
+
+* Alterable Value A of char = 7
+	char : Change animation sequence to Animation 17
+
+* Alterable Value A of char = 8
+	char : Change animation sequence to Animation 18
+
+* Alterable Value A of char = 9
+	char : Change animation sequence to Animation 19
+
+* Alterable Value A of char = 10
+	char : Change animation sequence to Animation 20
+
+* Alterable Value A of char = 11
+	char : Change animation sequence to Animation 21
+
+* Alterable Value A of char = 12
+	char : Change animation sequence to Animation 22
+
+* Alterable Value A of char = 13
+	char : Change animation sequence to Animation 23
+
+* Alterable Value A of char = 14
+	char : Change animation sequence to Animation 24
+
+* Alterable Value A of char = 15
+	char : Change animation sequence to Animation 25
+
+* Alterable Value A of char = 16
+	char : Change animation sequence to Animation 26
+
+* Alterable Value A of char = 17
+	char : Change animation sequence to Animation 27
+
+* Alterable Value A of char = 18
+	char : Change animation sequence to Animation 28
+
+* Alterable Value A of char = 19
+	char : Change animation sequence to Animation 29
+
+* Alterable Value A of char = 20
+	char : Change animation sequence to Animation 30
+
+* Alterable Value A of char = 0
+	char : Make invisible
+
+* Alterable Value A of char > 0
+	char : Reappear
+
+* Alterable Value A of char = 21
+	char : Change animation sequence to Animation 31
+
+* Alterable Value A of char = 22
+	char : Change animation sequence to Animation 32
+
+* Alterable Value A of char = 23
+	char : Change animation sequence to Animation 33
+
+* Alterable Value A of char = 24
+	char : Change animation sequence to Animation 34
+
+* Alterable Value A of char = 25
+	char : Change animation sequence to Animation 35
+
+* Alterable Value A of char = 26
+	char : Change animation sequence to Animation 36
+
+* Alterable Value A of char = 27
+	char : Change animation sequence to Animation 37
+
+* Alterable Value A of char = 28
+	char : Change animation sequence to Animation 38
+
+* Alterable Value A of char = 29
+	char : Change animation sequence to Animation 39
+
+* Alterable Value A of char = 30
+	char : Change animation sequence to Animation 40
+
+* Alterable Value A of char = 31
+	char : Change animation sequence to Animation 41
+
+* Alterable Value A of char = 32
+	char : Change animation sequence to Animation 42
+
+* Alterable Value A of char = 33
+	char : Change animation sequence to Animation 43
+
+* Alterable Value A of char = 34
+	char : Change animation sequence to Animation 44
+
+* Alterable Value A of char = 35
+	char : Change animation sequence to Animation 45
+
+* Alterable Value A of char = 36
+	char : Change animation sequence to Animation 46
+
+* Alterable Value A of char = 37
+	char : Change animation sequence to Animation 47
+
+* Alterable Value A of char = 38
+	char : Change animation sequence to Animation 48
+
+* Alterable Value A of char = 39
+	char : Change animation sequence to Animation 49
+
+* Alterable Value A of char = 40
+	char : Change animation sequence to Animation 50
+
+* Alterable Value A of char = 41
+	char : Change animation sequence to Animation 51
+
+* Alterable Value A of char = 42
+	char : Change animation sequence to Animation 52
+
+* Alterable Value A of char = 43
+	char : Change animation sequence to Animation 53
+
+* Alterable Value A of char = 44
+	char : Change animation sequence to Animation 54
+
+* Alterable Value A of char = 45
+	char : Change animation sequence to Animation 55
+
+* Alterable Value A of char = 46
+	char : Change animation sequence to Animation 56
+
+* Alterable Value A of char = 47
+	char : Change animation sequence to Animation 57
+
+* Alterable Value A of char = 48
+	char : Change animation sequence to Animation 58
+
+* Every 00''-10
+	char : Set Alterable Value E to 0
+
+* g1 p 1 is overlapping char
+	char : Set Alterable Value E to 1
+
+* g1 p 2 is overlapping char
+	char : Set Alterable Value E to 1
+
+* g1 p 3 is overlapping char
+	char : Set Alterable Value E to 1
+
+* g1 p 4 is overlapping char
+	char : Set Alterable Value E to 1
+
+* g1 p 5 is overlapping char
+	char : Set Alterable Value E to 1
+
+* g1 p 6 is overlapping char
+	char : Set Alterable Value E to 1
+
+* g1 p 7 is overlapping char
+	char : Set Alterable Value E to 1
+
+* g1 p 8 is overlapping char
+	char : Set Alterable Value E to 1
+
+* Start of Frame
+	 reset 1 : Set alpha-blending coefficient to 200
+	 reset 2 : Set alpha-blending coefficient to 200
+	 reset 3 : Set alpha-blending coefficient to 200
+	 reset 4 : Set alpha-blending coefficient to 200
+	 reset 5 : Set alpha-blending coefficient to 200
+	 reset 6 : Set alpha-blending coefficient to 200
+	 reset 7 : Set alpha-blending coefficient to 200
+	 reset 8 : Set alpha-blending coefficient to 200
+
+* slot 1 > 0
++ slot 2 > 0
++ slot 3 > 0
++ slot 4 > 0
++ slot 5 > 0
++ slot 6 > 0
++ slot 7 > 0
++ slot 8 > 0
+	Active 2 : Set Alterable Value F to 1
+	free to pick? : Set Counter to 1
+
+* slot 1 = 0
+	Active 2 : Set Alterable Value F to 0
+
+* slot 2 = 0
+	Active 2 : Set Alterable Value F to 0
+
+* slot 3 = 0
+	Active 2 : Set Alterable Value F to 0
+
+* slot 4 = 0
+	Active 2 : Set Alterable Value F to 0
+
+* slot 5 = 0
+	Active 2 : Set Alterable Value F to 0
+
+* slot 6 = 0
+	Active 2 : Set Alterable Value F to 0
+
+* slot 7 = 0
+	Active 2 : Set Alterable Value F to 0
+
+* slot 8 = 0
+	Active 2 : Set Alterable Value F to 0
+
+* Alterable Value A of wait = 0
+	wait : Set Alterable Value A to 0
+	wait : Make invisible
+
+* Alterable Value A of wait > 0
+	wait : Sub 1 from Alterable Value A
+	wait : Reappear
+	create : Make invisible
+
+* area <= 1
+	background : Change animation sequence to Stopped
+
+* area = 2
+	background : Change animation sequence to Animation 15
+
+* area = 5
+	background : Change animation sequence to Animation 17
+
+* area = 8
+	background : Change animation sequence to Animation 12
+
+* area = 11
+	background : Change animation sequence to Animation 14
+
+* area = 14
+	background : Change animation sequence to Animation 13
+
+* area = 17
+	background : Change animation sequence to Animation 13
+
+* area = 20
+	background : Change animation sequence to Animation 16
+
+* slot 1 > 0
+	create : Make invisible
+
+* slot 2 > 0
+	create : Make invisible
+
+* slot 3 > 0
+	create : Make invisible
+
+* slot 4 > 0
+	create : Make invisible
+
+* slot 5 > 0
+	create : Make invisible
+
+* slot 6 > 0
+	create : Make invisible
+
+* slot 7 > 0
+	create : Make invisible
+
+* slot 8 > 0
+	create : Make invisible
+
+* area = 23
+	background : Change animation sequence to Animation 18
+
+* area = 26
+	background : Change animation sequence to Animation 19
+
+* level = 0
+	level : Make invisible
+
+* level > 0
+	level : Reappear
+
+* Alterable Value A of char > 0
++ Alterable Value L of char = 0
++ char is overlapping level
+	char : Set Alterable Value L to 1
+	level : Set Counter to ItemValue( "Ini", Str$(Alterable Value A( "char" )) + "lv" ) + 1
+
+* mode <> 2
+	party lock : Set Counter to 0
+
+* mode = 2
+	fixed : Reappear
+	wait : Make invisible
+	create : Make invisible
+
+* difficulty = 2
+	hard mode : Reappear
+
+* Alterable Value R of Active = 6
++ Only one action when event loops
+	have all : Set Counter to 1
+
+* Alterable Value B of char = 0
+	have all : Set Counter to 0
+
+* have all = 1
++ Only one action when event loops
+	Ini : Set current file to "info"
+	Ini : Set current group to "info"
+	 Ini : Set value 1 to item "all"
+	Ini : Set current file to "fnafw" + Str$(value( "file slot" ))
+	Ini : Set current group to "fnafw"
+
+* NOT Mouse pointer is over char
+	String : Make invisible
+	level 2 : Make invisible
+	next : Make invisible
+	strength : Make invisible
+	Active 5 : Make invisible
+	Active 6 : Make invisible
+	Active 7 : Make invisible
+	character : Make invisible
+	mini button : Make invisible
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char >= 1
+	String : Reappear
+	level 2 : Reappear
+	next : Reappear
+	strength : Reappear
+	character : Reappear
+	Active 5 : Reappear
+	Active 6 : Reappear
+	Active 7 : Reappear
+	mini button : Reappear
+
+* Mouse pointer is over char
++ Alterable Value B of char = 0
+	String : Make invisible
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 1
+	String : Set alterable string to "Freddy"
+	character : Change animation sequence to Stopped
+	button 1 : Set Alterable Value A to 1
+	button 2 : Set Alterable Value A to 6
+	button 3 : Set Alterable Value A to 26
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 2
+	String : Set alterable string to "Bonnie"
+	character : Change animation sequence to Animation 12
+	button 1 : Set Alterable Value A to 2
+	button 2 : Set Alterable Value A to 7
+	button 3 : Set Alterable Value A to 12
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 3
+	String : Set alterable string to "Chica"
+	character : Change animation sequence to Animation 13
+	button 1 : Set Alterable Value A to 11
+	button 2 : Set Alterable Value A to 13
+	button 3 : Set Alterable Value A to 15
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 4
+	String : Set alterable string to "Foxy"
+	character : Change animation sequence to Animation 14
+	button 1 : Set Alterable Value A to 3
+	button 2 : Set Alterable Value A to 8
+	button 3 : Set Alterable Value A to 31
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 5
+	String : Set alterable string to "Toy Bonnie"
+	character : Change animation sequence to Animation 15
+	button 1 : Set Alterable Value A to 7
+	button 2 : Set Alterable Value A to 32
+	button 3 : Set Alterable Value A to 36
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 6
+	String : Set alterable string to "Toy Chica"
+	character : Change animation sequence to Animation 16
+	button 1 : Set Alterable Value A to 11
+	button 2 : Set Alterable Value A to 26
+	button 3 : Set Alterable Value A to 44
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 7
+	String : Set alterable string to "Toy Freddy"
+	character : Change animation sequence to Animation 17
+	button 1 : Set Alterable Value A to 1
+	button 2 : Set Alterable Value A to 13
+	button 3 : Set Alterable Value A to 29
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 8
+	String : Set alterable string to "Mangle"
+	character : Change animation sequence to Animation 18
+	button 1 : Set Alterable Value A to 3
+	button 2 : Set Alterable Value A to 34
+	button 3 : Set Alterable Value A to 36
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 9
+	String : Set alterable string to "Balloon Boy"
+	character : Change animation sequence to Animation 19
+	button 1 : Set Alterable Value A to 9
+	button 2 : Set Alterable Value A to 31
+	button 3 : Set Alterable Value A to 32
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 10
+	String : Set alterable string to "JJ"
+	character : Change animation sequence to Animation 20
+	button 1 : Set Alterable Value A to 9
+	button 2 : Set Alterable Value A to 34
+	button 3 : Set Alterable Value A to 41
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 11
+	String : Set alterable string to "Phantom Freddy"
+	character : Change animation sequence to Animation 21
+	button 1 : Set Alterable Value A to 22
+	button 2 : Set Alterable Value A to 23
+	button 3 : Set Alterable Value A to 24
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 12
+	String : Set alterable string to "Phantom Chica"
+	character : Change animation sequence to Animation 22
+	button 1 : Set Alterable Value A to 16
+	button 2 : Set Alterable Value A to 23
+	button 3 : Set Alterable Value A to 41
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 13
+	String : Set alterable string to "Phantom BB"
+	character : Change animation sequence to Animation 23
+	button 1 : Set Alterable Value A to 17
+	button 2 : Set Alterable Value A to 21
+	button 3 : Set Alterable Value A to 24
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 14
+	String : Set alterable string to "Phantom Foxy"
+	character : Change animation sequence to Animation 24
+	button 1 : Set Alterable Value A to 8
+	button 2 : Set Alterable Value A to 16
+	button 3 : Set Alterable Value A to 41
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 15
+	String : Set alterable string to "Phantom Mangle"
+	character : Change animation sequence to Animation 25
+	button 1 : Set Alterable Value A to 16
+	button 2 : Set Alterable Value A to 38
+	button 3 : Set Alterable Value A to 43
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 16
+	String : Set alterable string to "Withered Bonnie"
+	character : Change animation sequence to Animation 26
+	button 1 : Set Alterable Value A to 4
+	button 2 : Set Alterable Value A to 6
+	button 3 : Set Alterable Value A to 42
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 17
+	String : Set alterable string to "Withered Chica"
+	character : Change animation sequence to Animation 27
+	button 1 : Set Alterable Value A to 2
+	button 2 : Set Alterable Value A to 11
+	button 3 : Set Alterable Value A to 37
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 18
+	String : Set alterable string to "Withered Freddy"
+	character : Change animation sequence to Animation 28
+	button 1 : Set Alterable Value A to 1
+	button 2 : Set Alterable Value A to 22
+	button 3 : Set Alterable Value A to 40
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 19
+	String : Set alterable string to "Withered Foxy"
+	character : Change animation sequence to Animation 29
+	button 1 : Set Alterable Value A to 3
+	button 2 : Set Alterable Value A to 24
+	button 3 : Set Alterable Value A to 35
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 20
+	String : Set alterable string to "Shadow Freddy"
+	character : Change animation sequence to Animation 30
+	button 1 : Set Alterable Value A to 41
+	button 2 : Set Alterable Value A to 40
+	button 3 : Set Alterable Value A to 44
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 21
+	String : Set alterable string to "Marionette"
+	character : Change animation sequence to Animation 31
+	button 1 : Set Alterable Value A to 37
+	button 2 : Set Alterable Value A to 38
+	button 3 : Set Alterable Value A to 40
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 22
+	String : Set alterable string to "Phantom Marionette"
+	character : Change animation sequence to Animation 32
+	button 1 : Set Alterable Value A to 8
+	button 2 : Set Alterable Value A to 35
+	button 3 : Set Alterable Value A to 39
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 23
+	String : Set alterable string to "Golden Freddy"
+	character : Change animation sequence to Animation 33
+	button 1 : Set Alterable Value A to 8
+	button 2 : Set Alterable Value A to 25
+	button 3 : Set Alterable Value A to 46
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 24
+	String : Set alterable string to "Paperpals"
+	character : Change animation sequence to Animation 34
+	button 1 : Set Alterable Value A to 37
+	button 2 : Set Alterable Value A to 39
+	button 3 : Set Alterable Value A to 49
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 25
+	String : Set alterable string to "Nightmare Freddy"
+	character : Change animation sequence to Animation 35
+	button 1 : Set Alterable Value A to 5
+	button 2 : Set Alterable Value A to 23
+	button 3 : Set Alterable Value A to 33
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 26
+	String : Set alterable string to "Nightmare Bonnie"
+	character : Change animation sequence to Animation 36
+	button 1 : Set Alterable Value A to 5
+	button 2 : Set Alterable Value A to 25
+	button 3 : Set Alterable Value A to 43
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 27
+	String : Set alterable string to "Nightmare Chica"
+	character : Change animation sequence to Animation 37
+	button 1 : Set Alterable Value A to 5
+	button 2 : Set Alterable Value A to 20
+	button 3 : Set Alterable Value A to 44
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 28
+	String : Set alterable string to "Nightmare Foxy"
+	character : Change animation sequence to Animation 38
+	button 1 : Set Alterable Value A to 5
+	button 2 : Set Alterable Value A to 42
+	button 3 : Set Alterable Value A to 35
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 29
+	String : Set alterable string to "Endo 01"
+	character : Change animation sequence to Animation 39
+	button 1 : Set Alterable Value A to 27
+	button 2 : Set Alterable Value A to 28
+	button 3 : Set Alterable Value A to 47
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 30
+	String : Set alterable string to "Endo 02"
+	character : Change animation sequence to Animation 40
+	button 1 : Set Alterable Value A to 29
+	button 2 : Set Alterable Value A to 47
+	button 3 : Set Alterable Value A to 48
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 31
+	String : Set alterable string to "Plushtrap"
+	character : Change animation sequence to Animation 41
+	button 1 : Set Alterable Value A to 16
+	button 2 : Set Alterable Value A to 20
+	button 3 : Set Alterable Value A to 23
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 32
+	String : Set alterable string to "Endoplush"
+	character : Change animation sequence to Animation 42
+	button 1 : Set Alterable Value A to 48
+	button 2 : Set Alterable Value A to 4
+	button 3 : Set Alterable Value A to 45
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 33
+	String : Set alterable string to "Springtrap"
+	character : Change animation sequence to Animation 43
+	button 1 : Set Alterable Value A to 5
+	button 2 : Set Alterable Value A to 10
+	button 3 : Set Alterable Value A to 24
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 34
+	String : Set alterable string to "RXQ"
+	character : Change animation sequence to Animation 44
+	button 1 : Set Alterable Value A to 46
+	button 2 : Set Alterable Value A to 49
+	button 3 : Set Alterable Value A to 50
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 35
+	String : Set alterable string to "Crying Child"
+	character : Change animation sequence to Animation 45
+	button 1 : Set Alterable Value A to 27
+	button 2 : Set Alterable Value A to 28
+	button 3 : Set Alterable Value A to 50
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 36
+	String : Set alterable string to "Funtime Foxy"
+	character : Change animation sequence to Animation 46
+	button 1 : Set Alterable Value A to 14
+	button 2 : Set Alterable Value A to 30
+	button 3 : Set Alterable Value A to 50
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 37
+	String : Set alterable string to "Nightmare Fredbear"
+	character : Change animation sequence to Animation 47
+	button 1 : Set Alterable Value A to 19
+	button 2 : Set Alterable Value A to 33
+	button 3 : Set Alterable Value A to 51
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 38
+	String : Set alterable string to "Nightmare"
+	character : Change animation sequence to Animation 48
+	button 1 : Set Alterable Value A to 19
+	button 2 : Set Alterable Value A to 25
+	button 3 : Set Alterable Value A to 51
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 39
+	String : Set alterable string to "Fredbear"
+	character : Change animation sequence to Animation 49
+	button 1 : Set Alterable Value A to 51
+	button 2 : Set Alterable Value A to 15
+	button 3 : Set Alterable Value A to 49
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 40
+	String : Set alterable string to "Spring Bonnie"
+	character : Change animation sequence to Animation 50
+	button 1 : Set Alterable Value A to 10
+	button 2 : Set Alterable Value A to 14
+	button 3 : Set Alterable Value A to 30
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 41
+	String : Set alterable string to "Jack-O-Bonnie"
+	character : Change animation sequence to Animation 52
+	button 1 : Set Alterable Value A to 46
+	button 2 : Set Alterable Value A to 54
+	button 3 : Set Alterable Value A to 52
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 42
+	character : Change animation sequence to Animation 53
+	button 1 : Set Alterable Value A to 46
+	button 2 : Set Alterable Value A to 54
+	button 3 : Set Alterable Value A to 57
+	String : Set alterable string to "Jack-O-Chica"
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 43
+	String : Set alterable string to "Animdude"
+	character : Change animation sequence to Animation 54
+	button 1 : Set Alterable Value A to 48
+	button 2 : Set Alterable Value A to 58
+	button 3 : Set Alterable Value A to 53
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 44
+	character : Change animation sequence to Animation 55
+	button 1 : Set Alterable Value A to 49
+	button 2 : Set Alterable Value A to 57
+	button 3 : Set Alterable Value A to 59
+	String : Set alterable string to "Mr. Chipper"
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 45
+	character : Change animation sequence to Animation 56
+	button 1 : Set Alterable Value A to 51
+	button 2 : Set Alterable Value A to 55
+	button 3 : Set Alterable Value A to 56
+	String : Set alterable string to "Nightmare BB"
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 46
+	character : Change animation sequence to Animation 57
+	button 1 : Set Alterable Value A to 37
+	button 2 : Set Alterable Value A to 55
+	button 3 : Set Alterable Value A to 53
+	String : Set alterable string to "Nightmarionne"
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 47
+	character : Change animation sequence to Animation 58
+	button 1 : Set Alterable Value A to 50
+	button 2 : Set Alterable Value A to 58
+	button 3 : Set Alterable Value A to 60
+	String : Set alterable string to "Coffee"
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
++ Alterable Value A of char = 48
+	character : Change animation sequence to Animation 59
+	button 1 : Set Alterable Value A to 29
+	button 2 : Set Alterable Value A to 52
+	button 3 : Set Alterable Value A to 59
+	String : Set alterable string to "Purpleguy"
+
+* Start of Frame
+	Fredbear icon : Set Alterable Value A to ItemValue( "Ini", "cine" )
+
+* demo? = 0
+	demo : Make invisible
+	blue out : Make invisible
+
+* demo? = 1
+	demo : Reappear
+	blue out : Reappear
+
+* char is overlapping blue out
++ demo? = 1
+	char : Set Alterable Value D to 1
+
+* demo? = 1
++ slot 1 > 16
+	fixed : Make invisible
+	slot 1 : Set Counter to 0
+	slot 2 : Set Counter to 0
+	slot 3 : Set Counter to 0
+	slot 4 : Set Counter to 0
+	slot 5 : Set Counter to 0
+	slot 6 : Set Counter to 0
+	slot 7 : Set Counter to 0
+	slot 8 : Set Counter to 0
+
+* demo? = 1
++ slot 2 > 16
+	fixed : Make invisible
+	slot 1 : Set Counter to 0
+	slot 2 : Set Counter to 0
+	slot 3 : Set Counter to 0
+	slot 4 : Set Counter to 0
+	slot 5 : Set Counter to 0
+	slot 6 : Set Counter to 0
+	slot 7 : Set Counter to 0
+	slot 8 : Set Counter to 0
+
+* demo? = 1
++ slot 3 > 16
+	fixed : Make invisible
+	slot 1 : Set Counter to 0
+	slot 2 : Set Counter to 0
+	slot 3 : Set Counter to 0
+	slot 4 : Set Counter to 0
+	slot 5 : Set Counter to 0
+	slot 6 : Set Counter to 0
+	slot 7 : Set Counter to 0
+	slot 8 : Set Counter to 0
+
+* demo? = 1
++ slot 4 > 16
+	fixed : Make invisible
+	slot 1 : Set Counter to 0
+	slot 2 : Set Counter to 0
+	slot 3 : Set Counter to 0
+	slot 4 : Set Counter to 0
+	slot 5 : Set Counter to 0
+	slot 6 : Set Counter to 0
+	slot 7 : Set Counter to 0
+	slot 8 : Set Counter to 0
+
+* demo? = 1
++ slot 5 > 16
+	fixed : Make invisible
+	slot 1 : Set Counter to 0
+	slot 2 : Set Counter to 0
+	slot 3 : Set Counter to 0
+	slot 4 : Set Counter to 0
+	slot 5 : Set Counter to 0
+	slot 6 : Set Counter to 0
+	slot 7 : Set Counter to 0
+	slot 8 : Set Counter to 0
+
+* demo? = 1
++ slot 6 > 16
+	fixed : Make invisible
+	slot 1 : Set Counter to 0
+	slot 2 : Set Counter to 0
+	slot 3 : Set Counter to 0
+	slot 4 : Set Counter to 0
+	slot 5 : Set Counter to 0
+	slot 6 : Set Counter to 0
+	slot 7 : Set Counter to 0
+	slot 8 : Set Counter to 0
+
+* demo? = 1
++ slot 7 > 16
+	fixed : Make invisible
+	slot 1 : Set Counter to 0
+	slot 2 : Set Counter to 0
+	slot 3 : Set Counter to 0
+	slot 4 : Set Counter to 0
+	slot 5 : Set Counter to 0
+	slot 6 : Set Counter to 0
+	slot 7 : Set Counter to 0
+	slot 8 : Set Counter to 0
+
+* demo? = 1
++ slot 8 > 16
+	fixed : Make invisible
+	slot 1 : Set Counter to 0
+	slot 2 : Set Counter to 0
+	slot 3 : Set Counter to 0
+	slot 4 : Set Counter to 0
+	slot 5 : Set Counter to 0
+	slot 6 : Set Counter to 0
+	slot 7 : Set Counter to 0
+	slot 8 : Set Counter to 0
+
+* free to pick? = 0
++ NOT g1 p 8 is overlapping char
+	select : Set Alterable Value A to 8
+
+* free to pick? = 0
++ NOT g1 p 7 is overlapping char
+	select : Set Alterable Value A to 7
+
+* free to pick? = 0
++ NOT g1 p 6 is overlapping char
+	select : Set Alterable Value A to 6
+
+* free to pick? = 0
++ NOT g1 p 5 is overlapping char
+	select : Set Alterable Value A to 5
+
+* free to pick? = 0
++ NOT g1 p 4 is overlapping char
+	select : Set Alterable Value A to 4
+
+* free to pick? = 0
++ NOT g1 p 3 is overlapping char
+	select : Set Alterable Value A to 3
+
+* free to pick? = 0
++ NOT g1 p 2 is overlapping char
+	select : Set Alterable Value A to 2
+
+* free to pick? = 0
++ NOT g1 p 1 is overlapping char
+	select : Set Alterable Value A to 1
+
+* free to pick? = 0
+	select : Make invisible
+
+* free to pick? = 1
++ Only one action when event loops
+	select : Make invisible
+	select : Set Alterable Value A to 0
+	select : Set Alterable Value C to 30
+
+* Start of Frame
+	character : Stop
+
+* Mouse pointer is over char
++ Alterable Value B of char = 1
+	level 2 : Set Counter to ItemValue( "Ini", Str$(Alterable Value A( "char" )) + "lv" ) + 1
+	strength : Set Counter to ( ItemValue( "Ini", Str$(Alterable Value A( "char" )) + "lv" ) * 2 ) + ( ( ( Alterable Value A( "char" ) - 1 ) / 8 ) * 10 )
+	next : Set Counter to ItemValue( "Ini", Str$(Alterable Value A( "char" )) + "next" )
+
+* next = 0
+	next : Set Counter to 100
+
+* Timer is less than 01''-00
+	level 2 : Make invisible
+	next : Make invisible
+	strength : Make invisible
+	String : Make invisible
+	character : Make invisible
+	Active 5 : Make invisible
+	Active 6 : Make invisible
+	Active 7 : Make invisible
+	mini button : Make invisible
+
+* Alterable Value A of mini button = 1
+	mini button : Change animation sequence to Stopped
+
+* Alterable Value A of mini button = 2
+	mini button : Change animation sequence to Animation 12
+
+* Alterable Value A of mini button = 3
+	mini button : Change animation sequence to Animation 13
+
+* Alterable Value A of mini button = 4
+	mini button : Change animation sequence to Animation 14
+
+* Alterable Value A of mini button = 5
+	mini button : Change animation sequence to Animation 15
+
+* Alterable Value A of mini button = 6
+	mini button : Change animation sequence to Animation 16
+
+* Alterable Value A of mini button = 7
+	mini button : Change animation sequence to Animation 17
+
+* Alterable Value A of mini button = 8
+	mini button : Change animation sequence to Animation 18
+
+* Alterable Value A of mini button = 9
+	mini button : Change animation sequence to Animation 19
+
+* Alterable Value A of mini button = 10
+	mini button : Change animation sequence to Animation 20
+
+* Alterable Value A of mini button = 11
+	mini button : Change animation sequence to Animation 21
+
+* Alterable Value A of mini button = 12
+	mini button : Change animation sequence to Animation 22
+
+* Alterable Value A of mini button = 13
+	mini button : Change animation sequence to Animation 23
+
+* Alterable Value A of mini button = 14
+	mini button : Change animation sequence to Animation 24
+
+* Alterable Value A of mini button = 15
+	mini button : Change animation sequence to Animation 25
+
+* Alterable Value A of mini button = 16
+	mini button : Change animation sequence to Animation 26
+
+* Alterable Value A of mini button = 17
+	mini button : Change animation sequence to Animation 27
+
+* Alterable Value A of mini button = 18
+	mini button : Change animation sequence to Animation 28
+
+* Alterable Value A of mini button = 19
+	mini button : Change animation sequence to Animation 29
+
+* Alterable Value A of mini button = 20
+	mini button : Change animation sequence to Animation 30
+
+* Alterable Value A of mini button = 21
+	mini button : Change animation sequence to Animation 31
+
+* Alterable Value A of mini button = 22
+	mini button : Change animation sequence to Animation 32
+
+* Alterable Value A of mini button = 23
+	mini button : Change animation sequence to Animation 33
+
+* Alterable Value A of mini button = 24
+	mini button : Change animation sequence to Animation 34
+
+* Alterable Value A of mini button = 25
+	mini button : Change animation sequence to Animation 35
+
+* Alterable Value A of mini button = 26
+	mini button : Change animation sequence to Animation 36
+
+* Alterable Value A of mini button = 27
+	mini button : Change animation sequence to Animation 37
+
+* Alterable Value A of mini button = 28
+	mini button : Change animation sequence to Animation 38
+
+* Alterable Value A of mini button = 29
+	mini button : Change animation sequence to Animation 39
+
+* Alterable Value A of mini button = 30
+	mini button : Change animation sequence to Animation 40
+
+* Alterable Value A of mini button = 31
+	mini button : Change animation sequence to Animation 41
+
+* Alterable Value A of mini button = 32
+	mini button : Change animation sequence to Animation 42
+
+* Alterable Value A of mini button = 33
+	mini button : Change animation sequence to Animation 43
+
+* Alterable Value A of mini button = 34
+	mini button : Change animation sequence to Animation 44
+
+* Alterable Value A of mini button = 35
+	mini button : Change animation sequence to Animation 45
+
+* Alterable Value A of mini button = 36
+	mini button : Change animation sequence to Animation 46
+
+* Alterable Value A of mini button = 37
+	mini button : Change animation sequence to Animation 47
+
+* Alterable Value A of mini button = 38
+	mini button : Change animation sequence to Animation 48
+
+* Alterable Value A of mini button = 39
+	mini button : Change animation sequence to Animation 49
+
+* Alterable Value A of mini button = 40
+	mini button : Change animation sequence to Animation 50
+
+* Alterable Value A of mini button = 41
+	mini button : Change animation sequence to Animation 51
+
+* Alterable Value A of mini button = 42
+	mini button : Change animation sequence to Animation 52
+
+* Alterable Value A of mini button = 43
+	mini button : Change animation sequence to Animation 53
+
+* Alterable Value A of mini button = 44
+	mini button : Change animation sequence to Animation 54
+
+* Alterable Value A of mini button = 45
+	mini button : Change animation sequence to Animation 55
+
+* Alterable Value A of mini button = 46
+	mini button : Change animation sequence to Animation 56
+
+* Alterable Value A of mini button = 47
+	mini button : Change animation sequence to Animation 57
+
+* Alterable Value A of mini button = 48
+	mini button : Change animation sequence to Animation 58
+
+* Alterable Value A of mini button = 49
+	mini button : Change animation sequence to Animation 59
+
+* Alterable Value A of mini button = 50
+	mini button : Change animation sequence to Animation 60
+
+* Alterable Value A of mini button = 51
+	mini button : Change animation sequence to Animation 61
+
+* Alterable Value A of mini button = 52
+	mini button : Change animation sequence to Animation 62
+
+* Alterable Value A of mini button = 53
+	mini button : Change animation sequence to Animation 63
+
+* Alterable Value A of mini button = 54
+	mini button : Change animation sequence to Animation 64
+
+* Alterable Value A of mini button = 55
+	mini button : Change animation sequence to Animation 65
+
+* Alterable Value A of mini button = 56
+	mini button : Change animation sequence to Animation 66
+
+* Alterable Value A of mini button = 57
+	mini button : Change animation sequence to Animation 67
+
+* Alterable Value A of mini button = 58
+	mini button : Change animation sequence to Animation 68
+
+* Alterable Value A of mini button = 59
+	mini button : Change animation sequence to Animation 69
+
+* Alterable Value A of mini button = 60
+	mini button : Change animation sequence to Animation 70
+
+* mini button is overlapping button 1
+	mini button : Set Alterable Value A to Alterable Value A( "button 1" )
+
+* mini button is overlapping button 2
+	mini button : Set Alterable Value A to Alterable Value A( "button 2" )
+
+* mini button is overlapping button 3
+	mini button : Set Alterable Value A to Alterable Value A( "button 3" )
+
+* area = 50
+	background : Make invisible
+
+* showend = 1
+	storyboard controls : Jump to frame "ending" (48)
+

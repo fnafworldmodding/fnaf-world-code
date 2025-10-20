@@ -1,0 +1,160 @@
++ Object Definitions
+	+ background
+		- Type: Active
+		- Images hash: 0xB376
+	+ item box 2
+		- Type: Active
+		- Images hash: 0x9B67
+	+ Active
+		- Type: Active
+		- Images hash: 0x4174
+	+ what shop
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ last cutscene
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ character
+		- Type: Active
+		- Images hash: 0x4FB5
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xB8E8
+	+ tokens
+		- Type: Counter
+		- Images hash: 0x22B4
+	+ selection
+		- Type: Counter
+		- Images hash: 0x4306
+	+ current price
+		- Type: Counter
+		- Images hash: 0x4306
+	+ shopkeeper
+		- Type: Active
+		- Images hash: 0xA21A
+	+ String 2
+		- Type: String
+		+ Texts
+			1: It was fun being the puppet-master, but now I grow weary. It is time to put you in your place.
+	+ Active 3
+		- Type: Active
+		- Images hash: 0x08A8
+	+ item box
+		- Type: Active
+		- Images hash: 0x89CA
+	+ price 1
+		- Type: Counter
+		- Images hash: 0x32EC
+	+ set item 1
+		- Type: Active
+		- Images hash: 0x2204
+	+ set item 2
+		- Type: Active
+		- Images hash: 0x2204
+	+ set item 3
+		- Type: Active
+		- Images hash: 0x2204
+	+ Active 5
+		- Type: Active
+		- Images hash: 0xC3EE
+	+ have slot 1?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ have slot 2?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ have slot 3?
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ checkl
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ bought
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Byte Icon
+		- Type: Active
+		- Images hash: 0x38D9
+	+ sold out 3
+		- Type: Active
+		- Images hash: 0x0BFA
+	+ sold out 2
+		- Type: Active
+		- Images hash: 0x0BFA
+	+ sold out 1
+		- Type: Active
+		- Images hash: 0x0BFA
+	+ name
+		- Type: String
+		+ Texts
+			1: Play
+	+ file slot
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 9
+		- Type: Active
+		- Images hash: 0x217C
+	+ Active 10
+		- Type: Active
+		- Images hash: 0x9EA5
+	+ Active 4
+		- Type: Active
+		- Images hash: 0xCF4E
+	+ text
+		- Type: Active
+		- Images hash: 0xB04A
+	+ line
+		- Type: Active
+		- Images hash: 0x1179
+	+ text stage
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ text cooldown
+		- Type: Counter
+		- Images hash: 0x1C7A
+	+ Active 6
+		- Type: Active
+		- Images hash: 0x3C87
+	+ Ini
+		- Type: Ini
++ Layer #1 (Layer 1)
+	- background [647, -580]
++ Layer #2 (Layer 2)
+	- item box 2 [-136, -163]
+	- Active [417, -147]
+	- what shop [16, -268]
+	- last cutscene [18, -235]
+	- character [1025, 473]
+	- Active 2 [971, 584]
+	- tokens [-6, -147]
+	- selection [781, -85]
+	- current price [782, -33]
+	- shopkeeper [76, 735]
+	- String 2 [-24, -450]
+	- Active 3 [-267, -171]
+	- item box [-138, 180]
+	- price 1 [719, -170]
+	- set item 1 [908, 141]
+	- set item 2 [887, 217]
+	- set item 3 [877, 274]
+	- Active 5 [155, -88]
+	- have slot 1? [424, -104]
+	- have slot 2? [424, -86]
+	- have slot 3? [424, -68]
+	- checkl [548, -95]
+	- bought [548, -77]
+	- Byte Icon [904, -32]
+	- sold out 3 [872, -192]
+	- sold out 2 [918, -200]
+	- sold out 1 [928, -200]
+	- name [529, -205]
+	- file slot [-30, -258]
+	- Active 9 [565, -166]
+	- Active 10 [628, -192]
+	- Active 4 [111, 391]
+	- text [102, 59]
+	- line [178, 243]
+	- text stage [-77, -89]
+	- text cooldown [-77, -71]
+	- Active 6 [148, -354]
+	- Ini [300, -100]

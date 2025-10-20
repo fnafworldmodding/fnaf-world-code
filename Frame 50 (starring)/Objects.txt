@@ -1,0 +1,24 @@
++ Object Definitions
+	+ Real
+		- Type: String
+		+ Texts
+			1: 
+	+ Fake
+		- Type: String
+		+ Texts
+			1: Music by\nLeon Riskin\n\nVoice Actors\n\nChica's Magic Rainbow\nDebi Derryberry\n\nNightmare Chica, JJ, Toy Chica\nAmber Lee Connors\n\nBaron Foxy\nJesse Adam\n\nFoxy.EXE Voice\nMarc Martel\n\nFredbear\nChristopher McCullough\n\nSouldozer\nPJ Heywood\n\nBaby\nHeather Masters\n\n\n\nCreated by\nScott Cawthon
+	+ Active
+		- Type: Active
+		- Images hash: 0x2E7E
+	+ Active 2
+		- Type: Active
+		- Images hash: 0xA051
+	+ Active 3
+		- Type: Active
+		- Images hash: 0xB861
++ Layer #1 (Layer 1)
+	- Real [900, -400]
+	- Fake [-350, -1050]
+	- Active [400, 494]
+	- Active 2 [400, 195]
+	- Active 3 [405, 275]

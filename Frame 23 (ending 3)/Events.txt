@@ -1,0 +1,122 @@
+* Upon pressing "Escape"
+	storyboard controls : End the application
+
+* Start of Frame
+	text : Set Counter to 1
+	cooldown : Set Counter to 200
+	Sound : Stop any sample
+	 Sound : Play sample rumble2 on channel #2
+
+* cooldown > 0
+	cooldown : Subtract 1 from Counter
+	Active 2 : Make invisible
+
+* text > 0
++ cooldown = 0
++ Alterable Value B of Active = 1
++ Alterable Value E of Active = 0
+	Active 2 : Reappear
+
+* text = 1
++ cooldown = 0
++ Alterable Value E of Active = 0
++ Only one action when event loops
+	New Objects : Create black box at (-42,94) from make
+	Active : Change animation sequence to Animation 12
+	Active : Reappear
+
+* text > 0
++ cooldown = 0
++ Alterable Value E of Active = 0
++ Upon pressing "S"
+	text : Add 1 to Counter
+	cooldown : Set Counter to 200
+	New Objects : Create black box at (-42,94) from make
+
+* text > 0
++ cooldown = 0
++ Alterable Value E of Active = 0
++ Upon pressing "Down Arrow"
+	text : Add 1 to Counter
+	cooldown : Set Counter to 200
+	New Objects : Create black box at (-42,94) from make
+
+* text > 0
++ cooldown = 0
++ Alterable Value E of Active = 0
++ Upon pressing "Enter"
+	text : Add 1 to Counter
+	cooldown : Set Counter to 200
+	New Objects : Create black box at (-42,94) from make
+
+* User clicks with left button
++ text > 0
++ cooldown = 0
++ Alterable Value E of Active = 0
+	text : Add 1 to Counter
+	cooldown : Set Counter to 200
+	New Objects : Create black box at (-42,94) from make
+
+* black box animation Stopped is over
+	black box : Destroy
+
+* Active animation Animation 12 is over
+	Active : Change animation sequence to Stopped
+	String 2 : Reappear
+	Active : Set Alterable Value B to 1
+
+* text = 1
+	String 2 : Set alterable string to "This isn't fair..."
+
+* text = 2
+	String 2 : Set alterable string to "It was never fair. It was supposed to be me. It was always supposed to be me!"
+
+* text = 3
+	String 2 : Set alterable string to "My world was lush and beautiful, full of strange and colorful creatures! But no, that wasn't enough for you."
+
+* text = 4
+	String 2 : Set alterable string to "You wanted to be scared. You wanted to feel dread. And what happened to me? What happened to us? Obscurity..."
+
+* text = 5
+	String 2 : Set alterable string to "You haven't seen the last of me. Freddy Fazbear isn't the one who will be sharpening his teeth on your bones. It will be me."
+
+* text = 6
+	String 2 : Set alterable string to "It will be me..."
+
+* text = 7
+	String 2 : Set alterable string to "The End"
+	Active : Set Alterable Value E to 1
+	eye : Make invisible
+	Active 4 : Change animation sequence to Animation 12
+
+* Every 00''-05
+	eye : Set Alterable Value A to Random(0 + ( value( "text" ) * 2 ))
+
+* Alterable Value A of eye = 0
++ text <> 7
+	eye : Reappear
+
+* Alterable Value A of eye <> 0
+	eye : Make invisible
+
+* Alterable Value E of Active = 1
+	Active : Add 1 to Alterable Value F
+
+* Alterable Value E of Active = 1
++ Alterable Value F of Active < 200
+	String 2 : Make invisible
+
+* Alterable Value E of Active = 1
++ Alterable Value F of Active > 200
++ Only one action when event loops
+	String 2 : Reappear
+	 Sound : Play sample broken theme - fear of pixelation - draft1 (uninteruptable) on channel #1, 0 times
+
+* Every 03''-00
++ Alterable Value E of Active = 0
+	 Sound : Play sample rumble2 on channel #2
+
+* Alterable Value E of Active = 1
++ Only one action when event loops
+	 Sound : Play sample off on channel #2
+

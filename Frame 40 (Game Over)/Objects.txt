@@ -1,0 +1,10 @@
++ Object Definitions
+	+ Active
+		- Type: Active
+		- Images hash: 0x938A
+	+ Active 5
+		- Type: Active
+		- Images hash: 0x178E
++ Layer #1 (Layer 1)
+	- Active [389, 305]
+	- Active 5 [377, -71]
