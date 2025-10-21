@@ -4,10 +4,13 @@ the source code of the beloved fnaf world version 0.1.24 by Scott Cawthon
 
 ## Q&A
 - can I compile the code to the game?
+
 no, this code is purely visiable and for readablity. you cannot sadly compile it to the game itself but can be used to understand how it works
 
 - does this code match other modded fnaf worlds?
+
 not really, some mods use fwf which rewrites the code to be compact and miniaml but still keeps that core functionlity and some their code is based on it but can also be heavily modified which might make some mismatch. **either way it shouldn't be a relaibale way to undersand how modded fanf worlds work**
+
 
 
 
